@@ -59,6 +59,7 @@
 ## Runtimes
 
 * [Overview](runtimes/overview.md)
+* [Format](runtimes/format/README.md)
 * [Background](runtimes/background.md)
 * [Add a runtime](runtimes/add-runtime.md)
 * [Load a file](runtimes/load-file.md)
