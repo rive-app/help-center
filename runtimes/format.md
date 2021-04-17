@@ -19,11 +19,9 @@ Byte order is little endian.
 {% hint style="info" %}
 Reference Binary Readers
 
-[Dart Binary Reader](https://github.com/rive-app/rive-flutter/blob/master/lib/src/utilities/binary_buffer/binary_reader.dart)
-
-[C++ Binary Reader](https://github.com/rive-app/rive-cpp/blob/master/src/core/binary_reader.cpp)
-
-[C++ Binary Decoder](https://github.com/rive-app/rive-cpp/blob/master/include/core/reader.h)
+[Dart](https://github.com/rive-app/rive-flutter/blob/master/lib/src/utilities/binary_buffer/binary_reader.dart) 
+[C++ Reader](https://github.com/rive-app/rive-cpp/blob/master/src/core/binary_reader.cpp) 
+[C++ Decoder](https://github.com/rive-app/rive-cpp/blob/master/include/core/reader.h)
 {% endhint %}
 
 ## Header
