@@ -71,7 +71,11 @@ There are 5 fundamental backing types but they are serialized in 4 different way
 For example, a boolean can be read as an unsigned integer as the backing type and serializer is compatible. Even though reading the boolean as an integer will not provide the valid value for the property, the runtime can still just read past it.
 
 ### ToC Data
-The list of known properties is serialized as a sequence of variable unsigned integers with a 0 terminator. A valid property key is distinguished by a non-zero unsigned integer id/key. Following the properties is a bit array which is composed of the read property count / 4 bytes. Every property gets 2 bits to define which backing type deserializer can be used to read past it. The intention here is to provide the known property type keys and their backing type, such that if the property type is unknown, the reader can read the entirety of the value without under/over running the buffer.
+The list of known properties is serialized as a sequence of variable unsigned integers with a 0 terminator. A valid property key is distinguished by a non-zero unsigned integer id/key. Following the properties is a bit array which is composed of the read property count / 4 bytes. Every property gets 2 bits to define which backing type deserializer can be used to read past it. 
+
+{% hint style="info" %}
+The intention here is to provide the known property type keys and their backing type, such that if the property type is unknown, the reader can read the entirety of the value without under/over running the buffer.
+{% endhint %}
 
 The two bits are interepreted as one of four backing types.
 | Backing Type | 2 bit value |
