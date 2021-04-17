@@ -11,7 +11,7 @@ Byte order is little endian.
 
 | Type | Description |
 | --- | ----------- |
-| variable unsigned integer | LEB128 variable encoded unsigned integer |
+| variable unsigned integer | LEB128 variable encoded unsigned integer (abbreviated to varuint going forward) |
 | unsigned integer | 4 byte unsigned integer |
 | string | unsigned integer followed by utf-8 encoded byte array of provided length  |
 | float | 32 bit floating point number encoded in 4 byte IEEE 754 |
@@ -111,5 +111,37 @@ Reference ToC Deserializers
 ### Baseline properties
 
 Rive won't export properties that have been known to the system since the latest major version. We baseline when we shift new major versions as there will be no minor version that needs to read past newer properties. Newly introduced properties after the shift to the latest major will export as they are added and new minor versions are released.
-# Content
 
+# Content
+The rest of the file is simply a list of objects, each containing a list of their properties and values. An object is represented as a varuint type key. It is immediately followed by the list of properties. Properties are terminated with a 0 varuint. If a non 0 value is read, it is expected to the the type key for the property. If the runtime knows the type key, it will know the backing type and how to decode it. The bytes following the type key will be one of the binary types specified earlier. If it is unknown, it can determine from the ToC what the backing type is and read past it. 
+
+## Core
+All objects and properties are defined in a set of files we call core defs for [Core Definitions](https://github.com/rive-app/rive-cpp/tree/master/dev/defs). These are defined in a series of JSON objects and help Rive generate serialization, deserialization, and animation property code. The C++ and Flutter runtimes both have helpers to read and generate a lot of the boilerplate code for these types.
+
+### Object
+A core object is represented by its Core type key. For example, a Shape has [core type key 3](https://github.com/rive-app/rive-cpp/blob/4512406300b7333ba543cd87930e67a24c2fc715/dev/defs/shapes/shape.json#L4). Similarly you can see the generated code for the C++ runtime also [identifies a Shape with the same key](https://github.com/rive-app/rive-cpp/blob/4512406300b7333ba543cd87930e67a24c2fc715/include/generated/shapes/shape_base.hpp#L12).
+
+### Properties
+Properties are similarly represented by a Core type key. These are unique across all objects, so [property key 13](https://github.com/rive-app/rive-cpp/blob/4512406300b7333ba543cd87930e67a24c2fc715/dev/defs/node.json#L16) will always be the X value of a Node object, and it [matches in the runtime](https://github.com/rive-app/rive-cpp/blob/4512406300b7333ba543cd87930e67a24c2fc715/include/generated/node_base.hpp#L33). A Node's X value is known to be a floating point value so when it is encountered [it will be decoded as such](https://github.com/rive-app/rive-cpp/blob/4512406300b7333ba543cd87930e67a24c2fc715/include/generated/node_base.hpp#L66-L68). Property key 0 is reserved as a null terminator (meaning we are done reading properties for the current object).
+
+## Example Serialized Object
+
+| Data | Type/Size | Description |
+| --- | ----------- | -- |
+| 2 | varuint | object of type 2 (Node) |
+| 13 | varuint | X property for the Node |
+| 100.0 | 4 byte float | the X value for the Node |
+| 14 | varuint | Y property for the Node |
+| 22.0 | 4 byte float | the Y value for the Node |
+| 0 | varuint | Null terminator. Done reading properties and have completed reading Node. |
+
+
+## Context
+Objects are always provided in context of each other. A Shape will always be provided after an Artboard. The Node's artboard can always be determined by finding the latest read Artboard. This concept is used extensively to provide the context for objects that require it. Another example, a KeyFrame will always be provided after a LinearAnimation, meaning you can always determine which LinearAnimation a KeyFrame belongs to by simply tracking that last read LinearAnimation.
+
+## Hierarchy
+Objects inside the Artboard can be parented to other objects in the Artboard. This mapping is more complex and requires identifiers to find the parent. The identifiers are provided as a [core def property](https://github.com/rive-app/rive-cpp/blob/4512406300b7333ba543cd87930e67a24c2fc715/dev/defs/component.json#L28-L38). The value is always an unsigned integer representing the index within the Artboard of the ContainerComponent derived object that makes a valid parent.
+
+{% hint style="info" %}
+For specifics around import context, you can review the ImportStack pattern used in the File reader. [Dart](https://github.com/rive-app/rive-flutter/blob/bbee63bb6c791dcabd0cd9d9788ca7ec4783fddb/lib/src/rive_file.dart#L101) [C++](https://github.com/rive-app/rive-cpp/blob/4512406300b7333ba543cd87930e67a24c2fc715/src/file.cpp#L137)
+{% endhint %}
