@@ -52,7 +52,6 @@
   * [Clipping](editor/manipulating-shapes/clipping.md)
   * [Trim Path](editor/manipulating-shapes/trim-path.md)
   * [Freeze and Origin](editor/manipulating-shapes/origin-and-freeze.md)
-* [Reusability](editor/reusability.md)
 * [Revision history](editor/revision-history.md)
 * [Keyboard shortcuts](editor/keyboard-shortcuts.md)
 
