@@ -8,7 +8,7 @@ The Fill section of the Inspector allows you to add and modify the fill properti
 
 ### **Fill type**
 
-![](../../../.gitbook/assets/fill_type%20%281%29.gif)
+![](../../../.gitbook/assets/fill_type%20%281%29%20%281%29.gif)
 
 You can apply different fill types to shapes. These include:
 
@@ -37,7 +37,7 @@ You can apply different stroke types to shapes. These include:
 
 ### **Cap**
 
-![](../../../.gitbook/assets/cups.gif)
+![](../../../.gitbook/assets/cups%20%281%29.gif)
 
 The Cap option determines how the endpoints of strokes with open paths should be rendered.
 

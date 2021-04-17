@@ -8,9 +8,9 @@ The pen tool allows you to create custom vector shapes. Activate the Pen tool by
 
 Click on the stage to place vertices.
 
-![](../../../.gitbook/assets/pen-tool-create%20%281%29.gif)
+![](../../../.gitbook/assets/pen-tool-create%20%281%29%20%281%29.gif)
 
 Click and drag to create a vertex with bezier handles. When you are finished, hit `esc` on your keyboard.
 
-![](../../../.gitbook/assets/pen-tool-create-handless.gif)
+![](../../../.gitbook/assets/pen-tool-create-handless%20%281%29.gif)
 
