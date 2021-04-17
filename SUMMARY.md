@@ -57,8 +57,8 @@
 
 ## Runtimes
 
-* [Overview](runtimes/overview.md)
-* [Format](runtimes/format/README.md)
+* [Runtimes overview](runtimes/overview.md)
+* [Format](runtimes/format.md)
 * [Background](runtimes/background.md)
 * [Add a runtime](runtimes/add-runtime.md)
 * [Load a file](runtimes/load-file.md)
@@ -68,7 +68,7 @@
 
 ## Community
 
-* [Overview](community/overview.md)
+* [Community overview](community/overview.md)
 
 ## Admin
 
