@@ -8,7 +8,7 @@ The Fill section of the Inspector allows you to add and modify the fill properti
 
 ### **Fill type**
 
-![](../../../.gitbook/assets/fill_type%20%281%29%20%281%29.gif)
+![](../../../.gitbook/assets/fill_type%20%281%29%20%281%29%20%281%29.gif)
 
 You can apply different fill types to shapes. These include:
 

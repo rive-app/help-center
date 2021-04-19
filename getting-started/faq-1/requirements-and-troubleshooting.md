@@ -10,7 +10,7 @@ Windows and Linux versions of Rive will be coming in the future.
 
 ## Can I use Rive on multiple computers?
 
-Yes, you can use Rive on as many computers as you like. Simply log in to your account via the browser or the macOS app to access all your personal and team files.
+Yes, you can use Rive on as many computers as you like. Simply log in to your account via the browser to access all your personal and team files.
 
 Whilst you can use Rive on multiple computers personally, you'll need individual accounts for multiple users across computers.
 

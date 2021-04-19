@@ -4,7 +4,7 @@ description: The inspector is always located on the right side of the editor.
 
 # Inspector
 
-![](../../../.gitbook/assets/inspector%20%282%29.png)
+![](../../../.gitbook/assets/inspector%20%282%29%20%281%29.png)
 
 All of the editable properties of an object can be found in the inspector. The inspector changes dynamically depending on what object you have selected as well as where you are in the editor. 
 
