@@ -1,4 +1,4 @@
-# Importing assets
+# Importing Assets
 
 Import your assets by dragging and dropping them onto the Rive editor. In doing so, the editor generates an artboard and associated hierarchy for you to begin working with.
 

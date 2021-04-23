@@ -1,4 +1,4 @@
-# Interpolation \(easing\)
+# Interpolation \(Easing\)
 
 When you set two keys on a property, the value in between those keys is automatically calculated. This is called interpolation. Interpolation settings can be customized to create dramatically different results.
 

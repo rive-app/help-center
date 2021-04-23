@@ -1,4 +1,4 @@
-# Tips and best practices
+# Shape and Path Tips
 
 ![](../../../.gitbook/assets/shapes-and-paths-01.png)
 

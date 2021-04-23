@@ -1,4 +1,4 @@
-# Transform spaces
+# Transform Spaces
 
 Groups allow you to create new transform spaces for your graphics, opening up the ability to animate graphics from multiple areas of interest. For example, you might want a planet to rotate on its own axis while also rotating around another planet. Multiple transform spaces \(achieved by nesting groups, bones, and other container objects\) allow you to achieve this.
 

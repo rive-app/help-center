@@ -4,7 +4,7 @@ description: >-
   divided into a few main panels, described below.
 ---
 
-# Interface overview
+# Interface Overview
 
 {% embed url="https://www.youtube.com/watch?v=S-sSF09NCvs" %}
 

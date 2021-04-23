@@ -1,4 +1,4 @@
-# Procedural shapes
+# Procedural Shapes
 
 ## Creating a procedural shape
 

@@ -1,4 +1,4 @@
-# Editing vertices
+# Edit Vertices
 
 No matter the type of vector you create, you can edit the vertices by changing their position or handles in both design and animate mode.
 

@@ -1,4 +1,4 @@
-# Tips and best practices
+# Procedural Shape Tips
 
 ![](../../../.gitbook/assets/procedural_shapes_bp.png)
 

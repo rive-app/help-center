@@ -1,4 +1,4 @@
-# Tips and best practices
+# Edit Vertices Tips
 
 When working with vector shapes, you have the luxury of editing the vertices of your shapes at any time \(this includes animate mode\). Whether you need to add extra vertices, change the type of bezier handle, or change the position of an errant vertex, everything is available to you regardless of where you created your graphics.
 

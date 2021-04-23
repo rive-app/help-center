@@ -1,4 +1,4 @@
-# Quick links
+# Quick Links
 
 [Get the runtimes](../runtimes/overview.md)
 

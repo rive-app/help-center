@@ -1,4 +1,4 @@
-# Tips and best practices
+# Fill and Stroke Tips
 
 Although shapes and paths define the shape of your graphics, it's the fills and strokes that will give your graphics form. Here are a few ways to use fills and strokes to bring your creations to another level.
 

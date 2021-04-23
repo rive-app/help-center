@@ -2,7 +2,7 @@
 description: Learn how to export your Rive files
 ---
 
-# Exporting files
+# Exporting Files
 
 ## **Via the Editor**
 

@@ -1,4 +1,4 @@
-# Tips and best practices
+# Pen Tool Tips
 
 ## Using the pen tool
 

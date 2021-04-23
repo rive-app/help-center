@@ -1,4 +1,6 @@
-# Tips: create a root group
+# Group Tips
+
+## Create a root group
 
 Creating a root group is generally a good idea for any object that you may need to rescale or reposition later, even if the contents have already been animated. 
 

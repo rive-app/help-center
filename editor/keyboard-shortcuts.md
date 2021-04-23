@@ -1,4 +1,4 @@
-# Keyboard shortcuts
+# Keyboard Shortcuts
 
 ### Tools
 

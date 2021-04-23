@@ -1,4 +1,4 @@
-# Design vs Animate mode
+# Design vs Animate Mode
 
 The Rive editor has two distinct modes, Design and Animate. As you switch between modes, the interface changes to show the appropriate tools and options available.
 

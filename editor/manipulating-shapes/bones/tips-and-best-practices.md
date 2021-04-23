@@ -1,4 +1,4 @@
-# Tips and best practices
+# Bone Tips
 
 How you rig your design is important. A smart rig allows you to create fewer keys, making your animation easy to work with and keeping your timeline tidy.
 

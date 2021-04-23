@@ -1,4 +1,4 @@
-# Pen tool
+# Pen Tool
 
 ## Creating **custom shapes**
 

@@ -1,4 +1,4 @@
-# Selecting and navigating groups
+# Selecting and Navigating Groups
 
 ## Double-click
 
