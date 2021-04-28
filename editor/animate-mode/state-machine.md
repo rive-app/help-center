@@ -4,9 +4,9 @@ description: Add intelligence to your animations
 
 # State Machine
 
-The State Machine feature is a visual way to connect animations together and define the logic that drives the transitions, all without code.
+The State Machine feature is a visual way to connect animations together and define the logic that drives the transitions without code.
 
-This allows you to build interactive motion graphics that transition and mix animations based on events and user interactions.
+This allows you to build interactive motion graphics that are ready to be implemented in your product, game, or website.
 
 {% embed url="https://www.youtube.com/watch?v=0ihqZANziCk" %}
 
@@ -34,7 +34,11 @@ Connect your new states with transitions. When you hover near a state, you'll se
 
 ### Inputs
 
-Before adding logic to the transitions, you need to create at least one Input. Inputs are values that can be manipulated when the state machine is playing. You can change these values while the state machine is playing in the Editor or at runtime in your app, game, or website. In this case, we're going to use this Input to determine when a button is pressed, so we're going to name it "Pressed."
+Before adding logic to the transitions, you need to create at least one input. Inputs are values that are controlled by your app or game engine.
+
+Think of them as the contract between your design and engineering teams. Your product's code can change the values of the inputs at any time, and the state machine reacts to those changes.
+
+You can change these values while the state machine is playing in the Editor or at runtime in your app, game, or website. In this case, we're going to use this Input to determine when a button is pressed, so we're going to name it "Pressed."
 
 ![Create an Input](../../.gitbook/assets/2021-04-02-20.04.07.gif)
 
@@ -46,7 +50,7 @@ Select a transition to view its properties.
 
 **Duration** determines how long the two animations \(in this case Idle and Press\) will mix. A value of 0 has no mixing and instantly changes from one state to the next. Duration can be a fixed time value \(milliseconds or seconds\) or it can be a percentage \(based on the length of the beginning state\). 
 
-**Exit Time** determines how much time must pass before the transition can happen \(even if the conditions have already been met\). This can be useful if you have an animation that needs to reach a specific point before it can transition. You can use time values \(milliseconds or seconds\) or a percentage. A value of 100% means that the transition can only happen once the entire animation has played.
+**Exit Time** determines how much time must pass before the transition can happen \(even if the conditions have already been met\). This can be useful if you have an animation that needs to reach a specific point before it transitions. You can use time values \(milliseconds or seconds\) or a percentage. A value of 100% means that the transition can only happen once the entire animation has played.
 
 Use **Pause When Exiting** if you want to hold the current frame \(of the beginning state\) when the transition started.
 
