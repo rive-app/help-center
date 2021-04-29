@@ -4,9 +4,9 @@ description: Add intelligence to your animations
 
 # State Machine
 
-The State Machine feature is a visual way to connect animations together and define the logic that drives the transitions without code.
+State machines are a visual way to connect animations together and define the logic that drives the transitions, all without code.
 
-This allows you to build interactive motion graphics that are ready to be implemented in your product, game, or website.
+They allow you to build interactive motion graphics that are ready to be implemented in your product, game, or website.
 
 {% embed url="https://www.youtube.com/watch?v=0ihqZANziCk" %}
 
