@@ -4,41 +4,41 @@ description: Add intelligence to your animations
 
 # State Machine
 
-State machines are a visual way to connect animations together and define the logic that drives the transitions, all without code.
+State Machines are a visual way to connect animations together and define the logic that drives the transitions, all without code.
 
 They allow you to build interactive motion graphics that are ready to be implemented in your product, game, or website.
 
 {% embed url="https://www.youtube.com/watch?v=0ihqZANziCk" %}
 
-## Create a state machine
+## Create a State Machine
 
 To get started, you first need some timeline-based animations.
 
 ![](../../.gitbook/assets/screen-shot-2021-04-02-at-7.02.56-pm.png)
 
-Then create a state machine.
+Then create a State Machine.
 
 ![](../../.gitbook/assets/screen-shot-2021-04-02-at-7.03.33-pm.png)
 
 ### States
 
-With the state machine selected, drag and drop your animations onto the graph on the right.
+With the State Machine selected, drag and drop your animations onto the graph on the right.
 
 ![Drag and drop animations on the graph to create states](../../.gitbook/assets/2021-04-02-19.06.19.gif)
 
-### Create transitions
+### Create Transitions
 
-Connect your new states with transitions. When you hover near a state, you'll see a dot appear. Click and drag on that dot to draw a transition from one state to another. The transition from the **Entry** state defines which state should play first. A transition from the **Any State** will happen regardless of what state is currently active, provided the conditions on that transition are met \(read below for more on conditions\). A transition to the **Exit** state will exit the state machine.
+Connect your new states with Transitions. When you hover near a state, you'll see a dot appear. Click and drag on that dot to draw a transition from one state to another. The transition from the **Entry** state defines which state should play first. A transition from the **Any State** will happen regardless of what state is currently active, provided the conditions on that transition are met \(read below for more on conditions\). A transition to the **Exit** state will exit the State Machine.
 
 ![Create transitions](../../.gitbook/assets/2021-04-02-19.11.06.gif)
 
 ### Inputs
 
-Before adding logic to the transitions, you need to create at least one input. Inputs are values that are controlled by your app or game engine.
+Before adding logic to Transitions, you need to create at least one Input. Inputs are values that are controlled by your app or game engine.
 
-Think of them as the contract between your design and engineering teams. Your product's code can change the values of the inputs at any time, and the state machine reacts to those changes.
+Think of them as the contract between your design and engineering teams. Your product's code can change the values of the Inputs at any time, and the State Machine reacts to those changes.
 
-You can change these values while the state machine is playing in the Editor or at runtime in your app, game, or website. In this case, we're going to use this Input to determine when a button is pressed, so we're going to name it "Pressed."
+You can change these values while the State Machine is playing in the Editor or at runtime in your app, game, or website. In this case, we're going to use this Input to determine when a button is pressed, so we're going to name it "Pressed."
 
 ![Create an Input](../../.gitbook/assets/2021-04-02-20.04.07.gif)
 
@@ -62,9 +62,37 @@ A transition can have no conditions, one condition, or multiple conditions. If i
 
 If you have **Exit Time** enabled, then the transition happens once all conditions are met and the exit time has been reached. Use this to ensure your transition happens at a specific time of your animation.
 
-### Play the state machine
+### Play the State Machine
 
-Press the play button to start the state machine. Change the Inputs to test how your state machine responds.
+Press the play button to start the State Machine. Change the Inputs to test how your State Machine responds.
 
 ![](../../.gitbook/assets/2021-04-02-20.45.15.gif)
+
+## Blend States
+
+A Blend State allows you to mix animations together on the same state. You can use this to create all kinds of interesting interactions, like pull-to-refresh animations, creative loading bars, facial expressions, or to control the walk/run speed of a character.
+
+![Using a Blend State to make the water rise in this download button.](../../.gitbook/assets/liquid_download.gif)
+
+To make a Blend State, select a state and use the toggle to change the type. Rive currently supports three types of state:
+
+* Animation State
+* 1D Blend State
+* Additive Blend State
+
+![](../../.gitbook/assets/blend_states.gif)
+
+### 1D Blend State
+
+A 1D Blend State allows you to blend animations using a number input. After choosing the blend type, you'll want to pick which input will control this blend state.
+
+![](../../.gitbook/assets/1d_blend.gif)
+
+Then add animations with the plus button and set the threshold for each. The thresholds for each animation determine the range of your Blend State. In our example, the range is from 0 to 100. That means that one animation is playing fully at each end of the range, while anything in between is a blend of both animations. You can see this represented in the diagram above the animations list. As you change the input value, watch to see how the position in this range changes the mix amount of each animation.
+
+### Additive Blend State
+
+![](../../.gitbook/assets/screen-shot-2021-05-11-at-9.41.59-pm.png)
+
+An Additive Blend State allows you to map any input directly to any animation. The Additive Blend State expects a number between 0-100 \(which defines whether 0% of the animation is playing or if 100% of the animation is playing\). This can be useful if you want to have exact control over animations, rather than blending them indirectly with a single input.
 
