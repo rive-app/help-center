@@ -30,7 +30,7 @@ Want to animate assets created in other tools? Learn how to import them straight
 
 Learn how to export your Rive files ready to implement into your app or game.
 
-{% page-ref page="exporting.md" %}
+{% page-ref page="../exporting.md" %}
 
 
 

@@ -38,7 +38,7 @@
   * [Edit Vertices](editor/fundamentals/editing-vertices/README.md)
     * [Edit Vertices Tips](editor/fundamentals/editing-vertices/tips-and-best-practices.md)
   * [Importing Assets](editor/fundamentals/importing-assets.md)
-  * [Exporting Files](editor/fundamentals/exporting.md)
+  * [Revision History](editor/fundamentals/revision-history.md)
 * [Animate Mode](editor/animate-mode/README.md)
   * [Timeline](editor/animate-mode/timeline.md)
   * [Keys](editor/animate-mode/keyframes.md)
@@ -52,8 +52,8 @@
   * [Clipping](editor/manipulating-shapes/clipping.md)
   * [Trim Path](editor/manipulating-shapes/trim-path.md)
   * [Freeze and Origin](editor/manipulating-shapes/origin-and-freeze.md)
-* [Revision History](editor/revision-history.md)
 * [Keyboard Shortcuts](editor/keyboard-shortcuts.md)
+* [Exporting](editor/exporting.md)
 
 ## Runtimes
 

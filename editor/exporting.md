@@ -2,17 +2,17 @@
 description: Learn how to export your Rive files
 ---
 
-# Exporting Files
+# Exporting
 
 ## **Via the Editor**
 
-![](../../.gitbook/assets/screen-shot-2021-04-20-at-3.30.35-pm.png)
+![](../.gitbook/assets/screen-shot-2021-04-20-at-3.30.35-pm.png)
 
 Export your file via the export menu within the toolbar. Select Download from the dropdown menu.
 
 ### For newest runtime
 
-This option downloads a **.riv** file that is compatible with the latest major version of the Rive runtimes \(number displayed on the right\). You can use the [Get runtimes](../../runtimes/overview.md) button to find all our latest runtimes. 
+This option downloads a **.riv** file that is compatible with the latest major version of the Rive runtimes \(number displayed on the right\). You can use the [Get runtimes](../runtimes/overview.md) button to find all our latest runtimes. 
 
 {% hint style="info" %}
 Note that **.riv** files are optimized for runtime so any non-runtime-related data \(like x/y coordinates of states\) are stripped out.
@@ -28,7 +28,7 @@ This option downloads a **.rev** file that is intended for backup. It contains a
 
 ## **Via the File Browser**
 
-![](../../.gitbook/assets/export%20%281%29.png)
+![](../.gitbook/assets/export%20%281%29.png)
 
 Right-click files from within the browser and select Export from the contextual menu. Use marquee selection by clicking and dragging to export multiple files at once.
 

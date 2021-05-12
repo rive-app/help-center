@@ -32,5 +32,5 @@ Since all the runtimes are open-source, we encourage you to dive in and take a l
 
 As we publish updates to our Rive editor, we will occasionally push updated runtimes to support the new features. In most cases, the newest runtimes will also support previous versions of your Rive assets, so you will not need to re-export assets to update to the latest runtimes. 
 
-There are a number of ways to export your Rive files in cases where re-exporting is necessary to take advantage of the latest features. Check out our documentation on [exporting](../editor/fundamentals/exporting.md) for more information.
+There are a number of ways to export your Rive files in cases where re-exporting is necessary to take advantage of the latest features. Check out our documentation on [exporting](../editor/exporting.md) for more information.
 
