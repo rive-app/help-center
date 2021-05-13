@@ -38,7 +38,7 @@ Right-click files from within the browser and select Export from the contextual 
 
 Alternatively, right-click on a folder to export all the containing files.
 
-## Exporting linear content \(video\)
+## Exporting video \(Cloud Render\)
 
 Rive is all about interactive animation, but sometimes you need a good old-fashioned video. Our Cloud Renderer turns any device into a supercomputer, allowing you to continue working while we generate your videos.
 
