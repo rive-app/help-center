@@ -4,11 +4,11 @@ description: Add intelligence to your animations
 
 # State Machine
 
-State Machines are a visual way to connect animations together and define the logic that drives the transitions, all without code.
+State Machines are a visual way to connect animations together and define the logic that drives the transitions. They allow you to build interactive motion graphics that are ready to be implemented in your product, game, or website.
 
-They allow you to build interactive motion graphics that are ready to be implemented in your product, game, or website.
+State machines create a new level of collaboration between designers and developers, allowing both teams to iterate deep in the development process without the need for a complicated handoff.
 
-{% embed url="https://www.youtube.com/watch?v=0ihqZANziCk" %}
+{% embed url="https://www.youtube.com/watch?v=r17OBczdK4c" %}
 
 ## Create a State Machine
 
