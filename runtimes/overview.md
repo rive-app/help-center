@@ -1,4 +1,4 @@
-# Runtimes Overview
+# Overview
 
 The Rive runtimes are open-source libraries that give you full control of your Rive files in frameworks and engines.
 
@@ -6,11 +6,12 @@ The Rive runtimes are open-source libraries that give you full control of your R
 
 | Runtime | Link |
 | :--- | :--- |
-| Web \(Wasm and Canvas2D\) | ​[Npm](https://www.npmjs.com/package/rive-canvas), [GitHub](https://github.com/rive-app/rive-wasm)​ |
+| Web | ​[npm](https://www.npmjs.com/package/rive-js), [GitHub](https://github.com/rive-app/rive-wasm)​ |
 | iOS | [GitHub](https://github.com/rive-app/rive-ios) |
 | Android | [GitHub](https://github.com/rive-app/rive-android) |
-| Flutter | ​[Pub.dev](https://pub.dev/packages/rive), [GitHub](https://github.com/rive-app/rive-flutter)​ |
+| Flutter | ​[pub.dev](https://pub.dev/packages/rive), [GitHub](https://github.com/rive-app/rive-flutter)​ |
 | C++ | ​[GitHub](https://github.com/rive-app/rive-cpp) |
+| Tizen | [GitHub](https://github.com/rive-app/rive-tizen) |
 
 ### Community runtimes
 
