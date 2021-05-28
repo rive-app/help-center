@@ -1,5 +1,5 @@
 ---
-description: Get up and running with Rive in your app or web page in a couple of minutes
+description: Add Rive to your app or web page in a couple of minutes
 ---
 
 # Quick Start
@@ -212,7 +212,55 @@ export default {
 {% endtab %}
 
 {% tab title="Flutter" %}
-## Coming soon
+## 1. Add the Rive package dependency
+
+{% code title="pubspec.yaml" %}
+```yaml
+dependencies:
+  rive:
+```
+{% endcode %}
+
+## 2. Import the Rive package
+
+```dart
+import 'package:rive/rive.dart';
+```
+
+## 3. Add a RiveAnimation widget
+
+```dart
+RiveAnimation.network(
+  'https://cdn.rive.app/animations/truck.riv',
+)
+```
+
+## Complete example
+
+{% code title="main.dart" %}
+```dart
+import 'package:flutter/material.dart';
+import 'package:rive/rive.dart';
+
+void main() => runApp(MaterialApp(
+      home: MyRiveAnimation(),
+    ));
+
+class MyRiveAnimation extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return const Scaffold(
+      body: Center(
+        child: RiveAnimation.network(
+          'https://cdn.rive.app/animations/truck.riv',
+          fit: BoxFit.cover,
+        ),
+      ),
+    );
+  }
+}
+```
+{% endcode %}
 {% endtab %}
 
 {% tab title="iOS" %}
