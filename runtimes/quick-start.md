@@ -311,7 +311,49 @@ class RiveViewController: UIViewController {
 {% endtab %}
 
 {% tab title="Android" %}
-## Coming soon
+## 1. Add the Rive dependency
+
+```groovy
+dependencies {
+    implementation 'app.rive:rive-android:0.1.1'
+}
+```
+
+## 2. Add RiveAnimation to your layout
+
+```markup
+    <app.rive.runtime.kotlin.RiveAnimationView
+        android:id="@+id/my_rive_animation"
+        
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:riveUrl="https://cdn.rive.app/animations/truck.riv"
+        app:riveFit="COVER" />
+```
+
+## 3. Clean up when done
+
+{% code title="MyRiveActivity.kt" %}
+```kotlin
+class MyRiveActivity : AppCompatActivity() {
+
+    private val animationView by lazy(LazyThreadSafetyMode.NONE) {
+        findViewById<RiveAnimationView>(R.id.my_rive_animation)
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.my_rive)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        animationView.destroy()
+    }
+}
+```
+{% endcode %}
 {% endtab %}
 
 {% tab title="React Native" %}
