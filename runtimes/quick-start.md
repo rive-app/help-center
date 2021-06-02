@@ -59,8 +59,8 @@ Create a new instance of a Rive object, providing the url of the Rive file you w
 ```
 {% endtab %}
 
-{% tab title="React" %}
-The following shows how to create a simple Rive component in [React](https://reactjs.org/); the steps are broadly applicable to other web frameworks.
+{% tab title="React & Vue" %}
+The following shows how to create a simple Rive component in [React](https://reactjs.org/); the steps are broadly applicable to other web frameworks. See the example at the bottom of the page for [Vue](https://vuejs.org/).
 
 ## 1. Add Rive package to package.json
 
@@ -264,10 +264,57 @@ class MyRiveAnimation extends StatelessWidget {
 {% endtab %}
 
 {% tab title="iOS" %}
-## Coming soon
+## 1. Add the CocoaPods dependency
+
+{% code title="Podfile" %}
+```ruby
+  pod 'RiveRuntime', :git => 'git@github.com:rive-app/test-ios.git'
+```
+{% endcode %}
+
+## 2. Create a UIViewController and import runtime
+
+```swift
+import UIKit
+import RiveRuntime
+
+class RiveViewController: UIViewController {
+    
+    override public func loadView() {
+        super.loadView()
+    }
+}
+```
+
+## 3. Add a RiveView and a RiveFile
+
+```swift
+import UIKit
+import RiveRuntime
+
+class RiveViewController: UIViewController {
+    let url = "https://cdn.rive.app/animations/truck.riv"
+    
+    override public func loadView() {
+        super.loadView()
+        
+        let view = RiveView()
+        guard let riveFile = RiveFile(httpUrl: url, with: view) else {
+            fatalError("Unable to load RiveFile")
+        }
+        
+        view.configure(riveFile)
+        self.view = view
+    }
+}
+```
 {% endtab %}
 
 {% tab title="Android" %}
+## Coming soon
+{% endtab %}
+
+{% tab title="React Native" %}
 ## Coming soon
 {% endtab %}
 {% endtabs %}
