@@ -356,16 +356,17 @@ class MyRiveActivity : AppCompatActivity() {
 {% endcode %}
 {% endtab %}
 
-{% tab title="React Native (Android)" %}
-
-## 1. Add the Rive dependency 
+{% tab title="React Native - Android" %}
+## 1. Add the Rive dependency
 
 ```sh
 npm install rive-react-native
 ```
 
 ## 2. Update Android minSdkVersion
+
 {% code title="android/build.gradle" %}
+
 ```kotlin
 buildscript {
    ext {
@@ -375,8 +376,9 @@ buildscript {
    }
 }
 ```
+{% endcode %}
 
-## 3. Add your rive component 
+## 3. Add your rive component
 
 {% code title="App.js" %}
 ```js
@@ -392,19 +394,21 @@ function App() {
 {% endcode %}
 {% endtab %}
 
-{% tab title="React Native (iOS)" %}
+{% tab title="React Native - iOS" %}
 
-## 1. Add the Rive dependency 
+## 1. Add the Rive dependency
 
 ```sh
 npm install rive-react-native
 ```
 
 ## 2. Update iOS build target to at least 11.4
+
 {% code title="ios/Podfile" %}
 ```ruby
 platform :ios, '11.4'
 ```
+{% endcode %}
 
 ## 3. Create Bridging header
 
