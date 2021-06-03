@@ -120,7 +120,7 @@ const Animation = ({ asset, animation, fit, alignment }) => {
 
     // Resizes the canvas to match the parent element
     useEffect(() => {
-        
+
         let resizer = () => {
             const { width: w, height: h } =
                 animationContainer.current.getBoundingClientRect();
@@ -279,7 +279,7 @@ import UIKit
 import RiveRuntime
 
 class RiveViewController: UIViewController {
-    
+
     override public func loadView() {
         super.loadView()
     }
@@ -294,15 +294,15 @@ import RiveRuntime
 
 class RiveViewController: UIViewController {
     let url = "https://cdn.rive.app/animations/truck.riv"
-    
+
     override public func loadView() {
         super.loadView()
-        
+
         let view = RiveView()
         guard let riveFile = RiveFile(httpUrl: url, with: view) else {
             fatalError("Unable to load RiveFile")
         }
-        
+
         view.configure(riveFile)
         self.view = view
     }
@@ -324,7 +324,7 @@ dependencies {
 ```markup
     <app.rive.runtime.kotlin.RiveAnimationView
         android:id="@+id/my_rive_animation"
-        
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
 
@@ -359,14 +359,13 @@ class MyRiveActivity : AppCompatActivity() {
 {% tab title="React Native - Android" %}
 ## 1. Add the Rive dependency
 
-```sh
+```bash
 npm install rive-react-native
 ```
 
 ## 2. Update Android minSdkVersion
 
 {% code title="android/build.gradle" %}
-
 ```kotlin
 buildscript {
    ext {
@@ -381,7 +380,7 @@ buildscript {
 ## 3. Add your rive component
 
 {% code title="App.js" %}
-```js
+```javascript
 import Rive from 'rive-react-native';
 
 function App() {
@@ -395,10 +394,9 @@ function App() {
 {% endtab %}
 
 {% tab title="React Native - iOS" %}
-
 ## 1. Add the Rive dependency
 
-```sh
+```bash
 npm install rive-react-native
 ```
 
@@ -412,14 +410,14 @@ platform :ios, '11.4'
 
 ## 3. Create Bridging header
 
-- open the iOS prject file in xcode `open ios/<name>.xcodeproj`
-- create a new empty swift file. 
-- confirm "Create Bridging Header"
+* open the iOS prject file in xcode `open ios/<name>.xcodeproj`
+* create a new empty swift file. 
+* confirm "Create Bridging Header"
 
-## 4. Add your rive component 
+## 4. Add your rive component
 
 {% code title="App.js" %}
-```js
+```javascript
 import Rive from 'rive-react-native';
 
 function App() {
@@ -431,10 +429,5 @@ function App() {
 ```
 {% endcode %}
 {% endtab %}
-
 {% endtabs %}
-
-
-
-
 

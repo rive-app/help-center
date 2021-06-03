@@ -1,13 +1,10 @@
----
-description: >-
-  Bones allow you to create a skeleton for your graphics. This is an intuitive
-  and natural way to animate multiple connected parts such as an arm, flag, or
-  tree branch.
----
-
 # Bones
 
-## **Create bones**
+Bones allow you to create a skeleton for your graphics. This is an intuitive and natural way to animate multiple connected parts such as an arm, flag, or tree branch. Learn how to use bones by either watching the video or reading more below.
+
+{% embed url="https://youtu.be/eUGoFK6mUy4" %}
+
+**Create bones**
 
 To create a chain of bones activate the Bone tool in the [Transform Tools menu](../../fundamentals/interface-overview/toolbar.md#transform-tools-menu) \(or press `B`\) and click anywhere.
 

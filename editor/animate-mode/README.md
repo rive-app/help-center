@@ -1,8 +1,8 @@
 # Animate Mode
 
-Rive has two distinct modes, Design and Animate. When you are in Animate mode, the Editor changes to display everything you need to create your animations including, a timeline, animations list, and interpolation panel.
+Rive has two distinct modes, Design and Animate. When you are in Animate mode, the Editor changes to display everything you need to create your animations including, a timeline, animations list, and interpolation panel. Learn more about Animate mode by watching the video, or reading more below.
 
-![](../../.gitbook/assets/animate_mode.png)
+{% embed url="https://youtu.be/4U3er1uSjBw" %}
 
 To quickly switch modes, use the `tab` shortcut.
 

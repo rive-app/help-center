@@ -4,9 +4,9 @@ description: The hierarchy is always located on the left side of the editor.
 
 # Hierarchy
 
-The Hierarchy is a tree view, which shows both the parent/child relationships between objects on the stage as well as the order in which they are rendered.
+The Hierarchy is a tree view, which shows both the parent/child relationships between objects on the stage as well as the order in which they are rendered. Learn about the Hierarchy by either watching the video or reading more below.
 
-![](../../../.gitbook/assets/hierarchy_b.png)
+{% embed url="https://youtu.be/IcSXchdnzHM" %}
 
 Parent/child relationships are a core concept in Rive, which allows you to create complex layered animations with minimal effort. [Groups](../groups/), [Bones](../../manipulating-shapes/bones/), and Solo objects can all have children in Rive.
 
