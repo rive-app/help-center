@@ -12,6 +12,7 @@ The Rive runtimes are open-source libraries that give you full control of your R
 | Flutter | ​[pub.dev](https://pub.dev/packages/rive), [GitHub](https://github.com/rive-app/rive-flutter)​ |
 | C++ | ​[GitHub](https://github.com/rive-app/rive-cpp) |
 | Tizen | [GitHub](https://github.com/rive-app/rive-tizen) |
+| React Native | [GitHub](https://github.com/rive-app/rive-react-native) |
 
 ### Community runtimes
 
