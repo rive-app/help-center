@@ -308,6 +308,15 @@ class RiveViewController: UIViewController {
     }
 }
 ```
+
+## 4. Tidy up once the view is dismissed
+
+```swift
+override public func viewDidDisappear(_ animated: Bool) {
+    (view as! RiveView).stop()
+    super.viewDidDisappear(animated)
+}
+```
 {% endtab %}
 
 {% tab title="Android" %}
