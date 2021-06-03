@@ -354,6 +354,19 @@ class MyRiveActivity : AppCompatActivity() {
 }
 ```
 {% endcode %}
+
+## Internet permissions
+
+This example requires your app to have permission to access the internet:
+
+{% code title="AndroidManifest.xml" %}
+```markup
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+```
+{% endcode %}
+
+This is needed only if you're retrieving Rive files over a network. If you include the files in your Android project, this isn't necessary.
 {% endtab %}
 
 {% tab title="React Native - Android" %}
