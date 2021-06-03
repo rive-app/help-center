@@ -416,10 +416,6 @@ platform :ios, '11.4'
 - create a new empty swift file. 
 - confirm "Create Bridging Header"
 
-more resources on this: 
-- https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_objective-c_into_swift
-- https://github.com/facebookarchive/react-native-fbsdk/issues/755
-
 ## 4. Add your rive component 
 
 {% code title="App.js" %}
