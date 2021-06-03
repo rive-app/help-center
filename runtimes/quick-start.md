@@ -356,12 +356,85 @@ class MyRiveActivity : AppCompatActivity() {
 {% endcode %}
 {% endtab %}
 
-{% tab title="React Native" %}
-## Coming soon
+{% tab title="React Native (Android)" %}
+
+## 1. Add the Rive dependency 
+
+```sh
+npm install rive-react-native
+```
+
+## 2. Update Android minSdkVersion
+{% code title="android/build.gradle" %}
+```kotlin
+buildscript {
+   ext {
+     ...
+     minSdkVersion = 23
+     ...
+   }
+}
+```
+
+## 3. Add your rive component 
+
+{% code title="App.js" %}
+```js
+import Rive from 'rive-react-native';
+
+function App() {
+  return <Rive
+      url="https://cdn.rive.app/animations/truck.riv"
+      style={{width: 400, height: 400}}
+  />;
+}
+```
+{% endcode %}
 {% endtab %}
+
+{% tab title="React Native (iOS)" %}
+
+## 1. Add the Rive dependency 
+
+```sh
+npm install rive-react-native
+```
+
+## 2. Update iOS build target to at least 11.4
+{% code title="ios/Podfile" %}
+```ruby
+platform :ios, '11.4'
+```
+
+## 3. Create Bridging header
+
+- open the iOS prject file in xcode `open ios/<name>.xcodeproj`
+- create a new empty swift file. 
+- confirm "Create Bridging Header"
+
+more resources on this: 
+- https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_objective-c_into_swift
+- https://github.com/facebookarchive/react-native-fbsdk/issues/755
+
+## 4. Add your rive component 
+
+{% code title="App.js" %}
+```js
+import Rive from 'rive-react-native';
+
+function App() {
+  return <Rive
+      url="https://cdn.rive.app/animations/truck.riv"
+      style={{width: 400, height: 400}}
+  />;
+}
+```
+{% endcode %}
+{% endtab %}
+
 {% endtabs %}
 
-## 
+
 
 
 
