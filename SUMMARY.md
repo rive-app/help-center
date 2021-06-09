@@ -59,6 +59,7 @@
 
 * [Overview](runtimes/overview.md)
 * [Quick Start](runtimes/quick-start.md)
+* [Layout](runtimes/layout.md)
 * [Format](runtimes/format.md)
 * [Background](runtimes/background.md)
 * [Add a runtime](runtimes/add-runtime.md)
