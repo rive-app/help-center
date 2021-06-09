@@ -60,13 +60,8 @@
 * [Overview](runtimes/overview.md)
 * [Quick Start](runtimes/quick-start.md)
 * [Layout](runtimes/layout.md)
-* [Format](runtimes/format.md)
-* [Background](runtimes/background.md)
-* [Add a runtime](runtimes/add-runtime.md)
-* [Load a file](runtimes/load-file.md)
-* [Play an animation](runtimes/play-animation/README.md)
-  * [Mixing animations](runtimes/play-animation/mixing-animations.md)
-* [Example](runtimes/example.md)
+* [Advanced Topics](runtimes/advanced_topics/README.md)
+  * [Format](runtimes/advanced_topics/format.md)
 
 ## Community
 
