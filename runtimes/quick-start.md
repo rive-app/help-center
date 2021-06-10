@@ -4,6 +4,8 @@ description: Add Rive to your app or web page in a couple of minutes
 
 # Quick Start
 
+
+
 {% tabs %}
 {% tab title="web" %}
 ## 1. Add the Rive library
@@ -59,16 +61,14 @@ Create a new instance of a Rive object, providing the url of the Rive file you w
 ```
 {% endtab %}
 
-{% tab title="React & Vue" %}
-The following shows how to create a simple Rive component in [React](https://reactjs.org/); the steps are broadly applicable to other web frameworks. See the example at the bottom of the page for [Vue](https://vuejs.org/).
-
-## 1. Add Rive package to package.json
+{% tab title="React" %}
+## 1. Add Rive React package to package.json
 
 {% code title="package.json" %}
 ```javascript
 {
   "dependencies": {
-    "rive-js": "latest"
+    "rive-react": "latest"
   }
 }
 ```
@@ -77,107 +77,22 @@ The following shows how to create a simple Rive component in [React](https://rea
 ## 2. Import the Rive library
 
 ```javascript
-import { Rive } from 'rive-js';
+import Rive from 'rive-react';
 ```
 
-## 3. Create a canvas
-
-Create a canvas where the Rive file will display:
+## 3. Use the Rive component
 
 ```javascript
-return (
-    <canvas ref={canvas} />
-);
+export const Simple = () => <Rive 
+    src="https://cdn.rive.app/animations/truck.riv"
+/>;
 ```
+{% endtab %}
 
-## 4. Create a Rive object
+{% tab title="Vue" %}
+The following snippet demonstrates how to create a simple Rive component in [Vue](https://vuejs.org) 2.
 
-```javascript
-useEffect(() => {
-    rive.current = new Rive({
-        src: asset,
-        canvas: canvas.current,
-        animation: animation,
-        layout: new Layout({fit: fit, alignment: alignment}),
-        autoplay: true,
-    });
-
-    return () => rive.current.stop();
-});
-```
-
-## Complete example
-
-{% code title="Animation.js" %}
-```javascript
-import React, { useRef, useEffect } from 'react';
-import { Rive, Layout } from 'rive-js';
-
-const Animation = ({ asset, animation, fit, alignment }) => {
-    const canvas = useRef(null);
-    const animationContainer = useRef(null);
-    let rive = useRef(null);
-
-    // Resizes the canvas to match the parent element
-    useEffect(() => {
-
-        let resizer = () => {
-            const { width: w, height: h } =
-                animationContainer.current.getBoundingClientRect();
-            canvas.current.width = w;
-            canvas.current.height = h;
-        };
-        resizer();
-    });
-
-    // Starts the animation
-    useEffect(() => {
-        rive.current = new Rive({
-            src: asset,
-            canvas: canvas.current,
-            animation: animation,
-            layout: new Layout({fit: fit, alignment: alignment}),
-            autoplay: true,
-        });
-
-        return () => rive.current.stop();
-    });
-
-    return (
-        <div ref={animationContainer} className="Rive-logo">
-            <canvas ref={canvas} />
-        </div>
-    );
-};
-
-export default Animation;
-```
-{% endcode %}
-
-{% code title="App.js" %}
-```javascript
-import Animation from './Animation.js';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-        <Animation 
-          asset="https://cdn.rive.app/animations/truck.riv"
-          fit="cover"
-          alignment="center" />
-    </div>
-  );
-}
-
-export default App;
-```
-{% endcode %}
-
-## Vue.js 2 Example
-
-{% code title="Rive.vue" %}
-```javascript
+```markup
 <template>
   <div>
     <canvas ref="canvas" width="400" height="400"></canvas>
@@ -208,7 +123,6 @@ export default {
 }
 </script>
 ```
-{% endcode %}
 {% endtab %}
 
 {% tab title="Flutter" %}
