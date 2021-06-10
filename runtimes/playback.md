@@ -14,9 +14,9 @@ When a Rive object is instantiated, the artboard to use can be specified. If no 
 {% tab title="web" %}
 ```javascript
 new rive.Rive({
-    src: 'https://cdn.rive.app/animations/truck.riv',
+    src: 'https://cdn.rive.app/animations/vehicles.riv',
     canvas: document.getElementById('canvas'),
-    artboard: 'Truck Motion',
+    artboard: 'Truck',
     autoplay: true
 });
 ```
@@ -25,8 +25,8 @@ new rive.Rive({
 {% tab title="Flutter" %}
 ```dart
 RiveAnimation.network(
-    'https://cdn.rive.app/animations/truck.riv',
-    artboard: 'Truck Motion'
+    'https://cdn.rive.app/animations/vehicles.riv',
+    artboard: 'Truck'
 );
 ```
 {% endtab %}
@@ -41,7 +41,7 @@ Starting animations can also be chosen when Rive is instantiated. A list of anim
 ```javascript
 // Play the idle animation
 new rive.Rive({
-    src: 'https://cdn.rive.app/animations/truck.riv',
+    src: 'https://cdn.rive.app/animations/vehicles.riv',
     canvas: document.getElementById('canvas'),
     animations: ['idle', 'curves'],
     autoplay: true
@@ -49,7 +49,7 @@ new rive.Rive({
 
 // play and mix the idle and curves animations
 new rive.Rive({
-    src: 'https://cdn.rive.app/animations/truck.riv',
+    src: 'https://cdn.rive.app/animations/vehicles.riv',
     canvas: document.getElementById('canvas'),
     animations: ['idle', 'curves'],
     autoplay: true
@@ -61,13 +61,13 @@ new rive.Rive({
 ```dart
 // Play the curves animation
 RiveAnimation.network(
-    'https://cdn.rive.app/animations/truck.riv',
+    'https://cdn.rive.app/animations/vehicles.riv',
     animations: ['curves'],
 );
 
 // Play and mix both the idle and curves animations
 RiveAnimation.network(
-    'https://cdn.rive.app/animations/truck.riv',
+    'https://cdn.rive.app/animations/vehicles.riv',
     animations: ['idle', 'curves'],
 ),
 ```
@@ -82,9 +82,9 @@ A starting state machine can be specified when Rive is instantiated. A state mac
 {% tab title="web" %}
 ```javascript
 new rive.Rive({
-    src: 'https://cdn.rive.app/animations/skills.riv',
+    src: 'https://cdn.rive.app/animations/vehicles.riv',
     canvas: document.getElementById('canvas'),
-    stateMachines: 'Lifecycle',
+    stateMachines: 'weather',
     autoplay: true
 });
 ```
@@ -93,8 +93,8 @@ new rive.Rive({
 {% tab title="Flutter" %}
 ```dart
 RiveAnimation.network(
-    'https://cdn.rive.app/animations/skills.riv',
-    stateMachines: ['Lifecycle'],
+    'https://cdn.rive.app/animations/vehicles.riv',
+    stateMachines: ['weather'],
 )
 ```
 {% endtab %}

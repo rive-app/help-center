@@ -40,7 +40,7 @@ Most runtimes have a `Layout` object. You typically provide layout data when ins
     });
 
     const r = new rive.Rive({
-        src: 'https://cdn.rive.app/animations/truck.riv',
+        src: 'https://cdn.rive.app/animations/vehicles.riv',
         canvas: document.getElementById('canvas'),
         layout: layout,
         autoplay: true
@@ -60,13 +60,13 @@ Bounds options are absent; Flutter's layout engine and options are the preferred
 ```dart
 // Fill the canvas, cropping Rive if necessary
 var widget = const RiveAnimation.network(
-  'https://cdn.rive.app/animations/truck.riv',
+  'https://cdn.rive.app/animations/vehicles.riv',
   fit: BoxFit.cover,
 );
 
 // Fit to the width and align to the top of the canvas
 widget = const RiveAnimation.network(
-  'https://cdn.rive.app/animations/truck.riv',
+  'https://cdn.rive.app/animations/vehicles.riv',
   fit: BoxFit.fitWidth,
   alignment: Alignment.topCenter,
 );

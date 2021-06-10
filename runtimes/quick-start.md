@@ -31,7 +31,7 @@ Create a new instance of a Rive object, providing the url of the Rive file you w
 ```javascript
 <script>
     new rive.Rive({
-        src: 'https://cdn.rive.app/animations/truck.riv',
+        src: 'https://cdn.rive.app/animations/vehicles.riv',
         canvas: document.getElementById('canvas'),
         autoplay: true
     });
@@ -51,7 +51,7 @@ Create a new instance of a Rive object, providing the url of the Rive file you w
         <script src="https://unpkg.com/rive-js"></script>
         <script>
             new rive.Rive({
-                src: 'https://cdn.rive.app/animations/truck.riv',
+                src: 'https://cdn.rive.app/animations/vehicles.riv',
                 canvas: document.getElementById('canvas'),
                 autoplay: true
             });
@@ -84,7 +84,7 @@ import Rive from 'rive-react';
 
 ```javascript
 export const Simple = () => <Rive 
-    src="https://cdn.rive.app/animations/truck.riv"
+    src="https://cdn.rive.app/animations/vehicles.riv"
 />;
 ```
 {% endtab %}
@@ -145,7 +145,7 @@ import 'package:rive/rive.dart';
 
 ```dart
 RiveAnimation.network(
-  'https://cdn.rive.app/animations/truck.riv',
+  'https://cdn.rive.app/animations/vehicles.riv',
 )
 ```
 
@@ -166,7 +166,7 @@ class MyRiveAnimation extends StatelessWidget {
     return const Scaffold(
       body: Center(
         child: RiveAnimation.network(
-          'https://cdn.rive.app/animations/truck.riv',
+          'https://cdn.rive.app/animations/vehicles.riv',
           fit: BoxFit.cover,
         ),
       ),
@@ -207,7 +207,7 @@ import UIKit
 import RiveRuntime
 
 class RiveViewController: UIViewController {
-    let url = "https://cdn.rive.app/animations/truck.riv"
+    let url = "https://cdn.rive.app/animations/vehicles.riv"
 
     override public func loadView() {
         super.loadView()
@@ -251,7 +251,7 @@ dependencies {
         android:layout_width="match_parent"
         android:layout_height="match_parent"
 
-        app:riveUrl="https://cdn.rive.app/animations/truck.riv"
+        app:riveUrl="https://cdn.rive.app/animations/vehicles.riv"
         app:riveFit="COVER" />
 ```
 
@@ -321,7 +321,7 @@ import Rive from 'rive-react-native';
 
 function App() {
   return <Rive
-      url="https://cdn.rive.app/animations/truck.riv"
+      url="https://cdn.rive.app/animations/vehicles.riv"
       style={{width: 400, height: 400}}
   />;
 }
@@ -358,7 +358,7 @@ import Rive from 'rive-react-native';
 
 function App() {
   return <Rive
-      url="https://cdn.rive.app/animations/truck.riv"
+      url="https://cdn.rive.app/animations/vehicles.riv"
       style={{width: 400, height: 400}}
   />;
 }
