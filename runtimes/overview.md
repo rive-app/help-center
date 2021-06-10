@@ -9,7 +9,7 @@ The Rive runtimes are open-source libraries that give you full control of your R
 | web | ​[npm](https://www.npmjs.com/package/rive-js), [GitHub](https://github.com/rive-app/rive-wasm)​ |
 | React | [npm](https://www.npmjs.com/package/rive-react), [GitHub](https://github.com/rive-app/rive-react) |
 | iOS | [GitHub](https://github.com/rive-app/rive-ios) |
-| Android | [GitHub](https://github.com/rive-app/rive-android) |
+| Android | [maven](https://search.maven.org/artifact/app.rive/rive-android), [GitHub](https://github.com/rive-app/rive-android) |
 | Flutter | ​[pub.dev](https://pub.dev/packages/rive), [GitHub](https://github.com/rive-app/rive-flutter)​ |
 | C++ | ​[GitHub](https://github.com/rive-app/rive-cpp) |
 | Tizen | [GitHub](https://github.com/rive-app/rive-tizen) |
