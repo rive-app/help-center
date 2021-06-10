@@ -292,11 +292,11 @@ This example requires your app to have permission to access the internet:
 This is needed only if you're retrieving Rive files over a network. If you include the files in your Android project, this isn't necessary.
 {% endtab %}
 
-{% tab title="React Native - Android" %}
+{% tab title="React Native" %}
 ## 1. Add the Rive dependency
 
 ```bash
-npm install rive-react-native
+npm install --save rive-react-native
 ```
 
 ## 2. Update Android minSdkVersion
@@ -313,44 +313,21 @@ buildscript {
 ```
 {% endcode %}
 
-## 3. Add your rive component
-
-{% code title="App.js" %}
-```javascript
-import Rive from 'rive-react-native';
-
-function App() {
-  return <Rive
-      url="https://cdn.rive.app/animations/vehicles.riv"
-      style={{width: 400, height: 400}}
-  />;
-}
-```
-{% endcode %}
-{% endtab %}
-
-{% tab title="React Native - iOS" %}
-## 1. Add the Rive dependency
-
-```bash
-npm install rive-react-native
-```
-
-## 2. Update iOS build target to at least 11.4
+## 3. Update iOS build target
 
 {% code title="ios/Podfile" %}
-```ruby
-platform :ios, '11.4'
+```yaml
+platform :ios, '10'
 ```
 {% endcode %}
 
-## 3. Create Bridging header
+## 4. Create iOS bridging header
 
-* open the iOS prject file in xcode `open ios/<name>.xcodeproj`
+* open the iOS project file in XCode `open ios/<name>.xcodeproj`
 * create a new empty swift file. 
 * confirm "Create Bridging Header"
 
-## 4. Add your rive component
+## 5. Add your rive component
 
 {% code title="App.js" %}
 ```javascript
