@@ -8,7 +8,7 @@ Rive provides a number of ways in which to control how your animations are laid 
 
 ## The `Layout` object
 
-All runtimes have a `Layout` object. You typically provide layout data when instantiating a Rive object, and can update at any time.
+Most runtimes have a `Layout` object. You typically provide layout data when instantiating a Rive object, and can update at any time.
 
 {% tabs %}
 {% tab title="web" %}
@@ -19,7 +19,7 @@ All runtimes have a `Layout` object. You typically provide layout data when inst
 <script src="https://unpkg.com/rive-js"></script>
 <script>
 
-    // Fill the canvas, cropping Rive is necessary
+    // Fill the canvas, cropping Rive if necessary
     let layout = new rive.Layout({
         fit: rive.Fit.Cover,
     });
@@ -40,7 +40,7 @@ All runtimes have a `Layout` object. You typically provide layout data when inst
     });
 
     const r = new rive.Rive({
-        src: 'https://cdn.rive.app/animations/off_road_car_v7.riv',
+        src: 'https://cdn.rive.app/animations/truck.riv',
         canvas: document.getElementById('canvas'),
         layout: layout,
         autoplay: true
@@ -50,10 +50,30 @@ All runtimes have a `Layout` object. You typically provide layout data when inst
     r.layout = new rive.Layout({ fit: rive.Fit.Fill });
 </script>
 ```
+
+## 
 {% endtab %}
 
-{% tab title="Second Tab" %}
+{% tab title="Flutter" %}
+Rive's Flutter runtime doesn't have a `Layout` object; instead fit and alignment can be passed in through the `RiveAnimation` and `Rive` constructors. The fit and alignment options behave like their counterparts in Flutter \(see [`BoxFit`](https://api.flutter.dev/flutter/painting/BoxFit-class.html) and [`Size`](https://api.flutter.dev/flutter/dart-ui/Size-class.html) as examples\).
 
+Bounds options are absent; Flutter's layout engine and options are the preferred way to handle positioning Rive content.
+
+```dart
+// Fill the canvas, cropping Rive if necessary
+var widget = const RiveAnimation.network(
+  'https://cdn.rive.app/animations/truck.riv',
+  fit: BoxFit.cover,
+);
+
+// Fit to the width and align to the top of the canvas
+widget = const RiveAnimation.network(
+  'https://cdn.rive.app/animations/truck.riv',
+  fit: BoxFit.fitWidth,
+  alignment: Alignment.topCenter,
+);
+
+```
 {% endtab %}
 {% endtabs %}
 
