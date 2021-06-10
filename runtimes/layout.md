@@ -50,8 +50,6 @@ Most runtimes have a `Layout` object. You typically provide layout data when ins
     r.layout = new rive.Layout({ fit: rive.Fit.Fill });
 </script>
 ```
-
-## 
 {% endtab %}
 
 {% tab title="Flutter" %}

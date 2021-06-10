@@ -62,8 +62,40 @@ new rive.Rive({
 // Play the curves animation
 RiveAnimation.network(
     'https://cdn.rive.app/animations/truck.riv',
-    animation: 'curves'
+    animations: ['curves'],
 );
+
+// Play and mix both the idle and curves animations
+RiveAnimation.network(
+    'https://cdn.rive.app/animations/truck.riv',
+    animations: ['idle', 'curves'],
+),
+```
+{% endtab %}
+{% endtabs %}
+
+## Choosing starting state machines
+
+A starting state machine can be specified when Rive is instantiated. A state machine name can be provided.
+
+{% tabs %}
+{% tab title="web" %}
+```javascript
+new rive.Rive({
+    src: 'https://cdn.rive.app/animations/skills.riv',
+    canvas: document.getElementById('canvas'),
+    stateMachines: 'Lifecycle',
+    autoplay: true
+});
+```
+{% endtab %}
+
+{% tab title="Flutter" %}
+```dart
+RiveAnimation.network(
+    'https://cdn.rive.app/animations/skills.riv',
+    stateMachines: ['Lifecycle'],
+)
 ```
 {% endtab %}
 {% endtabs %}
