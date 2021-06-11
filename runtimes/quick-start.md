@@ -299,7 +299,7 @@ This is needed only if you're retrieving Rive files over a network. If you inclu
 npm install --save rive-react-native
 ```
 
-## 3. Update iOS build target
+## 2. Update iOS build target
 
 {% code title="ios/Podfile" %}
 ```yaml
@@ -307,13 +307,13 @@ platform :ios, '10'
 ```
 {% endcode %}
 
-## 4. Create iOS bridging header
+## 3. Create iOS bridging header
 
 * open the iOS project file in XCode `open ios/<name>.xcodeproj`
 * create a new empty swift file. 
 * confirm "Create Bridging Header"
 
-## 5. Add your rive component
+## 4. Add your rive component
 
 {% code title="App.js" %}
 ```javascript
