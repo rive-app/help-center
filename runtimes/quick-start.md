@@ -299,20 +299,6 @@ This is needed only if you're retrieving Rive files over a network. If you inclu
 npm install --save rive-react-native
 ```
 
-## 2. Update Android minSdkVersion
-
-{% code title="android/build.gradle" %}
-```kotlin
-buildscript {
-   ext {
-     ...
-     minSdkVersion = 23
-     ...
-   }
-}
-```
-{% endcode %}
-
 ## 3. Update iOS build target
 
 {% code title="ios/Podfile" %}
