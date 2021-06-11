@@ -2,7 +2,7 @@
 
 Welcome to the Rive Help Center. We've split this documentation into five core sub-sections listed below. If you can't find the information you're looking for or have questions for us, join us on [Twitter](https://twitter.com/rive_app), [Discord](https://discord.com/invite/FGjmaTr), or email us at [hello@rive.app](mailto:hello@rive.app).
 
-{% embed url="https://www.youtube.com/watch?v=8m31AGsoVS0" %}
+{% embed url="https://youtu.be/GPy0s2Y6hQg" %}
 
 ### 1. Getting started
 
