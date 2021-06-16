@@ -22,6 +22,16 @@ const r = new rive.Rive({
 });
 ```
 {% endtab %}
+
+{% tab title="Flutter" %}
+```dart
+RiveAnimation.network(
+    'https://cdn.rive.app/animations/vehicles.riv',
+    fit: BoxFit.cover,
+    stateMachines: ['bumpy'],
+);
+```
+{% endtab %}
 {% endtabs %}
 
 Once the Rive file is loaded and instantiated, the state machine can be queried for inputs, and these inputs can then be read from and written to, and in the case of triggers, fired.
