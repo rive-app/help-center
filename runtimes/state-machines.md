@@ -102,5 +102,79 @@ const r = new rive.Rive({
 });
 ```
 {% endtab %}
+
+{% tab title="Flutter" %}
+State machine controllers are used to retrieve a state machine's inputs which can then be used to interact with, and drive the state of, the state machine.
+
+State machine controllers require a reference to an artboard when being instantiated. The `RiveAnimation` widget provides a callback `onInit(Artboard artboard)` that is called when the Rive file has loaded and is initialized for playback:
+
+```dart
+void _onRiveInit(Artboard artboard) {}
+
+RiveAnimation.network(
+    'https://cdn.rive.app/animations/vehicles.riv',
+    fit: BoxFit.cover,
+    onInit: _onRiveInit,
+);
+```
+
+Now that we have an artboard, we can create an instance of a `StateMachineController` and from that, retrieve the inputs we're interested in. Specific inputs can be retrieved using `findInput()` or all inputs with the `inputs` property.
+
+```dart
+SMITrigger? _bump;
+
+void _onRiveInit(Artboard artboard) {
+    final controller = StateMachineController.fromArtboard(artboard, 'bumpy');
+    artboard.addController(controller!);
+    _bump = controller.findInput<bool>('bump') as SMITrigger;
+}
+```
+
+Here we retrieve the `bump` input, which is an `SMITrigger`. This type of input has a `fire()` method to activate the trigger. There are two other input types: `SMIBool` and `SMINumber`. These both have a `value` property that can get and set the value.
+
+```dart
+class SimpleStateMachine extends StatefulWidget {
+  const SimpleStateMachine({Key? key}) : super(key: key);
+
+  @override
+  _SimpleStateMachineState createState() => _SimpleStateMachineState();
+}
+
+class _SimpleStateMachineState extends State<SimpleStateMachine> {
+  SMITrigger? _bump;
+
+  void _onRiveInit(Artboard artboard) {
+    final controller = StateMachineController.fromArtboard(artboard, 'bumpy');
+    artboard.addController(controller!);
+    _bump = controller.findInput<bool>('bump') as SMITrigger;
+  }
+
+  void _hitBump() => _bump?.fire();
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Simple Animation'),
+      ),
+      body: Center(
+        child: GestureDetector(
+          child: RiveAnimation.network(
+            'https://cdn.rive.app/animations/vehicles.riv',
+            fit: BoxFit.cover,
+            onInit: _onRiveInit,
+          ),
+          onTap: _hitBump,
+        ),
+      ),
+    );
+  }
+}
+```
+
+In the complete example above, every time the `RiveAnimation` is tapped, it fires the `bump` input trigger, and the state machine reacts appropriately, in this case mixing in a bump animation.
+{% endtab %}
 {% endtabs %}
+
+
 
