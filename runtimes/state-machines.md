@@ -4,6 +4,8 @@ description: Playing and changing inputs in state machines
 
 # State Machines
 
+For more information on designing and building state machines in Rive, please refer to the [editor's state machine section](https://app.gitbook.com/@rive/s/rive-help-center/editor/animate-mode/state-machine).
+
 Rive's state machines provide a way to combine a set of animations and manage the transition between them through a series of inputs that can be programmatically controlled. Once a state machine is instantiated and playing, transitioning states can be accomplished by changing boolean or double value inputs, or firing triggers. The effects of these will be dependent on how the state machine has been configured in the editor.
 
 ## Playing state machines
