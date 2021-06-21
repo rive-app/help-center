@@ -175,6 +175,28 @@ class _SimpleStateMachineState extends State<SimpleStateMachine> {
 ```
 
 In the complete example above, every time the `RiveAnimation` is tapped, it fires the `bump` input trigger, and the state machine reacts appropriately, in this case mixing in a bump animation.
+
+If you'd like to know which state a state machine is in, or when a state machine transitions to another state, you can provide a callback to `StateMachineController`. The callback has the name of the state machine and the name of the animation associated with the current state:
+
+```dart
+ void _onRiveInit(Artboard artboard) {
+  final controller = StateMachineController.fromArtboard(
+    artboard,
+    'bumpy',
+    onStateChange: _onStateChange,
+  );
+  artboard.addController(controller!);
+  _bump = controller.findInput<bool>('bump') as SMITrigger;
+}
+
+void _onStateChange(
+  String stateMachineName,
+  String stateName,
+) =>
+    setState(
+      () => message = 'State Changed in $stateMachineName to $stateName',
+    );
+```
 {% endtab %}
 {% endtabs %}
 
