@@ -1,6 +1,6 @@
 # Quick Links
 
-[Get the runtimes](../runtimes/overview.md)
+[Get the runtimes](../runtimes/downloads.md)
 
 [Join us on Discord](https://discord.gg/FGjmaTr)
 

@@ -6,7 +6,7 @@ description: Learn how to export your Rive files
 
 ## Exporting for real-time content
 
-You can load your Rive files into apps, websites, products, and games thanks to the open-source [Rive Runtimes](../runtimes/overview.md). To load your files in our runtimes, you'll need to export a **.riv** file.
+You can load your Rive files into apps, websites, products, and games thanks to the open-source [Rive Runtimes](../runtimes/downloads.md). To load your files in our runtimes, you'll need to export a **.riv** file.
 
 {% hint style="info" %}
 Note that **.riv** files are optimized for runtime so any non-runtime-related data \(like x/y coordinates of [states](animate-mode/state-machine.md#states)\) are stripped out.
@@ -20,7 +20,7 @@ Export your file via the export menu within the toolbar. Select Download from th
 
 #### For newest runtime
 
-This option downloads a **.riv** file that is compatible with the latest major version of the Rive runtimes \(number displayed on the right\). You can use the [Get runtimes](../runtimes/overview.md) button to find all our latest runtimes. 
+This option downloads a **.riv** file that is compatible with the latest major version of the Rive runtimes \(number displayed on the right\). You can use the [Get runtimes](../runtimes/downloads.md) button to find all our latest runtimes. 
 
 #### Previous
 

@@ -1,6 +1,10 @@
-# Overview
+---
+description: Download a Rive runtime for your platform of choice.
+---
 
-The Rive runtimes are open-source libraries that give you full control of your Rive files in frameworks and engines.
+# Downloads
+
+Rive's runtimes are open source and can be downloaded from GitHub, or through repositories like npm, pub, maven and Cocoapods.
 
 ## Official runtimes
 
