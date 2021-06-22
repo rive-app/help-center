@@ -12,7 +12,7 @@ You can learn more about our editor [here](../../editor/fundamentals/).
 
 Runtimes are open-source libraries that allow you to play and manipulate your animations in realtime across a variety of platforms. Currently, we have runtimes for the web and Flutter with iOS and Android versions arriving in the coming month. 
 
-You can learn more about our runtimes [here](../../runtimes/downloads.md).
+You can learn more about our runtimes [here](../../runtimes/overview.md).
 
 ## What's the best way to learn Rive?
 
@@ -30,7 +30,7 @@ Your work is automatically saved in real-time and safely stored remotely. If you
 
 Use the [export menu](../../editor/fundamentals/interface-overview/#toolbar) within the toolbar to export and download your Rive file. Alternatively, you can export directly from the file browser by right-clicking on a file or folder.
 
-Use one of our runtimes to import your file into your chosen platform and begin playing and manipulating your animation in real-time! You can learn more about our runtimes [here](../../runtimes/downloads.md).
+Use one of our runtimes to import your file into your chosen platform and begin playing and manipulating your animation in real-time! You can learn more about our runtimes [here](../../runtimes/overview.md).
 
 
 

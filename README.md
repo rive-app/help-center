@@ -20,7 +20,7 @@ Ready to start designing and animating in Rive? The editor section walks through
 
 Learn about our runtimes and how to integrate them into your app or game.
 
-{% page-ref page="runtimes/downloads.md" %}
+{% page-ref page="runtimes/overview.md" %}
 
 ### 4. Community \(coming soon\)
 
