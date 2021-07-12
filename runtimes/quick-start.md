@@ -7,7 +7,7 @@ description: Add Rive to your app or web page in a couple of minutes
 
 
 {% tabs %}
-{% tab title="web" %}
+{% tab title="Web" %}
 ## 1. Add the Rive library
 
 Add a script tag to a web page:

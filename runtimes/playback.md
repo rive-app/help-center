@@ -13,7 +13,7 @@ From here on we're going to use the term _animations_ collectively to refer to b
 When a Rive object is instantiated, the artboard to use can be specified. If no artboard is given, the default artboard is used. Only one artboard can be used at a time.
 
 {% tabs %}
-{% tab title="web" %}
+{% tab title="Web" %}
 ```javascript
 new rive.Rive({
     src: 'https://cdn.rive.app/animations/vehicles.riv',
@@ -39,7 +39,7 @@ RiveAnimation.network(
 Starting animations can also be chosen when Rive is instantiated. A list of animation names can be provided.
 
 {% tabs %}
-{% tab title="web" %}
+{% tab title="Web" %}
 ```javascript
 // Play the idle animation
 new rive.Rive({
@@ -81,7 +81,7 @@ RiveAnimation.network(
 A starting state machine can be specified when Rive is instantiated. A state machine name can be provided.
 
 {% tabs %}
-{% tab title="web" %}
+{% tab title="Web" %}
 ```javascript
 new rive.Rive({
     src: 'https://cdn.rive.app/animations/vehicles.riv',
@@ -108,13 +108,13 @@ Playback of each animation and state machine can be separately controlled. You c
 
 You can also provide callback to receive notification when certain events have occurred:
 
-* `onload` when a rive file has been loaded and initialized; it's now ready for playback
-* `onplay` when one or more animations play; provides a list of animations
-* `onpause` when one or more animations pause; provides a list of animations
-* `onloop` when an animation loops; provides the animation name
+* `onLoad` when a rive file has been loaded and initialized; it's now ready for playback
+* `onPlay` when one or more animations play; provides a list of animations
+* `onPause` when one or more animations pause; provides a list of animations
+* `onLoop` when an animation loops; provides the animation name
 
 {% tabs %}
-{% tab title="web" %}
+{% tab title="Web" %}
 ```markup
 <!doctype html>
 <html lang="en">
