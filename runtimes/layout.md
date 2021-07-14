@@ -11,7 +11,7 @@ Rive provides a number of ways in which to control how your animations are laid 
 Most runtimes have a `Layout` object. You typically provide layout data when instantiating a Rive object, and can update at any time.
 
 {% tabs %}
-{% tab title="web" %}
+{% tab title="Web" %}
 ```markup
 <div>
     <canvas id="canvas" width="800" height="600"></canvas>

@@ -13,7 +13,7 @@ Rive's state machines provide a way to combine a set of animations and manage th
 State machines are instantiated in much the same manner as animations: provide the state machine name to the Rive object:
 
 {% tabs %}
-{% tab title="web" %}
+{% tab title="Web" %}
 ```javascript
 const r = new rive.Rive({
     src: 'https://cdn.rive.app/animations/vehicles.riv',
@@ -39,8 +39,8 @@ RiveAnimation.network(
 Once the Rive file is loaded and instantiated, the state machine can be queried for inputs, and these inputs can then be read from and written to, and in the case of triggers, fired.
 
 {% tabs %}
-{% tab title="web" %}
-The web runtime provides an `onload` callback that's run when the Rive file is loaded and ready for use. We use this here to ensure that the state machine is instantiated when we query for inputs.
+{% tab title="Web" %}
+The web runtime provides an `onLoad` callback that's run when the Rive file is loaded and ready for use. We use this here to ensure that the state machine is instantiated when we query for inputs.
 
 ```markup
 <div id="button">
@@ -56,7 +56,7 @@ The web runtime provides an `onload` callback that's run when the Rive file is l
         autoplay: true,
         stateMachines: 'bumpy',
         fit: rive.Fit.cover,
-        onload: (_) => {
+        onLoad: (_) => {
             const inputs = r.stateMachineInputs('bumpy');
             const bumpTrigger = inputs.find(i => i.name === 'bump');
             button.onclick = () => bumpTrigger.fire();
@@ -90,7 +90,7 @@ inputs.forEach(i => {
 });
 ```
 
-We can set a callback to determine when the state machine changes state. `onstatechange` provides an `event` parameter that gives us the name of the current state:
+We can set a callback to determine when the state machine changes state. `onStateChange` provides an `event` parameter that gives us the name of the current state:
 
 ```javascript
 const r = new rive.Rive({
@@ -98,7 +98,7 @@ const r = new rive.Rive({
     canvas: document.getElementById('canvas'),
     autoplay: true,
     stateMachines: 'bumpy',
-    onstatechange: (event) => {
+    onStateChange: (event) => {
         stateName.innerHTML = event.data[0];
     },
 });
