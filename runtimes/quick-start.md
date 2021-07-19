@@ -1,6 +1,6 @@
 ---
 description: >-
-  The Rive Runtimes are open-source libraries that allow you to load and control
+  The Rive runtimes are open-source libraries that allow you to load and control
   your animations in apps, games, and websites.
 ---
 
