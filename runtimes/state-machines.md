@@ -34,6 +34,14 @@ RiveAnimation.network(
 );
 ```
 {% endtab %}
+
+{% tab title="Angular" %}
+```html
+<canvas riv="vehicles" width="500" height="500" fit="cover">
+  <riv-state-machine name="bumpy" play></riv-state-machine>
+</canvas>
+```
+{% endtab %}
 {% endtabs %}
 
 Once the Rive file is loaded and instantiated, the state machine can be queried for inputs, and these inputs can then be read from and written to, and in the case of triggers, fired.
@@ -197,6 +205,45 @@ void _onStateChange(
       () => message = 'State Changed in $stateMachineName to $stateName',
     );
 ```
+{% endtab %}
+
+
+{% tab title="Angular" %}
+### State Machine
+You can listen on event & manipulate the state machine animation as any other animation:
+```html
+<canvas riv="vehicles" width="500" height="500" fit="cover">
+  <riv-state-machine name="bumpy" play speed="2" (load)="onload($event)"></riv-state-machine>
+</canvas>
+```
+
+### Number & Boolean Input
+If the input is a number or a boolean you can use the `value`
+```html
+<canvas riv="vehicles" width="500" height="500" fit="cover">
+  <riv-state-machine name="bumpy" play (stateChange)="showStates($event)">
+    <riv-input name="level" [value]="value"><riv-input>
+  </riv-state-machine>
+</canvas>
+
+<input type="radio" formControl="level" value="0"> Car
+<input type="radio" formControl="level" value="1"> Train
+<input type="radio" formControl="level" value="2"> Airplane
+```
+_The `stateChange` output will display the list of state changed during the same frame._
+
+### Trigger Input
+If the input is a trigger you can access it with the export as `rivInput`:
+```html
+<canvas riv="vehicles">
+  <riv-state-machine name="bumpy" play>
+    <riv-input #trigger="rivInput" name="bump" (change)="showInput($event)"><riv-input>
+  </riv-state-machine>
+</canvas>
+
+<button (click)="trigger.fire()">Bump</button>
+```
+_You can listen to the change in the input with the `change` Ouput._
 {% endtab %}
 {% endtabs %}
 

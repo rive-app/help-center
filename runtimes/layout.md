@@ -72,6 +72,16 @@ widget = const RiveAnimation.network(
 );
 ```
 {% endtab %}
+
+{% tab title="Angular" %}
+Angular runtime exposes the layout's options through inputs on the canvas.
+```html
+<canvas riv="vehicles" width="500" height="500" fit="fitWidth" alignment="topCenter">
+  <riv-animation name="idle" play></riv-animation>
+</canvas>
+```
+{% endtab %}
+
 {% endtabs %}
 
 ## Fit
