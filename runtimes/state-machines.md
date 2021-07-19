@@ -232,16 +232,16 @@ If the input is a number or a boolean you can use the `value`
 ```
 _The `stateChange` output will display the list of state changed during the same frame._
 
-### Tigger Input
+### Trigger Input
 If the input is a trigger you can access it with the export as `rivInput`:
 ```html
 <canvas riv="vehicles">
   <riv-state-machine name="bumpy" play>
-    <riv-input #trigger="rivInput" name="bumpt" (change)="showInput($event)"><riv-input>
+    <riv-input #trigger="rivInput" name="bump" (change)="showInput($event)"><riv-input>
   </riv-state-machine>
 </canvas>
 
-<button (click)="tigger.fire()">Bumpt</button>
+<button (click)="trigger.fire()">Bump</button>
 ```
 _You can listen to the change in the input with the `change` Ouput._
 {% endtab %}
