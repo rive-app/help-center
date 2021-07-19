@@ -155,7 +155,7 @@ You can also provide callback to receive notification when certain events have o
                 truck.playingAnimationNames.includes('windshield_wipers') ?
                     truck.pause('windshield_wipers') :
                     truck.play('windshield_wipers');
-                          
+
             // Listen for play events to update button text
             truck.on(rive.EventType.Play, (event) => {
                 const names = event.data;
@@ -316,8 +316,4 @@ class _PlayOneShotAnimationState extends State<PlayOneShotAnimation> {
 ```
 {% endtab %}
 {% endtabs %}
-
-
-
-
 

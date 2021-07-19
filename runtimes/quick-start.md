@@ -4,8 +4,6 @@ description: Add Rive to your app or web page in a couple of minutes
 
 # Quick Start
 
-
-
 {% tabs %}
 {% tab title="Web" %}
 ## 1. Add the Rive library

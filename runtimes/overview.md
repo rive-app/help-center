@@ -26,6 +26,7 @@ Rive's runtimes are open source and can be downloaded from GitHub, or through re
 | React | Alex Gibson | [GitHub](https://github.com/alxgibsn/rive-examples-react) |
 | Vue.js | Dan Nelson | [GitHub](https://github.com/Coded-Clouds/Rive_Vue_ExampleApp) |
 | Angular | François Guezengar | [GitHub](https://github.com/dappsnation/ng-rive) |
+| AWTK | Firechip | [GitHub](https://github.com/zlgopen/awtk-widget-rive) |
 
 ## Licensing
 

@@ -45,7 +45,7 @@ Most runtimes have a `Layout` object. You typically provide layout data when ins
         layout: layout,
         autoplay: true
     });
-    
+
     // Update the layout
     r.layout = new rive.Layout({ fit: rive.Fit.Fill });
 </script>
@@ -70,7 +70,6 @@ widget = const RiveAnimation.network(
   fit: BoxFit.fitWidth,
   alignment: Alignment.topCenter,
 );
-
 ```
 {% endtab %}
 {% endtabs %}
@@ -109,6 +108,4 @@ The bounds for the area in which the Rive content will render can be set by prov
 * `minY`
 * `maxX`
 * `maxY`
-
-
 
