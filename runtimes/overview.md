@@ -4,13 +4,13 @@ description: Download a Rive runtime for your platform of choice.
 
 # Downloads
 
-Rive's runtimes are open source and can be downloaded from GitHub, or through repositories like npm, pub, maven and Cocoapods.
+Rive's runtimes are open source and can be downloaded from GitHub, or through repositories like npm, pub, maven, and Cocoapods.
 
 ## Official runtimes
 
 | Runtime | Link |
 | :--- | :--- |
-| web | ​[npm](https://www.npmjs.com/package/rive-js), [GitHub](https://github.com/rive-app/rive-wasm)​ |
+| Web | ​[npm](https://www.npmjs.com/package/rive-js), [GitHub](https://github.com/rive-app/rive-wasm)​ |
 | React | [npm](https://www.npmjs.com/package/rive-react), [GitHub](https://github.com/rive-app/rive-react) |
 | iOS | [GitHub](https://github.com/rive-app/rive-ios) |
 | Android | [maven](https://search.maven.org/artifact/app.rive/rive-android), [GitHub](https://github.com/rive-app/rive-android) |
@@ -23,10 +23,9 @@ Rive's runtimes are open source and can be downloaded from GitHub, or through re
 
 | Runtime | Author | Link |
 | :--- | :--- | :--- |
-| React | Alex Gibson | [GitHub](https://github.com/alxgibsn/rive-examples-react) |
 | Vue.js | Dan Nelson | [GitHub](https://github.com/Coded-Clouds/Rive_Vue_ExampleApp) |
 | Angular | François Guezengar | [GitHub](https://github.com/dappsnation/ng-rive) |
-| AWTK | Firechip | [GitHub](https://github.com/zlgopen/awtk-widget-rive) |
+| AWTK | [Li XianJing](https://twitter.com/xianjimli) | [GitHub](https://github.com/zlgopen/awtk-widget-rive) |
 
 ## Licensing
 

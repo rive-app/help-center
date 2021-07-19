@@ -34,11 +34,12 @@ RiveAnimation.network(
 {% endtab %}
 
 {% tab title="Angular" %}
-```html
+```markup
 <canvas riv="vehicles" width="500" height="500" artboard="Truck">
 
 </canvas>
 ```
+
 _If no artboard name is provided, the default artboard is used._
 {% endtab %}
 {% endtabs %}
@@ -85,7 +86,7 @@ RiveAnimation.network(
 {% endtab %}
 
 {% tab title="Angular" %}
-```html
+```markup
 <!-- Play the curves animation -->
 <canvas riv="vehicles" width="500" height="500">
   <riv-animation name="curves" play></riv-animation>
@@ -126,7 +127,7 @@ RiveAnimation.network(
 {% endtab %}
 
 {% tab title="Angular" %}
-```html
+```markup
 <canvas riv="vehicles" width="500" height="500">
   <riv-state-machine name="weather" play></riv-state-machine>
 </canvas>
@@ -348,22 +349,26 @@ class _PlayOneShotAnimationState extends State<PlayOneShotAnimation> {
 ```
 {% endtab %}
 
-
 {% tab title="Angular" %}
 ### Simple manipulation
+
 You can apply simple manipulation on the `riv-animation` directive:
-```html
+
+```markup
 <canvas riv="vehicles" width="500" height="500">
   <riv-animation name="curves" [play]="playing" speed="0.5"></riv-animation>
 </canvas>
 
 <button (click)="playing = !playing">Toggle Player</button>
 ```
+
 _If `speed` is negative, the animation goes in reverse._
 
 ### Advance manipulation
+
 For more advances manipulations you can use the `riv-player` directive:
-```html
+
+```markup
 <canvas riv="vehicles" width="500" height="500">
   <riv-player #player="rivPlayer" name="curves" [time]="time" mode="one-shot"></riv-player>
 </canvas>
@@ -374,16 +379,20 @@ For more advances manipulations you can use the `riv-player` directive:
   [max]="player.endTime"
 />
 ```
-- The `time` input will let you specify a moment in ms in the animation.
-- The `mode` input will force the mode "one-shot", "loop" or "ping-pong" (if undefined, default mode is used).
+
+* The `time` input will let you specify a moment in ms in the animation.
+* The `mode` input will force the mode "one-shot", "loop" or "ping-pong" \(if undefined, default mode is used\).
 
 ### Manipulate nodes
+
 You can select a specific node in the animation with the `riv-node`, `riv-bone` & `riv-root-bone` directives :
-```html
+
+```markup
 <canvas riv="vehicles" (mouseover)="position = $event.x">
   <riv-node name="wheel" [x]="position" scaleX="0.5"></riv-node>
 </canvas>
 ```
+
 _If the property of the node is updated by the animation, the animation wins._
 {% endtab %}
 {% endtabs %}

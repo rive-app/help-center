@@ -323,11 +323,13 @@ function App() {
 
 {% tab title="Angular" %}
 ## 1. Install :
-```
+
+```text
 npm install ng-rive
 ```
 
-## 2. Import `RiveModule`: 
+## 2. Import `RiveModule`:
+
 {% code title="animation.module.ts" %}
 ```typescript
 import { RiveModule } from 'ng-rive';
@@ -345,15 +347,16 @@ export class AnimationModule { }
 
 ## 3. Add your .riv file in your assets
 
-```
+```text
 |-- assets
 |   |--rive
 |      |-- vehicles.riv
 ```
 
 ## 4. Use in template :
+
 {% code title="animation.component.html" %}
-```html
+```markup
 <canvas riv="vehicles" width="500" height="500">
   <riv-animation name="idle" play></riv-animation>
 </canvas>
