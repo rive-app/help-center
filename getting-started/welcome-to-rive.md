@@ -2,7 +2,7 @@
 
 Welcome to the Rive help center. Here you can find documentation on all aspects of our editor and runtimes. Look out for the 'Welcome to Rive!' and 'Distinctly Rive' video series in our [Resources](https://rive.app/resources) section for more tips on getting started.
 
-{% embed url="https://www.youtube.com/watch?v=8m31AGsoVS0&t=12s" %}
+{% embed url="https://www.youtube.com/watch?v=GPy0s2Y6hQg" %}
 
 Have questions? [Join us on Discord](https://discord.com/invite/FGjmaTr) for more help from the team and community.
 

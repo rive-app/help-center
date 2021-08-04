@@ -1,22 +1,26 @@
+---
+description: Clipping allows you to cut one shape out from another.
+---
+
 # Clipping
 
-Clipping allows you to cut one shape out from another. 
+##  How to use Clipping
 
-To use clipping, select the shape you want to clip and hit the plus button next to the Clipping options in the Inspector. Now, select the path you want to use as a clipping mask.
+Select the shape you want to clip and hit the plus button next to the Clipping options in the Inspector. Now, select the path you want to use as a clipping path.
 
 ![](../../.gitbook/assets/clipping_20px.gif)
 
 You can add as many clipping paths to a shape as you'd like.
 
-## Multiple shapes as source
+## How to use a group as a clipping path
 
 ![](../../.gitbook/assets/clipping_group.png)
 
-You can use groups as a source for clipping to create different effects. In this example, we are adding clipping to a custom shape and using the ball as the source to create the lighting effect from the lamp. 
+Instead of selecting multiple clipping paths one-by-one, you can select a group and all the paths inside the group will be used as clipping paths. In this example, we are adding the ball group as a clipping path to the light shape, which creates a lighting effect on the ball as it moves across the screen.
 
-![Use group as clipping source](../../.gitbook/assets/clipping_group.gif)
+![Using a group as a clipping path](../../.gitbook/assets/clipping_group.gif)
 
-To achieve this effect, we need to select the shape we are using for lighting, add clipping, and select the ball as the source.
+## Clipping and path direction
 
 ![Reverse path direction](../../.gitbook/assets/clipping_fiix.gif)
 
@@ -24,7 +28,7 @@ In the event that you have shapes that aren't clipping, or only partially clippi
 
  
 
-## Inverse clipping
+## Inverse Clipping
 
 Clipping is typically used to hide a part of your graphics. In the example below, we're using an ellipse to show only part of our jewel graphic.
 

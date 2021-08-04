@@ -4,7 +4,7 @@ Bones allow you to create a skeleton for your graphics. This is an intuitive and
 
 {% embed url="https://youtu.be/eUGoFK6mUy4" %}
 
-**Create bones**
+## **How to create bones**
 
 To create a chain of bones activate the Bone tool in the [Transform Tools menu](../../fundamentals/interface-overview/toolbar.md#transform-tools-menu) \(or press `B`\) and click anywhere.
 
