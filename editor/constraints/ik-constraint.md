@@ -20,7 +20,7 @@ There are many applications for this technique, but some of the more common exam
 
 ## How to create an IK constraint
 
-To use IK, you need a bone chain and a target. The target can be any object, though in most cases you'll want to use a group with its Style set to Target.
+To use IK, you need a bone chain and a target. The target can be any object, though in most cases you'll want to use a group with its [Style set to Target](../fundamentals/groups/#group-style).
 
 ### 1. Create a bone chain and a target
 
@@ -80,5 +80,5 @@ You can set up multiple IK constraints for more complex rigs. A common setup is 
 
 ![](https://gblobscdn.gitbook.com/assets%2F-LLf9WNXyNW0pxMs9rjI%2F-LWsi9dTxfj2qUgqoM-9%2F-LWt95RxfajHmO2cJyBa%2Fik_rig.gif?alt=media&token=0fa7d42a-e3a4-4c1b-b825-8089e478f5cc)
 
-## 
+
 

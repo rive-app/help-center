@@ -16,9 +16,9 @@ Use the `Enter` key to quickly navigate down the Hierarchy. If you have a group 
 
 Use the `Esc` key to quickly navigate up the Hierarchy. This allows you to quickly select the parent of your current selection.
 
-## Deep select
+## Deep Select
 
-Hold `⌘` in macOS or `Ctrl` in Windows and click directly on a shape to select it, no matter where you are in the Hierarchy. This allows you to click-through all groups and directly select a shape.
+Hold `⌘` in macOS or `Ctrl` in Windows and click directly on a shape to select it, no matter where you are in the Hierarchy. This allows you to click through all groups and directly select a shape.
 
 ![](../../../.gitbook/assets/deep_select_command.gif)
 
