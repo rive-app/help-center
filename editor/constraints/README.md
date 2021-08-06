@@ -1,3 +1,7 @@
+---
+description: Learn how to use constraints in Rive
+---
+
 # Constraints
 
 Constraints are a way to control the properties of an object through another target object. Some constraints can set limits on these properties \(and their hierarchical relationships\), while others can copy properties from one object to another.
@@ -20,10 +24,10 @@ Examples of where to use constraints:
 Types of constraints in Rive:
 
 * [Inverse Kinematics \(IK\) Constraint](ik-constraint.md)
-* Distance Constraint
-* Translation Constraint
-* Scale Constraint
-* Rotation Constraint
+* [Distance Constraint](distance-constraint.md)
+* Transform Constraint
+
+
 
 
 

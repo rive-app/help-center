@@ -54,6 +54,7 @@
   * [Freeze and Origin](editor/manipulating-shapes/origin-and-freeze.md)
 * [Constraints](editor/constraints/README.md)
   * [IK Constraint](editor/constraints/ik-constraint.md)
+  * [Distance Constraint](editor/constraints/distance-constraint.md)
 * [Keyboard Shortcuts](editor/keyboard-shortcuts.md)
 * [Exporting](editor/exporting.md)
 

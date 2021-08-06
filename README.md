@@ -1,6 +1,6 @@
 # Introduction
 
-Welcome to the Rive Help Center. We've split this documentation into the sub-sections listed below. If you can't find the information you're looking for or have questions for us, join us on [Twitter](https://twitter.com/rive_app), [Discord](https://discord.com/invite/FGjmaTr), or email us at [hello@rive.app](mailto:hello@rive.app).
+Welcome to the Rive Help Center. We've split this documentation into the sub-sections below. If you can't find the information you're looking for or have questions for us, join us on [Twitter](https://twitter.com/rive_app), [Discord](https://discord.com/invite/FGjmaTr), or email us at [hello@rive.app](mailto:hello@rive.app).
 
 ## Getting Started
 
