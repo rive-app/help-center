@@ -25,7 +25,10 @@ Types of constraints in Rive:
 
 * [Inverse Kinematics \(IK\) Constraint](ik-constraint.md)
 * [Distance Constraint](distance-constraint.md)
-* Transform Constraint
+* [Transform Constraint](transform-constraint.md)
+* Translation Constraint
+* Scale Constraint
+* Rotation Constraint
 
 
 

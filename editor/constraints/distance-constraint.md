@@ -1,6 +1,6 @@
 # Distance Constraint
 
-The Distance Constraint forces an object to stay close, far, or exactly at a specific distance to another object.
+The Distance Constraint makes an object stay close, far, or exactly at a specific distance to another object.
 
 ## How to create a Distance Constraint
 
