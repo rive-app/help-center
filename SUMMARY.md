@@ -62,6 +62,7 @@
 ## Tutorials <a id="tutorial"></a>
 
 * [Bouncing ball](tutorial/bouncing-ball.md)
+* [Tom Morello](tutorial/tom-morello.md)
 
 ## Runtimes
 
