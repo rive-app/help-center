@@ -55,7 +55,10 @@
 * [Constraints](editor/constraints/README.md)
   * [IK Constraint](editor/constraints/ik-constraint.md)
   * [Distance Constraint](editor/constraints/distance-constraint.md)
+  * [Scale Constraint](editor/constraints/scale-constraint.md)
+  * [Rotation Constraint](editor/constraints/rotation-constraint.md)
   * [Transform Constraint](editor/constraints/transform-constraint.md)
+  * [Translation Constraint](editor/constraints/translation-constraint.md)
 * [Keyboard Shortcuts](editor/keyboard-shortcuts.md)
 * [Exporting](editor/exporting.md)
 
