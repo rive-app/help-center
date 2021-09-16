@@ -96,3 +96,7 @@ Then add animations with the plus button and set the threshold for each. The thr
 
 An Additive Blend State allows you to map any input directly to any animation. The Additive Blend State expects a number between 0-100 \(which defines whether 0% of the animation is playing or if 100% of the animation is playing\). This can be useful if you want to have exact control over animations, rather than blending them indirectly with a single input.
 
+## Layers
+
+A state machine layer can have only one active state at a time. Add in additional layers to your state machine to play multiple states simultaneously.
+
