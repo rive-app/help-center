@@ -46,7 +46,7 @@ Create a new instance of a Rive object, providing the url of the Rive file you w
         <title>Rive Hello World</title>
     </head>
     <body>
-        <canvas id="canvas"></canvas>
+        <canvas id="canvas" width="500" height="500"></canvas>
 
         <script src="https://unpkg.com/rive-js"></script>
         <script>
