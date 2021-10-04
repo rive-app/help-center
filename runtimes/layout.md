@@ -52,6 +52,41 @@ Most runtimes have a `Layout` object. You typically provide layout data when ins
 ```
 {% endtab %}
 
+{% tab title="React" %}
+
+```javascript
+import Rive, { Layout, Fit, Alignment } from 'rive-react';
+
+export const Simple = () => (
+  <Rive
+    src="https://cdn.rive.app/animations/vehicles.riv"
+    layout={new Layout({ fit: Fit.Contain, alignment: Alignment.TopCenter })}
+  />
+);
+```
+
+With the `useRive` hook:
+```javascript
+
+import { useRive, Layout, Fit, Alignment } from 'rive-react';
+
+export default function Example() {
+  const { RiveComponent } = useRive({
+    src: 'my-file.riv',
+    artboard: 'my-artboard',
+    animations: 'my-animation',
+    layout: new Layout({
+      fit: Fit.Cover,
+      alignment: Alignment.TopCenter,
+    }),
+    autoplay: true,
+  });
+
+  return <RiveComponent />;
+}
+```
+{% endtab %}
+
 {% tab title="Flutter" %}
 Rive's Flutter runtime doesn't have a `Layout` object; instead fit and alignment can be passed in through the `RiveAnimation` and `Rive` constructors. The fit and alignment options behave like their counterparts in Flutter \(see [`BoxFit`](https://api.flutter.dev/flutter/painting/BoxFit-class.html) and [`Size`](https://api.flutter.dev/flutter/dart-ui/Size-class.html) as examples\).
 
