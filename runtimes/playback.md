@@ -24,6 +24,25 @@ new rive.Rive({
 ```
 {% endtab %}
 
+{% tab title="React" %}
+```javascript
+export const Simple = () => (
+  <Rive src="https://cdn.rive.app/animations/vehicles.riv" artboard="Truck" />
+);
+
+// With `useRive` Hook:
+export default function Simple() {
+  const { RiveComponent } = useRive({
+    src: 'https://cdn.rive.app/animations/vehicles.riv',
+    artboard: 'Truck',
+    autoplay: true,
+  });
+
+  return <RiveComponent />;
+}
+```
+{% endtab %}
+
 {% tab title="Flutter" %}
 ```dart
 RiveAnimation.network(
@@ -55,7 +74,7 @@ Starting animations can also be chosen when Rive is instantiated. A list of anim
 new rive.Rive({
     src: 'https://cdn.rive.app/animations/vehicles.riv',
     canvas: document.getElementById('canvas'),
-    animations: ['idle', 'curves'],
+    animations: 'idle',
     autoplay: true
 });
 
@@ -68,6 +87,32 @@ new rive.Rive({
 });
 ```
 {% endtab %}
+
+{% tab title="React" %}
+```javascript
+// Play the idle animation
+export const Simple = () => (
+  <Rive src="https://cdn.rive.app/animations/vehicles.riv" animations="idle" />
+);
+
+// play and mix the idle and curves animations
+export const Simple = () => (
+  <Rive src="https://cdn.rive.app/animations/vehicles.riv" animations={['idle', 'curves']} />
+);
+
+// With `useRive` Hook:
+export default function Simple() {
+  const { RiveComponent } = useRive({
+    src: 'https://cdn.rive.app/animations/vehicles.riv',
+    animations:{['idle', 'curves']},
+    autoplay: true,
+  });
+
+  return <RiveComponent />;
+}
+```
+{% endtab %}
+
 
 {% tab title="Flutter" %}
 ```dart
@@ -117,6 +162,22 @@ new rive.Rive({
 ```
 {% endtab %}
 
+{% tab title="React" %}
+```javascript
+// State Machine require the useRive hook.
+export default function Simple() {
+  const { RiveComponent } = useRive({
+    src: 'https://cdn.rive.app/animations/vehicles.riv',
+    stateMachines: "weather",
+    autoplay: true,
+  });
+
+  return <RiveComponent />;
+}
+```
+{% endtab %}
+
+
 {% tab title="Flutter" %}
 ```dart
 RiveAnimation.network(
@@ -148,7 +209,7 @@ You can also provide callback to receive notification when certain events have o
 
 {% tabs %}
 {% tab title="Web" %}
-```markup
+```html
 <!doctype html>
 <html lang="en">
     <head>
@@ -215,6 +276,90 @@ You can also provide callback to receive notification when certain events have o
         </script>
     </body>
 </html>
+```
+{% endtab %}
+
+{% tab title="React" %}
+
+```javascript
+import { useState, useEffect } from "react";
+import { useRive, Layout, Fit } from "rive-react";
+
+export default function App() {
+  const [truckButtonText, setTruckButtonText] = useState("Start Truck");
+  const [wiperButtonText, setWiperButtonText] = useState("Start Wipers");
+
+  // animation will show the first frame but not start playing
+  const { rive, RiveComponent } = useRive({
+    src: "https://cdn.rive.app/animations/vehicles.riv",
+    artboard: "Jeep",
+    layout: new Layout({ fit: Fit.Cover }),
+  });
+
+  useEffect(() => {
+    if (rive) {
+      // Listen for play events to update button text
+      rive.on("play", (event) => {
+        const names = event.data;
+        names.forEach((name) => {
+          if (name === "idle") {
+            setTruckButtonText("Stop Truck");
+          } else if (name === "windshield_wipers") {
+            setWiperButtonText("Stop Wipers");
+          }
+        });
+      });
+
+      // Listen for pause events to update button text
+      rive.on("pause", (event) => {
+        const names = event.data;
+        names.forEach((name) => {
+          if (name === "idle") {
+            setTruckButtonText("Start Truck");
+          } else if (name === "windshield_wipers") {
+            setWiperButtonText("Start Wipers");
+          }
+        });
+      });
+    }
+  }, [rive]);
+
+  function onStartTruckClick() {
+    if (rive) {
+      if (rive.playingAnimationNames.includes("idle")) {
+        rive.pause("idle");
+      } else {
+        rive.play("idle");
+      }
+    }
+  }
+
+  function onStartWiperClick() {
+    if (rive) {
+      if (rive.playingAnimationNames.includes("windshield_wipers")) {
+        rive.pause("windshield_wipers");
+      } else {
+        rive.play("windshield_wipers");
+      }
+    }
+  }
+
+  return (
+    <>
+      <div>
+        <RiveComponent style={{ height: "1000px" }} />
+      </div>
+      <div>
+        <button id="idle" onClick={onStartTruckClick}>
+          {truckButtonText}
+        </button>
+        <button id="wipers" onClick={onStartWiperClick}>
+          {wiperButtonText}
+        </button>
+      </div>
+    </>
+  );
+}
 ```
 {% endtab %}
 
