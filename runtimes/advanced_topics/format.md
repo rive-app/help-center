@@ -89,7 +89,7 @@ The list of known properties is serialized as a sequence of variable unsigned in
 The intention here is to provide the known property type keys and their backing type, such that if the property type is unknown, the reader can read the entirety of the value without under/over running the buffer.
 {% endhint %}
 
-The two bits are interepreted as one of four backing types.
+The two bits are interpreted as one of four backing types.
 
 | Backing Type | 2 bit value |
 | :--- | :--- |
