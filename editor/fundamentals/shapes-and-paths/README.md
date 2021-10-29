@@ -4,7 +4,7 @@ Rive allows you to create, edit, and animate vector graphics using either proced
 
 To learn more about Shape and Path layers, watch our video on Shapes and Paths, or read more below.
 
-{% embed url="https://www.youtube.com/watch?v=lj6AwrC\_yEE&t=7s" %}
+{% embed url="https://www.youtube.com/watch?v=lj6AwrC_yEE&t=7s" %}
 
 ## **Shape layer**
 
@@ -18,13 +18,13 @@ The shape layer displays many properties in the inspector that can be edited in 
 
 ## **Path layer**
 
-![](../../../.gitbook/assets/path-layer_b.gif)
+![](../../../.gitbook/assets/path-layer\_b.gif)
 
-The actual shape of a vector is defined by a path \(or multiple paths\). Expanding a shape layer in Rive will reveal the paths it's using.
+The actual shape of a vector is defined by a path (or multiple paths). Expanding a shape layer in Rive will reveal the paths it's using.
 
 ![](../../../.gitbook/assets/shapes-path-drag-and-drop.gif)
 
-‌ You can add new paths to any shape by dragging and dropping an existing path onto the desired shape layer. 
+‌ You can add new paths to any shape by dragging and dropping an existing path onto the desired shape layer.&#x20;
 
 ### **Path layer properties**
 
@@ -35,4 +35,3 @@ The path layer displays many properties in the Inspector that can be edited in b
 Use the `Enter` key to quickly navigate down the Hierarchy. If you have a shape selected, this allows you to quickly select the child path layer.
 
 Use the `Esc` key to quickly navigate up the Hierarchy. If you have a path selected, this allows you to quickly select the parent shape layer.
-

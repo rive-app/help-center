@@ -12,7 +12,7 @@ In this tutorial, we'll look at an advanced file and look into some of the techn
 
 Notice the majority of the character uses simple shapes.
 
-![Use simple shapes](../.gitbook/assets/2021-08-12-13.15.25%20%281%29.gif)
+![Use simple shapes](<../.gitbook/assets/2021-08-12-13.15.25 (1) (1).gif>)
 
 The arms and legs have additional vertices added to account for the knees and elbows.
 
@@ -52,7 +52,7 @@ Use gradients with multiple stoppers to create a base for the background.
 
 Use blend modes to create unique effects such as lens flares, color shifts, and framing.
 
-![Lens flare with Overlay mode](../.gitbook/assets/2021-08-12-15.36.35.gif)
+![Lens flare with Overlay mode](<../.gitbook/assets/2021-08-12-15.36.35 (1).gif>)
 
 ![Color shift with Screen mode](../.gitbook/assets/2021-08-12-15.39.08.gif)
 
@@ -70,23 +70,23 @@ Add in additional bones for accessories.
 
 Ensure the bones have the proper hierarchical relationships.
 
-![](../.gitbook/assets/2021-08-16-12.41.45%20%281%29.gif)
+![](<../.gitbook/assets/2021-08-16-12.41.45 (1).gif>)
 
 Set up [IK constraints](../editor/constraints/ik-constraint.md) to make controlling the legs easier.
 
 ![](../.gitbook/assets/2021-08-16-12.51.42.gif)
 
-For the best performance, [bind and weight](../editor/manipulating-shapes/bones/#2-binding) only the shapes that will be influenced by two or more bones. 
+For the best performance, [bind and weight](../editor/manipulating-shapes/bones/#2-binding) only the shapes that will be influenced by two or more bones.&#x20;
 
 ![](../.gitbook/assets/2021-08-16-13.09.57.gif)
 
 Use [parent-child relationships](../editor/manipulating-shapes/bones/#1-hierarchical-relationships) for shapes or groups that only use a single bone.
 
-![](../.gitbook/assets/2021-08-16-13.14.20%20%281%29.gif)
+![](<../.gitbook/assets/2021-08-16-13.14.20 (1) (1).gif>)
 
 Ensure all objects are nested under a Root group before animating. This group will allow you to control the transform properties of the entire composition, even if you've already added some animations.
 
-![](../.gitbook/assets/2021-08-16-13.20.51.gif)
+![](<../.gitbook/assets/2021-08-16-13.20.51 (1) (1).gif>)
 
 
 
@@ -98,15 +98,15 @@ Animate the idle first. Let the control bone do most of the work.
 
 Add secondary motion to make the animation more interesting.
 
-![](../.gitbook/assets/2021-08-16-13.45.55.gif)
+![](<../.gitbook/assets/2021-08-16-13.45.55 (1).gif>)
 
-If you are planning on using the animation in the [state machine](../editor/state-machine.md), be sure to key all objects \(bones, shapes, paths, ect...\) in their current position. This will ensure the character can return to the proper pose when switching between states.
+If you are planning on using the animation in the [state machine](../editor/state-machine.md), be sure to key all objects (bones, shapes, paths, ect...) in their current position. This will ensure the character can return to the proper pose when switching between states.
 
-![](../.gitbook/assets/2021-08-16-13.57.27.gif)
+![](<../.gitbook/assets/2021-08-16-13.57.27 (1).gif>)
 
 Use the bones to help you achieve the proper poses, then edit the timing.
 
-![](../.gitbook/assets/2021-08-16-14.20.15.gif)
+![](<../.gitbook/assets/2021-08-16-14.20.15 (1) (1).gif>)
 
 Once you are happy with the main poses and timing, add in secondary motion.
 
@@ -132,13 +132,11 @@ Add an [input](../editor/state-machine.md#inputs).
 
 Configure transition [conditions](../editor/state-machine.md#conditions).
 
-![](../.gitbook/assets/2021-08-16-15.10.19.gif)
+![](<../.gitbook/assets/2021-08-16-15.10.19 (1).gif>)
 
 Test and make any changes necessary.
 
 ![](../.gitbook/assets/2021-08-16-15.11.20.gif)
-
-
 
 
 

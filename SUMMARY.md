@@ -10,7 +10,7 @@
   * [Editor and runtimes](getting-started/faq-1/editor-and-runtimes.md)
   * [Teams and billing](getting-started/faq-1/teams-and-billing.md)
   * [Improvements in the new Rive](getting-started/faq-1/improvements-in-the-new-rive.md)
-  * [Importing old Rive \(Flare\) files](getting-started/faq-1/importing-rive-1-files.md)
+  * [Importing old Rive (Flare) files](getting-started/faq-1/importing-rive-1-files.md)
 * [Quick Links](getting-started/quick-links.md)
 
 ## Editor
@@ -22,7 +22,8 @@
     * [Hierarchy](editor/fundamentals/interface-overview/hierarchy.md)
     * [Inspector](editor/fundamentals/interface-overview/inspector.md)
     * [Stage](editor/fundamentals/interface-overview/stage.md)
-  * [Artboards](editor/fundamentals/artboards.md)
+  * [Artboards](editor/fundamentals/artboards/README.md)
+    * [Nested Artboards](editor/fundamentals/artboards/nested-artboards.md)
   * [Pen Tool](editor/fundamentals/pen-tool/README.md)
     * [Pen Tool Tips](editor/fundamentals/pen-tool/tips-and-best-practices.md)
   * [Shapes and Paths](editor/fundamentals/shapes-and-paths/README.md)
@@ -43,7 +44,7 @@
   * [Timeline](editor/animate-mode/timeline.md)
   * [Keys](editor/animate-mode/keyframes.md)
   * [Animation Mixing](editor/animate-mode/animation-mixing.md)
-  * [Interpolation \(Easing\)](editor/animate-mode/interpolation-easing.md)
+  * [Interpolation (Easing)](editor/animate-mode/interpolation-easing.md)
   * [Animating Draw Order](editor/animate-mode/animating-draw-order.md)
 * [State Machine](editor/state-machine.md)
 * [Manipulating Shapes](editor/manipulating-shapes/README.md)
@@ -62,7 +63,7 @@
 * [Keyboard Shortcuts](editor/keyboard-shortcuts.md)
 * [Exporting](editor/exporting.md)
 
-## Tutorials <a id="tutorial"></a>
+## Tutorials <a href="tutorial" id="tutorial"></a>
 
 * [Bouncing ball](tutorial/bouncing-ball.md)
 * [Tom Morello](tutorial/tom-morello.md)
@@ -74,8 +75,8 @@
 * [Playback](runtimes/playback.md)
 * [State Machines](runtimes/state-machines.md)
 * [Downloads](runtimes/overview.md)
-* [Advanced Topics](runtimes/advanced_topics/README.md)
-  * [Format](runtimes/advanced_topics/format.md)
+* [Advanced Topics](runtimes/advanced\_topics/README.md)
+  * [Format](runtimes/advanced\_topics/format.md)
 
 ## Community
 
@@ -94,4 +95,3 @@
 * [Terms of Service](legal/terms-of-service.md)
 * [Acceptable Use Policy](legal/acceptable-use-policy.md)
 * [Privacy Policy](legal/privacy-policy.md)
-

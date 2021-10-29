@@ -34,11 +34,11 @@ Add an additional Fill in the Inspector. Adjust the stoppers and choose some col
 
 ### 3. Add details
 
-Using the [pen tool](../editor/fundamentals/pen-tool/), create a line across the ball. Duplicate and rotate that line to create a cross. 
+Using the [pen tool](../editor/fundamentals/pen-tool/), create a line across the ball. Duplicate and rotate that line to create a cross.&#x20;
 
 ![](../.gitbook/assets/2021-08-10-15.37.00.gif)
 
-Select a line on the Stage, remove the Fill, and add a [Stroke](../editor/fundamentals/fill-and-stroke/#stroke). Change the thickness and color, then change the blend mode from normal to multiply. 
+Select a line on the Stage, remove the Fill, and add a [Stroke](../editor/fundamentals/fill-and-stroke/#stroke). Change the thickness and color, then change the blend mode from normal to multiply.&#x20;
 
 ![](../.gitbook/assets/2021-08-10-15.41.03.gif)
 
@@ -50,7 +50,7 @@ Add an ellipse, then duplicate it. Drag both of the ellipse path layers onto the
 
 ![](../.gitbook/assets/2021-08-10-15.47.40.gif)
 
-Select the shape layer and add [clipping](../editor/manipulating-shapes/clipping.md) in the Inspector. When prompted, select the ball layer as the clipping source. 
+Select the shape layer and add [clipping](../editor/manipulating-shapes/clipping.md) in the Inspector. When prompted, select the ball layer as the clipping source.&#x20;
 
 ![](../.gitbook/assets/2021-08-09-14.36.28.gif)
 
@@ -60,17 +60,17 @@ Change the [origin](../editor/manipulating-shapes/origin-and-freeze.md) of the d
 
 To add rim lighting, duplicate the ball shape and remove the fill. Add a stroke and change the thickness. Scale the ellipse down slightly.
 
-![Rim light part 1](../.gitbook/assets/2021-08-09-16.00.11.gif)
+![Rim light part 1](<../.gitbook/assets/2021-08-09-16.00.11 (1) (1).gif>)
 
 Change the fill to linear and adjust the position of the stoppers. Customize the colors and turn the [opacity](../editor/fundamentals/interface-overview/inspector.md#appearance-properties) down.
 
-![Rim light part 2](../.gitbook/assets/2021-08-09-16.07.05.gif)
+![Rim light part 2](<../.gitbook/assets/2021-08-09-16.07.05 (1).gif>)
 
 Add another stroke and copy the thickness from the first stroke. Change the color.
 
 ![](../.gitbook/assets/2021-08-10-15.53.57.gif)
 
-Open the stroke options and [enable trim path](../editor/manipulating-shapes/trim-path.md#enable-trim-path). Adjust the [start](../editor/manipulating-shapes/trim-path.md#start-and-end) and [offset](../editor/manipulating-shapes/trim-path.md#offset) until the stroke is on the top of the ball. 
+Open the stroke options and [enable trim path](../editor/manipulating-shapes/trim-path.md#enable-trim-path). Adjust the [start](../editor/manipulating-shapes/trim-path.md#start-and-end) and [offset](../editor/manipulating-shapes/trim-path.md#offset) until the stroke is on the top of the ball.&#x20;
 
 ![](../.gitbook/assets/2021-08-10-15.56.08.gif)
 
@@ -108,7 +108,7 @@ Group all objects on the stage in a "root" group. We won't use this group when a
 
 ### 1.Key initial motion
 
-Switch the editor to [Animate mode](../editor/animate-mode/) with the `Tab` key.
+Switch the editor to [Animate mode](../editor/animate-mode/) with the `Tab `key.
 
 ![](../.gitbook/assets/2021-08-09-17.34.22.gif)
 
@@ -182,7 +182,7 @@ Move playhead to end of timeline and set a rotation key at 180 degrees.
 
 ### 5. Animate shadows scale and opacity
 
-Key the initial X scale of the shadow group. 
+Key the initial X scale of the shadow group.&#x20;
 
 ![](../.gitbook/assets/2021-08-10-13.09.43.gif)
 
@@ -213,4 +213,3 @@ Ensure shadow group easing matches the ball group.
 Preview the animation and make any adjustments necessary.
 
 ![](../.gitbook/assets/2021-08-10-14.09.31.gif)
-

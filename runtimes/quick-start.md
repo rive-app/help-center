@@ -64,7 +64,7 @@ Create a new instance of a Rive object, providing the url of the Rive file you w
 {% tab title="React" %}
 ## Install the rive-react package
 
-{% code %}
+{% code title="" %}
 ```bash
 npm i --save rive-react
 ```
@@ -82,13 +82,13 @@ export const Simple = () => (
 );
 ```
 
-#### Props
+### Props
 
-- `src`: File path or URL to the .riv file to display.
-- `artboard`: _(optional)_ Name to display.
-- `animations`: _(optional)_ Name or list of names of animtions to play.
-- `layout`: _(optional)_ Layout object to define how animations are displayed on the canvas.
-- _All attributes and eventHandlers that can be passed to a `div` element can also be passed to the `Rive` component and used in the same manner._
+* `src`: File path or URL to the .riv file to display.
+* `artboard`: _(optional)_ Name to display.
+* `animations`: _(optional)_ Name or list of names of animtions to play.
+* `layout`: _(optional)_ Layout object to define how animations are displayed on the canvas.
+* _All attributes and eventHandlers that can be passed to a `div` element can also be passed to the `Rive` component and used in the same manner._
 
 ## useRive Hook
 
@@ -112,43 +112,42 @@ export default function Simple() {
 }
 ```
 
-#### Parameters
+### Parameters
 
-- `riveParams`: Set of parameters that are passed to the Rive.js `Rive` class constructor. `null` and `undefined` can be passed to conditionally display the .riv file.
-- `opts`: Rive React specific options.
+* `riveParams`: Set of parameters that are passed to the Rive.js `Rive` class constructor. `null` and `undefined` can be passed to conditionally display the .riv file.
+* `opts`: Rive React specific options.
 
-#### Return Values
+### Return Values
 
-- `RiveComponent`: A Component that can be used to display your .riv file. This component accepts the same attributes and event handlers as a `div` element.
-- `rive`: A Rive.js `Rive` object. This will return as null until the .riv file has fully loaded.
-- `canvas`: HTMLCanvasElement object, on which the .riv file is rendering.
-- `setCanvasRef`: A callback ref that can be passed to your own canvas element, if you wish to have control over the rendering of the Canvas element.
-- `setContainerRef`: A callback ref that can be passed to a container element that wraps the canvas element, if you which to have control over the rendering of the container element.
-  _For the vast majority of use cases, you can just the returned `RiveComponent` and don't need to worry about `setCanvasRef` and `setContainerRef`._
+* `RiveComponent`: A Component that can be used to display your .riv file. This component accepts the same attributes and event handlers as a `div` element.
+* `rive`: A Rive.js `Rive` object. This will return as null until the .riv file has fully loaded.
+* `canvas`: HTMLCanvasElement object, on which the .riv file is rendering.
+* `setCanvasRef`: A callback ref that can be passed to your own canvas element, if you wish to have control over the rendering of the Canvas element.
+*   `setContainerRef`: A callback ref that can be passed to a container element that wraps the canvas element, if you which to have control over the rendering of the container element.
 
-#### riveParams
+    _For the vast majority of use cases, you can just the returned `RiveComponent` and don't need to worry about `setCanvasRef` and `setContainerRef`._
 
-- `src?`: _(optional)_ File path or URL to the .riv file to use. One of `src` or `buffer` must be provided.
-- `buffer?`: _(optional)_ ArrayBuffer containing the raw bytes from a .riv file. One of `src` or `buffer` must be provided.
-- `artboard?`: _(optional)_ Name of the artboard to use.
-- `animations?`: _(optional)_ Name or list of names of animations to play.
-- `stateMachines?`: _(optional)_ Name of list of names of state machines to load.
-- `layout?`: _(optional)_ Layout object to define how animations are displayed on the canvas. See [Rive.js](https://github.com/rive-app/rive-wasm#layout) for more details.
-- `autoplay?`: _(optional)_ If `true`, the animation will automatically start playing when loaded. Defaults to false.
-- `onLoad?`: _(optional)_ Callback that get's fired when the .rive file loads .
-- `onLoadError?`: _(optional)_ Callback that get's fired when an error occurs loading the .riv file.
-- `onPlay?`: _(optional)_ Callback that get's fired when the animation starts playing.
-- `onPause?`: _(optional)_ Callback that get's fired when the animation pauses.
-- `onStop?`: _(optional)_ Callback that get's fired when the animation stops playing.
-- `onLoop?`: _(optional)_ Callback that get's fired when the animation completes a loop.
-- `onStateChange?`: _(optional)_ Callback that get's fired when a state change occurs.
+### riveParams
 
-#### opts
+* `src?`: _(optional)_ File path or URL to the .riv file to use. One of `src` or `buffer` must be provided.
+* `buffer?`: _(optional)_ ArrayBuffer containing the raw bytes from a .riv file. One of `src` or `buffer` must be provided.
+* `artboard?`: _(optional)_ Name of the artboard to use.
+* `animations?`: _(optional)_ Name or list of names of animations to play.
+* `stateMachines?`: _(optional)_ Name of list of names of state machines to load.
+* `layout?`: _(optional)_ Layout object to define how animations are displayed on the canvas. See [Rive.js](https://github.com/rive-app/rive-wasm#layout) for more details.
+* `autoplay?`: _(optional)_ If `true`, the animation will automatically start playing when loaded. Defaults to false.
+* `onLoad?`: _(optional)_ Callback that get's fired when the .rive file loads .
+* `onLoadError?`: _(optional)_ Callback that get's fired when an error occurs loading the .riv file.
+* `onPlay?`: _(optional)_ Callback that get's fired when the animation starts playing.
+* `onPause?`: _(optional)_ Callback that get's fired when the animation pauses.
+* `onStop?`: _(optional)_ Callback that get's fired when the animation stops playing.
+* `onLoop?`: _(optional)_ Callback that get's fired when the animation completes a loop.
+* `onStateChange?`: _(optional)_ Callback that get's fired when a state change occurs.
 
-- `useDevicePixelRatio`: _(optional)_ If `true`, the hook will scale the resolution of the animation based the [devicePixelRatio](https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio). Defaults to `true`. NOTE: Requires the `setContainerRef` ref callback to be passed to a element wrapping a canvas element. If you use the `RiveComponent`, then this will happen automatically.
-- `fitCanvasToArtboardHeight`: _(optional)_ If `true`, then the canvas will resize based on the height of the artboard. Defaults to `false`.
+### opts
 
-
+* `useDevicePixelRatio`: _(optional)_ If `true`, the hook will scale the resolution of the animation based the [devicePixelRatio](https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio). Defaults to `true`. NOTE: Requires the `setContainerRef` ref callback to be passed to a element wrapping a canvas element. If you use the `RiveComponent`, then this will happen automatically.
+* `fitCanvasToArtboardHeight`: _(optional)_ If `true`, then the canvas will resize based on the height of the artboard. Defaults to `false`.
 {% endtab %}
 
 {% tab title="Vue" %}
@@ -364,7 +363,7 @@ npm install --save rive-react-native
 ## 2. Create iOS bridging header
 
 * open the iOS project file in XCode `open ios/<name>.xcodeproj`
-* create a new empty swift file. 
+* create a new empty swift file.&#x20;
 * confirm "Create Bridging Header"
 
 ## 3. Add your rive component
@@ -386,7 +385,7 @@ function App() {
 {% tab title="Angular" %}
 ## 1. Install :
 
-```text
+```
 npm install ng-rive
 ```
 
@@ -409,7 +408,7 @@ export class AnimationModule { }
 
 ## 3. Add your .riv file in your assets
 
-```text
+```
 |-- assets
 |   |--rive
 |      |-- vehicles.riv
@@ -426,4 +425,3 @@ export class AnimationModule { }
 {% endcode %}
 {% endtab %}
 {% endtabs %}
-

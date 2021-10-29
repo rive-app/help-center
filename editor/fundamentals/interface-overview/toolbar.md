@@ -8,13 +8,13 @@ description: >-
 
 ## **Editor menu**
 
-![](../../../.gitbook/assets/editor_menu%20%281%29.png)
+![](<../../../.gitbook/assets/editor\_menu (1).png>)
 
 The editor menu is located to the left of the transform tools menu. This menu allows you to change the file name, select your revision history, as well as link you to the help center and feedback page.
 
 ## **Transform Tools menu**
 
-![](../../../.gitbook/assets/transform_tools.png)
+![](../../../.gitbook/assets/transform\_tools.png)
 
 The Transform Tools menu houses tools that allow you to alter the transform properties of an object directly on the Stage.
 
@@ -24,13 +24,13 @@ When you have objects selected with the Select tool, you'll see the Gizmo which 
 
 ## **Create Tools menu**
 
-![](../../../.gitbook/assets/create_tools_menu.png)
+![](../../../.gitbook/assets/create\_tools\_menu.png)
 
-The Create Tools menu is located on the toolbar, just to the right of the Transform Tools menu. This menu houses all of the tools that you need to create and rig your graphics. This menu also includes the [artboard](../artboards.md) tool.
+The Create Tools menu is located on the toolbar, just to the right of the Transform Tools menu. This menu houses all of the tools that you need to create and rig your graphics. This menu also includes the [artboard](../artboards/) tool.
 
 ## **Export menu**
 
-![](../../../.gitbook/assets/export_menu.png)
+![](../../../.gitbook/assets/export\_menu.png)
 
 The Export menu allows you to download your file for use with the Rive runtimes. In the future, you'll be able to render your files from here too.
 
@@ -42,9 +42,7 @@ The View Options menu is located on the right side of the toolbar. This menu all
 
 ## **Mode toggle**
 
-![](../../../.gitbook/assets/mode_toggle.png)
+![](../../../.gitbook/assets/mode\_toggle.png)
 
-Located above the inspector. The mode toggle allows you to switch between Design and Animate mode. Press `Tab` to quickly switch modes.  
-  
-
-
+Located above the inspector. The mode toggle allows you to switch between Design and Animate mode. Press `Tab` to quickly switch modes.\
+\

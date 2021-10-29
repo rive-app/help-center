@@ -113,7 +113,6 @@ export default function Simple() {
 ```
 {% endtab %}
 
-
 {% tab title="Flutter" %}
 ```dart
 // Play the curves animation
@@ -177,7 +176,6 @@ export default function Simple() {
 ```
 {% endtab %}
 
-
 {% tab title="Flutter" %}
 ```dart
 RiveAnimation.network(
@@ -209,7 +207,7 @@ You can also provide callback to receive notification when certain events have o
 
 {% tabs %}
 {% tab title="Web" %}
-```html
+```markup
 <!doctype html>
 <html lang="en">
     <head>
@@ -280,7 +278,6 @@ You can also provide callback to receive notification when certain events have o
 {% endtab %}
 
 {% tab title="React" %}
-
 ```javascript
 import { useState, useEffect } from "react";
 import { useRive, Layout, Fit } from "rive-react";
@@ -526,7 +523,7 @@ For more advances manipulations you can use the `riv-player` directive:
 ```
 
 * The `time` input will let you specify a moment in ms in the animation.
-* The `mode` input will force the mode "one-shot", "loop" or "ping-pong" \(if undefined, default mode is used\).
+* The `mode` input will force the mode "one-shot", "loop" or "ping-pong" (if undefined, default mode is used).
 
 ### Manipulate nodes
 
@@ -541,4 +538,3 @@ You can select a specific node in the animation with the `riv-node`, `riv-bone` 
 _If the property of the node is updated by the animation, the animation wins._
 {% endtab %}
 {% endtabs %}
-

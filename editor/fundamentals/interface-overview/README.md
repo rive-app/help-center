@@ -10,21 +10,25 @@ description: >-
 
 ## Toolbar
 
-![](../../../.gitbook/assets/tool_bar.png)
+![](../../../.gitbook/assets/tool\_bar.png)
 
 The Toolbar displays the tools you have available to manipulate and create items on the stage. In addition to these tools, the toolbar houses a variety of options to allow you to customize the look of your file.
 
 Read more on the Toolbar page.
 
-{% page-ref page="toolbar.md" %}
+{% content-ref url="toolbar.md" %}
+[toolbar.md](toolbar.md)
+{% endcontent-ref %}
 
 ## **Hierarchy**
 
-![](../../../.gitbook/assets/hierarchy_b.png)
+![](../../../.gitbook/assets/hierarchy\_b.png)
 
 All the stage objects, assets, controls, and animations that make up your file appear in the Hierarchy.
 
-{% page-ref page="hierarchy.md" %}
+{% content-ref url="hierarchy.md" %}
+[hierarchy.md](hierarchy.md)
+{% endcontent-ref %}
 
 ## **Inspector**
 
@@ -34,7 +38,9 @@ The Inspector allows you to adjust the properties for the currently selected obj
 
 Read more on the Inspector page.
 
-{% page-ref page="inspector.md" %}
+{% content-ref url="inspector.md" %}
+[inspector.md](inspector.md)
+{% endcontent-ref %}
 
 ## **Stage**
 
@@ -44,16 +50,19 @@ The stage refers to the central area between the toolbar, the hierarchy, and the
 
 Read more on the Stage page
 
-{% page-ref page="stage.md" %}
+{% content-ref url="stage.md" %}
+[stage.md](stage.md)
+{% endcontent-ref %}
 
 ## **Timeline**
 
-![](../../../.gitbook/assets/timeline%20%282%29.png)
+![](<../../../.gitbook/assets/timeline (2).png>)
 
-The Timeline surfaces from the bottom of the screen upon entering animate mode. Here you can create new animations, access playback controls, and settings, and set keyframes for object parameters. Select an animation from the left-hand list to switch between the respective timelines.  
+The Timeline surfaces from the bottom of the screen upon entering animate mode. Here you can create new animations, access playback controls, and settings, and set keyframes for object parameters. Select an animation from the left-hand list to switch between the respective timelines.\
 
 
 Read more on the Timeline page.
 
-{% page-ref page="../../animate-mode/timeline.md" %}
-
+{% content-ref url="../../animate-mode/timeline.md" %}
+[timeline.md](../../animate-mode/timeline.md)
+{% endcontent-ref %}
