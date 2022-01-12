@@ -16,7 +16,7 @@ Ready to start designing and animating in Rive? The editor section walks through
 
 ## Runtimes
 
-Learn about our runtimes and how to integrate them into your app or game. The Rive runtimes are open-source libraries that allow you to load and control your animations in apps, games, and websites.
+Learn about our runtimes and how to integrate your animations into your app or game. The Rive runtimes are open-source libraries that allow you to load and control your animations in apps, games, and websites.
 
 {% page-ref page="runtimes/quick-start.md" %}
 
@@ -35,4 +35,3 @@ All the information you need to manage accounts, teams, and plans.
 ## Legal
 
 All our legal stuff, like our [Terms of Service](legal/terms-of-service.md), [Acceptable Use Policy](legal/acceptable-use-policy.md), and [Privacy Policy](legal/privacy-policy.md).
-
