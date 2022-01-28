@@ -8,7 +8,7 @@ To learn more about Shape and Path layers, watch our video on Shapes and Paths, 
 
 ## **Shape layer**
 
-![](../../../.gitbook/assets/shapes-layer.png)
+![](https://public.rive.app/help/shapes-layer.png)
 
 Vectors in Rive are rendered on shape layers. Shape layers define the style of the shape by allowing you to customize the fill and stroke.
 
@@ -18,11 +18,11 @@ The shape layer displays many properties in the inspector that can be edited in 
 
 ## **Path layer**
 
-![](../../../.gitbook/assets/path-layer\_b.gif)
+![](https://public.rive.app/help/path-layer_b.gif)
 
 The actual shape of a vector is defined by a path (or multiple paths). Expanding a shape layer in Rive will reveal the paths it's using.
 
-![](../../../.gitbook/assets/shapes-path-drag-and-drop.gif)
+![](https://public.rive.app/help/shapes-path-drag-and-drop.gif)
 
 ‌ You can add new paths to any shape by dragging and dropping an existing path onto the desired shape layer.&#x20;
 

@@ -10,11 +10,11 @@ Examples of where to use constraints:
 
 * Make a character's eyes follow a target.
 
-![](../../.gitbook/assets/2021-08-03-19.12.35.gif)
+![](https://public.rive.app/help/2021-08-03-19.12.35.gif)
 
 * Ensure a character's feet stay planted on the floor while their legs automatically bend at the knees.
 
-![](../../.gitbook/assets/2021-08-03-19.17.41.gif)
+![](https://public.rive.app/help/2021-08-03-19.17.41.gif)
 
 * Make all the wheels on a vehicle rotate together.
 * Make the hands on a clock rotate.

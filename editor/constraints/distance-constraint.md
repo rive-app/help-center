@@ -8,19 +8,19 @@ The Distance Constraint makes an object stay close, far, or exactly at a specifi
 
 Use the Constraints section of the Inspector to add a Distance Constraint to an object.
 
-![](../../.gitbook/assets/2021-08-05-16.52.56.gif)
+![](https://public.rive.app/help/2021-08-05-16.52.56.gif)
 
 ### 2. Choose a target
 
 Use the new constraint's fly-out menu to select a target for this constraint.
 
-![](../../.gitbook/assets/2021-08-05-16.53.17.gif)
+![](https://public.rive.app/help/2021-08-05-16.53.17.gif)
 
 ### 3. Test that the Distance Constraint is working
 
 Moving the target object now causes the constrained object to stay close \(which is the default [mode](distance-constraint.md#mode)\).
 
-![](../../.gitbook/assets/2021-08-05-16.59.24.gif)
+![](https://public.rive.app/help/2021-08-05-16.59.24.gif)
 
 ## Strength <a id="target"></a>
 

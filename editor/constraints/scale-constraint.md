@@ -8,15 +8,15 @@ The Scale Constraint allows you to set limits on an object's scale and/or copy t
 
 Use the Constraints section of the Inspector to add a Scale Constraint to an object.
 
-![](../../.gitbook/assets/2021-08-19-16.40.37.gif)
+![](https://public.rive.app/help/2021-08-19-16.40.37.gif)
 
 ### 2. Choose a target
 
-![](../../.gitbook/assets/2021-08-19-16.44.38.gif)
+![](https://public.rive.app/help/2021-08-19-16.44.38.gif)
 
 Use the new constraint's fly-out menu to select a target for this constraint.
 
-![](../../.gitbook/assets/2021-08-19-16.41.20.gif)
+![](https://public.rive.app/help/2021-08-19-16.41.20.gif)
 
 ### 3. Test that the Scale Constraint is working
 

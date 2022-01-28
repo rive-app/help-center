@@ -12,11 +12,12 @@ Most runtimes have a `Layout` object. You typically provide layout data when ins
 
 {% tabs %}
 {% tab title="Web" %}
+
 ```markup
 <div>
     <canvas id="canvas" width="800" height="600"></canvas>
 </div>
-<script src="https://unpkg.com/rive-js"></script>
+<script src="https://unpkg.com/@rive-app/webgl@1.0.18"></script>
 <script>
 
     // Fill the canvas, cropping Rive if necessary
@@ -50,12 +51,13 @@ Most runtimes have a `Layout` object. You typically provide layout data when ins
     r.layout = new rive.Layout({ fit: rive.Fit.Fill });
 </script>
 ```
+
 {% endtab %}
 
 {% tab title="React" %}
 
 ```javascript
-import Rive, { Layout, Fit, Alignment } from 'rive-react';
+import Rive, { Layout, Fit, Alignment } from "rive-react";
 
 export const Simple = () => (
   <Rive
@@ -66,25 +68,26 @@ export const Simple = () => (
 ```
 
 With the `useRive` hook:
-```javascript
 
-import { useRive, Layout, Fit, Alignment } from 'rive-react';
+```javascript
+import { useRive, Layout, Fit, Alignment } from "rive-react";
 
 export default function Example() {
   const { RiveComponent } = useRive({
-    src: 'my-file.riv',
-    artboard: 'my-artboard',
-    animations: 'my-animation',
+    src: "my-file.riv",
+    artboard: "my-artboard",
+    animations: "my-animation",
     layout: new Layout({
       fit: Fit.Cover,
-      alignment: Alignment.TopCenter,
+      alignment: Alignment.TopCenter
     }),
-    autoplay: true,
+    autoplay: true
   });
 
   return <RiveComponent />;
 }
 ```
+
 {% endtab %}
 
 {% tab title="Flutter" %}
@@ -106,6 +109,7 @@ widget = const RiveAnimation.network(
   alignment: Alignment.topCenter,
 );
 ```
+
 {% endtab %}
 
 {% tab title="Angular" %}
@@ -116,6 +120,7 @@ Angular runtime exposes the layout's options through inputs on the canvas.
   <riv-animation name="idle" play></riv-animation>
 </canvas>
 ```
+
 {% endtab %}
 {% endtabs %}
 
@@ -123,34 +128,33 @@ Angular runtime exposes the layout's options through inputs on the canvas.
 
 Fit determines how the Rive content will be fitted to the view. There are a number of options available:
 
-* `Cover`: Rive will cover the view, preserving aspect ratio. If the Rive content has a different ratio to the view, then the Rive content will be clipped.
-* `Contain`: Rive content will be contained within the view, preserving aspect ratio. If the ratios differ, then a portion of the view will be unused.
-* `Fill`: Rive content will fill the available view. If the aspect ratios differ, then the Rive content will be stretched.
-* `FitWidth`: Rive content will fill to the width of the view. This may result in clipping or unfilled view space.
-* `FitHeight`: Rive content will fill to the height of the view. This may result in clipping or unfilled view space.
-* `None`: Rive content will render to the size of its artboard, which may result in clipping or unfilled view space.
-* `ScaleDown`: Rive content is scaled down to the size of the view, preserving aspect ratio. This is equivalent to `Contain` when the content is larger than the canvas. If the canvas is larger, then `ScaleDown` will not scale up.
+- `Cover`: Rive will cover the view, preserving aspect ratio. If the Rive content has a different ratio to the view, then the Rive content will be clipped.
+- `Contain`: Rive content will be contained within the view, preserving aspect ratio. If the ratios differ, then a portion of the view will be unused.
+- `Fill`: Rive content will fill the available view. If the aspect ratios differ, then the Rive content will be stretched.
+- `FitWidth`: Rive content will fill to the width of the view. This may result in clipping or unfilled view space.
+- `FitHeight`: Rive content will fill to the height of the view. This may result in clipping or unfilled view space.
+- `None`: Rive content will render to the size of its artboard, which may result in clipping or unfilled view space.
+- `ScaleDown`: Rive content is scaled down to the size of the view, preserving aspect ratio. This is equivalent to `Contain` when the content is larger than the canvas. If the canvas is larger, then `ScaleDown` will not scale up.
 
 ## Alignment
 
 Alignment determines how the content aligns with respect to the view bounds. The following options are available:
 
-* `Center`
-* `TopLeft`
-* `TopCenter`
-* `TopRight`
-* `CenterLeft`
-* `CenterRight`
-* `BottomLeft` 
-* `BottomCenter`
-* `BottomRight`
+- `Center`
+- `TopLeft`
+- `TopCenter`
+- `TopRight`
+- `CenterLeft`
+- `CenterRight`
+- `BottomLeft`
+- `BottomCenter`
+- `BottomRight`
 
 ## Bounds
 
 The bounds for the area in which the Rive content will render can be set by providing the minimum and maximum x and y coordinates. These coordinates are relative to the view in which the Rive content is contained, and all must be provided. These will override alignment settings.
 
-* `minX`
-* `minY`
-* `maxX`
-* `maxY`
-
+- `minX`
+- `minY`
+- `maxX`
+- `maxY`
