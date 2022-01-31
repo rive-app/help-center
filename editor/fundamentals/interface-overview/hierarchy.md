@@ -16,7 +16,7 @@ Each row in the Hierarchy represents an item on the stage. A circle button with 
 
 Any type of object can be a parent or a child of another type of object. When an object is a child of another object, it inherits all the transformations of its parent.
 
-![](../../../.gitbook/assets/parent_child_relationships_b.gif)
+![](https://public.rive.app/help/parent_child_relationships_b.gif)
 
 The depth of these parent/child relationships is infinite, so you can keep stacking \(or nesting\) items to create grandchildren, great-grandchildren, and so on.
 
@@ -24,7 +24,7 @@ The depth of these parent/child relationships is infinite, so you can keep stack
 
 To change the relationship between objects, drag and drop the object onto or out of another.
 
-![](../../../.gitbook/assets/parent_child_change_.gif)
+![](https://public.rive.app/help/parent_child_change_.gif)
 
 ## Draw Order
 
@@ -32,7 +32,7 @@ In addition to displaying the relationships between objects, the Hierarchy shows
 
 ## Change Draw Order
 
-![](../../../.gitbook/assets/hierarchy-order.gif)
+![](https://public.rive.app/help/hierarchy-order.gif)
 
 To change the Draw Order of objects on the stage, drag and drop the shape, or group of shapes above or below another in the list. 
 
@@ -42,13 +42,13 @@ The Draw Order can be animated, but the process is a bit more in-depth. Read abo
 
 You can reverse the entire draw order of an Artboard by right-clicking on any object in the hierarchy and selecting Reverse All.
 
-![](../../../.gitbook/assets/reverse_draw_order.gif)
+![](https://public.rive.app/help/reverse_draw_order.gif)
 
 If you only need to reverse the Draw Order of a group, right-click on an object within a group and select Reverse.
 
 ## Renaming
 
-![](../../../.gitbook/assets/parent_child_name.gif)
+![](https://public.rive.app/help/parent_child_name.gif)
 
 You can change the name of any object by double-clicking the name.
 

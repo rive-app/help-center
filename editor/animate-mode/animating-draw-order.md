@@ -6,7 +6,7 @@ You can change the draw order of your graphics at design time by moving items up
 
 To animate the draw order of a group or shape, start by selecting it. Use the Draw Order section of the Inspector to create Draw Order Rules.
 
-![](../../.gitbook/assets/screen-shot-2020-09-21-at-11.33.58-am.png)
+![](https://public.rive.app/help/screen-shot-2020-09-21-at-11.33.58-am.png)
 
 The Normal rule is the default order \(based on [Hierarchy](../fundamentals/interface-overview/hierarchy.md) order\). When the radio button next to this rule is active, the shape appears at its default draw order. 
 
@@ -18,7 +18,7 @@ The target must be a drawable item, like a shape. It cannot be a group.
 
 In Animate mode, use the radio button next to the Draw Order Rules to set a key. Note that these are [Hold keys](interpolation-easing.md#hold) as Draw Order cannot be interpolated.  
 
-![](../../.gitbook/assets/draw-order.gif)
+![](https://public.rive.app/help/draw-order.gif)
 
 
 

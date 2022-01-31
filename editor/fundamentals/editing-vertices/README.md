@@ -6,7 +6,7 @@ No matter the type of vector you create, you can edit the vertices by changing t
 
 To enter Edit Vertices mode, either select the shape and hit enter twice, or select a path and hit enter once.
 
-![](../../../.gitbook/assets/edit_verticies_20px.gif)
+![](https://public.rive.app/help/edit_verticies_20px.gif)
 
 After activating Edit Vertices mode, you can select any vertex, reposition it, and edit the bezier handles.
 
@@ -20,7 +20,7 @@ To select a path within a group on the stage, hold `⌘` \(Mac\) or `ctrl` \(Win
 
 ### ‌**Straight**
 
-![](../../../.gitbook/assets/handles_straight%20%281%29.gif)
+![](https://public.rive.app/help/handles_straight%20%281%29.gif)
 
 ‌The default handles are set to straight, which creates straight edges between vertices.
 
@@ -28,23 +28,23 @@ To select a path within a group on the stage, hold `⌘` \(Mac\) or `ctrl` \(Win
 
 The Corner Radius property allows you to round straight corners. This property only appears on vertices that are set to straight. 
 
-![](../../../.gitbook/assets/round_corner.gif)
+![](https://public.rive.app/help/round_corner.gif)
 
 ### ‌**Mirrored**
 
-![](../../../.gitbook/assets/handles_mirrored_20px.gif)
+![](https://public.rive.app/help/handles_mirrored_20px.gif)
 
 ‌Mirrored is the default handle when you create a vertex by clicking and dragging. These handles always keep the same rotation and length.
 
 ### ‌**Detached**
 
-![](../../../.gitbook/assets/detached_20px.gif)
+![](https://public.rive.app/help/detached_20px.gif)
 
 ‌Detached handles allow each handle to have it's own rotation and length.
 
 ### ‌**Asymmetric**
 
-![](../../../.gitbook/assets/handles_asymetric_20px.gif)
+![](https://public.rive.app/help/handles_asymetric_20px.gif)
 
 ‌Asymmetric handles share the same rotation but can have lengths independently of the other.
 

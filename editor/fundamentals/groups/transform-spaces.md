@@ -8,11 +8,11 @@ This technique is a fundamental concept for all motion graphics. To learn more a
 
 ## Transform space example
 
-![](../../../.gitbook/assets/group_1.gif)
+![](https://public.rive.app/help/group_1.gif)
 
 Nest multiple groups to transform your shapes from different locations. In the example above, a group is rotating the Earth, another is rotating the Moon around the Earth, and another is rotating the moon on its axis. 
 
-![](../../../.gitbook/assets/group_2.gif)
+![](https://public.rive.app/help/group_2.gif)
 
 ## 
 
