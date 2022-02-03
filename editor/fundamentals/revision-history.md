@@ -6,7 +6,7 @@ Rive saves your files automatically as you work. Even if multiple people are wor
 
 The Revision History can be accessed from the [Editor Menu](interface-overview/toolbar.md#editor-menu).
 
-![](https://public.rive.app/help/revisionhistory_fixed.gif)
+![](../../.gitbook/assets/revisionhistory_fixed.gif)
 
 ## Restore a revision
 

@@ -2,7 +2,7 @@
 
 Import your assets by dragging and dropping them onto the Rive editor. In doing so, the editor generates an artboard and associated hierarchy for you to begin working with.
 
-![](https://public.rive.app/help/import.gif)
+![](../../.gitbook/assets/import.gif)
 
 ### Assets panel (coming soon)
 
@@ -20,7 +20,7 @@ When exporting files as SVG, exporting with inline style as opposed to CSS will 
 
 When exporting from other design tools, look for the option to retain id's and names of your shapes when you export. This will ensure that your imported file retains the same structure and layer names. Most tools have an option for this, as in the Figma example below.
 
-![Figma's option to include "id" attribute](https://public.rive.app/help/figma_export_id.png)
+![Figma's option to include "id" attribute](../../.gitbook/assets/figma\_export\_id.png)
 
 #### Photoshop:
 
@@ -30,16 +30,16 @@ When exporting from Photoshop, make sure you're only using vector layers. Don't 
 
 When using "Save As" to export an SVG from Illustrator, select "Style Attributes" from the CSS Properties instead of the default option. Thanks to [V.lang on our feedback site for figuring this out](https://feedback.rive.app/122)! Be sure to also disable the "Preserve Illustrator Editing Capabilities" as this will make your file much larger and add data that is not recognized by our importer.&#x20;
 
-![Illustrator's Save As SVG panel](https://public.rive.app/help/image%20%282%29.png)
+![Illustrator's Save As SVG panel](<../../.gitbook/assets/image (2).png>)
 
 #### Known Issues:&#x20;
 
-- Embedded images are ignored, we are planning to implement this (for more info [see here](https://feedback.rive.app/69)).
-- Filters, shaders, and gradient transforms are ignored.&#x20;
-  - We currently cannot provide equal support for this across our runtimes, so this is not supported.
-  - We do support linear and radial gradients, however, which can cover some use cases.
-- Rive does not have a concept of point (pt) or millimeter (mm) sizing. An SVG that uses dimensions provided in pt or mm will have their values converted to pixels (px). Points are converted to 1.33 px and millimeters are converted to 3.78 px.&#x20;
-- SVG provides `inherit` to let stroke and fills to use the color of their ancestors. Rive does not support this and any inherited color defaults to white.
+* Embedded images are ignored, we are planning to implement this (for more info [see here](https://feedback.rive.app/69)).
+* Filters, shaders, and gradient transforms are ignored.&#x20;
+  * We currently cannot provide equal support for this across our runtimes, so this is not supported.
+  * We do support linear and radial gradients, however, which can cover some use cases.
+* Rive does not have a concept of point (pt) or millimeter (mm) sizing. An SVG that uses dimensions provided in pt or mm will have their values converted to pixels (px). Points are converted to 1.33 px and millimeters are converted to  3.78 px.&#x20;
+* SVG provides `inherit` to let stroke and fills to use the color of their ancestors. Rive does not support this and any inherited color defaults to white.
 
 **Coming soon**
 

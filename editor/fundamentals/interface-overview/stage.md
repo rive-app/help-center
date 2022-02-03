@@ -6,7 +6,7 @@ description: >-
 
 # Stage
 
-![](https://public.rive.app/help/stage%20%281%29.png)
+![](../../../.gitbook/assets/stage%20%281%29.png)
 
 ## **Selection**
 
@@ -34,19 +34,19 @@ Use the `Esc` key to quickly navigate up the Hierarchy. This allows you to quick
 
 ### **Panning**
 
-![](https://public.rive.app/help/panning.gif)
+![](../../../.gitbook/assets/panning.gif)
 
 To pan the Stage, right-click and drag your mouse. If you have a trackpad, scroll left and right. Alternatively, hold `Spacebar` to trigger the Pan Tool. With the Pan Tool enabled, click and drag to move to your desired point on the Stage.
 
 ### **Zooming**
 
-![](https://public.rive.app/help/zoom-1.gif)
+![](../../../.gitbook/assets/zoom-1.gif)
 
 With your cursor positioned over the Stage, hold `⌘` / `Ctrl` and scroll your mouse or trackpad to zoom in and out. Alternatively, use the `+` / `-` keys to zoom between preset points. You can quickly revert back to 100% with `⌘` / `Ctrl` and `0`.
 
 ### **Fit**
 
-![](https://public.rive.app/help/fit.gif)
+![](../../../.gitbook/assets/fit.gif)
 
 Tap `F` to simultaneously zoom and position your active artboard to fit within the viewable Stage area. Note that if you have an object within the Hierarchy selected this action will be performed on the object as opposed to the artboard.
 

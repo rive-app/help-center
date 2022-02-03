@@ -4,7 +4,7 @@
 
 Objects and their properties appear on the Timeline once they have been keyed. There are a few different ways to key a property. You can manipulate an object directly on the Stage \(which will set keys for any resulting transformation, like position, rotation, or scale\) or change the property in the Inspector. You can also use the key button that appears next to any property that can be animated. This will set a key for the current value.
 
-![](https://public.rive.app/help/key_buttons.png)
+![](../../.gitbook/assets/key_buttons.png)
 
 Note that the key button has a grey stroke when a key is not set. If the property has been animated, then the property has a blue stroke. If the property has been animated at the current playhead position, then the key button has a blue fill. 
 
@@ -12,7 +12,7 @@ Note that the key button has a grey stroke when a key is not set. If the propert
 
 Keyed objects and their properties appear on rows in the timeline. Keys for properties are shown in a blue fill. If a property \(or multiple properties\) is collapsed, then the key appears filled in grey.
 
-![](https://public.rive.app/help/keys_20px.gif)
+![](../../.gitbook/assets/keys_20px.gif)
 
 You can change a key's position on the timeline by clicking and dragging it to the desired location. Use the grey keys to move all of the keyed properties of an object or use the blue keys to change a single property's location.
 

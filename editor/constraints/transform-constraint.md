@@ -8,19 +8,19 @@ The Transform Constraint allows its owner to copy all the transformation propert
 
 Use the Constraints section of the Inspector to add a Transform Constraint to an object.
 
-![](https://public.rive.app/help/2021-08-05-18.24.28.gif)
+![](../../.gitbook/assets/2021-08-05-18.24.28.gif)
 
 ### 2. Choose a target
 
 Use the new constraint's fly-out menu to select a target for this constraint.
 
-![](https://public.rive.app/help/2021-08-05-18.25.00.gif)
+![](../../.gitbook/assets/2021-08-05-18.25.00.gif)
 
 ### 3. Test that the Transform Constraint is working
 
 Manipulating the target object now causes the constrained object to copy Position, Rotation, and Scale properties.
 
-![](https://public.rive.app/help/2021-08-05-18.26.11.gif)
+![](../../.gitbook/assets/2021-08-05-18.26.11.gif)
 
 ## Strength <a id="target"></a>
 
@@ -30,7 +30,7 @@ A Strength of 0% means the constraint won't have any effect.
 
 A Strength of 50% means half the value from the target will be applied.
 
-![50% Strength](https://public.rive.app/help/2021-08-05-18.28.08.gif)
+![50% Strength](../../.gitbook/assets/2021-08-05-18.28.08.gif)
 
 ## Transform Space
 
@@ -46,15 +46,15 @@ Choose whether this constraint should use World or Local coordinates for the Des
 
 Consider the package resting on the table and the mechanical arm below.
 
-![](https://public.rive.app/help/image%20%283%29.png)
+![](../../.gitbook/assets/image%20%283%29.png)
 
 Add a Transform Constraint to the package and a target group at the end of the arm.
 
-![The target group is a child of the arm hierarchy, so it moves with the arm.](https://public.rive.app/help/2019-01-24-20.13.14.gif)
+![The target group is a child of the arm hierarchy, so it moves with the arm.](../../.gitbook/assets/2019-01-24-20.13.14.gif)
 
 With a Strength of 100%, all the transform properties of the package match the target. Notice how the package moves and rotates correctly with the movement of the arm.
 
-![](https://public.rive.app/help/arm_pickup_package.gif)
+![](../../.gitbook/assets/arm_pickup_package.gif)
 
 Set the Strength to 0% to make the arm drop the package.
 

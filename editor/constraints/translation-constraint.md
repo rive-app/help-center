@@ -8,19 +8,19 @@ The Translation Constraint allows you to set limits on an object's position and/
 
 Use the Constraints section of the Inspector to add a Translation Constraint to an object.
 
-![](https://public.rive.app/help/2021-08-19-15.14.22.gif)
+![](../../.gitbook/assets/2021-08-19-15.14.22.gif)
 
 ### 2. Choose a target
 
 Use the new constraint's fly-out menu to select a target for this constraint.
 
-![](https://public.rive.app/help/2021-08-19-15.43.48.gif)
+![](../../.gitbook/assets/2021-08-19-15.43.48.gif)
 
 ### 3. Test that the Translation Constraint is working
 
 Manipulating the target object now causes the constrained object to copy Position properties.
 
-![](https://public.rive.app/help/2021-08-19-15.47.25.gif)
+![](../../.gitbook/assets/2021-08-19-15.47.25.gif)
 
 ## Strength <a id="target"></a>
 
@@ -48,7 +48,7 @@ Choose whether this constraint should use World or Local coordinates for the Min
 
 Allows the constraint owner to be manually offset from the constraint source.
 
-![](https://public.rive.app/help/2021-08-19-15.49.58.gif)
+![](../../.gitbook/assets/2021-08-19-15.49.58.gif)
 
 ## Copy X &Y
 

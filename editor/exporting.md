@@ -14,7 +14,7 @@ Note that **.riv** files are optimized for runtime so any non-runtime-related da
 
 ### Via the Editor
 
-![](https://public.rive.app/help/screen-shot-2021-04-20-at-3.30.35-pm.png)
+![](../.gitbook/assets/screen-shot-2021-04-20-at-3.30.35-pm.png)
 
 Export your file via the export menu within the toolbar. Select Download from the dropdown menu.
 
@@ -32,7 +32,7 @@ This option downloads a **.rev** file that is intended for backup. It contains a
 
 ### **Via the File Browser**
 
-![](https://public.rive.app/help/export%20%281%29.png)
+![](<../.gitbook/assets/export (1).png>)
 
 Right-click files from within the browser and select Export from the contextual menu. Use marquee selection by clicking and dragging to export multiple files at once.
 
@@ -46,10 +46,10 @@ Rive is all about interactive animation, but sometimes you need a good old-fashi
 
 To render an animation, open up the timeline you want to render (in [Animate Mode](animate-mode/)). Then open up the Export Menu and select Add to Cloud Renderer.
 
-![](https://public.rive.app/help/screen-shot-2021-05-13-at-2.37.39-pm.png)
+![](../.gitbook/assets/screen-shot-2021-05-13-at-2.37.39-pm.png)
 
 This opens up the Cloud Renderer. Add multiple videos to a queue and set them to render either one-by-one or all at once. Our services do the heavy lifting while you continue working.
 
-![](https://public.rive.app/help/screen-shot-2021-05-13-at-2.42.53-pm.png)
+![](../.gitbook/assets/screen-shot-2021-05-13-at-2.42.53-pm.png)
 
 If you're on a team plan, you can remove the "Made with Rive" watermark and set custom properties like Frame Rate, Bitrate, and Size. If you're on the free plan, your render will use the default options.&#x20;
