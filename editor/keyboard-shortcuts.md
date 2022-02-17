@@ -9,7 +9,7 @@
 | Rectangle Tool                                     | `U`      |
 | Ellipse Tool                                       | `O`      |
 | [Pen Tool](fundamentals/pen-tool/)                 | `P`      |
-| [Artboard Tool](fundamentals/artboards/)           | `M`      |
+| [Artboard Tool](fundamentals/artboards/)           | `A`      |
 | [Bone Tool](manipulating-shapes/bones/)            | `B`      |
 | [Group Tool](fundamentals/groups/)                 | `G`      |
 | [Freeze](manipulating-shapes/origin-and-freeze.md) | `Y`      |
@@ -18,7 +18,7 @@
 
 | **Purpose**                                                             | Shortcut                                                                                                                            |
 | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| Switch Mode                                                             | `Tab `                                                                                                                              |
+| Switch Mode                                                             | `Tab`                                                                                                                               |
 | Constrain Shape/Angle                                                   | `Shift`                                                                                                                             |
 | Deep Select                                                             | <p>macOS: <code>⌘</code> + click</p><p>Windows: <code>Ctrl</code> + click</p>                                                       |
 | Select Behind                                                           | `Alt`                                                                                                                               |
