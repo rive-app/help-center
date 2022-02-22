@@ -10,7 +10,6 @@ description: >-
 {% tab title="Web" %}
 ## 1. Add the Rive library
 
-\
 Add a script tag to a web page:
 
 ```javascript
@@ -25,9 +24,9 @@ npm install @rive-app/webgl
 
 // example.js
 import rive from "@rive-app/webgl";
-
-
 ```
+
+
 
 If you need more details and options for a web runtime, checkout the installation section in the [README](https://github.com/rive-app/rive-wasm#installing) docs.
 
@@ -324,51 +323,99 @@ override public func viewDidDisappear(_ animated: Bool) {
 {% tab title="Android" %}
 ## 1. Add the Rive dependency
 
+Add the following dependencies to your `build.gradle` file in your project:
+
 ```groovy
 dependencies {
-    implementation 'app.rive:rive-android:0.1.1'
+    implementation 'app.rive:rive-android:2.0.19'
+    // During initialization, you may need to add a dependency
+    // for Jetpack Startup
+    implementation "androidx.startup:startup-runtime:1.1.0"
 }
 ```
 
-## 2. Add RiveAnimation to your layout
+## 2. Initialize Rive
 
-```markup
-    <app.rive.runtime.kotlin.RiveAnimationView
-        android:id="@+id/my_rive_animation"
+Rive needs to initialize its runtime when your app starts.
 
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+It can be done via an [initializer](https://developer.android.com/topic/libraries/app-startup) that does this for you automatically. The initialization provider can be set up directly in your app's manifest file:
 
-        app:riveUrl="https://cdn.rive.app/animations/vehicles.riv"
-        app:riveFit="COVER" />
+```xml
+<provider
+  android:name="androidx.startup.InitializationProvider"
+  android:authorities="${applicationId}.androidx-startup"
+  android:exported="false"
+  tools:node="merge">
+    <meta-data android:name="app.rive.runtime.kotlin.RiveInitializer"
+      android:value="androidx.startup" />
+</provider>
 ```
 
-## 3. Clean up when done
 
-{% code title="MyRiveActivity.kt" %}
+
+Otherwise, this can be achieved by calling the initializer in code:
+
 ```kotlin
-class MyRiveActivity : AppCompatActivity() {
+AppInitializer.getInstance(applicationContext)
+  .initializeComponent(RiveInitializer::class.java)
+```
 
-    private val animationView by lazy(LazyThreadSafetyMode.NONE) {
-        findViewById<RiveAnimationView>(R.id.my_rive_animation)
-    }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.my_rive)
-    }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        animationView.destroy()
-    }
-}
+If you want to initialize Rive yourself, this can be done in code:
+
+```kotlin
+Rive.init(context)
+```
+
+## 3. Add RiveAnimation to your layout
+
+The simplest way to get a Rive animation into your application is to include it as part of a layout. The following will consist of the Rive file loaded from the raw resources and auto-play its first animation. This assumes you have taken a downloaded `.riv` file (i.e `off_road_car_blog.riv`) and placed it in your raw resources folder.
+
+
+
+{% code title="simple.xml" %}
+```xml
+<app.rive.runtime.kotlin.RiveAnimationView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:riveResource="@raw/off_road_car_blog" />
+
 ```
 {% endcode %}
 
+
+
+Another way to load a Rive file in is by referencing the URL where the asset lives (see Internet Permissions section below for an extra step in setup):
+
+{% code title="simple.xml" %}
+```xml
+<app.rive.runtime.kotlin.RiveAnimationView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:riveUrl="https://cdn.rive.app/animations/vehicles.riv" />
+```
+{% endcode %}
+
+\
+When setting your context views, this might look like
+
+```kotlin
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+
+class SimpleActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.simple)
+    }
+}
+```
+
 ## Internet permissions
 
-This example requires your app to have permission to access the internet:
+If you're retrieving Rive files over a network, your app will need permission to access the internet:
 
 {% code title="AndroidManifest.xml" %}
 ```markup
@@ -377,7 +424,14 @@ This example requires your app to have permission to access the internet:
 ```
 {% endcode %}
 
-This is needed only if you're retrieving Rive files over a network. If you include the files in your Android project, this isn't necessary.
+
+
+Note that this isn't necessary if you include the files in your Android project and load these in as a raw resource.
+
+## Resources
+
+Github: [https://github.com/rive-app/rive-android](https://github.com/rive-app/rive-android)\
+Examples: [https://github.com/rive-app/rive-android/tree/master/app/src/main/java/app/rive/runtime/example](https://github.com/rive-app/rive-android/tree/master/app/src/main/java/app/rive/runtime/example)
 {% endtab %}
 
 {% tab title="React Native" %}
@@ -452,3 +506,4 @@ export class AnimationModule { }
 {% endcode %}
 {% endtab %}
 {% endtabs %}
+
