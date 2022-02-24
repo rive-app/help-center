@@ -267,13 +267,25 @@ class MyRiveAnimation extends StatelessWidget {
 {% tab title="iOS" %}
 ## 1. Add the CocoaPods dependency
 
+Add the following to your Podspec file:
+
 {% code title="Podfile" %}
 ```ruby
-  pod 'RiveRuntime', :git => 'git@github.com:rive-app/test-ios.git'
+  pod 'RiveRuntime'
 ```
 {% endcode %}
 
-## 2. Create a UIViewController and import runtime
+## 2. Importing Rive
+
+Add the following to the top of your file where you utilize the Rive runtime:
+
+```swift
+import RiveRuntime
+```
+
+## 3. Create a UIViewController
+
+If you're using UIKit, a simple way to get started is to start by creating a UIViewController:
 
 ```swift
 import UIKit
@@ -287,7 +299,9 @@ class RiveViewController: UIViewController {
 }
 ```
 
-## 3. Add a RiveView and a RiveFile
+## 4. Add a RiveView and a RiveFile
+
+Next, you can instantiate a `RiveView` and use the `RiveFile` API to load in this example `.riv` asset. Then simply set the `RiveView` as the controller's view when loaded:
 
 ```swift
 import UIKit
