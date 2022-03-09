@@ -4,9 +4,19 @@ Import your assets by dragging and dropping them onto the Rive editor. In doing 
 
 ![](../../.gitbook/assets/import.gif)
 
-### Assets panel (coming soon)
+### Assets panel&#x20;
 
-We'll soon be adding an assets panel to manage and access all your imported assets in a file. See more about this on our [public roadmap](https://feedback.rive.app/116).
+After dragging in your graphics, they now appear in the Assets Panel, located at the bottom of the hierarchy. Drag and drop them onto an artboard to begin using them.
+
+## Updating graphics
+
+You can make updates to your graphics after they've been imported.&#x20;
+
+Do this by selecting the image in the Assets Panel. Notice that the assets properties appear in the inspector.&#x20;
+
+Hit the replace button and when prompted, select the updated image. You'll notice that this updates all instances of the graphic used in the file.&#x20;
+
+
 
 ## Supported formats
 
