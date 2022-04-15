@@ -265,7 +265,7 @@ class MyRiveAnimation extends StatelessWidget {
 {% endtab %}
 
 {% tab title="iOS" %}
-## 1. Add the CocoaPods dependency
+## 1a. Add Rive via Cocoapods
 
 Add the following to your Podspec file:
 
@@ -275,6 +275,10 @@ Add the following to your Podspec file:
 ```
 {% endcode %}
 
+## 1b. Add Rive via Swift Package Manager
+
+To install via Swift Package Manager, in the package finder in xcode, search with the Github repository name: `https://github.com/rive-app/rive-ios`
+
 ## 2. Importing Rive
 
 Add the following to the top of your file where you utilize the Rive runtime:
@@ -283,7 +287,50 @@ Add the following to the top of your file where you utilize the Rive runtime:
 import RiveRuntime
 ```
 
-## 3. Create a UIViewController
+## 3. v2 Runtime Usage
+
+Rive iOS runtimes of versions 2.x.x or later should use the newer patterns for integrating Rive into your iOS applications. This involves some API changes from the pattern in versions 1.x.x.
+
+### 3a. UIKit
+
+#### Set up RiveViewModel w/ Controller
+
+The simplest way of adding Rive to a controller is to make a `RiveViewModel` and set its view as the `RiveView` when it is loaded.
+
+```swift
+class SimpleAnimationViewController: UIViewController {
+    @IBOutlet weak var rview: RiveView!
+    // Load the truck_v7 resource assets
+    var rSimpleVM: RiveViewModel = RiveModel(fileName: "truck_v7")
+    // or choose to load the Rive file in from a URL
+    // var rSimpleVM: RiveViewModel = RiveModel(webURL: "https://cdn.rive.app/animations/vehicles.riv")
+
+    override public func viewDidLoad() {
+        super.viewDidLoad()
+        rSimpleVM.setView(rview)
+    }
+}
+```
+
+### &#x20;3b. SwiftUI
+
+#### Set up RiveViewModel
+
+```swift
+struct SwiftSimpleAnimation: DismissableView {
+    var dismiss: () -> Void = {}
+    
+    var body: some View {
+        RiveViewModel(fileName: "truck").view()
+    }
+}
+```
+
+## 4. v1 Runtime Usage
+
+For UIKit usage, follow the quickstart guidelines below -
+
+### 4a. Create a UIViewController
 
 If you're using UIKit, a simple way to get started is to start by creating a UIViewController:
 
@@ -299,7 +346,7 @@ class RiveViewController: UIViewController {
 }
 ```
 
-## 4. Add a RiveView and a RiveFile
+### 4b. Add a RiveView and a RiveFile
 
 Next, you can instantiate a `RiveView` and use the `RiveFile` API to load in this example `.riv` asset. Then simply set the `RiveView` as the controller's view when loaded:
 
@@ -324,7 +371,7 @@ class RiveViewController: UIViewController {
 }
 ```
 
-## 4. Tidy up once the view is dismissed
+### 4c. Tidy up once the view is dismissed
 
 ```swift
 override public func viewDidDisappear(_ animated: Bool) {
