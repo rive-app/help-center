@@ -90,18 +90,26 @@ Putting this altogether, you can load this example Rive animation in one HTML fi
 {% tab title="React" %}
 ## Install the rive-react package
 
+The Rive React runtime allows for 2 main options based on which backing renderer you need.
+
+* **(Recommended)** `@rive-app/react-canvas` - Wraps the `@rive-app/canvas` dependency. Unless you specifically need a `WebGL` backing renderer, we recommend you use this dependency when using Rive in your apps for quick and fast usage.
+* `@rive-app/react-webgl` - Wraps the `@rive-app/webgl` dependency. In the future, we may have advanced rendering features that are only supported by using `WebGL` . We are currently working on improving the performance with this backing renderer.
+
 {% code title="" %}
 ```bash
-npm i --save rive-react
+npm i --save @rive-app/react-canvas
 ```
 {% endcode %}
 
+\
+Before v2.0.0, the React runtime was powered by the `rive-react` dependency and is still published today. Despite being actively published, It contains a larger bundle, as it has dependencies for both `@rive-app/canvas` and `@rive-app/webgl` . Starting in v2.0.0, we recommend you switch to one of the above dependencies instead.
+
 ## Component
 
-Rive React provides a basic component as it's default import for displaying simple animations.
+Rive React provides a basic component as its default import for displaying simple animations.
 
 ```javascript
-import Rive from 'rive-react'
+import Rive from '@rive-app/react-canvas'
 
 export const Simple = () => (
   <Rive src="https://cdn.rive.app/animations/vehicles.riv" />
@@ -112,16 +120,16 @@ export const Simple = () => (
 
 * `src`: File path or URL to the .riv file to display.
 * `artboard`: _(optional)_ Name to display.
-* `animations`: _(optional)_ Name or list of names of animtions to play.
+* `animations`: _(optional)_ Name or list of names of animations to play.
 * `layout`: _(optional)_ Layout object to define how animations are displayed on the canvas.
-* _All attributes and eventHandlers that can be passed to a `div` element can also be passed to the `Rive` component and used in the same manner._
+* _All attributes and event handlers that can be passed to a `div` element can also be passed to the `Rive` component and used in the same manner._
 
 ## useRive Hook
 
 For more advanced usage, the `useRive` hook is provided. The hook will return a component and a `Rive` object which gives you control of the current rive file.
 
 ```javascript
-import { useRive } from 'rive-react';
+import { useRive } from '@rive-app/react-canvas';
 
 export default function Simple() {
   const { rive, RiveComponent } = useRive({
@@ -141,7 +149,7 @@ export default function Simple() {
 ### Parameters
 
 * `riveParams`: Set of parameters that are passed to the Rive.js `Rive` class constructor. `null` and `undefined` can be passed to conditionally display the .riv file.
-* `opts`: Rive React specific options.
+* `opts`: Rive React-specific options.
 
 ### Return Values
 
@@ -149,7 +157,7 @@ export default function Simple() {
 * `rive`: A Rive.js `Rive` object. This will return as null until the .riv file has fully loaded.
 * `canvas`: HTMLCanvasElement object, on which the .riv file is rendering.
 * `setCanvasRef`: A callback ref that can be passed to your own canvas element, if you wish to have control over the rendering of the Canvas element.
-*   `setContainerRef`: A callback ref that can be passed to a container element that wraps the canvas element, if you which to have control over the rendering of the container element.
+*   `setContainerRef`: A callback ref that can be passed to a container element that wraps the canvas element, if you wish to have control over the rendering of the container element.
 
     _For the vast majority of use cases, you can just the returned `RiveComponent` and don't need to worry about `setCanvasRef` and `setContainerRef`._
 
@@ -159,20 +167,20 @@ export default function Simple() {
 * `buffer?`: _(optional)_ ArrayBuffer containing the raw bytes from a .riv file. One of `src` or `buffer` must be provided.
 * `artboard?`: _(optional)_ Name of the artboard to use.
 * `animations?`: _(optional)_ Name or list of names of animations to play.
-* `stateMachines?`: _(optional)_ Name of list of names of state machines to load.
+* `stateMachines?`: _(optional)_ Name or list of names of state machines to load.
 * `layout?`: _(optional)_ Layout object to define how animations are displayed on the canvas. See our [web runtime docs](https://github.com/rive-app/rive-wasm#layout) for more details.
 * `autoplay?`: _(optional)_ If `true`, the animation will automatically start playing when loaded. Defaults to false.
-* `onLoad?`: _(optional)_ Callback that get's fired when the .rive file loads .
-* `onLoadError?`: _(optional)_ Callback that get's fired when an error occurs loading the .riv file.
-* `onPlay?`: _(optional)_ Callback that get's fired when the animation starts playing.
-* `onPause?`: _(optional)_ Callback that get's fired when the animation pauses.
-* `onStop?`: _(optional)_ Callback that get's fired when the animation stops playing.
-* `onLoop?`: _(optional)_ Callback that get's fired when the animation completes a loop.
-* `onStateChange?`: _(optional)_ Callback that get's fired when a state change occurs.
+* `onLoad?`: _(optional)_ Callback that gets fired when the .rive file loads.
+* `onLoadError?`: _(optional)_ Callback that gets fired when an error occurs loading the .riv file.
+* `onPlay?`: _(optional)_ Callback that gets fired when the animation starts playing.
+* `onPause?`: _(optional)_ Callback that gets fired when the animation pauses.
+* `onStop?`: _(optional)_ Callback that gets fired when the animation stops playing.
+* `onLoop?`: _(optional)_ Callback that gets fired when the animation completes a loop.
+* `onStateChange?`: _(optional)_ Callback that gets fired when a state change occurs.
 
 ### opts
 
-* `useDevicePixelRatio`: _(optional)_ If `true`, the hook will scale the resolution of the animation based the [devicePixelRatio](https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio). Defaults to `true`. NOTE: Requires the `setContainerRef` ref callback to be passed to a element wrapping a canvas element. If you use the `RiveComponent`, then this will happen automatically.
+* `useDevicePixelRatio`: _(optional)_ If `true`, the hook will scale the resolution of the animation based on the [devicePixelRatio](https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio). Defaults to `true`. NOTE: Requires the `setContainerRef` ref callback to be passed to an element wrapping a canvas element. If you use the `RiveComponent`, then this will happen automatically.
 * `fitCanvasToArtboardHeight`: _(optional)_ If `true`, then the canvas will resize based on the height of the artboard. Defaults to `false`.
 {% endtab %}
 
