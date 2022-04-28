@@ -195,7 +195,7 @@ The following snippet demonstrates how to create a simple Rive component in [Vue
 </template>
 
 <script>
-import { Rive, Layout } from '@rive-app/webgl';
+import { Rive, Layout } from '@rive-app/canvas';
 
 export default {
   name: 'Rive',
