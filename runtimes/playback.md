@@ -225,7 +225,7 @@ You can also provide callback to receive notification when certain events have o
             <button id="wipers">Start Wipers</button>
         </div>
 
-        <script src="/dist/rive.min.js"></script>
+        <script src="https://unpkg.com/@rive-app/canvas@1.0.47"></script>
         <script>
             // animation will show the first frame but not start playing
             const truck = new rive.Rive({
@@ -280,7 +280,7 @@ You can also provide callback to receive notification when certain events have o
 {% tab title="React" %}
 ```javascript
 import { useState, useEffect } from "react";
-import { useRive, Layout, Fit } from "rive-react";
+import { useRive, Layout, Fit } from "@rive-app/react-canvas";
 
 export default function App() {
   const [truckButtonText, setTruckButtonText] = useState("Start Truck");

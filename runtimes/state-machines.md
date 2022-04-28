@@ -69,7 +69,7 @@ The web runtime provides an `onLoad` callback that's run when the Rive file is l
 <div id="button">
     <canvas id="canvas" width="1000" height="500"></canvas>
 </div>
-<script src="/dist/rive.min.js"></script>
+<script src="https://unpkg.com/@rive-app/canvas@1.0.47"></script>
 <script>
     const button = document.getElementById('button');
 
@@ -129,11 +129,10 @@ const r = new rive.Rive({
 {% endtab %}
 
 {% tab title="React" %}
-
 The react runtime provides the `useStateMachineInput` hook to make the process of retrieving a state machine input much simplier.
 
 ```javascript
-import { useRive, useStateMachineInput } from "rive-react";
+import { useRive, useStateMachineInput } from "@rive-app/react-canvas";
 
 export default function Simple() {
   const { rive, RiveComponent } = useRive({
@@ -154,15 +153,16 @@ export default function Simple() {
 ```
 
 The above example show a `Trigger` input. The three types of inputs are:
-- `StateMachineInputType.Trigger` which has a `fire()` function
-- `StateMachineInputType.Number` which has a `value` number property
-- `StateMachineInputType.Boolean` which has a `value` boolean property
+
+* `StateMachineInputType.Trigger` which has a `fire()` function
+* `StateMachineInputType.Number` which has a `value` number property
+* `StateMachineInputType.Boolean` which has a `value` boolean property
 
 We can set a callback to determine when the state machine changes.
 
 ```javascript
 import { useEffect } from 'react';
-import { useRive, useStateMachineInput } from "rive-react";
+import { useRive, useStateMachineInput } from "@rive-app/react-canvas";
 
 export default function Simple() {
   const { rive, RiveComponent } = useRive({
@@ -197,7 +197,6 @@ export default function Simple() {
 }
 ```
 {% endtab %}
-
 
 {% tab title="Flutter" %}
 State machine controllers are used to retrieve a state machine's inputs which can then be used to interact with, and drive the state of, the state machine.
@@ -339,4 +338,3 @@ If the input is a trigger you can access it with the export as `rivInput`:
 _You can listen to the change in the input with the `change` Ouput._
 {% endtab %}
 {% endtabs %}
-

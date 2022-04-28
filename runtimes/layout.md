@@ -16,7 +16,7 @@ Most runtimes have a `Layout` object. You typically provide layout data when ins
 <div>
     <canvas id="canvas" width="800" height="600"></canvas>
 </div>
-<script src="https://unpkg.com/rive-js"></script>
+<script src="https://unpkg.com/@rive-app/canvas@1.0.47"></script>
 <script>
 
     // Fill the canvas, cropping Rive if necessary
@@ -53,9 +53,8 @@ Most runtimes have a `Layout` object. You typically provide layout data when ins
 {% endtab %}
 
 {% tab title="React" %}
-
 ```javascript
-import Rive, { Layout, Fit, Alignment } from 'rive-react';
+import Rive, { Layout, Fit, Alignment } from '@rive-app/react-canvas';
 
 export const Simple = () => (
   <Rive
@@ -66,9 +65,9 @@ export const Simple = () => (
 ```
 
 With the `useRive` hook:
-```javascript
 
-import { useRive, Layout, Fit, Alignment } from 'rive-react';
+```javascript
+import { useRive, Layout, Fit, Alignment } from '@rive-app/react-canvas';
 
 export default function Example() {
   const { RiveComponent } = useRive({
@@ -88,7 +87,7 @@ export default function Example() {
 {% endtab %}
 
 {% tab title="Flutter" %}
-Rive's Flutter runtime doesn't have a `Layout` object; instead fit and alignment can be passed in through the `RiveAnimation` and `Rive` constructors. The fit and alignment options behave like their counterparts in Flutter \(see [`BoxFit`](https://api.flutter.dev/flutter/painting/BoxFit-class.html) and [`Size`](https://api.flutter.dev/flutter/dart-ui/Size-class.html) as examples\).
+Rive's Flutter runtime doesn't have a `Layout` object; instead fit and alignment can be passed in through the `RiveAnimation` and `Rive` constructors. The fit and alignment options behave like their counterparts in Flutter (see [`BoxFit`](https://api.flutter.dev/flutter/painting/BoxFit-class.html) and [`Size`](https://api.flutter.dev/flutter/dart-ui/Size-class.html) as examples).
 
 Bounds options are absent; Flutter's layout engine and options are the preferred way to handle positioning Rive content.
 
@@ -141,7 +140,7 @@ Alignment determines how the content aligns with respect to the view bounds. The
 * `TopRight`
 * `CenterLeft`
 * `CenterRight`
-* `BottomLeft` 
+* `BottomLeft`&#x20;
 * `BottomCenter`
 * `BottomRight`
 
@@ -153,4 +152,3 @@ The bounds for the area in which the Rive content will render can be set by prov
 * `minY`
 * `maxX`
 * `maxY`
-

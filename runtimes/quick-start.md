@@ -13,17 +13,17 @@ description: >-
 Add a script tag to a web page:
 
 ```javascript
-<script src="https://unpkg.com/@rive-app/webgl"></script>
+<script src="https://unpkg.com/@rive-app/canvas@1.0.47"></script>
 ```
 
 \
 Alternatively, you can import our recommended web runtime package via NPM in your project:
 
 ```
-npm install @rive-app/webgl
+npm install @rive-app/canvas
 
 // example.js
-import rive from "@rive-app/webgl";
+import rive from "@rive-app/canvas";
 ```
 
 
@@ -70,7 +70,7 @@ Putting this altogether, you can load this example Rive animation in one HTML fi
   <body>
     <canvas id="canvas" width="500" height="500"></canvas>
 
-    <script src="https://unpkg.com/@rive-app/webgl"></script>
+    <script src="https://unpkg.com/@rive-app/canvas@1.0.47"></script>
     <script>
       new rive.Rive({
         src: "https://cdn.rive.app/animations/vehicles.riv",
