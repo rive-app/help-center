@@ -507,14 +507,14 @@ Examples: [https://github.com/rive-app/rive-android/tree/master/app/src/main/jav
 ## 1. Add the Rive dependency
 
 ```bash
-npm install --save rive-react-native
+npm install rive-react-native
+# or for Yarn
+yarn add rive-react-native
 ```
 
-## 2. Create iOS bridging header
+## 2. Pod install
 
-* open the iOS project file in XCode `open ios/<name>.xcodeproj`
-* create a new empty swift file.&#x20;
-* confirm "Create Bridging Header"
+`cd` inside the `ios` folder and run `pod install` (if deploying to iOS)
 
 ## 3. Add your rive component
 
