@@ -8,13 +8,11 @@ description: >-
 
 ## **Editor menu**
 
-![](<../../../.gitbook/assets/editor\_menu (1).png>)
-
 The editor menu is located to the left of the transform tools menu. This menu allows you to change the file name, select your revision history, as well as link you to the help center and feedback page.
 
-## **Transform Tools menu**
+![](<../../../.gitbook/assets/Screen Shot 2022-05-25 at 1.36.49 PM.png>)
 
-![](../../../.gitbook/assets/transform\_tools.png)
+## **Transform Tools menu**
 
 The Transform Tools menu houses tools that allow you to alter the transform properties of an object directly on the Stage.
 
@@ -22,23 +20,53 @@ The Select tool allows you to click and drag in an empty space to select multipl
 
 When you have objects selected with the Select tool, you'll see the Gizmo which gives you the power to change the position, scale, and rotation of the object.
 
+![](<../../../.gitbook/assets/Screen Shot 2022-05-25 at 1.47.04 PM.png>)
+
+## Artboard Menu
+
+The Artboard menu houses all of the tools you need to create new Artboards, nest existing ones, and create groups.
+
+![](<../../../.gitbook/assets/Screen Shot 2022-05-25 at 1.39.23 PM.png>)
+
 ## **Create Tools menu**
 
-![](../../../.gitbook/assets/create\_tools\_menu.png)
+The Create Tools menu houses all of the tools you'll need to create vector artwork.
 
-The Create Tools menu is located on the toolbar, just to the right of the Transform Tools menu. This menu houses all of the tools that you need to create and rig your graphics. This menu also includes the [artboard](../artboards/) tool.
+![](<../../../.gitbook/assets/Screen Shot 2022-05-25 at 3.46.23 PM.png>)
+
+## **Bones Menu**
+
+The bones menu houses both the bone tool and weight tool.
+
+![](<../../../.gitbook/assets/Screen Shot 2022-05-25 at 3.46.27 PM.png>)
 
 ## **Export menu**
 
-![](../../../.gitbook/assets/export\_menu.png)
+![](<../../../.gitbook/assets/Screen Shot 2022-05-25 at 3.46.32 PM.png>)
 
-The Export menu allows you to download your file for use with the Rive runtimes. In the future, you'll be able to render your files from here too.
+The Export menu allows you to export your file in a variety of formats to suit your needs.
+
+
+
+The Download menu gives you the option to export your file, ready to use with our runtimes.
+
+
+
+Use the Share Link option to create a shareable link that is viewable by anyone with the link, including non-Rive members. This is a great way to share progress with a client or embed your file.
+
+
+
+Publish to Community allows you to post your animations and State Machines to the community.
+
+
+
+The cloud renderer allows you to export your animations as a variety of file formats such as MP4 and gif.
 
 ## **View Options menu**
 
-![](../../../.gitbook/assets/view.png)
-
 The View Options menu is located on the right side of the toolbar. This menu allows you to customize your window so that you can see exactly what you want when you want.
+
+![](<../../../.gitbook/assets/Screen Shot 2022-05-25 at 3.48.30 PM.png>)
 
 ## **Mode toggle**
 

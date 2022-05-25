@@ -24,7 +24,7 @@ This option downloads a **.riv** file that is compatible with the latest major v
 
 #### Previous
 
-This option downloads a **.riv **file that is compatible with the previous major version of the Rive runtimes (number displayed on the right). Use this if you haven't updated to the latest major version.&#x20;
+This option downloads a **.riv** file that is compatible with the previous major version of the Rive runtimes (number displayed on the right). Use this if you haven't updated to the latest major version.&#x20;
 
 #### For backup
 
@@ -52,4 +52,19 @@ This opens up the Cloud Renderer. Add multiple videos to a queue and set them to
 
 ![](../.gitbook/assets/screen-shot-2021-05-13-at-2.42.53-pm.png)
 
-If you're on a team plan, you can remove the "Made with Rive" watermark and set custom properties like Frame Rate, Bitrate, and Size. If you're on the free plan, your render will use the default options.&#x20;
+## Share Links
+
+![](<../.gitbook/assets/Screen Shot 2022-05-25 at 4.05.16 PM (1).png>)
+
+We've recently added the ability to generate share links. Share links give you the ability to share a file with someone else without giving them access to edit the file. This is a great way to show off your animations and state machines.
+
+![](<../.gitbook/assets/Screen Shot 2022-05-25 at 4.05.30 PM (1).png>)
+
+### Share Link
+
+Use this link to share a copy of your file with a client or friend.&#x20;
+
+### Embed Link
+
+Us this link to embed your file in other applications like Twitter and Notion.
+

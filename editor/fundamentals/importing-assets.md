@@ -20,7 +20,7 @@ Hit the replace button and when prompted, select the updated image. You'll notic
 
 ## Supported formats
 
-Currently, Rive supports importing SVG (see limitations below), png, and jpeg/jpg formats. We'll be adding a range of other formats soon!
+Currently, Rive supports importing SVG (see limitations below), png,  PSD, and jpeg/jpg formats. We'll be adding a range of other formats soon!
 
 ## SVG Tips
 

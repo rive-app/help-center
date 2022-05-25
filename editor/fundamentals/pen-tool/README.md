@@ -8,8 +8,6 @@ The Pen tool allows you to create custom vector paths as well as add additional 
 
 The Pen tool allows you to create custom vector shapes. Activate the Pen tool by finding it under the Create Tools menu or by using the `V` shortcut.&#x20;
 
-![](../../../.gitbook/assets/pen-tool.gif)
-
 Click on the stage to place vertices.
 
 ![](<../../../.gitbook/assets/pen-tool-create (1) (1).gif>)
