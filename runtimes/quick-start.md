@@ -273,7 +273,7 @@ class MyRiveAnimation extends StatelessWidget {
 {% endtab %}
 
 {% tab title="iOS" %}
-## 1a. Add Rive via Cocoapods
+## 1a. Add Rive via CocoaPods
 
 Add the following to your Podspec file:
 
@@ -295,97 +295,117 @@ Add the following to the top of your file where you utilize the Rive runtime:
 import RiveRuntime
 ```
 
+
+
 ## 3. v2 Runtime Usage
 
-Rive iOS runtimes of versions 2.x.x or later should use the newer patterns for integrating Rive into your iOS applications. This involves some API changes from the pattern in versions 1.x.x.
+Rive iOS runtimes of versions 2.x.x or later should use the newer patterns for integrating Rive into your iOS applications. This involves some API changes from the pattern in versions 1.x.x. \
+The primary object you'll use is a `RiveViewModel`. It is responsible for creating and interacting with Rive assets.&#x20;
 
-### 3a. UIKit
 
-#### Set up RiveViewModel w/ Controller
 
-The simplest way of adding Rive to a controller is to make a `RiveViewModel` and set its view as the `RiveView` when it is loaded.
+### 3a. SwiftUI
+
+#### Set up RiveViewModel w/ View
 
 ```swift
-class SimpleAnimationViewController: UIViewController {
-    @IBOutlet weak var rview: RiveView!
-    // Load the truck_v7 resource assets
-    var rSimpleVM: RiveViewModel = RiveModel(fileName: "truck_v7")
-    // or choose to load the Rive file in from a URL
-    // var rSimpleVM: RiveViewModel = RiveModel(webURL: "https://cdn.rive.app/animations/vehicles.riv")
+struct AnimationView: View {
+    var body: some View {
+        RiveViewModel(fileName: "cool_rive_animation").view()
+    }
+}
+```
+
+###
+
+### 3b. UIKit - Storyboard
+
+#### Set up RiveViewModel w/ Controller formatted on a Storyboard
+
+The simplest way of adding Rive to a controller using Storyboards is to make a `RiveViewModel`, and set its view to be the `RiveView` you made in the Storyboard.
+
+```swift
+class AnimationViewController: UIViewController {
+    @IBOutlet weak var riveView: RiveView!
+    var simpleVM = RiveViewModel(fileName: "cool_rive_animation")
 
     override public func viewDidLoad() {
-        super.viewDidLoad()
-        rSimpleVM.setView(rview)
+        simpleVM.setView(riveView)
     }
 }
 ```
 
-### &#x20;3b. SwiftUI
+###
 
-#### Set up RiveViewModel
+### 3c. UIKit - Programmatic&#x20;
+
+#### Set up RiveViewModel w/ Controller from scratch in code
+
+You can also add Rive to a controller purely with code by making the `RiveViewModel`, telling it to create a fresh `RiveView` and then adding it to the view hierarchy.
 
 ```swift
-struct SwiftSimpleAnimation: DismissableView {
-    var dismiss: () -> Void = {}
+class AnimationViewController: UIViewController {
+    var simpleVM = RiveViewModel(fileName: "cool_rive_animation")
     
-    var body: some View {
-        RiveViewModel(fileName: "truck").view()
+    override func viewWillAppear(_ animated: Bool) {
+        let riveView = simpleVM.createRiveView()
+        view.addSubview(riveView)
+        riveView.frame = view.frame
     }
 }
 ```
 
-## 4. v1 Runtime Usage
 
-For UIKit usage, follow the quickstart guidelines below -
 
-### 4a. Create a UIViewController
+## 4. Playback Controls
 
-If you're using UIKit, a simple way to get started is to start by creating a UIViewController:
+By default `RiveViewModel` will automatically play the animation or state machine you've given it. Very often that will be all that is needed to display your Rive asset. However, we have some convenient controls for when you want more fine grained control of when it plays and doesn't.&#x20;
+
+
+
+### 4a. Play
+
+If you set auto play to false you can play the active animation or state machine very simply.
 
 ```swift
-import UIKit
-import RiveRuntime
-
-class RiveViewController: UIViewController {
-
-    override public func loadView() {
-        super.loadView()
-    }
-}
+simpleVM.play()
 ```
 
-### 4b. Add a RiveView and a RiveFile
 
-Next, you can instantiate a `RiveView` and use the `RiveFile` API to load in this example `.riv` asset. Then simply set the `RiveView` as the controller's view when loaded:
+
+If there are multiple animations on the active artboard you can play a specific one.
 
 ```swift
-import UIKit
-import RiveRuntime
-
-class RiveViewController: UIViewController {
-    let url = "https://cdn.rive.app/animations/vehicles.riv"
-
-    override public func loadView() {
-        super.loadView()
-
-        let view = RiveView()
-        guard let riveFile = RiveFile(httpUrl: url, with: view) else {
-            fatalError("Unable to load RiveFile")
-        }
-
-        view.configure(riveFile)
-        self.view = view
-    }
-}
+simpleVM.play(animationName: "Fancy Animation")
 ```
 
-### 4c. Tidy up once the view is dismissed
+
+
+### 4b. Pause, Stop, Reset
+
+Based on certain events in your app you may want to adjust the playback further.&#x20;
 
 ```swift
-override public func viewDidDisappear(_ animated: Bool) {
-    (view as! RiveView).stop()
-    super.viewDidDisappear(animated)
-}
+simpleVM.pause()
+simpleVM.stop()
+simpleVM.reset()
+```
+
+
+
+### 4c. Inputs
+
+Some Rive assets that use state machines are configured to accept inputs which trigger unique behavior. Triggering these events is easily done through the `RiveViewModel`.
+
+```swift
+// Something that displays 0 - 5 stars
+starsVM.setInput("Rating Changed", value: 5)
+
+// Something that toggles back and forth
+toggleVM.setInput("Switch Flipped", value: true)
+
+// Something that animates a burst of confetti when triggered
+confettiVM.triggerInput("Celebrate")
 ```
 {% endtab %}
 
