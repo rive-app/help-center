@@ -10,7 +10,7 @@ description: >-
 
 ## Toolbar
 
-![](../../../.gitbook/assets/tool\_bar.png)
+![](<../../../.gitbook/assets/Screen Shot 2022-05-25 at 3.41.40 PM.png>)
 
 The Toolbar displays the tools you have available to manipulate and create items on the stage. In addition to these tools, the toolbar houses a variety of options to allow you to customize the look of your file.
 
@@ -22,9 +22,9 @@ Read more on the Toolbar page.
 
 ## **Hierarchy**
 
-![](../../../.gitbook/assets/hierarchy\_b.png)
-
 All the stage objects, assets, controls, and animations that make up your file appear in the Hierarchy.
+
+![](<../../../.gitbook/assets/Screen Shot 2022-05-26 at 2.45.21 PM.png>)
 
 {% content-ref url="hierarchy.md" %}
 [hierarchy.md](hierarchy.md)
@@ -32,9 +32,9 @@ All the stage objects, assets, controls, and animations that make up your file a
 
 ## **Inspector**
 
-![](../../../.gitbook/assets/inspector-copy.png)
-
 The Inspector allows you to adjust the properties for the currently selected object. In Animate mode, you will only see properties that can be animated.
+
+![](<../../../.gitbook/assets/Screen Shot 2022-05-26 at 2.47.28 PM.png>)
 
 Read more on the Inspector page.
 
@@ -44,9 +44,9 @@ Read more on the Inspector page.
 
 ## **Stage**
 
-![](../../../.gitbook/assets/stage.png)
-
 The stage refers to the central area between the toolbar, the hierarchy, and the inspector. Here you can create the artboards that are the foundations of your designs and animations within Rive.
+
+![](<../../../.gitbook/assets/Screen Shot 2022-05-26 at 2.54.29 PM.png>)
 
 Read more on the Stage page
 
@@ -56,7 +56,7 @@ Read more on the Stage page
 
 ## **Timeline**
 
-![](<../../../.gitbook/assets/timeline (2).png>)
+![](<../../../.gitbook/assets/Screen Shot 2022-05-26 at 3.06.33 PM.png>)
 
 The Timeline surfaces from the bottom of the screen upon entering animate mode. Here you can create new animations, access playback controls, and settings, and set keyframes for object parameters. Select an animation from the left-hand list to switch between the respective timelines.\
 

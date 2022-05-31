@@ -6,7 +6,7 @@ description: >-
 
 # Toolbar
 
-## **Editor menu**
+## Editor Menu
 
 The editor menu is located to the left of the transform tools menu. This menu allows you to change the file name, select your revision history, as well as link you to the help center and feedback page.
 
@@ -70,7 +70,7 @@ The View Options menu is located on the right side of the toolbar. This menu all
 
 ## **Mode toggle**
 
-![](../../../.gitbook/assets/mode\_toggle.png)
+![](<../../../.gitbook/assets/Screen Shot 2022-05-26 at 3.25.12 PM (1).png>)
 
 Located above the inspector. The mode toggle allows you to switch between Design and Animate mode. Press `Tab` to quickly switch modes.\
 \

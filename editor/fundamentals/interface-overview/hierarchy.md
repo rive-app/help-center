@@ -16,15 +16,15 @@ Each row in the Hierarchy represents an item on the stage. A circle button with 
 
 Any type of object can be a parent or a child of another type of object. When an object is a child of another object, it inherits all the transformations of its parent.
 
-![](../../../.gitbook/assets/parent_child_relationships_b.gif)
+![](<../../../.gitbook/assets/2022-05-26 15.33.22.gif>)
 
-The depth of these parent/child relationships is infinite, so you can keep stacking \(or nesting\) items to create grandchildren, great-grandchildren, and so on.
+The depth of these parent/child relationships is infinite, so you can keep stacking (or nesting) items to create grandchildren, great-grandchildren, and so on.
 
 ## Change parent/child relationships
 
 To change the relationship between objects, drag and drop the object onto or out of another.
 
-![](../../../.gitbook/assets/parent_child_change_.gif)
+![](<../../../.gitbook/assets/2022-05-26 15.36.10.gif>)
 
 ## Draw Order
 
@@ -32,9 +32,9 @@ In addition to displaying the relationships between objects, the Hierarchy shows
 
 ## Change Draw Order
 
-![](../../../.gitbook/assets/hierarchy-order.gif)
+![](<../../../.gitbook/assets/2022-05-26 15.42.05.gif>)
 
-To change the Draw Order of objects on the stage, drag and drop the shape, or group of shapes above or below another in the list. 
+To change the Draw Order of objects on the stage, drag and drop the shape, or group of shapes above or below another in the list.&#x20;
 
 The Draw Order can be animated, but the process is a bit more in-depth. Read about it on the Animating Draw Order page.
 
@@ -42,13 +42,12 @@ The Draw Order can be animated, but the process is a bit more in-depth. Read abo
 
 You can reverse the entire draw order of an Artboard by right-clicking on any object in the hierarchy and selecting Reverse All.
 
-![](../../../.gitbook/assets/reverse_draw_order.gif)
+![](<../../../.gitbook/assets/2022-05-26 15.42.46.gif>)
 
 If you only need to reverse the Draw Order of a group, right-click on an object within a group and select Reverse.
 
 ## Renaming
 
-![](../../../.gitbook/assets/parent_child_name.gif)
+![](<../../../.gitbook/assets/2022-05-26 15.45.26.gif>)
 
 You can change the name of any object by double-clicking the name.
-
