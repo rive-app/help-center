@@ -62,8 +62,9 @@
   * [Translation Constraint](editor/constraints/translation-constraint.md)
 * [Keyboard Shortcuts](editor/keyboard-shortcuts.md)
 * [Exporting](editor/exporting.md)
+* [Share Links](editor/share-links.md)
 
-## Tutorials <a href="tutorial" id="tutorial"></a>
+## Tutorials <a href="#tutorial" id="tutorial"></a>
 
 * [Bouncing ball](tutorial/bouncing-ball.md)
 * [Tom Morello](tutorial/tom-morello.md)
