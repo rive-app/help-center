@@ -112,7 +112,7 @@ Listeners allow you to detect clicks and hovers to manipulate a State Machine's 
 
 
 
-Create a new Listener by expanding the Listeners tab and hitting the plus button.
+Create a new listener by expanding the Listeners tab and hitting the plus button.
 
 ![](<../.gitbook/assets/2022-06-10 14.45.22 (1).gif>)
 
@@ -122,7 +122,7 @@ A listener requires you to configure it before it will work by adding a target, 
 
 ### **Target**
 
-A target tells the Listener what object needs to be interacted with to manipulate an input. Listeners can target any object on the stage.
+A target tells the listener what object needs to be interacted with to manipulate an input. Listeners can target any object on the stage.
 
 ![](<../.gitbook/assets/2022-06-10 14.46.46.gif>)
 
@@ -132,7 +132,7 @@ This dropdown allows you to select the type of listener you want to use. The lis
 
 ![](<../.gitbook/assets/2022-06-10 14.47.51.gif>)
 
-The current list of Listeners includes:
+The current list of listeners includes:
 
 * Pointer down- click/tap down
 * Pointer up - click/tap up
