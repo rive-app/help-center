@@ -78,6 +78,7 @@
 * [Downloads](runtimes/overview.md)
 * [Advanced Topics](runtimes/advanced\_topics/README.md)
   * [Format](runtimes/advanced\_topics/format.md)
+* [Feature Support](runtimes/feature-support.md)
 
 ## Community
 
