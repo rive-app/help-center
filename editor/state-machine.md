@@ -104,13 +104,9 @@ An Additive Blend State allows you to map any input directly to any animation. T
 
 A state machine layer can have only one active state at a time. Add in additional layers to your state machine to play multiple states simultaneously.
 
-
-
 ## Listeners
 
 Listeners allow you to detect clicks and hovers to manipulate a State Machine's Inputs. That means designers and animators can create even richer interactivity directly in the Rive Editor without writing any code.
-
-
 
 Create a new listener by expanding the Listeners tab and hitting the plus button.
 
@@ -118,27 +114,25 @@ Create a new listener by expanding the Listeners tab and hitting the plus button
 
 A listener requires you to configure it before it will work by adding a target, listener type, and the input you want it to manipulate.
 
+### **Listener Target**
 
-
-### **Target**
-
-A target tells the listener what object needs to be interacted with to manipulate an input. Listeners can target any object on the stage.
+A target tells the listener what object needs to be interacted with to manipulate an input. Listeners can target any object in the artboard.
 
 ![](<../.gitbook/assets/2022-06-10 14.46.46.gif>)
 
-### Listener type
+### Listener Type
 
-This dropdown allows you to select the type of listener you want to use. The listener type tells your listeners what action it should respond to.&#x20;
+The Listener Type dropdown tells your listener what type of pointer action it should respond to.
 
 ![](<../.gitbook/assets/2022-06-10 14.47.51.gif>)
 
-The current list of listeners includes:
+The current list of listeners are:
 
 * Pointer down- click/tap down
 * Pointer up - click/tap up
 * Pointer enter - pointer enters the target area
 * Pointer exit - pointer exits the target area
 
-### Input
+### Set Input
 
-The input area tells the listener what input to fire, and what value it should have. Multiple listeners can use the same input but set a different value.
+The input area tells the listener what input to change, and what value it should have. You can set multiple inputs on the same listener and you can use inputs across multiple listeners.
