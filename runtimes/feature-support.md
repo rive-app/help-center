@@ -27,6 +27,10 @@ We may include notes on migrating to newer versions if a new feature warrants re
 * `@rive-app/webgl` - There is a new flag here, `useOffscreenRenderer` which is off by default. This flag will allow you to work around the various browser constraints on the number of WebGL contexts created. We **highly recommend** setting this option to `true` when instantiating Rive in the high-level API. See more here: [https://github.com/rive-app/rive-wasm#other-notes](https://github.com/rive-app/rive-wasm#other-notes).
 * `rive-react-native` - Starting in `v3.0.0`, it will have a minimum iOS `14.0` support
 
+{% hint style="info" %}
+No extra code is needed to support listeners, and you do not need to invoke listeners via event listener/detector code at runtime. If the Rive file has a listener as part of the state machine at design time, the runtime library has implicit event listener/detector code to trigger the listeners at the appropriate time
+{% endhint %}
+
 ## Raster Asset Support
 
 | Runtime                      | Version                         |
