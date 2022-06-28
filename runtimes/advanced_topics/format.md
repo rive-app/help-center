@@ -12,30 +12,30 @@ A binary reader for Rive runtime files needs to be able to read these data types
 Byte order is little endian.
 {% endhint %}
 
-| Type | Description |
-| :--- | :--- |
-| variable unsigned integer | LEB128 variable encoded unsigned integer \(abbreviated to varuint going forward\) |
-| unsigned integer | 4 byte unsigned integer |
-| string | unsigned integer followed by utf-8 encoded byte array of provided length |
-| float | 32 bit floating point number encoded in 4 byte IEEE 754 |
+| Type                      | Description                                                                     |
+| ------------------------- | ------------------------------------------------------------------------------- |
+| variable unsigned integer | LEB128 variable encoded unsigned integer (abbreviated to varuint going forward) |
+| unsigned integer          | 4 byte unsigned integer                                                         |
+| string                    | unsigned integer followed by utf-8 encoded byte array of provided length        |
+| float                     | 32 bit floating point number encoded in 4 byte IEEE 754                         |
 
 {% hint style="info" %}
 Reference Binary Readers
 
-[Dart](https://github.com/rive-app/rive-flutter/blob/master/lib/src/utilities/binary_buffer/binary_reader.dart) [C++ Reader](https://github.com/rive-app/rive-cpp/blob/master/src/core/binary_reader.cpp) [C++ Decoder](https://github.com/rive-app/rive-cpp/blob/master/include/core/reader.h)
+[Dart](https://github.com/rive-app/rive-flutter/blob/master/lib/src/utilities/binary\_buffer/binary\_reader.dart) [C++ Reader](https://github.com/rive-app/rive-cpp/blob/master/src/core/binary\_reader.cpp) [C++ Decoder](https://github.com/rive-app/rive-cpp/blob/master/include/core/reader.h)
 {% endhint %}
 
 ### Header
 
-The header is the first thing written into the file and provides basic information for the runtime to verify that it can read this file. A ToC \(table of contents/field definition\) is provided which allows the runtime to understand how it can skip over properties and objects it may not understand. This is part of what makes the format resilient to future changes/feature additions to the editor. An older runtime can at least attempt to load an older file and display it without the objects and properties it doesn't understand.
+The header is the first thing written into the file and provides basic information for the runtime to verify that it can read this file. A ToC (table of contents/field definition) is provided which allows the runtime to understand how it can skip over properties and objects it may not understand. This is part of what makes the format resilient to future changes/feature additions to the editor. An older runtime can at least attempt to load an older file and display it without the objects and properties it doesn't understand.
 
-| Value | Type |
-| :--- | :--- |
-| Fingerprint | 4 bytes |
-| Major Version | varuint |
-| Minor Version | varuint |
-| File ID | varuint |
-| ToC | byte aligned bit array |
+| Value         | Type                   |
+| ------------- | ---------------------- |
+| Fingerprint   | 4 bytes                |
+| Major Version | varuint                |
+| Minor Version | varuint                |
+| File ID       | varuint                |
+| ToC           | byte aligned bit array |
 
 #### Fingerprint
 
@@ -47,10 +47,10 @@ The file fingerprint just lets the importer quickly sanity check that it's actua
 
 #### Major Version
 
-Runtimes are compatible with only a single Major Rive export format version. The current major format is 7. If a 7 runtime encounters a 6 file, it will immediately error and not attempt to read any further content as the format is understood to be fundamentally different. This is provided as a last resort tool for Rive to fundamentally change its export format if it needs to. We try very hard to do this as rarely as possible. We recently needed to bump from 6 to 7 to add support for the State Machine, but in doing so we changed the format to be more resilient to such changes in the future. The editor currently supports exporting both major version 6 and major version 7 files, however files exported with major version 6 will not include State Machine support.
+Runtimes are compatible with only a single Major Rive export format version. The current major format is 7. If a 7 runtime encounters a 6 file, it will immediately error and not attempt to read any further content as the format is understood to be fundamentally different. This is provided as a last resort tool for Rive to fundamentally change its export format if it needs to. We try very hard to do this as rarely as possible. We recently needed to bump from 6 to 7 to add support for the State Machine, but in doing so we changed the format to be more resilient to such changes in the future. The editor currently supports exporting both major version 6 and major version 7 files, however, files exported with major version 6 will not include State Machine support.
 
 {% hint style="warning" %}
-Major versions are not cross compatible. A major version 6 runtime cannot read major version 7 files. Similarly, a major version 7 files cannot read a major version 6 file.
+Major versions are not cross-compatible. A major version 6 runtime cannot read major version 7 files. Similarly, a major version 7 files cannot read a major version 6 file.
 {% endhint %}
 
 #### Minor Version
@@ -60,12 +60,12 @@ Minor version changes are compatible with each other provided the major version 
 Example Version Compatibility
 
 | Runtime Version | File Version | Compatibility |
-| :--- | :--- | :--- |
-| 6.1 | 6.0 | Yes |
-| 6.1 | 6.2 | Yes |
-| 6.1 | 7.0 | No |
-| 7.0 | 6.1 | No |
-| 7.0 | 7.1 | Yes |
+| --------------- | ------------ | ------------- |
+| 6.1             | 6.0          | Yes           |
+| 6.1             | 6.2          | Yes           |
+| 6.1             | 7.0          | No            |
+| 7.0             | 6.1          | No            |
+| 7.0             | 7.1          | Yes           |
 
 #### File ID
 
@@ -73,7 +73,7 @@ This is a unique identifier for the file that in the future will be able to be u
 
 #### ToC
 
-The Table of Contents section of the header is a list of the properties in the file along with their backing type. This allows the runtime to read past properties it wishes to skip or doesn't understand. It does this by providing the backing type for each property id.
+The Table of Contents section of the header is a list of the properties in the file along with their backing type. This allows the runtime to read past properties it wishes to skip or doesn't understand. It does this by providing the backing type for each property ID.
 
 #### Field Types
 
@@ -92,13 +92,13 @@ The intention here is to provide the known property type keys and their backing 
 The two bits are interpreted as one of four backing types.
 
 | Backing Type | 2 bit value |
-| :--- | :--- |
-| Uint/Bool | 0 |
-| String | 1 |
-| Float | 2 |
-| Color | 3 |
+| ------------ | ----------- |
+| Uint/Bool    | 0           |
+| String       | 1           |
+| Float        | 2           |
+| Color        | 3           |
 
-As an example, if there were a file with three known property types \(property 12 a uint value, property 16 a string value, and 6 a bool value\) the exporter would serialize data as follows:
+As an example, if there were a file with three known property types (property 12 a uint value, property 16 a string value, and 6 a bool value) the exporter would serialize data as follows:
 
 varuint: 12
 
@@ -115,7 +115,7 @@ varuint: 0
 2 bits: 0
 
 {% hint style="info" %}
-Reference ToC Deserializers [Flutter](https://github.com/rive-app/rive-flutter/blob/bbee63bb6c791dcabd0cd9d9788ca7ec4783fddb/lib/src/rive_core/runtime/runtime_header.dart#L43-L60) [C++](https://github.com/rive-app/rive-cpp/blob/4512406300b7333ba543cd87930e67a24c2fc715/include/runtime_header.hpp#L76-L104)
+Reference ToC Deserializers [Flutter](https://github.com/rive-app/rive-flutter/blob/bbee63bb6c791dcabd0cd9d9788ca7ec4783fddb/lib/src/rive\_core/runtime/runtime\_header.dart#L43-L60) [C++](https://github.com/rive-app/rive-cpp/blob/4512406300b7333ba543cd87930e67a24c2fc715/include/runtime\_header.hpp#L76-L104)
 {% endhint %}
 
 #### Baseline properties
@@ -132,22 +132,22 @@ All objects and properties are defined in a set of files we call core defs for [
 
 #### Object
 
-A core object is represented by its Core type key. For example, a Shape has [core type key 3](https://github.com/rive-app/rive-cpp/blob/4512406300b7333ba543cd87930e67a24c2fc715/dev/defs/shapes/shape.json#L4). Similarly you can see the generated code for the C++ runtime also [identifies a Shape with the same key](https://github.com/rive-app/rive-cpp/blob/4512406300b7333ba543cd87930e67a24c2fc715/include/generated/shapes/shape_base.hpp#L12).
+A core object is represented by its Core type key. For example, a Shape has [core type key 3](https://github.com/rive-app/rive-cpp/blob/4512406300b7333ba543cd87930e67a24c2fc715/dev/defs/shapes/shape.json#L4). Similarly you can see the generated code for the C++ runtime also [identifies a Shape with the same key](https://github.com/rive-app/rive-cpp/blob/4512406300b7333ba543cd87930e67a24c2fc715/include/generated/shapes/shape\_base.hpp#L12).
 
 #### Properties
 
-Properties are similarly represented by a Core type key. These are unique across all objects, so [property key 13](https://github.com/rive-app/rive-cpp/blob/4512406300b7333ba543cd87930e67a24c2fc715/dev/defs/node.json#L16) will always be the X value of a Node object, and it [matches in the runtime](https://github.com/rive-app/rive-cpp/blob/4512406300b7333ba543cd87930e67a24c2fc715/include/generated/node_base.hpp#L33). A Node's X value is known to be a floating point value so when it is encountered [it will be decoded as such](https://github.com/rive-app/rive-cpp/blob/4512406300b7333ba543cd87930e67a24c2fc715/include/generated/node_base.hpp#L66-L68). Property key 0 is reserved as a null terminator \(meaning we are done reading properties for the current object\).
+Properties are similarly represented by a Core type key. These are unique across all objects, so [property key 13](https://github.com/rive-app/rive-cpp/blob/4512406300b7333ba543cd87930e67a24c2fc715/dev/defs/node.json#L16) will always be the X value of a Node object, and it [matches in the runtime](https://github.com/rive-app/rive-cpp/blob/4512406300b7333ba543cd87930e67a24c2fc715/include/generated/node\_base.hpp#L33). A Node's X value is known to be a floating point value so when it is encountered [it will be decoded as such](https://github.com/rive-app/rive-cpp/blob/4512406300b7333ba543cd87930e67a24c2fc715/include/generated/node\_base.hpp#L66-L68). Property key 0 is reserved as a null terminator (meaning we are done reading properties for the current object).
 
 ### Example Serialized Object
 
-| Data | Type/Size | Description |
-| :--- | :--- | :--- |
-| 2 | varuint | object of type 2 \(Node\) |
-| 13 | varuint | X property for the Node |
-| 100.0 | 4 byte float | the X value for the Node |
-| 14 | varuint | Y property for the Node |
-| 22.0 | 4 byte float | the Y value for the Node |
-| 0 | varuint | Null terminator. Done reading properties and have completed reading Node. |
+| Data  | Type/Size    | Description                                                               |
+| ----- | ------------ | ------------------------------------------------------------------------- |
+| 2     | varuint      | object of type 2 (Node)                                                   |
+| 13    | varuint      | X property for the Node                                                   |
+| 100.0 | 4 byte float | the X value for the Node                                                  |
+| 14    | varuint      | Y property for the Node                                                   |
+| 22.0  | 4 byte float | the Y value for the Node                                                  |
+| 0     | varuint      | Null terminator. Done reading properties and have completed reading Node. |
 
 ### Context
 
@@ -158,6 +158,5 @@ Objects are always provided in context of each other. A Shape will always be pro
 Objects inside the Artboard can be parented to other objects in the Artboard. This mapping is more complex and requires identifiers to find the parent. The identifiers are provided as a [core def property](https://github.com/rive-app/rive-cpp/blob/4512406300b7333ba543cd87930e67a24c2fc715/dev/defs/component.json#L28-L38). The value is always an unsigned integer representing the index within the Artboard of the ContainerComponent derived object that makes a valid parent.
 
 {% hint style="info" %}
-For specifics around import context, you can review the ImportStack pattern used in the File reader. [Dart](https://github.com/rive-app/rive-flutter/blob/bbee63bb6c791dcabd0cd9d9788ca7ec4783fddb/lib/src/rive_file.dart#L101) [C++](https://github.com/rive-app/rive-cpp/blob/4512406300b7333ba543cd87930e67a24c2fc715/src/file.cpp#L137)
+For specifics around import context, you can review the ImportStack pattern used in the File reader. [Dart](https://github.com/rive-app/rive-flutter/blob/bbee63bb6c791dcabd0cd9d9788ca7ec4783fddb/lib/src/rive\_file.dart#L101) [C++](https://github.com/rive-app/rive-cpp/blob/4512406300b7333ba543cd87930e67a24c2fc715/src/file.cpp#L137)
 {% endhint %}
-

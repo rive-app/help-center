@@ -14,7 +14,7 @@ By creating an account on the Service (an **“Account”**), accepting an invit
 
 ### 2. Account Registration
 
-You may access certain portions of our Service on a limited, view-only basis without creating an Account or logging in, such as for example when a user shares Content publicly.  But in order to use most functions of the Service, you must create an Account and become a registered User. You must provide us with complete and accurate information and keep it up-to-date, including a valid email address and, if you purchase a Subscription, all required billing information.
+You may access certain portions of our Service on a limited, view-only basis without creating an Account or logging in, such as, for example, when a user shares Content publicly.  But in order to use most functions of the Service, you must create an Account and become a registered User. You must provide us with complete and accurate information and keep it up-to-date, including a valid email address and, if you purchase a Subscription, all required billing information.
 
 If you create an account on behalf of an entity, you represent and warrant that you have the authority to enter into these Terms on behalf of such entity.  If you create an Account on behalf of an entity but do not have the authority to bind the entity to these Terms, then you as an individual are the User.
 
@@ -65,7 +65,7 @@ You may change the type of Subscription at any time by (i) emailing us at suppor
 
 ### 3. Payment Methods
 
-a. **Credit Card Authorization.**  By purchasing a Subscription, you give us permission to charge your credit card or other approved method of payment for all fees incurred by you for your Subscription.  Rive does not store your credit card information itself but instead relies on it’s third-party credit card processor.  By purchasing a Subscription, you give us permission to share the applicable payment information with our third-party credit card processor.
+a. **Credit Card Authorization.**  By purchasing a Subscription, you give us permission to charge your credit card or other approved method of payment for all fees incurred by you for your Subscription.  Rive does not store your credit card information itself but instead relies on its third-party credit card processor.  By purchasing a Subscription, you give us permission to share the applicable payment information with our third-party credit card processor.
 
 b. **Invoicing.** Rive may, in its sole discretion, agree in writing to permit certain users to pay via invoice.  Any such invoice will be due within 15 days of receipt thereof, payable in U.S. Dollars. If you fail to make payment on time, Rive reserves the right, in addition to taking any other action at law or equity, to (i) charge interest on past due amounts at 1.0% per month or the highest interest rate allowed by law, whichever is less, and to charge all expenses of recovery, and (ii) terminate the applicable Account. You are solely responsible for all taxes, fees, duties and governmental assessments (except for taxes based on Rive's net income) that are imposed or become due in connection with your Subscription.
 

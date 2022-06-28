@@ -20,7 +20,7 @@ Hit the replace button and when prompted, select the updated image. You'll notic
 
 ## Supported formats
 
-Currently, Rive supports importing SVG (see limitations below), png,  PSD, and jpeg/jpg formats. We'll be adding a range of other formats soon!
+Currently, Rive supports importing SVG (see limitations below), png, PSD, and jpeg/jpg formats. We'll be adding a range of other formats soon!
 
 ## SVG Tips
 
@@ -28,7 +28,7 @@ SVG is a very flexible and feature-rich format. We aim to support SVG as best we
 
 When exporting files as SVG, exporting with inline style as opposed to CSS will work best for our importer.
 
-When exporting from other design tools, look for the option to retain id's and names of your shapes when you export. This will ensure that your imported file retains the same structure and layer names. Most tools have an option for this, as in the Figma example below.
+When exporting from other design tools, look for the option to retain ID's and names of your shapes when you export. This will ensure that your imported file retains the same structure and layer names. Most tools have an option for this, as in the Figma example below.
 
 ![Figma's option to include "id" attribute](../../.gitbook/assets/figma\_export\_id.png)
 
@@ -48,8 +48,8 @@ When using "Save As" to export an SVG from Illustrator, select "Style Attributes
 * Gradient transforms are ignored.&#x20;
   * We currently cannot provide equal support for this across our runtimes, so this is not supported.
   * We do support linear and radial gradients, however, which can cover some use cases.
-* Rive does not have a concept of point (pt) or millimeter (mm) sizing. An SVG that uses dimensions provided in pt or mm will have their values converted to pixels (px). Points are converted to 1.33 px and millimeters are converted to  3.78 px.&#x20;
-* SVG provides `inherit` to let stroke and fills to use the color of their ancestors. Rive does not support this and any inherited color defaults to white.
+* Rive does not have a concept of point (pt) or millimeter (mm) sizing. An SVG that uses dimensions provided in pt or mm will have its values converted to pixels (px). Points are converted to 1.33 px and millimeters are converted to  3.78 px.&#x20;
+* SVG provides `inherit` to let stroke and fills use the color of their ancestors. Rive does not support this and any inherited color defaults to white.
 * Other unsupported SVG features:
   * `stroke-dasharray` - you may see a solid stroke line instead
   * `mask` -  we treat this like clipping

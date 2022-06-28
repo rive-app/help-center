@@ -4,16 +4,14 @@ Rive is free for individuals and supports paid plans for teams. Teams allow you 
 
 ## Individual plan
 
-Every user that signs up for Rive has an individual area where they can create unlimited private files.
+Every user that signs up for Rive has an individual area where they can create a maximum of 3 files.
 
 **Free**
 
 ## Studio plan
 
-The Studio plan allows you to create a space where you and other members of your team can share files and collaborate in real-time.
+The Studio plan allows you to create a space where you and other members of your team can share files and collaborate in real-time. All paid accounts have unlimited files.
 
-**$14/mo** per user billed yearly  
+**$14/mo** per user billed yearly\
 **$21/mo** per user billed monthly
-
-
 

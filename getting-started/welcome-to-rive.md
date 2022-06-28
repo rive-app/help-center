@@ -8,7 +8,7 @@ Have questions? [Join us on Discord](https://discord.com/invite/FGjmaTr) for mor
 
 ## Create an account
 
-Create an account to get started with Rive. Once set up, you'll be able to create as many files as you like, all privately stored within your personal directory. Your account also enables you to join teams to collaborate with your peers, remix and share files with the wider community, and access our in-app tuition material.
+Create an account to get started with Rive. Once set up, you'll be able to create a maximum of 3 files with the Free plan and as many files as you like with a paid Studio plan. All your files are privately stored within your personal directory. Your account also enables you to join teams to collaborate with your peers, remix and share files with the wider community, and access our in-app tuition material.
 
 You can sign up via Google, Facebook, or email.
 
@@ -22,7 +22,7 @@ The Rive format and runtimes are all open-source and available through the MIT l
 
 ## File browser
 
-Upon signing up and logging in you'll arrive at the home tab. This is where you can access and organize both yours and your team's Rive files. You'll find the primary navigation points on the left-hand side:
+Upon signing up and logging in you'll arrive at the home tab. This is where you can access and organize both your and your team's Rive files. You'll find the primary navigation points on the left-hand side:
 
 **Search (coming soon)**\
 ****A global search across personal and team files.
@@ -43,10 +43,10 @@ Upon signing up and logging in you'll arrive at the home tab. This is where you 
 ****All your personal Rive files.
 
 **Your teams**\
-****All the teams you're apart of, and the files associated with them.
+****All the teams you're a member of, and the files associated with them.
 
 ## Create a new file
 
-To create a new file, select **your files** from the navigation column, and select the **add** action in the top-right hand corner. Selecting **New file** from the dropdown will create a file and open it in a new tab.
+To create a new file, select **your files** from the navigation column, and select the **add** action in the top-right-hand corner. Selecting **New file** from the dropdown will create a file and open it in a new tab.
 
 Alternatively, you can select the quick-start action directly from the navigation pane itself.
