@@ -8,9 +8,10 @@ Your account will be canceled immediately and we delete all your data 90 days af
 
 Content that you have contributed to a team or that other users have remixed from the Community will not be deleted.
 
-If you are the owner of a team, access to the team will be suspended for all members. If you want the team to continue, please transfer ownership of before canceling.
+If you are the owner of a team, access to the team will be suspended for all members. If you want the team to continue, please transfer ownership of the team before canceling.
 
-Take a look at our [Terms of Service](../../legal/terms-of-service.md#1-account-cancellation) for full details on this. 
+Take a look at our [Terms of Service](../../legal/terms-of-service.md#1-account-cancellation) for full details on this.&#x20;
 
-{% page-ref page="../../legal/terms-of-service.md" %}
-
+{% content-ref url="../../legal/terms-of-service.md" %}
+[terms-of-service.md](../../legal/terms-of-service.md)
+{% endcontent-ref %}
