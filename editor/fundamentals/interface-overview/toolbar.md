@@ -20,11 +20,27 @@ The Select tool allows you to click and drag in an empty space to select multipl
 
 When you have objects selected with the Select tool, you'll see the Gizmo which gives you the power to change the position, scale, and rotation of the object.
 
+## **Artboard Menu**
+
+**The artboard menu houses the tools you'll need to create new artboards, nest existing artboards, and create groups.**
+
+## **Create Tools menu**
+
 ![](<../../../.gitbook/assets/Screen Shot 2022-05-25 at 1.47.04 PM.png>)
+
+The Create Tools menu is located on the toolbar, just to the right of the Transform Tools menu. This menu houses all of the tools that you need to create vector graphics.
 
 ## Artboard Menu
 
 The Artboard menu houses all of the tools you need to create new Artboards, nest existing ones, and create groups.
+
+
+
+Use the Download menu to download your file, ready to use with our runtimes.
+
+
+
+Use the Share Link option to generate a shareable link to your file. This is great if you want to share a file with your client, or as a way to embed your file.
 
 ![](<../../../.gitbook/assets/Screen Shot 2022-05-25 at 1.39.23 PM.png>)
 
@@ -44,7 +60,7 @@ The bones menu houses both the bone tool and weight tool.
 
 ![](<../../../.gitbook/assets/Screen Shot 2022-05-25 at 3.46.32 PM.png>)
 
-The Export menu allows you to export your file in a variety of formats to suit your needs.
+The Export menu allows you to export your file in various ways to meet your needs.
 
 
 

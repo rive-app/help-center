@@ -50,6 +50,7 @@
 * [Manipulating Shapes](editor/manipulating-shapes/README.md)
   * [Bones](editor/manipulating-shapes/bones/README.md)
     * [Bone Tips](editor/manipulating-shapes/bones/tips-and-best-practices.md)
+  * [Meshes](editor/manipulating-shapes/meshes.md)
   * [Clipping](editor/manipulating-shapes/clipping.md)
   * [Trim Path](editor/manipulating-shapes/trim-path.md)
   * [Freeze and Origin](editor/manipulating-shapes/origin-and-freeze.md)
