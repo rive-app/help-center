@@ -124,7 +124,7 @@ A target tells the listener what object needs to be interacted with to manipulat
 
 The Listener Type dropdown tells your listener what type of pointer action it should respond to.
 
-![](<../.gitbook/assets/2022-06-10 14.47.51.gif>)
+![](<../.gitbook/assets/2022-07-05 09.15.30.gif>)
 
 The current list of listeners are:
 
@@ -132,7 +132,20 @@ The current list of listeners are:
 * Pointer up - click/tap up
 * Pointer enter - pointer enters the target area
 * Pointer exit - pointer exits the target area
+* Pointer move - pointer moves in the target area
 
-### Set Input
+### Listener action
 
-The input area tells the listener what input to change, and what value it should have. You can set multiple inputs on the same listener and you can use inputs across multiple listeners.
+Listener actions tell our listener what to do when the listener parameters are met.
+
+
+
+**Input Change**
+
+Tells the listener to change the desired input when conditions are met.
+
+
+
+**Align Target**
+
+Aligns the target with the mouse cursor.
