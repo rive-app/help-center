@@ -63,8 +63,4 @@ Share links also work great for social media! Check out the steps below on how t
 
 ### Managing share links
 
-In the modal where the 3 share link options are presented, you also have the option to manage all the share links you have generated. Here, you can see when the share link was generated, and have the ability to toggle off the active state. By toggling this state off, the link to your Rive creation will make it non-public.\
-\
-Additionally, in the manage share links modal, you will see all the different share link URL's you have generated.
-
-You can also navigate straight to share links management here when signed in: [https://rive.app/profile/?section=share%20links](https://rive.app/profile/?section=share%20links).
+Visit the [Share Links](https://rive.app/profile/?section=share%20links) section of your settings to manage the links you've generated. You can disable a share link by setting its Active toggle to off.
