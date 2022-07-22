@@ -154,23 +154,23 @@ The runtime provides the following enums to set on layout parameters:\
 
 
 * Fit
-  * `.fitFill`
-  * `.fitContain`
-  * `.fitCover`
-  * `.fitFitWidth`
-  * `.fitFitHeight`
-  * `.fitScaleDown`
-  * `.fitNone`
+  * `.fill`
+  * `.contain`
+  * `.cover`
+  * `.fitWidth`
+  * `.fitHeight`
+  * `.scaleDown`
+  * `.noFit`
 * Alignment
-  * `.alignmentTopLeft`
-  * `.alignmentTopCenter`
-  * `.alignmentTopRight`
-  * `.alignmentCenterLeft`
-  * `.alignmentCenter`
-  * `.alignmentCenterRight`
-  * `.alignmentBottomLeft`
-  * `.alignmentBottomCenter`
-  * `.alignmentBottomRight`
+  * `.topLeft`
+  * `.topCenter`
+  * `.topRight`
+  * `.centerLeft`
+  * `.center`
+  * `.centerRight`
+  * `.bottomLeft`
+  * `.bottomCenter`
+  * `.bottomRight`
 
 
 
@@ -180,28 +180,28 @@ The following example shows how to set layout parameters and switch them at runt
 
 ```swift
 struct SwiftLayout: View {
-    @State private var fit = Fit.fitContain
-    @State private var alignment = Alignment.alignmentCenter
+    @State private var fit: RiveFit = .contain
+    @State private var alignment: RiveAlignment = .center
     
     var body: some View {
         VStack {
-            RiveViewModel(fileName: "off_road_car_blog", fit: fit, alignment: alignment).view()
+            RiveViewModel(fileName: "fancy_rive_file", fit: fit, alignment: alignment).view()
         }
         HStack {
             Text("Some Fit Examples")
         }
         HStack {
-            Button("Fill", action: {fit = .fitFill})
-            Button("Contain", action: {fit = .fitContain})
-            Button("Cover", action: {fit = .fitCover})
+            Button("Fill") { fit = .fill }
+            Button("Contain") { fit = .contain }
+            Button("Cover") { fit = .cover }
         }
         HStack {
             Text("Some Alignment Examples")
         }
         HStack {
-            Button("Top Left", action: {alignment = .alignmentTopLeft})
-            Button("Top Center", action: {alignment = .alignmentTopCenter})
-            Button("Top Right", action: {alignment = .alignmentTopRight})
+            Button("Top Left") { alignment = .topLeft }
+            Button("Top Center") { alignment = .topCenter }
+            Button("Top Right") { alignment = .topRight }
         }
     }
 }
@@ -214,7 +214,7 @@ The following example shows how to set layout parameters and switch them at runt
 ```swift
 class LayoutViewController: UIViewController {
     @IBOutlet weak var riveView: RiveView!
-    var viewModel = RiveViewModel(fileName: "truck_v7")
+    var viewModel = RiveViewModel(fileName: "fancy_rive_file")
     
     override func viewDidLoad() {
         viewModel.setView(riveView)
@@ -228,34 +228,34 @@ class LayoutViewController: UIViewController {
         setAlignment(name: sender.currentTitle!)
     }
     
-    func setFit(name: String = "") {
-        var fit: Fit = .fitContain
+    func setFit(name: String) {
+        var fit: RiveFit = .contain
         switch name {
-        case "Fill": fit = .fitFill
-        case "Contain": fit = .fitContain
-        case "Cover": fit = .fitCover
-        case "Fit Width": fit = .fitFitWidth
-        case "Fit Height": fit = .fitFitHeight
-        case "Scale Down": fit = .fitScaleDown
-        case "None": fit = .fitNone
-        default: fit = .fitContain
+        case "Fill": fit = .fill
+        case "Contain": fit = .contain
+        case "Cover": fit = .cover
+        case "Fit Width": fit = .fitWidth
+        case "Fit Height": fit = .fitHeight
+        case "Scale Down": fit = .scaleDown
+        case "None": fit = .noFit
+        default: fit = .contain
         }
         viewModel.fit = fit
     }
     
-    func setAlignment(name: String = "") {
-        var alignment: Alignment = .alignmentCenter
+    func setAlignment(name: String) {
+        var alignment: RiveAlignment = .center
         switch name {
-        case "Top Left": alignment = .alignmentTopLeft
-        case "Top Center": alignment = .alignmentTopCenter
-        case "Top Right": alignment = .alignmentTopRight
-        case "Center Left": alignment = .alignmentCenterLeft
-        case "Center": alignment = .alignmentCenter
-        case "Center Right": alignment = .alignmentCenterRight
-        case "Bottom Left": alignment = .alignmentBottomLeft
-        case "Bottom Center": alignment = .alignmentBottomCenter
-        case "Bottom Right": alignment = .alignmentBottomRight
-        default: alignment = .alignmentCenter
+        case "Top Left": alignment = .topLeft
+        case "Top Center": alignment = .topCenter
+        case "Top Right": alignment = .topRight
+        case "Center Left": alignment = .centerLeft
+        case "Center": alignment = .center
+        case "Center Right": alignment = .centerRight
+        case "Bottom Left": alignment = .bottomLeft
+        case "Bottom Center": alignment = .bottomCenter
+        case "Bottom Right": alignment = .bottomRight
+        default: alignment = .center
         }
         viewModel.alignment = alignment
     }

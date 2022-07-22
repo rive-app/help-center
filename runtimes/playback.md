@@ -662,10 +662,17 @@ Along with playing animations, you similarly have the ability to pause, stop, an
 
 Playing without&#x20;
 
-* `play(animationName: String? = nil, loop: Loop = .loopAuto, direction: Direction = .directionAuto)`
+* `play(animationName: String? = nil, loop: Loop = .autoLoop, direction: Direction = .autoDirection)`
   * `animationName` - Name of the animation to play
-  * `loop` - Loop mode to play the animation in
+  * `loop` - Loop mode to play the animation in. Possible values listed below:
+    * `oneShot` - plays animation through once
+    * `loop` - plays through animation and repeats from the set starting time
+    * `pingPong` - plays animation from start -> end, then end -> start on repeat
+    * `autoLoop` (default) - plays through the loop setting set on the animation
   * `direction` - Direction to play the animation in
+    * `backwards` - plays through animation timeline backward
+    * `forwards` - plays through animation timeline forwards
+    * `autoDirection` - plays through direction set on the animation
 * `pause()`
 * `stop()`
 * `reset()`
@@ -722,7 +729,7 @@ class ToggleViewModel: RiveViewModel {
   }
   
   init() {
-      super.init(fileName: "toggle", animationName: startAnimation, fit: .fitCover)
+      super.init(fileName: "toggle", animationName: startAnimation, fit: .cover)
   }
   
   func view(_ action: ((Bool) -> Void)? = nil) -> some View {

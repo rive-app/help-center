@@ -606,8 +606,8 @@ class SimpleAnimation: RiveViewModel {
     }
     
     func stateMachine(_ stateMachine: RiveStateMachineInstance, didChangeState stateName: String) {
-        var stateMachineNames = [String]()
-        var stateMachineStates = [String]()
+        var stateMachineNames: [String] = []
+        var stateMachineStates: [String] = []
         stateMachineNames.append(stateMachine.name())
         stateMachineStates.append(stateName)
         ...

@@ -96,5 +96,8 @@ See subsequent runtime pages to learn how to control animation playback, state m
 ## Resources
 
 Github: [https://github.com/rive-app/rive-ios](https://github.com/rive-app/rive-ios)\
-Example: [https://github.com/rive-app/rive-ios/tree/main/Example-iOS](https://github.com/rive-app/rive-ios/tree/main/Example-iOS)\
-Free course from Meng To: [https://designcode.io/swiftui-rive](https://designcode.io/swiftui-rive)&#x20;
+Examples:&#x20;
+
+* [https://github.com/rive-app/rive-ios/tree/main/Example-iOS](https://github.com/rive-app/rive-ios/tree/main/Example-iOS)
+* [https://github.com/rive-app/rive-ios/tree/main/Demo-App](https://github.com/rive-app/rive-ios/tree/main/Demo-App)
+* Free course from Meng To: [https://designcode.io/swiftui-rive](https://designcode.io/swiftui-rive)&#x20;
