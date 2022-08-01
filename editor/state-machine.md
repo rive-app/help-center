@@ -106,7 +106,7 @@ A state machine layer can have only one active state at a time. Add in additiona
 
 ## Listeners
 
-Listeners allow you to detect clicks and hovers to manipulate a State Machine's Inputs. That means designers and animators can create even richer interactivity directly in the Rive Editor without writing any code.
+Listeners allow you to detect clicks and hovers to change a State Machine's Inputs. That means designers and animators can create interactivity directly in the Rive Editor without writing code.
 
 Create a new listener by expanding the Listeners tab and hitting the plus button.
 
@@ -118,11 +118,15 @@ A listener requires you to configure it before it will work by adding a target, 
 
 A target tells the listener what object needs to be interacted with to manipulate an input. Listeners can target any object in the artboard.
 
+{% hint style="info" %}
+Tip: if you have an object selected when you create a listener, that object will automatically be configured as your target.
+{% endhint %}
+
 ![](<../.gitbook/assets/2022-06-10 14.46.46.gif>)
 
 ### Listener Type
 
-The Listener Type dropdown tells your listener what type of pointer action it should respond to.
+The Listener Type dropdown determines what pointer action it should respond to.
 
 ![](<../.gitbook/assets/2022-07-05 09.15.30.gif>)
 
@@ -136,7 +140,7 @@ The current list of listeners are:
 
 ### Listener action
 
-Listener actions tell our listener what to do when the listener parameters are met.
+Listener actions determine what to do when the listener parameters are met.
 
 
 
