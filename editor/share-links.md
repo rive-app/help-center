@@ -4,19 +4,21 @@ description: Learn how to share your Rive creations
 
 # Share Links
 
-## Sharing with others
+Share the current version of the file you're working with share links. Note that this is not the same as giving someone access to the live file with all its revision history. This link will be a frozen version of the file in its current state. If you make changes to the file, you'll need to generate a new share link.&#x20;
 
-There are a number of ways to share your Rive creation with others. One of which is the "Share Links" button in the export menu dropdown of the Rive editor. These links can be shared with anyone you send them to.
+## Creating a share link
 
-<img src="../.gitbook/assets/Screen Shot 2022-05-19 at 2.48.22 PM.png" alt="" data-size="original">
+Generate a share link from the Export menu. This link can be shared with anyone, not just your team members.
 
-Once you click this option, a new modal will appear where you can choose which artboard and animation or state machine to play.
+![](<../.gitbook/assets/CleanShot 2022-08-01 at 15.25.06@2x.png>)
+
+Choose which artboard, animation, or state machine you want to share in the Share Link modal.
 
 ![](<../.gitbook/assets/Screen Shot 2022-05-19 at 4.02.59 PM.png>)
 
-### Different share links
+### Share link types
 
-Once you click on the "Generate link" button at the bottom, you should be presented with three options for sharing:
+Once you click on the "Generate link" button, several share link types appear:
 
 * **Share link** - Displayed within a border frame on the Rive site at a unique URL. Use this for quickly showing off your Rive creation to clients without having to stage it within the context of a web application yourself
 * **Embed link** - Standalone display of your Rive creation without the context of the border frame. Use this link when you want to embed your Rive creation into other 3rd party platforms that support unfurling and displaying your Rive creation still as a preview (i.e Notion, Tome, Telegram)
@@ -25,19 +27,19 @@ Once you click on the "Generate link" button at the bottom, you should be presen
 ![
 ](<../.gitbook/assets/Screen Shot 2022-05-19 at 4.55.14 PM.png>)
 
-### Integrations
+## Integrations
 
-Check out the following steps below to see how to use share links to embed within just a few other well-known tools and platforms!
+Use share links to embed your Rive files with other well-known tools and platforms! This is not a full list. Most tools will support Rive share links using the methods described here.
 
-#### Notion
+### Notion
 
 1. Copy the _share_ or _embed link_
-2. In Notion, create an embed in the spot you want to embed Rive in
-3. Paste the embed link you copied from the Rive editor
+2. Paste the link in Notion.
+3. Select the Embed option that appears in the context menu.
 
-![](<../.gitbook/assets/Screen Shot 2022-05-19 at 6.09.35 PM.png>)
+![](<../.gitbook/assets/CleanShot 2022-08-01 at 15.32.03@2x.png>)
 
-#### Webflow
+### Webflow
 
 1. Copy the _embed code_ with the iframe HTML block
 2. In Webflow, click the + sign to add a component and add an Embed to access the HTML Embed Code Editor
@@ -45,7 +47,7 @@ Check out the following steps below to see how to use share links to embed withi
 
 ![](<../.gitbook/assets/Screen Shot 2022-05-19 at 7.30.30 PM.png>)
 
-#### Tome
+### Tome
 
 1. Copy the _embed link_
 2. In Tome on a slide of your choosing, add a weblink
@@ -55,12 +57,10 @@ Check out the following steps below to see how to use share links to embed withi
 
 ### Social Media
 
-Share links also work great for social media! Check out the steps below on how to share Rive creations on just a few of your favorite platforms:
-
 1. Copy the _share link_
 2. Paste it into your favorite platform
 3. See your Rive creation unfurl when you post
 
-### Managing share links
+## Managing share links
 
 Visit the [Share Links](https://rive.app/profile/?section=share%20links) section of your settings to manage the links you've generated. You can disable a share link by setting its Active toggle to off.
