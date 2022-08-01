@@ -28,9 +28,9 @@ In both Design and Edit modes, you can deform your mesh by entering edit mesh mo
 
 ![](<../../.gitbook/assets/2022-05-11 16.35.01.gif>)
 
-## Connect Bones
+## Binding Bones
 
-Another way to deform your mesh is by connecting bones to it. This will allow you to deform specific parts of your image with one bone, while other parts of the same image are controlled by other bones.
+Another way to deform your mesh is by connecting bones to it, a process called binding. This will allow you to deform specific parts of your image with one bone while other parts of the same image are controlled by other bones.
 
 ![](<../../.gitbook/assets/2022-05-11 16.56.29.gif>)
 
