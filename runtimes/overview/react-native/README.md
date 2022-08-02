@@ -28,6 +28,10 @@ yarn add rive-react-native
 
 `cd` inside the `ios` folder and run `pod install` (if deploying to iOS)
 
+{% hint style="info" %}
+If you run into issues here, you may need to bump the `ios` deployment version target to at least `14.0`. You can find this version in the `Podfile` of the `ios/` folder.
+{% endhint %}
+
 ### 3. Add the Rive component
 
 {% code title="App.js" %}
