@@ -1,5 +1,5 @@
 ---
-description: React native runtime for Rive
+description: React Native runtime for Rive
 ---
 
 # React Native
@@ -44,7 +44,6 @@ function App() {
       style={{width: 400, height: 400}}
   />;
 }
-
 ```
 {% endcode %}
 
