@@ -63,7 +63,8 @@
   * [Translation Constraint](editor/constraints/translation-constraint.md)
 * [Keyboard Shortcuts](editor/keyboard-shortcuts.md)
 * [Exporting](editor/exporting.md)
-* [Share Links](editor/share-links.md)
+* [Share Links](editor/share-links/README.md)
+  * [Framer and Rive](editor/share-links/framer-and-rive.md)
 
 ## Tutorials <a href="#tutorial" id="tutorial"></a>
 
