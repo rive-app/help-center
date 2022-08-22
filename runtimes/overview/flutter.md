@@ -21,7 +21,7 @@ Check out Rive's [pub.dev](https://pub.dev/packages/rive) page to get the latest
 {% code title="pubspec.yaml" %}
 ```yaml
 dependencies:
-  rive: 0.9.0
+  rive: 0.9.1
 ```
 {% endcode %}
 

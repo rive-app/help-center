@@ -22,7 +22,7 @@ The runtime has named exports for `Layout`, `Fit`, and `Alignment`.
 <div>
     <canvas id="canvas" width="800" height="600"></canvas>
 </div>
-<script src="https://unpkg.com/@rive-app/canvas@1.0.60"></script>
+<script src="https://unpkg.com/@rive-app/canvas@1.0.79"></script>
 <script>
 
     // Fill the canvas, cropping Rive if necessary

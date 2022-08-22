@@ -23,7 +23,7 @@ Follow the steps below for a quick start on integrating Rive into your web app.
 Add the following script tag to a web page; we recommend sticking to one version, such as seen below:
 
 ```javascript
-<script src="https://unpkg.com/@rive-app/canvas@1.0.65"></script>
+<script src="https://unpkg.com/@rive-app/canvas@1.0.79"></script>
 ```
 
 Find the versions of the runtimes in the "Versions" tab here: [https://www.npmjs.com/package/@rive-app/canvas](https://www.npmjs.com/package/@rive-app/canvas)
@@ -79,7 +79,7 @@ Putting this altogether, you can load an example Rive animation in one HTML file
   <body>
     <canvas id="canvas" width="500" height="500"></canvas>
 
-    <script src="https://unpkg.com/@rive-app/canvas@1.0.65"></script>
+    <script src="https://unpkg.com/@rive-app/canvas@1.0.79"></script>
     <script>
       new rive.Rive({
         src: "https://cdn.rive.app/animations/vehicles.riv",
