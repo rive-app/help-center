@@ -33,7 +33,13 @@ Use share links to embed your Rive files with other well-known tools and platfor
 
 ### Framer
 
-See the [Framer and Rive subpage](framer-and-rive.md) for more details.
+If you're looking to bring Rives to a Framer site, take advantage of the Framer component code snippet when creating a share link; no custom code is needed.\
+\
+With this integration, you copy our code snippet for your specified artboard and animation/state machine and paste it into a new [Framer code component](https://www.framer.com/learn/code-components/). With this new component, you can drag and drop it into your page and control playback, layout, and even state machine usage.
+
+See the [Framer and Rive subpage](framer-and-rive.md) to find more details and examples.
+
+<figure><img src="../../.gitbook/assets/Screen Shot 2022-08-25 at 10.39.22 AM.png" alt=""><figcaption><p>Framer code component in Framer</p></figcaption></figure>
 
 ### Notion
 
@@ -41,7 +47,7 @@ See the [Framer and Rive subpage](framer-and-rive.md) for more details.
 2. Paste the link in Notion.
 3. Select the Embed option that appears in the context menu.
 
-![](<../../.gitbook/assets/CleanShot 2022-08-01 at 15.32.03@2x.png>)
+<figure><img src="../../.gitbook/assets/CleanShot 2022-08-01 at 15.32.03@2x.png" alt=""><figcaption><p>Embed share link in Notion</p></figcaption></figure>
 
 ### Webflow
 
@@ -49,7 +55,7 @@ See the [Framer and Rive subpage](framer-and-rive.md) for more details.
 2. In Webflow, click the + sign to add a component and add an Embed to access the HTML Embed Code Editor
 3. Paste the embed code you copied from the Rive editor
 
-![](<../../.gitbook/assets/Screen Shot 2022-05-19 at 7.30.30 PM.png>)
+![Embed code in Webflow](<../../.gitbook/assets/Screen Shot 2022-05-19 at 7.30.30 PM.png>)
 
 ### Tome
 
@@ -57,7 +63,7 @@ See the [Framer and Rive subpage](framer-and-rive.md) for more details.
 2. In Tome on a slide of your choosing, add a weblink
 3. Paste the embed link you copied from the Rive editor
 
-![](<../../.gitbook/assets/Screen Shot 2022-05-19 at 7.32.34 PM.png>)
+![Embed share link in Tome](<../../.gitbook/assets/Screen Shot 2022-05-19 at 7.32.34 PM.png>)
 
 ### Social Media
 
