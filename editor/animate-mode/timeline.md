@@ -1,6 +1,6 @@
 # Timeline
 
-The Rive interface displays a timeline with playback controls and options for the current animation in Animate mode. A list of all animations is displayed to the left of the Timeline. Keep in mind that these are animations for the currently [active artboard](../fundamentals/artboards/#active-artboard).
+The Rive interface displays a timeline with playback controls and options for the current animation in Animate mode. A list of all animations is displayed to the left of the Timeline. Keep in mind that these are animations for the currently [active artboard](../fundamentals/artboards.md#active-artboard).
 
 ![](<../../.gitbook/assets/animate-ui-2 (1).png>)
 

@@ -4,23 +4,25 @@ Nested Artboards can speed up your workflow by allowing you to reuse common anim
 
 ## Creating a Nested Artboard
 
-Before creating a Nested Artboard, first, create an artboard with one or more animations.
+Create an instance of an artboard by selecting the Nested Artboard tool and clicking in your active artboard.
 
-![](<../../../.gitbook/assets/2021-10-14 13.36.13.gif>)
+![](<../../.gitbook/assets/2021-10-14 13.36.13.gif>)
 
-Now, use the Nested Artboard tool in the Create Tools menu to add a Nested Artboard to the Artboard of your choice. Note the Nested Artboard will display as a blank group on the stage until it is configured in the Inspector.
+{% hint style="info" %}
+The Nested Artboard will display as a blank group on the stage until it is configured in the Inspector.
+{% endhint %}
 
-## Configuring Nested Artboard
+## Configuring a Nested Artboard
 
-![](<../../../.gitbook/assets/2021-10-14 13.40.20.gif>)
+![](<../../.gitbook/assets/2021-10-14 13.40.20.gif>)
 
-With the Nested Artboard selected, find the Artboard dropdown in the inspector and select the desired Artboard you would like to nest. Notice that once the artboard is selected an instance of it now displays on the stage.
+With the Nested Artboard selected, find the Artboard dropdown in the Inspector and select the desired Artboard you would like to nest. Notice that once the artboard is selected an instance of it now displays on the stage.
 
 ### Simple vs Remap Animations
 
 Once you've decided on an artboard, you'll need to add the animations you want the nested artboard to use in the Inspector.
 
-![](<../../../.gitbook/assets/2021-10-14 13.44.55.gif>)
+![](<../../.gitbook/assets/2021-10-14 13.44.55.gif>)
 
 When selecting animations to add to a Nested Artboard, you'll be prompted to select whether the animation is a Simple or Remap animation.&#x20;
 

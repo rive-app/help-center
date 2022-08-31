@@ -4,7 +4,7 @@ The Rive Editor has two distinct modes, Design and Animate. As you switch betwee
 
 ## Design Mode
 
-Use Design Mode to prepare your graphics for animation. This is where you can design your own graphics with Rive's [create tools](interface-overview/toolbar.md#create-tools-menu), [import graphics from other software](importing-assets.md), or rig your graphics with [bones](../manipulating-shapes/bones/), [transform spaces](groups/transform-spaces.md), and [constraints](../constraints/).
+Use Design Mode to prepare your graphics for animation. This is where you can design your own graphics with Rive's [tools](interface-overview/toolbar.md#vector-tools-menu), [import graphics from other software](importing-assets.md), or rig your graphics with [bones](../manipulating-shapes/bones/), [transform spaces](groups/transform-spaces.md), and [constraints](../constraints/).
 
 ![Design Mode](<../../.gitbook/assets/Screen Shot 2022-05-26 at 2.28.14 PM.png>)
 
@@ -17,4 +17,4 @@ Use Animate Mode to create all of the animations and [state machines](../state-m
 
 ![Animate Mode](<../../.gitbook/assets/Screen Shot 2022-05-26 at 2.28.36 PM.png>)
 
-When you switch to Animate Mode, the UI updates to display a timeline with a list of animations for the currently [active artboard](artboards/#active-artboard). The Inspector also updates to show key buttons next to any property that can be animated.&#x20;
+When you switch to Animate Mode, the UI updates to display a timeline with a list of animations for the currently [active artboard](artboards.md#active-artboard). The Inspector also updates to show key buttons next to any property that can be animated.&#x20;

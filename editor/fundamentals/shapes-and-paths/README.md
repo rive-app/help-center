@@ -12,9 +12,7 @@ To learn more about Shape and Path layers, watch our video on Shapes and Paths, 
 
 Vectors in Rive are rendered on shape layers. Shape layers define the style of the shape by allowing you to customize the fill and stroke.
 
-### **Shape layer properties**
-
-The shape layer displays many properties in the inspector that can be edited in both design and animate mode. These properties include Position, Scale, and Rotation, as well as additional styling properties like Fill and Stroke.
+<figure><img src="../../../.gitbook/assets/CleanShot 2022-08-30 at 21.32.18@2x.png" alt=""><figcaption></figcaption></figure>
 
 ## **Path layer**
 
@@ -24,14 +22,16 @@ The actual shape of a vector is defined by a path (or multiple paths). Expanding
 
 ![](../../../.gitbook/assets/shapes-path-drag-and-drop.gif)
 
-‌ You can add new paths to any shape by dragging and dropping an existing path onto the desired shape layer.&#x20;
+‌You can add new paths to any shape by dragging and dropping an existing path onto the desired shape layer.&#x20;
 
 ### **Path layer properties**
 
-The path layer displays many properties in the Inspector that can be edited in both Design and Animate mode but differ slightly based on the type of path. While both custom and procedural paths display position, scale, and rotation, procedural paths are unique in that they display height and width properties.
+Path layers display properties that to the type of path. Learn more about [procedural shapes](../procedural-shapes.md).
+
+<figure><img src="../../../.gitbook/assets/CleanShot 2022-08-30 at 21.34.07@2x.png" alt=""><figcaption></figcaption></figure>
 
 ## Enter and Esc shortcuts
 
-Use the `Enter` key to quickly navigate down the Hierarchy. If you have a shape selected, this allows you to quickly select the child path layer.
+Use the `Enter` key to quickly navigate down the Hierarchy. If you have a shape selected, this allows you to select the child path layer quickly.
 
-Use the `Esc` key to quickly navigate up the Hierarchy. If you have a path selected, this allows you to quickly select the parent shape layer.
+Use the `Esc` key to quickly navigate up the Hierarchy. If you have a path selected, this allows you to select the parent shape layer quickly.

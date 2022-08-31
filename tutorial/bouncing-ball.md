@@ -20,7 +20,7 @@ Select the Artboard and modify its Fill in the [Inspector](../editor/fundamental
 
 ### 2. Create the ball
 
-Use the [ellipse tool](../editor/fundamentals/procedural-shapes/) to create the base for the ball.
+Use the [ellipse tool](../editor/fundamentals/procedural-shapes.md) to create the base for the ball.
 
 ![](../.gitbook/assets/2021-08-10-15.29.11.gif)
 
@@ -108,7 +108,7 @@ Group all objects on the stage in a "root" group. We won't use this group when a
 
 ### 1.Key initial motion
 
-Switch the editor to [Animate mode](../editor/animate-mode/) with the `Tab `key.
+Switch the editor to [Animate mode](../editor/animate-mode/) with the `Tab` key.
 
 ![](../.gitbook/assets/2021-08-09-17.34.22.gif)
 

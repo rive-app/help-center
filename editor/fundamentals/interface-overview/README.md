@@ -22,7 +22,7 @@ Read more on the Toolbar page.
 
 ## **Hierarchy**
 
-All the stage objects, assets, controls, and animations that make up your file appear in the Hierarchy.
+All the objects, assets, controls, and animations that make up your file appear in the Hierarchy.
 
 ![](<../../../.gitbook/assets/Screen Shot 2022-05-26 at 2.45.21 PM.png>)
 
@@ -32,7 +32,7 @@ All the stage objects, assets, controls, and animations that make up your file a
 
 ## **Inspector**
 
-The Inspector allows you to adjust the properties for the currently selected object. In Animate mode, you will only see properties that can be animated.
+The Inspector allows you to adjust the properties for the currently selected object.
 
 ![](<../../../.gitbook/assets/Screen Shot 2022-05-26 at 2.47.28 PM.png>)
 
@@ -65,4 +65,16 @@ Read more on the Timeline page.
 
 {% content-ref url="../../animate-mode/timeline.md" %}
 [timeline.md](../../animate-mode/timeline.md)
+{% endcontent-ref %}
+
+## State Machine graph
+
+<figure><img src="../../../.gitbook/assets/CleanShot 2022-08-30 at 21.16.30@2x.png" alt=""><figcaption><p>State Machine graph</p></figcaption></figure>
+
+When a state machine is selected, the Timeline is replaced by a graph.
+
+Read more on the State Machine page.
+
+{% content-ref url="../../state-machine.md" %}
+[state-machine.md](../../state-machine.md)
 {% endcontent-ref %}

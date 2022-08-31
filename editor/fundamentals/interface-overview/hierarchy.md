@@ -4,11 +4,11 @@ description: The hierarchy is always located on the left side of the editor.
 
 # Hierarchy
 
-The Hierarchy is a tree view, which shows both the parent/child relationships between objects on the stage as well as the order in which they are rendered. Learn about the Hierarchy by either watching the video or reading more below.
+The Hierarchy is a tree view, which shows both the parent-child relationships between objects on the stage as well as the order in which they are rendered. Learn about the Hierarchy by either watching the video or reading more below.
 
 {% embed url="https://youtu.be/IcSXchdnzHM" %}
 
-Parent/child relationships are a core concept in Rive, which allows you to create complex layered animations with minimal effort. [Groups](../groups/), [Bones](../../manipulating-shapes/bones/), and Solo objects can all have children in Rive.
+Parent-child relationships are a core concept in Rive, which allows you to create complex layered animations with minimal effort. [Groups](../groups/) and [Bones](../../manipulating-shapes/bones/) can have children in Rive.
 
 Each row in the Hierarchy represents an item on the stage. A circle button with an arrow appears next to items that have children nested underneath them. This button allows you to expand and collapse the list of children.
 
@@ -20,7 +20,7 @@ Any type of object can be a parent or a child of another type of object. When an
 
 The depth of these parent/child relationships is infinite, so you can keep stacking (or nesting) items to create grandchildren, great-grandchildren, and so on.
 
-## Change parent/child relationships
+## Change parent-child relationships
 
 To change the relationship between objects, drag and drop the object onto or out of another.
 
@@ -28,7 +28,7 @@ To change the relationship between objects, drag and drop the object onto or out
 
 ## Draw Order
 
-In addition to displaying the relationships between objects, the Hierarchy shows you the Draw Order of a file, with the objects at the top being rendered in front, and the objects at the bottom being rendered at the back.
+In addition to displaying the relationships between objects, the Hierarchy shows you the Draw Order of a file, with the objects at the top being rendered in front and the objects at the bottom being rendered at the back.
 
 ## Change Draw Order
 

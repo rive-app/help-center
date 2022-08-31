@@ -14,8 +14,8 @@ Take a tour of the Rive editor to familiarise yourself with the various sections
 
 Artboards are the foundation of your composition across both design and animate mode. Learn how to create and manage artboards within a file.
 
-{% content-ref url="artboards/" %}
-[artboards](artboards/)
+{% content-ref url="artboards.md" %}
+[artboards.md](artboards.md)
 {% endcontent-ref %}
 
 ### 3. Shapes and paths

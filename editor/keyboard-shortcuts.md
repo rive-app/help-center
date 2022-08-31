@@ -9,7 +9,7 @@
 | Rectangle Tool                                     | `U`      |
 | Ellipse Tool                                       | `O`      |
 | [Pen Tool](fundamentals/pen-tool/)                 | `P`      |
-| [Artboard Tool](fundamentals/artboards/)           | `A`      |
+| [Artboard Tool](fundamentals/artboards.md)         | `A`      |
 | [Bone Tool](manipulating-shapes/bones/)            | `B`      |
 | [Group Tool](fundamentals/groups/)                 | `G`      |
 | [Freeze](manipulating-shapes/origin-and-freeze.md) | `Y`      |
