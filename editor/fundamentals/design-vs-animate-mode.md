@@ -1,10 +1,10 @@
 # Design vs Animate Mode
 
-The Rive editor has two distinct modes, Design and Animate. As you switch between modes, the interface changes to show the appropriate tools and options available.
+The Rive Editor has two distinct modes, Design and Animate. As you switch between modes, the interface changes to show the appropriate tools and options.
 
 ## Design Mode
 
-Use this mode to create and rig your graphics to set them up for use in Animate Mode.
+Use Design Mode to prepare your graphics for animation. This is where you can design your own graphics with Rive's [create tools](interface-overview/toolbar.md#create-tools-menu), [import graphics from other software](importing-assets.md), or rig your graphics with [bones](../manipulating-shapes/bones/), [transform spaces](groups/transform-spaces.md), and [constraints](../constraints/).
 
 ![Design Mode](<../../.gitbook/assets/Screen Shot 2022-05-26 at 2.28.14 PM.png>)
 
@@ -13,7 +13,7 @@ Design Mode is the default mode for any file that doesn't have any animations cr
 
 ## Animate Mode
 
-Use Animate Mode to create all of the animations for your artboard.
+Use Animate Mode to create all of the animations and [state machines](../state-machine.md) for your artboard.
 
 ![Animate Mode](<../../.gitbook/assets/Screen Shot 2022-05-26 at 2.28.36 PM.png>)
 
