@@ -41,7 +41,7 @@ The following are props you can set on the Rive React component for this runtime
   * Type: `(animationName: string, isStateMachine: boolean) => void`
 * `onStop` _(optional)_ - Callback function that is called when animation or stateMachine has been stopped.
   * Type: `(animationName: string, isStateMachine: boolean) => void`
-* `onLoopEnd` _(optional)_ - Callback function that is called when animation loop has been ended.
+* `onLoopEnd` _(optional)_ - Callback function that is called when animation loop has been ended. **Note:** This callback is only invoked if playing individual animations via the `animationName` prop, and does not get invoked if playing a state machine via the `stateMachineName` prop.
   * Type: [`(animationName: string, loopMode: LoopMode) => void`](https://github.com/rive-app/rive-react-native/blob/main/docs/types.md#LoopMode)
 * `onStateChanged` _(optional)_ - Callback function that is called when the internal animation state has been changed. It's tightly coupled with state machines feature.
   * Type: `(stateMachineName: string, stateName: string) => void`
