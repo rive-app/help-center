@@ -1,5 +1,7 @@
 ---
-description: Learn how to share your Rive creations
+description: >-
+  Share Links are a fast no-code way to get your Rive files running on a website
+  or to present your graphics to a client.
 ---
 
 # Share Links
