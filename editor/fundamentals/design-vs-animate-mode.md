@@ -13,7 +13,7 @@ Design Mode is the default mode for any file that doesn't have any animations cr
 
 ## Animate Mode
 
-Use Animate Mode to create all of the animations and [state machines](../state-machine.md) for your artboard.
+Use [Animate Mode](../animate-mode/) to create all of the animations and [state machines](../state-machine.md) for your artboard.
 
 ![Animate Mode](<../../.gitbook/assets/Screen Shot 2022-05-26 at 2.28.36 PM.png>)
 
