@@ -102,7 +102,9 @@ An Additive Blend State allows you to map any input directly to any animation. T
 
 ## Layers
 
-A state machine layer can have only one active state at a time. Add in additional layers to your state machine to play multiple states simultaneously.
+A state machine layer can have only one active state at a time. Add more layers to play multiple states simultaneously.
+
+<figure><img src="../.gitbook/assets/CleanShot 2022-09-10 at 18.13.25@2x.png" alt=""><figcaption></figcaption></figure>
 
 ## Listeners
 
