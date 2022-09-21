@@ -69,7 +69,7 @@ export default function Simple() {
 ```
 
 {% hint style="info" %}
-Rive will not instantiate until the `RiveComponent` is rendered in the JSX, as the underlying `<canvas>` element needs to be present in the DOM
+Rive will not instantiate until the `RiveComponent` is rendered in the JSX, as the underlying `<canvas>` element needs to be present in the DOM. Also, keep in mind that the canvas size depends on the container it's placed within. Initially, this is 0x0.  Either pass a `className` to `RiveComponent` or wrap `RiveComponent` with an appropriately sized container.
 {% endhint %}
 
 See [here](parameters-and-return-values.md) for more on the parameters and return values of `useRive`.
