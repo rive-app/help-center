@@ -48,3 +48,36 @@ export default {
 </script>
 ```
 
+Here is an example using Vue 3.
+
+```vue
+<template>
+  <div>
+    <canvas ref="canvas" width="400" height="400"></canvas>
+  </div>
+</template>
+
+<script setup>
+import { onMounted, ref } from 'vue'
+import { Rive, Layout } from '@rive-app/canvas'
+
+const props = defineProps({
+  src: String,
+  fit: String,
+  alignment: String
+})
+const canvas = ref()
+
+onMounted(() => {
+  new Rive({
+    canvas: canvas.value,
+    src: props.src,
+    layout: new Layout({
+      fit: props.fit,
+      alignment: props.alignment,
+    }),
+    autoplay: true
+  })
+})
+</script>
+```
