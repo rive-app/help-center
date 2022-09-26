@@ -8,4 +8,4 @@
 
 [Send feedback](https://feedback.rive.app)
 
-[Video tutorials and other resources](https://rive.app/resources)
+[Video tutorials and other resources](https://rive.app/learn-rive)
