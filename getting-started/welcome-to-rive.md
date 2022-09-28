@@ -1,6 +1,6 @@
 # Welcome to Rive!
 
-Welcome to the Rive help center. Here you can find documentation on all aspects of our editor and runtimes. Look out for the 'Welcome to Rive!' and 'Distinctly Rive' video series in our [Resources](https://rive.app/resources) section for more tips on getting started.
+Welcome to the Rive help center. Here you can find documentation on all aspects of our editor and runtimes. Look out for the 'Welcome to Rive!' and 'Distinctly Rive' video series in our [Resources](https://rive.app/learn-rive) section for more tips on getting started.
 
 {% embed url="https://www.youtube.com/watch?v=GPy0s2Y6hQg" %}
 
