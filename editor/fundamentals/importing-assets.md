@@ -1,10 +1,10 @@
 # Importing Assets
 
-Import your assets by dragging and dropping them onto the Rive editor. In doing so, the editor generates an artboard and associated hierarchy for you to begin working with.&#x20;
+Import your assets by dragging and dropping them onto the Rive editor. In doing so, the editor generates an artboard and associated hierarchy for you to begin working.&#x20;
 
 ![](../../.gitbook/assets/import.gif)
 
-### Assets panel&#x20;
+## Assets Panel&#x20;
 
 After dragging in your graphics, they now appear in the Assets Panel, located at the bottom of the hierarchy. Drag and drop them onto an artboard to begin using them.
 
@@ -28,7 +28,7 @@ SVG is a very flexible and feature-rich format. We aim to support SVG as best we
 
 When exporting files as SVG, exporting with inline style as opposed to CSS will work best for our importer.
 
-When exporting from other design tools, look for the option to retain ID's and names of your shapes when you export. This will ensure that your imported file retains the same structure and layer names. Most tools have an option for this, as in the Figma example below.
+When exporting from other design tools, look for the option to retain IDs and names of your shapes when you export. This will ensure that your imported file retains the same structure and layer names. Most tools have an option for this, as in the Figma example below.
 
 ![Figma's option to include "id" attribute](../../.gitbook/assets/figma\_export\_id.png)
 
