@@ -65,6 +65,8 @@ Set `stateMachineName` on the Rive component to play a single state machine.
 {% endtab %}
 
 {% tab title="Flutter" %}
+To autoplay a state machine by default, simply set the `stateMachines` property at instantiation:
+
 ```dart
 RiveAnimation.network(
     'https://cdn.rive.app/animations/vehicles.riv',
@@ -72,6 +74,55 @@ RiveAnimation.network(
     stateMachines: ['bumpy'],
 );
 ```
+
+In the above snippet, at instantiation time, the runtime will create a [`StateMachineController` ](https://pub.dev/documentation/rive/latest/rive/StateMachineController-class.html)reference implicitly and immediately play the state machine.
+
+
+
+If you'd like further control over the state machine in cases where you may want to prevent autoplaying the state machine, you can instead pass your own reference to a `StateMachineController` to the `RiveAnimation` widget at instantiation time with the `isActive` property set to `false`. Below is an example of what this might look like:
+
+```dart
+class _ExampleState extends State<ExampleState> {
+  /// Controller for playback
+  late StateMachineController _controller;
+
+  void _onInit(Artboard art) {
+    var ctrl =
+      StateMachineController.fromArtboard(art, 'some-state-machine') as StateMachineController;
+    ctrl.isActive = false;
+    art.addController(ctrl);
+    setState(() {
+      _controller = ctrl;
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Play/Pause Example'),
+      ),
+      body: Center(
+        child: RiveAnimation.asset('assets/example.riv', onInit: _onInit),
+      ),
+      floatingActionButton: FloatingActionButton(
+        // Play/Pause the state machine
+        onPressed: () => {
+          _controller.isActive
+              ? _controller.isActive = false
+              : _controller.isActive = true
+        },
+        tooltip: 'Play/Pause',
+        child: const Icon(Icons.arrow_upward),
+      ),
+    );
+  }
+}
+```
+
+\
+As you change the `isActive` property of the `StateMachineController`, you'll see that the current state may pause advancing through the render loop. This is useful in cases where you may want to load in your Rive on screen, but delay playing until a loading sequence occurs, or some data comes back for your application.\
+
 {% endtab %}
 
 {% tab title="iOS" %}
@@ -458,13 +509,16 @@ In the `onInit` callback, you can create an instance of a `StateMachineControlle
 SMITrigger? _bump;
 
 void _onRiveInit(Artboard artboard) {
+    // Get State Machine Controller for the state machine called "bumpy"
     final controller = StateMachineController.fromArtboard(artboard, 'bumpy');
     artboard.addController(controller!);
+    // Get a reference to the "bump" state machine input
     _bump = controller.findInput<bool>('bump') as SMITrigger;
 }
 ```
 
-In the above snippet, the `bump` input is retrieved, which is an `SMITrigger`. This type of input has a `fire()` method to activate the trigger. There are two other input types: `SMIBool` and `SMINumber`. These both have a `value` property that can get and set the value.
+In the above snippet, the `bump` input is retrieved, which is an `SMITrigger`. This type of input has a `fire()` method to activate the trigger.\
+
 
 ```dart
 class SimpleStateMachine extends StatefulWidget {
@@ -507,6 +561,35 @@ class _SimpleStateMachineState extends State<SimpleStateMachine> {
 ```
 
 In the complete example above, every time the `RiveAnimation` is tapped, it fires the `bump` input trigger and the state machine reacts appropriately.
+
+**Note**: There are two other state machine input types to be aware of as well: `SMIBool` and `SMINumber`. These both have a `value` property that can get and set the value.\
+
+
+```dart
+// Example state machine input declarations
+SMIInput<bool>? _boolExampleInput;
+SMIInput<double>? _numberExampleInput;
+
+...
+
+// Extracting inputs from the StateMachineController
+void _onRiveInit(Artboard artboard) {
+  final controller = StateMachineController.fromArtboard(artboard, 'example');
+  artboard.addController(controller!);
+  _boolExampleInput = controller.findInput<bool>('exampleBool') as SMIBool;
+  _numberExampleInput = controller.findInput<double>('exampleNum') as SMINumber;
+}
+
+...
+
+// Getting/setting state machine input values
+if (_boolExampleInput.value == false) {
+  _boolExampleInput.value = true;
+}
+if (_numberExampleInput.value >= 100) {
+  _numberExampleInput.value = 0;
+}
+```
 
 
 

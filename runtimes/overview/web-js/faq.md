@@ -78,3 +78,11 @@ Make sure you've specified the `stateMachines` property when instantiating Rive 
 ### How do I get other web-frameworks to support Rive?
 
 Currently, we support the React runtime officially, beyond the plain JS/TS runtime here. There have been community-driven wrappers created to support other web-based libraries/frameworks, such as Angular. We recommend checking out the [rive-react](https://github.com/rive-app/rive-react) source project to understand how it wraps this JS runtime into React-friendly components and hooks to make using Rive better in React-based applications. We encourage you to explore doing the same for any other web-based framework/library you may be interested in building Rive with!
+
+### I have Content-Security-Policy set to block unsafe-eval, and now Rive fails to load. What do I do?
+
+Our Web (JS) runtime is built on top of a cpp runtime layer that provides a rendering abstraction. The web runtime uses web assembly (WASM) to bind the cpp layer to JS API's. We use a tool called [Emscripten](https://emscripten.org/) to do this compilation. As part of that tool's source code and binding techniques, it may use some techniques to generate the JS API's that the `unsafe-eval` policy would block. Because of this, the runtime may fail to load in the web assembly successfully, and thus Rive would fail to load since the web-assembly is crucial to running Rive in the web. See more on that issue [here](https://github.com/WebAssembly/content-security-policy/issues/7). \
+\
+To get around this, there is a new CSP setting you can set that would still allow you to block `unsafe-eval` but also give some freedom with regards to WASM being executed; `wasm-unsafe-eval`. While not the perfect solution, it is a better solution than allowing any unsafe evaluation of JS, while allowing web applications to still take WASM builds.\
+\
+&#x20;

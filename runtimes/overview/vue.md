@@ -48,3 +48,32 @@ export default {
 </script>
 ```
 
+If you're using Vue 3 with Typescript, the usage is slightly different with respect to their newer composition API:\
+
+
+```typescript
+<template>
+  <div>
+    <canvas ref="canvas" width="400" height="400"></canvas>
+  </div>
+</template>
+
+<script lang="ts">
+import { defineComponent } from 'vue';
+import { Rive } from '@rive-app/canvas';
+
+export default defineComponent({
+  name: 'Rive',
+  props: {
+    src: String
+  },
+  mounted() {
+    new Rive({
+      canvas: this.$refs.canvas,
+      src: this.$props.src,
+      autoplay: true
+    })
+  }
+})
+</script>
+```
