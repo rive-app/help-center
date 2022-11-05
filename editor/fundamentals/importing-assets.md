@@ -1,18 +1,16 @@
 # Importing Assets
 
-Import your assets by dragging and dropping them onto the Rive editor. In doing so, the editor generates an artboard and associated hierarchy for you to begin working.&#x20;
-
-![](../../.gitbook/assets/import.gif)
+Import your assets by dragging and dropping them onto the Rive Editor. You can import SVG, PNG, PSD, and JPG formats.
 
 ## Assets Panel&#x20;
 
-After dragging in your graphics, they now appear in the Assets Panel, located at the bottom of the hierarchy. Drag and drop them onto an artboard to begin using them.
+After dragging in your graphics, they now appear in the Assets Panel, located at the bottom-left of the editor UI. Drag and drop them onto an artboard to begin using them.
 
 ## Updating graphics
 
 You can make updates to your graphics after they've been imported.&#x20;
 
-Do this by selecting the image in the Assets Panel. Notice that the assets properties appear in the inspector.&#x20;
+Do this by selecting the image in the Assets Panel. Notice that the asset's properties appear in the inspector.&#x20;
 
 Hit the replace button and when prompted, select the updated image. You'll notice that this updates all instances of the graphic used in the file.&#x20;
 
@@ -20,7 +18,7 @@ Hit the replace button and when prompted, select the updated image. You'll notic
 
 ## Supported formats
 
-Currently, Rive supports importing SVG (see limitations below), png, PSD, and jpeg/jpg formats. We'll be adding a range of other formats soon!
+Rive supports importing SVG (see limitations below), PNG, PSD, and JPG formats.
 
 ## SVG Tips
 
@@ -28,7 +26,7 @@ SVG is a very flexible and feature-rich format. We aim to support SVG as best we
 
 When exporting files as SVG, exporting with inline style as opposed to CSS will work best for our importer.
 
-When exporting from other design tools, look for the option to retain IDs and names of your shapes when you export. This will ensure that your imported file retains the same structure and layer names. Most tools have an option for this, as in the Figma example below.
+When exporting from other design tools, look for the option to retain IDs and names of your shapes when you export. This will ensure that your imported file retains the same structure and layer names. Most tools have this option, as in the Figma example below.
 
 ![Figma's option to include "id" attribute](../../.gitbook/assets/figma\_export\_id.png)
 
@@ -55,7 +53,3 @@ When using "Save As" to export an SVG from Illustrator, select "Style Attributes
   * `mask` -  we treat this like clipping
   * `filter`
   * `skew`
-
-**Coming soon**
-
-We plan to add raster image support, [track the feature on our public roadmap and feedback site](https://feedback.rive.app/69).
