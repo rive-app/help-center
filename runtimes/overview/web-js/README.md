@@ -101,6 +101,24 @@ You can choose to load Rive files in the following ways:
 * Static assets in the bundle - String of a path to the public/static assets in your web project. Treat `.riv` files in the project just as you would any other asset in your bundle, such as images or font files
 * Fetching a file - Instead of using the `src` attribute, use the `buffer` attribute to load in an ArrayBuffer when fetching a file. See an example [here](https://codesandbox.io/s/rive-buffer-import-9989fv)
 
+### 4. Clean up Rive
+
+When creating a Rive instance, you need to ensure that it gets cleaned up. This should happen in scenarios where you no longer want to show the Rive canvas, for example, where:
+
+* The user navigates off the page showing Rive animations
+* The animation or state machine has completed and will no longer ever be run/shown
+
+Behind the scenes, lower-level CPP objects are created and must be deleted (i.e artboard instances, animation instances, state machine instances, etc.) manually. This helps prevent unwanted memory leaks and keeps your web application lean on resources. Luckily, with this high-level JS API, there is no need to track and manage what was created for deletion, as there is one method call you can make to effectively clean up all the instances created.
+
+When you're ready to clean up Rive, simply call the following API on the Rive instance you created:
+
+```javascript
+const riveInstance = new Rive({...));
+...
+// When ready to cleanup
+riveInstance.cleanup();
+```
+
 ## Resources
 
 Github: [https://github.com/rive-app/rive-wasm](https://github.com/rive-app/rive-wasm)\
