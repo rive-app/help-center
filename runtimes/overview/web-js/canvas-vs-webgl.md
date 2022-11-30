@@ -52,7 +52,7 @@ A low-level Rive API using the [CanvasRenderingContext2D](https://developer.mozi
 * Allows deeper control and manipulation of the components in a Rive hierarchy
 * Web Assembly (WASM) is part of the NPM bundle, but you load in the WASM manually
 
-See an example of usage here: [https://codesandbox.io/s/rive-js-advanced-api-centaur-example-exh2os](https://codesandbox.io/s/rive-js-advanced-api-centaur-example-exh2os)
+See an example of usage here: [https://codesandbox.io/s/rive-canvas-advanced-api-basketball-rgted8](https://codesandbox.io/s/rive-canvas-advanced-api-basketball-rgted8)
 
 ### @rive-app/webgl-advanced
 
@@ -63,7 +63,7 @@ A low-level Rive API using the [WebGL](https://developer.mozilla.org/en-US/docs/
 * Allows deeper control and manipulation of the components in a Rive hierarchy.
 * Web Assembly (WASM) is part of the NPM bundle, but you load in the WASM manually
 
-See an example of usage here: [https://codesandbox.io/s/rive-webgl-advanced-api-fwtmdb](https://codesandbox.io/s/rive-webgl-advanced-api-fwtmdb)
+See an example of usage here: [https://codesandbox.io/s/rive-webgl-advanced-api-fwtmdb](https://codesandbox.io/s/rive-webgl-advanced-api-fwtmdb?file=/src/index.ts)
 
 ### \*-single versions
 
