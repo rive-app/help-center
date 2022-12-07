@@ -79,6 +79,7 @@
     * [Migrating from rive-js](runtimes/overview/web-js/migrating-from-rive-js.md)
     * [FAQ](runtimes/overview/web-js/faq.md)
     * [Preloading WASM](runtimes/overview/web-js/preloading-wasm.md)
+    * [Low-level API Usage](runtimes/overview/web-js/low-level-api-usage.md)
   * [React](runtimes/overview/react/README.md)
     * [Parameters and Return Values](runtimes/overview/react/parameters-and-return-values.md)
     * [Migrating from 0.x.x to 1.x.x](runtimes/overview/react/migrating-from-0.x.x-to-1.x.x.md)
