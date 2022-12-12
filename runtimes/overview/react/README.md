@@ -76,14 +76,17 @@ See [here](parameters-and-return-values.md) for more on the parameters and retur
 
 Additionally, explore subsequent runtime pages to learn how to control animation playback, state machines, and more.
 
-
-
 ## Resources
 
 Github: [https://github.com/rive-app/rive-react](https://github.com/rive-app/rive-react)\
 Types: [https://github.com/rive-app/rive-react/blob/main/src/types.ts](https://github.com/rive-app/rive-react/blob/main/src/types.ts)\
 Examples:
 
-* [https://rive-app.github.io/rive-react/](https://rive-app.github.io/rive-react/)
-* [https://github.com/rive-app/rive-use-cases](https://github.com/rive-app/rive-use-cases)
+* Storybook demo: [https://rive-app.github.io/rive-react/](https://rive-app.github.io/rive-react/)
+* Animated Login Form:
+  * Code: [https://github.com/rive-app/rive-use-cases/tree/main/lib/components/login-form](https://github.com/rive-app/rive-use-cases/tree/main/lib/components/login-form)
+  * Demo: [https://rive-app.github.io/rive-use-cases/?path=/story/example-loginformcomponent--primary](https://rive-app.github.io/rive-use-cases/?path=/story/example-loginformcomponent--primary)
+* Rise of the Robots:
+  * Code: [https://github.com/PaulieScanlon/rise-of-the-robots](https://github.com/PaulieScanlon/rise-of-the-robots)
+  * Demo: [https://www.gatsbyjs.com/demos/rise-of-the-robots/](https://www.gatsbyjs.com/demos/rise-of-the-robots/)
 

@@ -87,5 +87,8 @@ See subsequent runtime pages to learn how to control animation playback, state m
 ## Resources
 
 Github: [https://github.com/rive-app/rive-flutter](https://github.com/rive-app/rive-flutter)\
-Examples: [https://github.com/rive-app/rive-flutter/tree/master/example/lib](https://github.com/rive-app/rive-flutter/tree/master/example/lib)\
-API Docs: [https://pub.dev/documentation/rive/latest/](https://pub.dev/documentation/rive/latest/)
+API Docs: [https://pub.dev/documentation/rive/latest/](https://pub.dev/documentation/rive/latest/)\
+Examples:
+
+* Demo app: [https://github.com/rive-app/rive-flutter/tree/master/example/lib](https://github.com/rive-app/rive-flutter/tree/master/example/lib)
+* Find the Dog (game): [https://github.com/rive-app/find-the-dog](https://github.com/rive-app/find-the-dog)

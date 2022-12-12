@@ -12,6 +12,10 @@ This library contains an API for React Native apps to easily integrate Rive asse
 
 The minimum iOS target is **14.0**
 
+{% hint style="warning" %}
+The Rive React Native runtime does not have support for Expo at this time
+{% endhint %}
+
 ## Getting Started
 
 Follow the steps below for a quick start on integrating Rive into your React Native app.
@@ -52,4 +56,7 @@ See subsequent runtime pages to learn how to control animation playback, state m
 ## Resources
 
 Github: [https://github.com/rive-app/rive-react-native](https://github.com/rive-app/rive-react-native)\
-Example: [https://github.com/rive-app/rive-react-native/tree/main/example](https://github.com/rive-app/rive-react-native/tree/main/example)
+Examples:
+
+* Demo App: [https://github.com/rive-app/rive-react-native/tree/main/example](https://github.com/rive-app/rive-react-native/tree/main/example)
+* Weather App: [https://github.com/rive-app/weather-app-mobile](https://github.com/rive-app/weather-app-mobile)
