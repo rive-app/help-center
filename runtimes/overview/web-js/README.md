@@ -125,7 +125,7 @@ Github: [https://github.com/rive-app/rive-wasm](https://github.com/rive-app/rive
 Examples:
 
 * Basic gallery app: [https://github.com/rive-app/rive-wasm/tree/master/js/examples/\_frameworks/parcel\_example\_canvas](https://github.com/rive-app/rive-wasm/tree/master/js/examples/\_frameworks/parcel\_example\_canvas)
-* Tracking mouse cursor: [https://codesandbox.io/s/eloquent-haslett-gxn16i](https://codesandbox.io/s/eloquent-haslett-gxn16i)
+* Tracking mouse cursor: [https://codesandbox.io/s/mouse-tracking-on-viewport-gxn16i](https://codesandbox.io/s/mouse-tracking-on-viewport-gxn16i)
 * Simple skinning: [https://codesandbox.io/s/rive-sm-workshop-demo-bare-demo2-ivv1pj](https://codesandbox.io/s/rive-sm-workshop-demo-bare-demo2-ivv1pj)
 * Connecting to page scroll: [https://codesandbox.io/s/rive-scroll-example-9llgpp](https://codesandbox.io/s/rive-scroll-example-9llgpp)
 
