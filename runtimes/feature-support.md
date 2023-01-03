@@ -8,6 +8,21 @@ As our Rive editor grows to support more features and toolsets in making Rive as
 \
 We may include notes on migrating to newer versions if a new feature warrants recent API changes.
 
+## Graph Editor Support
+
+If you use the timeline graph editor in the Rive editor and export a `.riv` file for runtime usage, bump to the appropriate versions noted below for the runtime being used to support this new feature.
+
+| Runtime                  | Version                         |
+| ------------------------ | ------------------------------- |
+| (Web) `@rive-app/canvas` | :white\_check\_mark:`>= 1.0.97` |
+| (Web) `@rive-app/webgl`  | :white\_check\_mark:`>= 1.0.93` |
+| React                    | :white\_check\_mark:`>= 3.0.34` |
+| React Native             | Coming soon                     |
+| Flutter                  | :white\_check\_mark:`>= 0.10.0` |
+| iOS                      | :white\_check\_mark:`>= 3.1.3`  |
+| Android                  | :white\_check\_mark:`>= 4.2.2`  |
+| C++                      | :white\_check\_mark: Supported  |
+
 ## Listeners Support
 
 | Runtime                  | Version                         |
