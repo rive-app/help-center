@@ -56,7 +56,7 @@ import RiveCanvas from '@rive-app/canvas-advanced';
 
 async function main() {
   const rive = await RiveCanvas({
-    locateFile: (_) => ' <https://unpkg.com/@rive-app/canvas-advanced@1.0.91/rive.wasm>'
+    locateFile: (_) => ' <https://unpkg.com/@rive-app/canvas-advanced@1.0.98/rive.wasm>'
   });
 }
 main();
