@@ -688,7 +688,7 @@ class SimpleAnimation: RiveViewModel {
         if let stateMachineName = riveModel?.stateMachine?.name() {...}
     }
     
-    func stateMachine(_ stateMachine: RiveStateMachineInstance, didChangeState stateName: String) {
+    @objc func stateMachine(_ stateMachine: RiveStateMachineInstance, didChangeState stateName: String) {
         var stateMachineNames: [String] = []
         var stateMachineStates: [String] = []
         stateMachineNames.append(stateMachine.name())
