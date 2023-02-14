@@ -56,6 +56,18 @@ struct AnimationView: View {
 }
 ```
 
+In the above example, you reference the name of a `.riv` asset bundled into your application, but you can also load in a `.riv` file hosted on a remote URL like so:
+
+```swift
+struct AnimationView: View {
+    var body: some View {
+        RiveViewModel(
+            webURL: "https://cdn.rive.app/animations/off_road_car_v7.riv"
+        ).view()
+    }
+}
+```
+
 #### 3b. UIKit - Storyboard
 
 #### Set up RiveViewModel w/ Controller formatted on a Storyboard
