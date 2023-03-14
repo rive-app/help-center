@@ -507,6 +507,7 @@ export default function App() {
     <View>
       <Rive
         resourceName="truck_v7"
+        animationName="idle"
         ref={riveRef}
       />
 

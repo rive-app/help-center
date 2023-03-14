@@ -4,17 +4,17 @@ Once you have access to the Rive ref object, there are a number of methods avail
 
 ### `.play()`
 
-A reference method that will play animation/animations. For an animation currently playing it is a no-op.
+A reference method that will play a singular animation or state machine. For an animation currently playing it is a no-op.
 
-Type: `(animationNames?: string | string[], loop?: LoopMode, direction?: Direction, areStateMachines?: boolean) => void`
+Type: `(animationName?: string, loop?: LoopMode, direction?: Direction, isStateMachine?: boolean) => void`
 
-* `animationNames` - Specifies which animations should be played. A string can be passed in the case of a single animation. If this argument hasn't been passed the first animation will be played.
-  * Default: `[]`
+* `animationName` - Specifies which singular animation should be played. We **highly** recommend passing a value here
+  * Default: `""`
 * `loop` - Specifies which [`LoopMode`](https://github.com/rive-app/rive-react-native/blob/main/docs/types.md#LoopMode) should be used for playing the animations.
   * Default: `LoopMode.Auto`
 * `direction` - Specifies which [`Direction`](https://github.com/rive-app/rive-react-native/blob/main/docs/types.md#Direction) should be used for playing the animations.
   * Default: `Direction.Auto`
-* `areStateMachines` - Specifies whether passed `animationNames` are state machines or just animations.
+* `isStateMachine` - Specifies whether the passed in `animationName` is a state machine or just a linear animation.
   * Default: `false`
 
 Example:
@@ -40,14 +40,9 @@ function App() {
 
 ### `.pause()`
 
-A reference method that will pause animation/animations. For the animations currently stopped/paused it is no-op.
+A reference method that will pause any playing animation/state machine. For the animations currently stopped/paused it is no-op.
 
-Type: `(animationNames?: string | string[], areStateMachines?: boolean) => void`
-
-* `animationNames` - Specifies which animations should be paused. A string can be passed in the case of a single animation. If this argument hasn't been passed all currently playing animations will be played.
-  * Default: `[]`
-* `areStateMachines` - Specifies whether passed `animationNames` are state machines or just animations.
-  * Default: `false`
+Type: `() => void`
 
 Example:
 
@@ -72,14 +67,9 @@ function App() {
 
 ### `.stop()`
 
-A reference method that will stop animation/animations. For the animations currently stopped/paused it is no-op.
+A reference method that will stop an animation/state machine. For the animations currently stopped/paused it is no-op.
 
-Type: `(animationNames?: string | string[], areStateMachines?: boolean) => void`
-
-* `animationNames` - Specifies which animations should be stopped. A string can be passed in the case of a single animation. If this argument hasn't been passed the whole artboard will be reset and paused.
-  * Default: `[]`
-* `areStateMachines` - Specifies whether passed `animationNames` are state machines or just animations.
-  * Default: `false`
+Type: `() => void`
 
 Example:
 

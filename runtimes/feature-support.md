@@ -17,7 +17,7 @@ If you use the timeline graph editor in the Rive editor and export a `.riv` file
 | (Web) `@rive-app/canvas` | :white\_check\_mark:`>= 1.0.97` |
 | (Web) `@rive-app/webgl`  | :white\_check\_mark:`>= 1.0.93` |
 | React                    | :white\_check\_mark:`>= 3.0.34` |
-| React Native             | Coming soon                     |
+| React Native             | :white\_check\_mark:`>= 4.0.0`  |
 | Flutter                  | :white\_check\_mark:`>= 0.10.0` |
 | iOS                      | :white\_check\_mark:`>= 3.1.3`  |
 | Android                  | :white\_check\_mark:`>= 4.2.2`  |

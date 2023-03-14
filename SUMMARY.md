@@ -89,6 +89,7 @@
     * [Props](runtimes/overview/react-native/props.md)
     * [Rive Ref Methods](runtimes/overview/react-native/rive-ref-methods.md)
     * [Loading in Rive Files](runtimes/overview/react-native/loading-in-rive-files.md)
+    * [Migrating from v3 to v4](runtimes/overview/react-native/migrating-from-v3-to-v4.md)
   * [Vue](runtimes/overview/vue.md)
   * [Angular](runtimes/overview/angular.md)
   * [Flutter](runtimes/overview/flutter.md)
