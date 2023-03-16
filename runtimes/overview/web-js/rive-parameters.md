@@ -24,7 +24,10 @@ export interface RiveParameters {
 ```
 
 * `canvas` - _(required)_ Canvas element to draw Rive animations onto.
-* `src?` - _(optional)_ File path or URL to the .riv file to use. One of `src` or `buffer` must be provided.
+* `src?` - _(optional)_ There are two optional ways to use `src`: either via URL to the `.riv` file, or a path to the public `.riv` asset to use. One of `src` or `buffer` must be provided.
+  * URL - If you are hosting your `.riv` on some publicly accessible bucket/CDN (i.e. AWS, GCS, etc.), you can pass in the URL here.&#x20;
+    * Alternatively, with ES6, you may import the `.riv` file as a data URI. Depending on your bundle loader, you may need to use a plugin (i.e `url-loader` for Webpack) to properly parse and load in `.riv` files as a data URI string. See [this project](https://github.com/zplata/rive-nextjs/blob/main/next.config.js#L8) as a basic example on how to set this up
+  * Path to public asset - This is a string path to the`.riv` public asset if bundled in your application. Note that this is **not** a relative path to the asset from wherever the current JS file is in. Treat the `.riv` as any other asset bundled in your application, such as an image or font. If your JS is compiled and run at the root of your web application, you must specify the path from the root to the location of the asset. For example, if your asset is in `/public/foo.riv`, and your JS is run from the root at `/`, you would specify: `src: '/public/foo.riv'` in this property.
 * `buffer?` - _(optional)_ ArrayBuffer containing the raw bytes from a .riv file. One of `src` or `buffer` must be provided.
 * `artboard?` - _(optional)_ Name of the artboard to use.
 * `animations?` - _(optional)_ Name or list of names of animations to play.

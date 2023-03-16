@@ -22,10 +22,6 @@ An easy-to-use high-level Rive API using a backing [CanvasRenderingContext2D](ht
 * Requests the Web Assembly (WASM) backing dependency for you
 * Web Assembly (WASM) backing dependency is part of the JS bundle; no need for any WASM request
 
-{% hint style="warning" %}
-On some newer versions of Chrome, the use of some blend modes defined at design-time in Rive files may cause unexpected behavior at runtime with `@rive-app/canvas`. It is a [reported bug](https://bugs.chromium.org/p/chromium/issues/detail?id=1350133) that hopefully will be addressed properly soon. If you run into this issue and cannot remove problematic blend modes in the Rive file, please temporarily use the `@rive-app/webgl` runtime below, as the renderer does not face this issue.
-{% endhint %}
-
 ### @rive-app/webgl
 
 An easy-to-use high-level Rive API using the [WebGL](https://developer.mozilla.org/en-US/docs/Web/API/WebGL\_API) renderer. Some benefits of this package:

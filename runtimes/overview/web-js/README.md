@@ -23,7 +23,7 @@ Follow the steps below for a quick start on integrating Rive into your web app.
 Add the following script tag to a web page; we recommend sticking to one version, such as seen below:
 
 ```javascript
-<script src="https://unpkg.com/@rive-app/canvas@1.0.98"></script>
+<script src="https://unpkg.com/@rive-app/canvas@1.0.102"></script>
 ```
 
 Find the versions of the runtimes in the "Versions" tab here: [https://www.npmjs.com/package/@rive-app/canvas](https://www.npmjs.com/package/@rive-app/canvas)
@@ -51,7 +51,8 @@ Create a canvas element where you want the Rive file to display in your HTML:
 
 Create a new instance of a Rive object, providing the following properties:
 
-* `src` - A string of the URL where the `.riv` file is hosted (like in the example below), or the path to a local `.riv` file
+* `src` - A string of the URL where the `.riv` file is hosted (like in the example below), or the path to the public asset `.riv` file (see more in [rive parameters](rive-parameters.md) for details on how to use this property)
+* `stateMachines` - A string of the state machine name you want to play
 * `canvas` - The canvas element on which you want the animation to render
 * `autoplay` - Boolean for whether you want the default animation to play
 
@@ -59,17 +60,20 @@ Create a new instance of a Rive object, providing the following properties:
 <script>
     new rive.Rive({
         src: "https://cdn.rive.app/animations/vehicles.riv",
-        // Or the path to a local Rive asset
-        // src: './example.riv',
+        // Or the path to a public Rive asset
+        // src: '/public/example.riv',
         canvas: document.getElementById("canvas"),
-        autoplay: true
+        autoplay: true,
+        stateMachines: "bumpy",
     });
 </script>
 ```
 
 ### Complete example
 
-Putting this altogether, you can load an example Rive animation in one HTML file:
+Putting this altogether, you can load an example Rive animation in one HTML file.&#x20;
+
+Additionally, we'll add an `onLoad` callback to the Rive object to use Rive's `resizeDrawingSurfaceToCanvas()` API to respect the device pixel ratio and prevent a blurry canvas from displaying. In a future release, this may be the default behavior, and you may need to opt-out if you do not want Rive to set your `<canvas>` width and height properties for you.
 
 ```javascript
 <html>
@@ -79,12 +83,16 @@ Putting this altogether, you can load an example Rive animation in one HTML file
   <body>
     <canvas id="canvas" width="500" height="500"></canvas>
 
-    <script src="https://unpkg.com/@rive-app/canvas@1.0.98"></script>
+    <script src="https://unpkg.com/@rive-app/canvas@1.0.102"></script>
     <script>
-      new rive.Rive({
+      const r = new rive.Rive({
         src: "https://cdn.rive.app/animations/vehicles.riv",
         canvas: document.getElementById("canvas"),
-        autoplay: true
+        autoplay: true,
+        stateMachines: "bumpy",
+        onLoad: () => {
+          r.resizeDrawingSurfaceToCanvas();
+        },
       });
     </script>
   </body>
@@ -98,8 +106,10 @@ Putting this altogether, you can load an example Rive animation in one HTML file
 You can choose to load Rive files in the following ways:
 
 * Hosted URL - The string of the URL where the `.riv` file is hosted. Set this to the `src` attribute when instantiating a `Rive` object
-* Static assets in the bundle - String of a path to the public/static assets in your web project. Treat `.riv` files in the project just as you would any other asset in your bundle, such as images or font files
+* Static assets in the bundle - String of a path to a publicly accessible `.riv` asset in your web project. Treat `.riv` files in the project just as you would any other asset in your bundle, such as images or font files.
 * Fetching a file - Instead of using the `src` attribute, use the `buffer` attribute to load in an ArrayBuffer when fetching a file. See an example [here](https://codesandbox.io/s/rive-buffer-import-9989fv)
+
+See more in the [rive parameters](rive-parameters.md) `src` property for further details.
 
 ### 4. Clean up Rive
 
