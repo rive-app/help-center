@@ -2,18 +2,17 @@
 
 ### Tools
 
-| Purpose                                            | Shortcut   |
-| -------------------------------------------------- | ---------- |
-| Select Tool                                        | `V`        |
-| Translate Tool                                     | `T`        |
-| Rectangle Tool                                     | `R`        |
-| Ellipse Tool                                       | `O`        |
-| [Pen Tool](fundamentals/pen-tool/)                 | `P`        |
-| [Artboard Tool](fundamentals/artboards.md)         | `A`        |
-| [Bone Tool](manipulating-shapes/bones/)            | `B`        |
-| [Group Tool](fundamentals/groups/)                 | `G`        |
-| [Freeze](manipulating-shapes/origin-and-freeze.md) | `Y`        |
-| Zoom                                               | `Z` (Hold) |
+| Purpose                                            | Shortcut |
+| -------------------------------------------------- | -------- |
+| Select Tool                                        | `V`      |
+| Translate Tool                                     | `T`      |
+| Rectangle Tool                                     | `R`      |
+| Ellipse Tool                                       | `O`      |
+| [Pen Tool](fundamentals/pen-tool/)                 | `P`      |
+| [Artboard Tool](fundamentals/artboards.md)         | `A`      |
+| [Bone Tool](manipulating-shapes/bones/)            | `B`      |
+| [Group Tool](fundamentals/groups/)                 | `G`      |
+| [Freeze](manipulating-shapes/origin-and-freeze.md) | `Y`      |
 
 ### **Editor**
 
@@ -48,6 +47,7 @@
 | Fit selection to screen | `F`                                                                                       |
 | Zoom (mouse)            | <p>macOS: <code>⌘</code> + Mouse Wheel</p><p>Windows: <code>Ctrl</code> + Mouse Wheel</p> |
 | Zoom (keyboard)         | `+` and `-`                                                                               |
+| Zoom (marquee)          | `Z` (hold)                                                                                |
 | Pan                     | <p><code>Right-click</code> + drag<br><code>Space</code> + drag</p>                       |
 
 ### Hierarchy
