@@ -1,6 +1,6 @@
 # Introduction
 
-Welcome to the Rive Help Center. We've split this documentation into the sub-sections below. If you can't find the information you're looking for or have questions for us, join us on [Twitter](https://twitter.com/rive\_app), [Discord](https://discord.com/invite/FGjmaTr), or contact us by filling out [this form](https://rive-app.typeform.com/to/QdTi9zri).
+Welcome to the Rive Guide. We've split this documentation into the sub-sections below. If you can't find the information you're looking for or have questions for us, join us on [Twitter](https://twitter.com/rive\_app), [Discord](https://discord.com/invite/FGjmaTr), or contact us by filling out [this form](https://rive.app/contact).
 
 ## Getting Started
 
@@ -12,7 +12,7 @@ New to Rive? Check out the Getting Started section for details on how to get up 
 
 ## Editor
 
-Ready to start designing and animating in Rive? The editor section walks through the core concepts of Rive as well as detailing individual features in-depth.
+Ready to start designing and animating in Rive? The editor section walks through the core concepts of Rive and details individual features in-depth.
 
 {% content-ref url="editor/fundamentals/" %}
 [fundamentals](editor/fundamentals/)
