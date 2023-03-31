@@ -37,3 +37,7 @@ Note, the default behavior will change in a next major release, whereby the defa
 ### Android
 
 * Bumping the Kotlin version from `1.5.20` to `1.7.10`
+
+{% hint style="warning" %}
+If you intend to run Rive on Android devices, please update to `4.0.1` at the least, which includes a crucial bug fix on the render lifecycle
+{% endhint %}
