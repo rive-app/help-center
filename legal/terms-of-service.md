@@ -1,5 +1,5 @@
 ---
-description: 'Last Updated: October 5, 2020'
+description: 'Last Updated: April 10, 2023'
 ---
 
 # Terms of Service
@@ -120,7 +120,7 @@ As between you and Rive, you own your User Content - Rive does not claim any own
 
 a. We need the legal right to do things like host, publish and share your User Content as part of the functionality of the Service. You grant us and our legal successors the worldwide, sublicensable, non-exclusive right and license to store, reproduce, display and publicly perform your Content, and make incidental copies as necessary to render and provide the Service. This includes the right to do things like copy your Content to our database and make backups; show it to you and other users; parse it into a search index or otherwise analyze it on our servers; share it with other users; and perform it.
 
-b. This license does not grant Rive the right to sell your User Content or otherwise distribute or use it outside of our provision of the Service; provided, however, that Rive has the right to use your name, and your User Content in connection with Rive’s marketing and promotional activities without the payment of any compensation to you.
+b. This license does not grant Rive the right to sell your User Content or otherwise distribute or use it outside of our provision of the Service; provided, however, that Rive has the right to use your name, and your Community Content (as defined below) in connection with Rive’s marketing and promotional activities without the payment of any compensation to you.
 
 ### 6. License Grant to Other Users
 
