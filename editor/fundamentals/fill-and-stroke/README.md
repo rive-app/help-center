@@ -42,11 +42,11 @@ You can apply different stroke types to shapes. These include:
 The Cap option determines how the endpoints of strokes with open paths should be rendered.
 
 * **Butt**\
-  ****The end of the stroke is a straight line and does not extend beyond the end vertices. On a zero-length path, the stroke will not be rendered at all.
+  The end of the stroke is a straight line and does not extend beyond the end vertices. On a zero-length path, the stroke will not be rendered at all.
 * **Round**\
-  ****The ends of a stroke are rounded. On a zero-length path, the stroke is a full circle.
+  The ends of a stroke are rounded. On a zero-length path, the stroke is a full circle.
 * **Square**\
-  ****The ends of a stroke are squared off and extend beyond the end vertices. On a zero-length path, the stroke is a square.
+  The ends of a stroke are squared off and extend beyond the end vertices. On a zero-length path, the stroke is a square.
 
 ### **Join**
 

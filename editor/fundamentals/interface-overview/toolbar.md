@@ -8,13 +8,13 @@ description: Access design and animation tools from the Rive Editor toolbar.
 
 The Editor menu is located to the left of the Transform Tools menu. This menu allows you to change the file name and view your file's [Revision History](../revision-history.md). Note that you can also change your file's name by double clicking on the tab at the top.
 
-<figure><img src="../../../.gitbook/assets/CleanShot 2022-08-30 at 20.37.57@2x.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screen Shot 2023-03-29 at 12.46.49 PM.png" alt=""><figcaption></figcaption></figure>
 
 ## **Transform Tools menu**
 
 The Transform Tools menu houses tools that allow you to alter the transform properties of an object on the [Stage](stage.md).
 
-<figure><img src="../../../.gitbook/assets/CleanShot 2022-08-30 at 20.38.40@2x.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screen Shot 2023-03-29 at 12.51.39 PM.png" alt=""><figcaption></figcaption></figure>
 
 The Select tool allows you to select objects and manipulate all their transform properties with the gizmo that appears. You can also click and drag in an empty space to select multiple objects with a marquee.
 
@@ -26,7 +26,7 @@ In most cases, you'll probably be using the Select tool, though we also currentl
 
 Learn about [Artboards](../artboards.md), [Nested Artboards](../nested-artboards.md), and [`Groups`](../groups/).
 
-<figure><img src="../../../.gitbook/assets/CleanShot 2022-08-30 at 21.06.32@2x.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screen Shot 2023-03-29 at 1.07.56 PM.png" alt=""><figcaption></figcaption></figure>
 
 ## Export menu
 
@@ -38,25 +38,31 @@ Use the [Share Link](../../share-links/) option to share the current version of 
 
 Use the [Cloud Renderer](../../exporting.md#exporting-video-cloud-render) options to export a traditional non-interactive format like GIF, MP4, PNG, or WebM.
 
-<figure><img src="../../../.gitbook/assets/CleanShot 2022-08-30 at 17.48.49@2x.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screen Shot 2023-03-29 at 1.08.57 PM.png" alt=""><figcaption></figcaption></figure>
 
 ## **Vector Tools menu**
 
-Design in Rive using the [Pen Tool](../pen-tool/) and [procedural shapes](../procedural-shapes.md). Thee Vector Tools menu houses all of the tools you'll need to create vector artwork.
+Design in Rive using the [Pen Tool](../pen-tool/) and [procedural shapes](../procedural-shapes.md). The Vector Tools menu houses all of the tools you'll need to create vector artwork.
 
-<figure><img src="../../../.gitbook/assets/CleanShot 2022-08-30 at 21.08.14@2x.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screen Shot 2023-03-29 at 1.13.50 PM.png" alt=""><figcaption></figcaption></figure>
 
 ## **Bones menu**
 
 Access the [Bone tool](../../manipulating-shapes/bones/) and [Weight tool](../../manipulating-shapes/bones/#2.-binding) (when binding).
 
-<figure><img src="../../../.gitbook/assets/CleanShot 2022-08-30 at 21.19.30@2x.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screen Shot 2023-03-29 at 1.20.43 PM.png" alt=""><figcaption></figcaption></figure>
 
 ## **View Options menu**
 
 Customize the zoom level, enable snapping, and toggle the visibility of bones.
 
-<figure><img src="../../../.gitbook/assets/CleanShot 2022-08-30 at 21.20.40@2x.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Screen Shot 2023-03-29 at 1.21.42 PM.png" alt=""><figcaption></figcaption></figure>
+
+## **Share Button**
+
+The Share button allows you to quickly create Share Links, publish a file to the Community, and download a .riv file.
+
+<figure><img src="../../../.gitbook/assets/Screen Shot 2023-03-29 at 1.24.32 PM.png" alt=""><figcaption></figcaption></figure>
 
 ## **Mode toggle**
 

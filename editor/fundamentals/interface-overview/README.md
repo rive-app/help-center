@@ -10,9 +10,9 @@ description: >-
 
 ## Toolbar
 
-![](<../../../.gitbook/assets/Screen Shot 2022-05-25 at 3.41.40 PM.png>)
+![](<../../../.gitbook/assets/Screen Shot 2023-03-29 at 12.25.22 PM.png>)
 
-The Toolbar displays the tools you have available to manipulate and create items on the stage. In addition to these tools, the toolbar houses a variety of options to allow you to customize the look of your file.
+The Toolbar displays the tools you have available to manipulate and create items on the stage. In addition to these tools, the toolbar houses a variety of options to allow you to customize the look of your file, set your main artboard, and export or share your file.
 
 Read more on the Toolbar page.
 
@@ -24,7 +24,7 @@ Read more on the Toolbar page.
 
 All the objects, assets, controls, and animations that make up your file appear in the Hierarchy.
 
-![](<../../../.gitbook/assets/Screen Shot 2022-05-26 at 2.45.21 PM.png>)
+![](<../../../.gitbook/assets/Screen Shot 2023-03-29 at 12.26.58 PM.png>)
 
 {% content-ref url="hierarchy.md" %}
 [hierarchy.md](hierarchy.md)
@@ -34,7 +34,7 @@ All the objects, assets, controls, and animations that make up your file appear 
 
 The Inspector allows you to adjust the properties for the currently selected object.
 
-![](<../../../.gitbook/assets/Screen Shot 2022-05-26 at 2.47.28 PM.png>)
+![](<../../../.gitbook/assets/Screen Shot 2023-03-29 at 12.40.06 PM.png>)
 
 Read more on the Inspector page.
 
@@ -46,7 +46,7 @@ Read more on the Inspector page.
 
 The stage refers to the central area between the toolbar, the hierarchy, and the inspector. Here you can create the artboards that are the foundations of your designs and animations within Rive.
 
-![](<../../../.gitbook/assets/Screen Shot 2022-05-26 at 2.54.29 PM.png>)
+![](<../../../.gitbook/assets/Screen Shot 2023-03-29 at 12.41.58 PM.png>)
 
 Read more on the Stage page
 
@@ -56,7 +56,7 @@ Read more on the Stage page
 
 ## **Timeline**
 
-![](<../../../.gitbook/assets/Screen Shot 2022-05-26 at 3.06.33 PM.png>)
+![](<../../../.gitbook/assets/Screen Shot 2023-03-29 at 12.44.19 PM.png>)
 
 The Timeline surfaces from the bottom of the screen upon entering animate mode. Here you can create new animations, access playback controls, and settings, and set keyframes for object parameters. Select an animation from the left-hand list to switch between the respective timelines.\
 

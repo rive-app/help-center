@@ -6,7 +6,7 @@ The Pen tool allows you to create custom vector paths as well as add additional 
 
 ## Creating **custom shapes**
 
-The Pen tool allows you to create custom vector shapes. Activate the Pen tool by finding it under the Create Tools menu or by using the `V` shortcut.&#x20;
+The Pen tool allows you to create custom vector shapes. Activate the Pen tool by finding it under the Create Tools menu or by using the `P` shortcut.&#x20;
 
 Click on the stage to place vertices.
 

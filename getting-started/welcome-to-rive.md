@@ -24,26 +24,26 @@ The Rive format and runtimes are all open-source and available through the MIT l
 
 Upon signing up and logging in you'll arrive at the home tab. This is where you can access and organize both your and your team's Rive files. You'll find the primary navigation points on the left-hand side:
 
-**Search (coming soon)**\
-****A global search across personal and team files.
+**Search**\
+A global search across personal and team files.
 
 **Learn**\
-****Educational materials like video collections, links, surveys, and tutorials on a variety of topics and features.
+Educational materials like video collections, links, surveys, and tutorials on a variety of topics and features.
 
 **Notifications**\
-****Team invites and Rive announcements.
+Team invites and Rive announcements.
 
 **Recent**\
-****Quick access to the files you were working on last.
+Quick access to the files you were working on last.
 
-**Community (coming soon)**\
-****Share your creations with others, and remix theirs.
+**Community**\
+Share your creations with others, and remix theirs.
 
 **Your files**\
-****All your personal Rive files.
+All your personal Rive files.
 
 **Your teams**\
-****All the teams you're a member of, and the files associated with them.
+All the teams you're a member of, and the files associated with them.
 
 ## Create a new file
 

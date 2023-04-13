@@ -16,6 +16,20 @@ To learn more about Artboards, watch our video on Artboards or read more below.
 
 The active artboard is represented with a dot next to its name on the stage. You can activate an artboard by clicking on it or any of its children within the stage. Note that sections of the editor will only surface content associated with the active artboard. For instance, only the active artboard's hierarchy is displayed in the tree. Similarly, only animations referenced to the active artboard will surface within the timeline.
 
+## Default State Machine
+
+The default state machine is the state machine that will be played when using the play button in the Toolbar. In addition to setting the default state machine, this also sets the default artboard that a developer will see when using this file outside of Rive.
+
+<figure><img src="../../.gitbook/assets/2023-03-29 14.14.22.gif" alt=""><figcaption></figcaption></figure>
+
+To change the default state machine, use the dropdown to select the one you want to use.
+
+You can quickly play the selected state machine from Design Mode by holding shift and hitting the space bar.
+
+<figure><img src="../../.gitbook/assets/2023-03-29 14.16.40 (2).gif" alt=""><figcaption></figcaption></figure>
+
+
+
 ## **Creating an artboard**
 
 ![](../../.gitbook/assets/create\_artboards\_b.gif)

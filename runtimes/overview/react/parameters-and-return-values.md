@@ -63,7 +63,7 @@ The `useStateMachineInput` hook is the recommended way to grab references to Riv
 * `rive` - The 1st parameter is the Rive object instantiated - this can be retrieved via the `useRive` hook
 * `stateMachineName?` - _(optional)_ Name of the state machine to grab the input from
 * `inputName?` - _(optional)_ Name of a single state machine input to grab a reference to
-* `initialValue?` - _(optional) ****_ Initial value to set on the input
+* `initialValue?` - _(optional)_ Initial value to set on the input
 
 #### Return Values
 
@@ -71,7 +71,7 @@ This hook returns a default instance of a `StateMachineInput`.
 
 **StateMachineInput**
 
-* `name` __ (get) - Access the name of the input
+* `name` (get) - Access the name of the input
 * `value` (get and set) - Access the value of the input, and set the value of the input via this property
 * `fire()` - Fires off a trigger input
 
@@ -85,6 +85,5 @@ One thing to note is that `style`/`className` props set on the component will be
 \
 The `<canvas>` element will still receive any other props passed into the component, such as `aria-*` attributes, `role`'s, etc.
 
-****
 
-****
+
