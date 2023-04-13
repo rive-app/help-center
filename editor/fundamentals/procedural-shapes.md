@@ -16,7 +16,7 @@ To edit the vertices of a procedural path, press `Enter` on your keyboard. This 
 
 ### Origin of a procedural path
 
-The [origin](origin-and-freeze.md) of a procedural path determines where its properties originate from. For example, changing the width on a rectangle with its origin in the middle (50% X and 50% Y) causes it to grow from its center.
+The [origin](../manipulating-shapes/origin-and-freeze.md) of a procedural path determines where its properties originate from. For example, changing the width on a rectangle with its origin in the middle (50% X and 50% Y) causes it to grow from its center.
 
 ![](../../.gitbook/assets/procedural\_center.gif)
 

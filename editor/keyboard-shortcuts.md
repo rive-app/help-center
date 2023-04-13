@@ -2,17 +2,17 @@
 
 ### Tools
 
-| Purpose                                     | Shortcut |
-| ------------------------------------------- | -------- |
-| Select Tool                                 | `V`      |
-| Translate Tool                              | `T`      |
-| Rectangle Tool                              | `R`      |
-| Ellipse Tool                                | `O`      |
-| [Pen Tool](fundamentals/pen-tool/)          | `P`      |
-| [Artboard Tool](fundamentals/artboards.md)  | `A`      |
-| [Bone Tool](manipulating-shapes/bones/)     | `B`      |
-| [Group Tool](fundamentals/groups/)          | `G`      |
-| [Freeze](fundamentals/origin-and-freeze.md) | `Y`      |
+| Purpose                                            | Shortcut |
+| -------------------------------------------------- | -------- |
+| Select Tool                                        | `V`      |
+| Translate Tool                                     | `T`      |
+| Rectangle Tool                                     | `R`      |
+| Ellipse Tool                                       | `O`      |
+| [Pen Tool](fundamentals/pen-tool/)                 | `P`      |
+| [Artboard Tool](fundamentals/artboards.md)         | `A`      |
+| [Bone Tool](manipulating-shapes/bones/)            | `B`      |
+| [Group Tool](fundamentals/groups/)                 | `G`      |
+| [Freeze](manipulating-shapes/origin-and-freeze.md) | `Y`      |
 
 ### **Editor**
 

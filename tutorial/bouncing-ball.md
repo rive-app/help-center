@@ -54,7 +54,7 @@ Select the shape layer and add [clipping](../editor/manipulating-shapes/clipping
 
 ![](../.gitbook/assets/2021-08-09-14.36.28.gif)
 
-Change the [origin](../editor/fundamentals/origin-and-freeze.md) of the detail shape.
+Change the [origin](../editor/manipulating-shapes/origin-and-freeze.md) of the detail shape.
 
 ![](../.gitbook/assets/2021-08-10-12.39.42.gif)
 

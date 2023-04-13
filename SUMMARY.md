@@ -37,7 +37,7 @@
     * [Fill and Stroke Tips](editor/fundamentals/fill-and-stroke/tips-and-best-practices.md)
   * [Edit Vertices](editor/fundamentals/editing-vertices/README.md)
     * [Edit Vertices Tips](editor/fundamentals/editing-vertices/tips-and-best-practices.md)
-  * [Freeze and Origin](editor/fundamentals/origin-and-freeze.md)
+  * [Freeze and Origin](editor/manipulating-shapes/origin-and-freeze.md)
   * [Importing Assets](editor/fundamentals/importing-assets.md)
   * [Revision History](editor/fundamentals/revision-history.md)
 * [Animate Mode](editor/animate-mode/README.md)

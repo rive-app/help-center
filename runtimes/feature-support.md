@@ -8,6 +8,20 @@ As our Rive editor grows to support more features and toolsets in making Rive as
 \
 We may include notes on migrating to newer versions if a new feature warrants recent API changes.
 
+## Solo Support
+
+To take advantage of Solos at runtime, bump to the appropriate versions noted below to support this new feature.
+
+| Runtime                                        | Version                         |
+| ---------------------------------------------- | ------------------------------- |
+| (Web) `@rive-app/canvas` and `@rive-app/webgl` | :white\_check\_mark:`>= 1.1.2`  |
+| React                                          | :white\_check\_mark:`>= 3.0.42` |
+| React Native                                   | Coming soon!                    |
+| Flutter                                        | Coming soon!                    |
+| iOS                                            | :white\_check\_mark:`>= 3.1.9`  |
+| Android                                        | Coming soon!                    |
+| C++                                            | :white\_check\_mark: Supported  |
+
 ## Speed on States Support
 
 If you set speed values on states in the state machine, bump to the appropriate versions noted below for the runtime being used to support this new feature.
@@ -17,7 +31,7 @@ If you set speed values on states in the state machine, bump to the appropriate 
 | (Web) `@rive-app/canvas` | :white\_check\_mark:`>= 1.0.102` |
 | (Web) `@rive-app/webgl`  | :white\_check\_mark:`>= 1.0.98`  |
 | React                    | :white\_check\_mark:`>= 3.0.38`  |
-| React Native             | :white\_check\_mark:`>= 4.0.0`   |
+| React Native             | :white\_check\_mark:`>= 4.0.1`   |
 | Flutter                  | :white\_check\_mark:`>= 0.10.3`  |
 | iOS                      | :white\_check\_mark:`>= 3.1.7`   |
 | Android                  | :white\_check\_mark:`>= 4.2.7`   |
@@ -32,7 +46,7 @@ If you use the timeline graph editor in the Rive editor and export a `.riv` file
 | (Web) `@rive-app/canvas` | :white\_check\_mark:`>= 1.0.97` |
 | (Web) `@rive-app/webgl`  | :white\_check\_mark:`>= 1.0.93` |
 | React                    | :white\_check\_mark:`>= 3.0.34` |
-| React Native             | :white\_check\_mark:`>= 4.0.0`  |
+| React Native             | :white\_check\_mark:`>= 4.0.1`  |
 | Flutter                  | :white\_check\_mark:`>= 0.10.0` |
 | iOS                      | :white\_check\_mark:`>= 3.1.3`  |
 | Android                  | :white\_check\_mark:`>= 4.2.2`  |
