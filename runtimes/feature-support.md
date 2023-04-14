@@ -17,7 +17,7 @@ To take advantage of Solos at runtime, bump to the appropriate versions noted be
 | (Web) `@rive-app/canvas` and `@rive-app/webgl` | :white\_check\_mark:`>= 1.1.2`  |
 | React                                          | :white\_check\_mark:`>= 3.0.42` |
 | React Native                                   | Coming soon!                    |
-| Flutter                                        | Coming soon!                    |
+| Flutter                                        | :white\_check\_mark:`>= 0.10.4` |
 | iOS                                            | :white\_check\_mark:`>= 3.1.9`  |
 | Android                                        | Coming soon!                    |
 | C++                                            | :white\_check\_mark: Supported  |
