@@ -125,3 +125,4 @@
 * [Terms of Service](legal/terms-of-service.md)
 * [Acceptable Use Policy](legal/acceptable-use-policy.md)
 * [Privacy Policy](legal/privacy-policy.md)
+* [GameKit Evaluation Agreement](legal/gamekit-evaluation-agreement.md)
