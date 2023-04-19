@@ -138,4 +138,5 @@ Examples:
 * Tracking mouse cursor: [https://codesandbox.io/s/mouse-tracking-on-viewport-gxn16i](https://codesandbox.io/s/mouse-tracking-on-viewport-gxn16i)
 * Simple skinning: [https://codesandbox.io/s/rive-sm-workshop-demo-bare-demo2-ivv1pj](https://codesandbox.io/s/rive-sm-workshop-demo-bare-demo2-ivv1pj)
 * Connecting to page scroll: [https://codesandbox.io/s/rive-scroll-example-9llgpp](https://codesandbox.io/s/rive-scroll-example-9llgpp)
+* Playing state machine only when scrolled into the user's viewport: [https://codesandbox.io/s/play-rive-when-scrolled-into-view-szxz9c](https://codesandbox.io/s/play-rive-when-scrolled-into-view-szxz9c)
 
