@@ -15,7 +15,7 @@ The Studio plan allows you to create a space where you and other team members ca
 **$14/mo** per user billed yearly ($168 a year per user)\
 **$21/mo** per user billed monthly
 
-## Educational & Non-profit pricing
+## Education and non-profit discounts
 
 We do not offer educational or non-profit pricing at this time. Our free plan is available to anyone who wishes to try Rive. Free plans allow you to work on a maximum of 3 files at a time, and there is a 10 MB file size limit per each image you upload into Rive.
 
