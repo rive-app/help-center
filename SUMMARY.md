@@ -71,6 +71,16 @@
 * [Bouncing ball](tutorial/bouncing-ball.md)
 * [Tom Morello](tutorial/tom-morello.md)
 
+## Rive GameKit
+
+* [Overview](rive-gamekit/overview.md)
+* [Fundamentals](rive-gamekit/fundamentals.md)
+* [Advancing State Machines](rive-gamekit/advancing-state-machines.md)
+* [Paint & Layout](rive-gamekit/paint-and-layout.md)
+* [Tutorials](rive-gamekit/tutorials/README.md)
+  * [Tilemaps](rive-gamekit/tutorials/tilemaps.md)
+  * [Adding Keyboard and Mouse Interaction](rive-gamekit/tutorials/adding-keyboard-and-mouse-interaction.md)
+
 ## Runtimes
 
 * [Runtime Libraries](runtimes/overview.md)
