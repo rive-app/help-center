@@ -20,6 +20,7 @@ export interface RiveParameters {
   onLoop?: EventCallback,
   onStateChange?: EventCallback,
   useOffscreenRenderer?: boolean,
+  shouldDisableRiveListeners?: boolean,
 }
 ```
 
@@ -42,3 +43,5 @@ export interface RiveParameters {
 * `onLoop?` - _(optional)_ Callback that gets fired when the animation completes a loop.
 * `onStateChange?` - _(optional)_ Callback that gets fired when a state change occurs.
 * `useOffscreenRenderer?` - _(optional)_ Boolean flag to determine whether to use a shared offscreen WebGL context rather than create its own WebGL context for this instance of Rive. This is only relevant for the `@rive-app/webgl` package. If you are displaying multiple Rive animations, it is highly encouraged to set this flag to `true`. Defaults to `false`.
+* `shouldDisableRiveListeners?` - _(optional)_ Boolean flag to disable setting up Rive Listeners on the `<canvas>` element, thus preventing any event listeners from being set up on the element.&#x20;
+  * **Note:** Rive Listeners by default are not set up on a `<canvas>` element if there is no playing state machine, or a state machine without any Rive Listeners set up on the state machine
