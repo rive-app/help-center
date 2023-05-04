@@ -71,7 +71,7 @@ Create a new instance of a Rive object, providing the following properties:
 
 ### Complete example
 
-Putting this altogether, you can load an example Rive animation in one HTML file.&#x20;
+Putting this all together, you can load an example Rive animation in one HTML file.&#x20;
 
 Additionally, we'll add an `onLoad` callback to the Rive object to use Rive's `resizeDrawingSurfaceToCanvas()` API to respect the device pixel ratio and prevent a blurry canvas from displaying. In a future release, this may be the default behavior, and you may need to opt-out if you do not want Rive to set your `<canvas>` width and height properties for you.
 
