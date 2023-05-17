@@ -15,22 +15,11 @@ The `useRive` hook is the recommended way to hook into the Rive runtime for full
 
 **UseRiveParameters**
 
-* `src?` - _(optional)_ File path or URL to the .riv file to use. One of `src` or `buffer` must be provided
-* `buffer?` - _(optional)_ ArrayBuffer containing the raw bytes from a .riv file. One of `src` or `buffer` must be provided
-* `artboard?` - _(optional)_ Name of the artboard to use
-* `animations?` - _(optional)_ Name or list of names of animations to play
-* `stateMachines?` - _(optional)_ Name or list of names of state machines to load
-* `layout?` - _(optional)_ Layout object to define how animations are displayed on the canvas. See our [web runtime docs](https://github.com/rive-app/rive-wasm#layout) for more details
-* `autoplay?` - _(optional)_ If true, the animation will automatically start playing when loaded. Defaults to false
-* `onLoad?` - _(optional)_ Callback that gets fired when the .rive file loads
-* `onLoadError?` - _(optional)_ Callback that gets fired when an error occurs loading the .riv file
-* `onPlay?` - _(optional)_ Callback that gets fired when the animation starts playing
-* `onPause?` - _(optional)_ Callback that gets fired when the animation pauses
-* `onStop?` - _(optional)_ Callback that gets fired when the animation stops playing
-* `onLoop?` - _(optional)_ Callback that gets fired when the animation completes a loop
-* `onStateChange?` - _(optional)_ Callback that gets fired when a state change occurs
+Most of these parameters come from the underlying web runtime configuration items for the Rive object, with the exception of supplying a `canvas` element. See [rive-parameters.md](../web-js/rive-parameters.md "mention") for all the parameters you can supply in this object.
 
-Most of these parameters come from the underlying web runtime configuration items for the Rive object. See the [types here](https://github.com/rive-app/rive-wasm/blob/master/js/src/rive.ts#L842).
+{% hint style="warning" %}
+If you supply an `onLoad` callback in the parameters, you may not have access to the `rive` instance yet. The React runtime uses `onLoad` internally to setState with the `rive` instance, and therefore may not be populated by the time it reaches a consumer-supplied callback. We recommend using a `useEffect` in place of `onLoad` to reliably use the `rive` instance if you are looking for a similar method. In a future version of the web runtime, we may supply the `rive` instance in the parameters of your callback so you can supply an `onLoad` here.
+{% endhint %}
 
 **UseRiveOptions**
 
@@ -57,6 +46,10 @@ In most cases, you will just need to grab the `RiveComponent` and `rive` return 
 The `useStateMachineInput` hook is the recommended way to grab references to Rive State Machine inputs, both for reading input values, and setting (or triggering) them. See below for parameters to pass in and the return value.
 
 `useStateMachineInput(rive: Rive | null, stateMachineName?: string, inputName?: string, initialValue?: number | boolean): StateMachineInput | null`
+
+{% hint style="warning" %}
+The return value which is the state machine input may not be immediately available due to the need for the `rive` instance to resolve first. You may want to use a `useEffect` to watch for when the `rive` instance and the return value of the `useStateMachineInput` hook has value
+{% endhint %}
 
 #### Parameters
 
