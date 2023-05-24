@@ -1,5 +1,5 @@
 ---
-description: Migrating guide from < .x
+description: Migrating guide from < 3.x
 ---
 
 # Migrating from 2.x.x to 3.x.x
@@ -22,17 +22,7 @@ Starting in v3, the Layout option enums have changed to match enum naming conven
 | Scale Down | `.fitScaleDown` | `.scaleDown` |
 | None       | `.fitNone`      | `.noFit`     |
 
-| Alignment     | Before                   | After           |
-| ------------- | ------------------------ | --------------- |
-| Top Left      | `.alignmentTopLeft`      | `.topLeft`      |
-| Top Center    | `.alignmentTopCenter`    | `.topCenter`    |
-| Top Right     | `.alignmentTopRight`     | `.topRight`     |
-| Center Left   | `.alignmentCenterLeft`   | `.centerLeft`   |
-| Center        | `.alignmentCenter`       | `.center`       |
-| Center Right  | `.alignmentCenterRight`  | `.centerRight`  |
-| Bottom Left   | `.alignmentBottomLeft`   | `.bottomLeft`   |
-| Bottom Center | `.alignmentBottomCenter` | `.bottomCenter` |
-| Bottom Right  | `.alignmentBottomRight`  | `.bottomRight`  |
+<table><thead><tr><th>Alignment</th><th width="268.3333333333333">Before</th><th>After</th></tr></thead><tbody><tr><td>Top Left</td><td><code>.alignmentTopLeft</code></td><td><code>.topLeft</code></td></tr><tr><td>Top Center</td><td><code>.alignmentTopCenter</code></td><td><code>.topCenter</code></td></tr><tr><td>Top Right</td><td><code>.alignmentTopRight</code></td><td><code>.topRight</code></td></tr><tr><td>Center Left</td><td><code>.alignmentCenterLeft</code></td><td><code>.centerLeft</code></td></tr><tr><td>Center</td><td><code>.alignmentCenter</code></td><td><code>.center</code></td></tr><tr><td>Center Right</td><td><code>.alignmentCenterRight</code></td><td><code>.centerRight</code></td></tr><tr><td>Bottom Left</td><td><code>.alignmentBottomLeft</code></td><td><code>.bottomLeft</code></td></tr><tr><td>Bottom Center</td><td><code>.alignmentBottomCenter</code></td><td><code>.bottomCenter</code></td></tr><tr><td>Bottom Right</td><td><code>.alignmentBottomRight</code></td><td><code>.bottomRight</code></td></tr></tbody></table>
 
 | Loop Mode | Before         | After      |
 | --------- | -------------- | ---------- |

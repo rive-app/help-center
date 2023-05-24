@@ -147,7 +147,7 @@ widget = const RiveAnimation.network(
 ```
 {% endtab %}
 
-{% tab title="iOS" %}
+{% tab title="iOS/macOS" %}
 See values and descriptions in the sections below for `Fit` and `Alignment`.\
 \
 The runtime provides the following enums to set on layout parameters:\

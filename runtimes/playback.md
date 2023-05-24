@@ -78,7 +78,7 @@ RiveAnimation.network(
 ```
 {% endtab %}
 
-{% tab title="iOS" %}
+{% tab title="iOS/macOS" %}
 ### SwiftUI
 
 ```swift
@@ -221,7 +221,7 @@ RiveAnimation.network(
 ```
 {% endtab %}
 
-{% tab title="iOS" %}
+{% tab title="iOS/macOS" %}
 By default `RiveViewModel` will automatically play the animation or state machine you've given it.
 
 ### SwiftUI
@@ -650,7 +650,7 @@ class _PlayOneShotAnimationState extends State<PlayOneShotAnimation> {
 ```
 {% endtab %}
 
-{% tab title="iOS" %}
+{% tab title="iOS/macOS" %}
 #### Invoking Playback Controls
 
 After creating a `RiveViewModel` to display, you can invoke animation playback control methods on a reference to this view model.

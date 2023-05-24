@@ -125,7 +125,7 @@ As you change the `isActive` property of the `StateMachineController`, you'll se
 
 {% endtab %}
 
-{% tab title="iOS" %}
+{% tab title="iOS/macOS" %}
 Specify a starting state machine by setting the name of the state machine via `stateMachineName` when instantiating the `RiveViewModel`.
 
 ### SwiftUI
@@ -618,7 +618,7 @@ void _onStateChange(
 ```
 {% endtab %}
 
-{% tab title="iOS" %}
+{% tab title="iOS/macOS" %}
 ### Inputs
 
 Just like with animation playback controls, setting input values for state machines goes through the `RiveViewModel` instantiated in the View class.

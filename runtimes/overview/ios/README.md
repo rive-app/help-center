@@ -1,20 +1,24 @@
 ---
-description: iOS runtime for Rive
+description: iOS/macOS runtime for Rive
 ---
 
-# iOS
+# iOS/macOS
 
 ## Overview
 
-This guide documents how to get started using the iOS runtime library. Rive runtime libraries are open-source. The source is available in its [GitHub repository](https://github.com/rive-app/rive-ios).\
+This guide documents how to get started using the iOS/macOS runtime library. Rive runtime libraries are open-source. The source is available in its [GitHub repository](https://github.com/rive-app/rive-ios).\
 \
-This library contains an API for iOS apps to easily integrate their Rive assets for both UIKit and SwiftUI. The runtime can also be installed via Cocoapods or Swift Package Manager.
+This library contains an API for iOS/macOS apps to easily integrate their Rive assets for both UIKit/AppKit and SwiftUI. The runtime can also be installed via Cocoapods or Swift Package Manager.
 
-The minimum iOS target is **14.0**
+The minimum iOS target is **14.0,** and the target for macOS is `13.1`
+
+{% hint style="info" %}
+**Note:** macOS runtime support is included in `v4.0.1+`
+{% endhint %}
 
 ## Getting Started
 
-Follow the steps below for a quick start on integrating Rive into your iOS app.
+Follow the steps below for a quick start on integrating Rive into your iOS/macOS app.
 
 ### 1. Install the dependency
 
@@ -30,7 +34,7 @@ Add the following to your Podspec file:
 
 #### Via Swift Package Manager
 
-To install via Swift Package Manager, in the package finder in xcode, search with the Github repository name: `https://github.com/rive-app/rive-ios`
+To install via Swift Package Manager, in the package finder in Xcode, search for `rive-ios`
 
 ### 2. Importing Rive
 
@@ -42,7 +46,7 @@ import RiveRuntime
 
 ### 3. v2 Runtime Usage
 
-Rive iOS runtimes of versions 2.x.x or later should use the newer patterns for integrating Rive into your iOS applications. This involves some API changes from the pattern in versions 1.x.x (see migration guide for guidance on moving to 2.x.x). The primary object you'll use is a `RiveViewModel`. It is responsible for creating and interacting with Rive assets.&#x20;
+In Rive iOS runtimes of versions 2.x.x or later, the primary object you'll use is a `RiveViewModel`. It is responsible for creating and interacting with Rive assets.&#x20;
 
 #### 3a. SwiftUI
 
