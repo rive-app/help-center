@@ -8,11 +8,17 @@ As our Rive editor grows to support more features and toolsets in making Rive as
 \
 We may include notes on migrating to newer versions if a new feature warrants recent API changes.
 
+## Joystick Support
+
+To allow any Joystick configuration from the editor to reflect at runtime, bump to the appropriate versions noted below to support this new feature.
+
+<table><thead><tr><th width="368">Runtime</th><th>Version</th></tr></thead><tbody><tr><td>(Web) <code>@rive-app/canvas</code> and <code>@rive-app/webgl</code></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 1.1.9</code></td></tr><tr><td>React</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 3.0.49</code></td></tr><tr><td>React Native</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 4.1.0</code></td></tr><tr><td>Flutter</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 0.11.1</code></td></tr><tr><td>iOS</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 4.0.1</code></td></tr><tr><td>Android</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 5.0.0</code></td></tr><tr><td>C++</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span> Supported</td></tr></tbody></table>
+
 ## Solo Support
 
 To take advantage of Solos at runtime, bump to the appropriate versions noted below to support this new feature.
 
-<table><thead><tr><th width="368">Runtime</th><th>Version</th></tr></thead><tbody><tr><td>(Web) <code>@rive-app/canvas</code> and <code>@rive-app/webgl</code></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 1.1.2</code></td></tr><tr><td>React</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 3.0.42</code></td></tr><tr><td>React Native</td><td>Coming soon!</td></tr><tr><td>Flutter</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 0.10.4</code></td></tr><tr><td>iOS</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 3.1.9</code></td></tr><tr><td>Android</td><td>Coming soon!</td></tr><tr><td>C++</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span> Supported</td></tr></tbody></table>
+<table><thead><tr><th width="368">Runtime</th><th>Version</th></tr></thead><tbody><tr><td>(Web) <code>@rive-app/canvas</code> and <code>@rive-app/webgl</code></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 1.1.2</code></td></tr><tr><td>React</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 3.0.42</code></td></tr><tr><td>React Native</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 4.0.4</code></td></tr><tr><td>Flutter</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 0.10.4</code></td></tr><tr><td>iOS</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 3.1.9</code></td></tr><tr><td>Android</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 4.4.0</code></td></tr><tr><td>C++</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span> Supported</td></tr></tbody></table>
 
 ## Speed on States Support
 
