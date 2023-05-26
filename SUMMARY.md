@@ -128,7 +128,7 @@
 * [Accounts](admin/accounts/README.md)
   * [Account Admin](admin/accounts/account-admin/README.md)
     * [Trouble logging in](admin/accounts/account-admin/trouble-logging-in.md)
-    * [Delete account](admin/accounts/account-admin/delete-account.md)
+    * [Delete account](admin/accounts/delete-account.md)
 * [Teams](admin/teams.md)
 * [Pricing](admin/pricing/README.md)
   * [Fair Billing Policy](admin/pricing/fair-billing-policy.md)

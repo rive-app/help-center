@@ -18,9 +18,25 @@ Hit the replace button and when prompted, select the updated image. You'll notic
 
 ## Supported formats
 
-Rive supports importing SVG (see limitations below), PNG, PSD, and JPG formats.
+Rive supports importing SVG (see limitations below), JSON, PNG, PSD, and JPG formats.
 
-## SVG Tips
+#### Copy and paste directly from Figma
+
+You can use "copy as SVG" and paste it directly into the Rive editor.
+
+<figure><img src="../../.gitbook/assets/2023-04-13 14.06.20.gif" alt=""><figcaption></figcaption></figure>
+
+#### Import Lottie file
+
+You can import your Lottie animations into Rive. To get started, drag and drop your Lottie JSON file into the Rive ediotr. this adds it to your Assets panel.
+
+<figure><img src="../../.gitbook/assets/CleanShot 2023-04-12 at 17.05.03@2x.png" alt=""><figcaption></figcaption></figure>
+
+From there, you can drag it into an exisiting artboard or drag it into an empty space to create a new artboard.
+
+<figure><img src="../../.gitbook/assets/CleanShot 2023-04-12 at 17.08.12@2x.png" alt=""><figcaption></figcaption></figure>
+
+### SVG Tips
 
 SVG is a very flexible and feature-rich format. We aim to support SVG as best we can, however, there are some features that we do not support at this stage.&#x20;
 

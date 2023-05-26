@@ -77,7 +77,9 @@ If you use the cubic interpolation in the interpolation panel, you'll need to ad
 
 #### Using Cubic value
 
-Using the cubic value option in the interpolation panel will enable you to adjust the interpolation directly on the graph.
+Using the cubic value option in the interpolation panel will enable you to adjust the interpolation directly on the graph.\
+\
+Unlike cubic interpolation, cubic values can effect the actual value of an animated property.
 
 
 

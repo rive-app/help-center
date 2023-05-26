@@ -2,17 +2,18 @@
 
 ### Tools
 
-| Purpose                                            | Shortcut |
-| -------------------------------------------------- | -------- |
-| Select Tool                                        | `V`      |
-| Translate Tool                                     | `T`      |
-| Rectangle Tool                                     | `R`      |
-| Ellipse Tool                                       | `O`      |
-| [Pen Tool](fundamentals/pen-tool/)                 | `P`      |
-| [Artboard Tool](fundamentals/artboards.md)         | `A`      |
-| [Bone Tool](manipulating-shapes/bones/)            | `B`      |
-| [Group Tool](fundamentals/groups/)                 | `G`      |
-| [Freeze](manipulating-shapes/origin-and-freeze.md) | `Y`      |
+| Select Tool                                        | `V` |
+| -------------------------------------------------- | --- |
+| Translate Tool                                     | `Q` |
+| Rotate Tool                                        | `W` |
+| Scale Tool                                         | `E` |
+| Rectangle Tool                                     | `R` |
+| Ellipse Tool                                       | `O` |
+| [Pen Tool](fundamentals/pen-tool/)                 | `P` |
+| [Artboard Tool](fundamentals/artboards.md)         | `A` |
+| [Bone Tool](manipulating-shapes/bones/)            | `B` |
+| [Group Tool](fundamentals/groups/)                 | `G` |
+| [Freeze](manipulating-shapes/origin-and-freeze.md) | `Y` |
 
 ### **Editor**
 
@@ -40,6 +41,7 @@
 | Color Picker                                                            | <p>macOS:  <code>Ctrl</code> + <code>C</code> or <code>I</code> <br>Windows: <code>I</code></p>                                                                                                                          |
 | Search                                                                  | <p>macOS: <code>⌘</code> + <code>K</code><br>Windows: <code>Ctrl</code> + <code>K</code></p>                                                                                                                             |
 | Reveal keys for selection                                               | `U`                                                                                                                                                                                                                      |
+| Play default State Machine                                              | `Shift + Space`                                                                                                                                                                                                          |
 
 ### View
 
