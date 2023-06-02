@@ -47,15 +47,15 @@ The names of the teams you are part of are down the left side of the page. Under
 
 
 
-You will see Plan, Receipt options, and History on the billing page.&#x20;
+Plan, Receipt options, and History are on the billing page.&#x20;
 
 <figure><img src="../../../../.gitbook/assets/acct8.png" alt=""><figcaption></figcaption></figure>
 
-**Plan**: This is the information for your account. It tells you the billing term (monthly or yearly) and if the team is active or suspended. Your due date is there and the amount of your next bill. Your credit balance is listed along with your payment method. This is where you can change your payment method or cancel your plan.&#x20;
+**Plan**: This is the information for your account. It tells you the billing term (monthly or yearly) and if the team is active or suspended. Your due date is there, and the amount of your next bill. Your credit balance is listed along with your payment method. This is where you can change your payment method or cancel your plan.&#x20;
 
-**Receipt options**: You can enter in the information you want on your receipt in this section. If you have a VAT number, you can add it in here. Our current system does not show the VAT number on your receipt. If you need your receipt to show that information, please email us at support@rive.app and we can generate the receipts for you.&#x20;
+**Receipt options**: You can enter the information you want on your receipt in this section. If you have a VAT number, you can add it here. Our current system does not show the VAT number on your receipt. If you need your receipt to show that information, please email us at support@rive.app, and we can generate the receipts.&#x20;
 
-**History**: Your billing history is in this section. You can see each bill, what you paid, and there is an option to click on Receipt. This will take you to a page showing the receipt you received. From there, you can download a .pdf copy of the receipt or the invoice, depending on your need. \
+**History**: Your billing history is in this section. You can see each bill and what you paid. There is an option to click on Receipt. This will take you to a page showing the receipt you received. You can download a .pdf copy of the receipt or the invoice, depending on your need. \
 
 
 <figure><img src="../../../../.gitbook/assets/acct5.png" alt=""><figcaption></figcaption></figure>

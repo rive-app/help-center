@@ -129,7 +129,7 @@
   * [Account Admin](admin/accounts/account-admin/README.md)
     * [Trouble logging in](admin/accounts/account-admin/trouble-logging-in.md)
     * [Account settings](admin/accounts/account-admin/account-settings/README.md)
-      * [Delete account](admin/accounts/account-admin/account-settings/delete-account.md)
+      * [Delete account](admin/accounts/delete-account.md)
 * [Teams](admin/teams.md)
 * [Pricing](admin/pricing/README.md)
   * [Fair Billing Policy](admin/pricing/fair-billing-policy.md)
