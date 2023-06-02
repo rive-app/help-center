@@ -1,16 +1,16 @@
 # Importing Assets
 
-Import your assets by dragging and dropping them onto the Rive Editor. You can import SVG, PNG, PSD, and JPG formats.
+Import your assets by dragging and dropping them onto the Rive Editor. You can import SVG, JSON, PNG, PSD, and JPG formats.
 
 ## Assets Panel&#x20;
 
-After dragging in your graphics, they now appear in the Assets Panel, located at the bottom-left of the editor UI. Drag and drop them onto an artboard to begin using them.
+After dragging in your graphics, they now appear in the Assets Panel, located in the left side of the editor UI. Drag and drop them onto an artboard to begin using them.
 
-## Updating graphics
+## Updating image assets
 
-You can make updates to your graphics after they've been imported.&#x20;
+You can make updates to your images after they've been imported.&#x20;
 
-Do this by selecting the image in the Assets Panel. Notice that the asset's properties appear in the inspector.&#x20;
+Do this by selecting the image in the Assets Panel; the asset's properties appear in the Inspector, and a "Replace" button will be available for raster assets (PNG, JPG, PSD).&#x20;
 
 Hit the replace button and when prompted, select the updated image. You'll notice that this updates all instances of the graphic used in the file.&#x20;
 
