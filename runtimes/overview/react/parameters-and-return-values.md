@@ -1,3 +1,7 @@
+---
+description: Rive React API
+---
+
 # Parameters and Return Values
 
 ## Hooks
@@ -31,7 +35,8 @@ If you supply an `onLoad` callback in the parameters, you may not have access to
 
 **RiveState**
 
-* `canvas` - Canvas element the Rive instance is attached to
+* `canvas` - Canvas element the Rive instance is rendered onto
+* `container` - Container element of the canvas that Rive instance is rendered onto
 * `setCanvasRef` - Ref callback to be passed to the canvas element
 * `setContainerRef` - Ref callback to be passed to the container element of the canvas. This is optional, however, if not used then the hook will not take care of automatically resizing the canvas to its outer container if the window resizes
 * `rive` - Newly created Rive instance from the Web runtime
@@ -70,13 +75,37 @@ This hook returns a default instance of a `StateMachineInput`.
 
 See the [State Machines page](../../state-machines.md) to see more usage of this hook.
 
-## \<RiveComponent />
+### useResizeCanvas
+
+The `useResizeCanvas` hook is an optional utility hook to resize the `<canvas>` element to its parent container element's size, while also resetting the appropriate surface area size of the canvas as well. This is useful when you don't want to use the `useRive` hook to render your Rive, and are perhaps using the web JS runtime in your React apps, but still want the ability to scale the `<canvas>` to its parent appropriately.
+
+{% hint style="success" %}
+This hook is already internally used in the Rive React runtime, so if you use the `useRive` hook or the default exported `<RiveComponent />` to render your Rive, you don't need to consume this hook yourself.
+{% endhint %}
+
+`useResizeCanvas(resizeProps: UseResizeCanvasProps): void`
+
+* `resizeProps` - See below for a set of properties to set onto this object parameter
+
+#### Parameters
+
+**UseResizeCanvasProps**
+
+* `riveLoaded: boolean` -  If `true`, the Rive instance has been created and the Rive file have been parsed. This ensures the hook does not prematurely scale the `<canvas>` element. Defaults to `false`
+* `canvasRef: MutableRefObject<HTMLCanvasElement | null>` - React `Ref` for the `<canvas>` element where Rive will be rendering onto
+* `containerRef: MutableRefObject<HTMLElement | null>` - React `Ref` for the canvas's parent container element
+* `onCanvasHasResized?: () => void` (Optional) Callback to be invoked after the canvas has been resized due to a resize of its parent container. This is where you would want to reset the layout dimensions for the Rive renderer to dictate the new min/max bounds of the canvas.
+  * Using the high-level JS runtime, this might be a simple call to `rive.resizeToCanvas()`&#x20;
+  * Using the low-level JS runtime, this might be invoking the renderer's `.align()` method, with the Layout and min/max X/Y values of the canvas.
+* `options?: Partial` - (Optional) Options passed to the useRive hook (see `UseRiveOptions` further up the document)
+* `artboardBounds?: Bounds` - (Optional) AABB bounds of the Artboard; you only need to supply this if `options.fitCanvasToArtboardHeight` is set to `true`.
+
+## Components
+
+### \<RiveComponent />
 
 The `RiveComponent` default export and the `RiveComponent` returned from the `useRive` hook are both to be rendered in the JSX of a component. As noted previously, all attributes and event handlers that can be passed to a `canvas` element can also be passed to the `Rive` component and used in the same manner.
 
 One thing to note is that `style`/`className` props set on the component will be passed onto the containing `<div>` element, rather than the underlying `<canvas>` itself. The reason for this is that the containing `<div>` element handles resizing and layout for you, and thus, all styles should be passed onto this element.\
 \
-The `<canvas>` element will still receive any other props passed into the component, such as `aria-*` attributes, `role`'s, etc.
-
-
-
+The `<canvas>` element will still receive any other props passed into the component, such as `aria-*` attributes, `role`'s, etc. You can also set children content inside the component for fallback scenarios where the `<canvas>` element cannot be shown
