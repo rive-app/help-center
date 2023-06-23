@@ -55,6 +55,22 @@ RiveAnimation.asset(
 )
 ```
 
+#### Via Relative Path
+
+```dart
+RiveAnimation.file('path/to/local/file.riv')
+```
+
+#### Via Direct
+
+If you use the same Rive file multiple times in your application, you may want to create a single `RiveFile` instance for that `.riv`, and feed it directly to `RiveAnimation` so that the Rive file is only loaded once.
+
+```dart
+final riveFile = await RiveFile.asset('assets/truck.riv');
+
+RiveAnimation.direct(riveFile)
+```
+
 ### Complete example
 
 {% code title="main.dart" %}
