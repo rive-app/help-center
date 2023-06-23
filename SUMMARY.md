@@ -104,6 +104,7 @@
   * [Vue](runtimes/overview/vue.md)
   * [Angular](runtimes/overview/angular.md)
   * [Flutter](runtimes/overview/flutter.md)
+    * [Caching a Rive File](runtimes/overview/flutter/caching-a-rive-file-in-flutter.md)
     * [Alternative Widget Setup](runtimes/overview/flutter/alternative-widget-setup.md)
   * [iOS/macOS](runtimes/overview/ios/README.md)
     * [Migrating from 1.x.x to 2.x.x](runtimes/overview/ios/migrating-from-1.x.x-to-2.x.x.md)
