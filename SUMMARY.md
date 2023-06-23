@@ -110,7 +110,7 @@
     * [Migrating from 2.x.x to 3.x.x](runtimes/overview/ios/migrating-from-2.x.x-to-3.x.x.md)
     * [Migrating from 3.x.x to 4.x.x](runtimes/overview/ios/migrating-from-3.x.x-to-4.x.x.md)
   * [Android](runtimes/overview/android.md)
-  * [C#](https://github.com/CommunityToolkit/Labs-Windows/blob/main/labs/RivePlayer/samples/RivePlayer.Samples/RivePlayer.md)
+  * [C#](https://github.com/CommunityToolkit/Labs-Windows/blob/main/components/RivePlayer/samples/RivePlayer.md)
   * [Noesis](runtimes/overview/noesis.md)
 * [Animation Playback](runtimes/playback.md)
 * [Layout](runtimes/layout.md)
