@@ -219,7 +219,7 @@ The web runtime provides an `onLoad` callback that's run when the Rive file is l
 <div id="button">
     <canvas id="canvas" width="1000" height="500"></canvas>
 </div>
-<script src="https://unpkg.com/@rive-app/canvas@1.0.98"></script>
+<script src="https://unpkg.com/@rive-app/canvas@1.2.1"></script>
 <script>
     const button = document.getElementById('button');
 
