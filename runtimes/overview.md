@@ -26,6 +26,7 @@ Rive's runtimes are open source and can be downloaded from GitHub, or through re
 | Vue.js  | Dan Nelson                                   | [GitHub](https://github.com/Coded-Clouds/Rive_Vue_ExampleApp) |
 | Angular | François Guezengar                           | [GitHub](https://github.com/dappsnation/ng-rive)              |
 | AWTK    | [Li XianJing](https://twitter.com/xianjimli) | [GitHub](https://github.com/zlgopen/awtk-widget-rive)         |
+| Titanium SDK    | [Michael Gangolf](https://twitter.com/michaelgangolf) | [GitHub](https://github.com/m1ga/ti.animation)         |
 
 ## Licensing
 
