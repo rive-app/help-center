@@ -106,6 +106,7 @@
   * [Flutter](runtimes/overview/flutter.md)
     * [Caching a Rive File](runtimes/overview/flutter/caching-a-rive-file-in-flutter.md)
     * [Alternative Widget Setup](runtimes/overview/flutter/alternative-widget-setup.md)
+    * [Custom Rive RenderObject](runtimes/overview/flutter/custom-rive-renderobject.md)
   * [iOS/macOS](runtimes/overview/ios/README.md)
     * [Migrating from 1.x.x to 2.x.x](runtimes/overview/ios/migrating-from-1.x.x-to-2.x.x.md)
     * [Migrating from 2.x.x to 3.x.x](runtimes/overview/ios/migrating-from-2.x.x-to-3.x.x.md)
