@@ -28,13 +28,23 @@ npm install rive-react-native
 yarn add rive-react-native
 ```
 
-### 2. Pod Install
+### 2a. iOS - Pod Install
 
 `cd` inside the `ios` folder and run `pod install` (if deploying to iOS)
 
 {% hint style="info" %}
 If you run into issues here, you may need to bump the `ios` deployment version target to at least `14.0`. You can find this version in the `Podfile` of the `ios/` folder.
 {% endhint %}
+
+### 2b. Android - Set Kotlin Dependency Resolution
+
+This step may be optional - however, if your Android setup in the React Native project does not have Kotlin `v1.8.0+` set up, you may run into duplicate class issues when building the project. To mitigate these issues, as suggested by [Kotlin docs](https://kotlinlang.org/docs/gradle-configure-project.html#versions-alignment-of-transitive-dependencies), add the following to your dependencies in your application's `build.gradle` file to deal with version alignment:
+
+<pre class="language-gradle"><code class="lang-gradle"><strong>dependencies {
+</strong><strong>    implementation platform('org.jetbrains.kotlin:kotlin-bom:1.8.0')
+</strong><strong>    ...
+</strong><strong>}
+</strong></code></pre>
 
 ### 3. Add the Rive component
 
