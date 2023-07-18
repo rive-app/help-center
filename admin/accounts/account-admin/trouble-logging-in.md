@@ -10,4 +10,4 @@ For additional help, please email us at support@rive.app.
 
 
 
-![](../../../.gitbook/assets/logininvalid.png)
+<figure><img src="../../../.gitbook/assets/logininvalid.png" alt=""><figcaption></figcaption></figure>
