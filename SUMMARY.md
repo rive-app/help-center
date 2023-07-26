@@ -65,6 +65,11 @@
 * [Exporting](editor/exporting.md)
 * [Share Links](editor/share-links/README.md)
   * [Framer and Rive](editor/share-links/framer-and-rive.md)
+* [Text](editor/text/README.md)
+  * [Text Runs](editor/text/text-runs.md)
+  * [Text Styles](editor/text/text-styles.md)
+  * [Text Modifiers](editor/text/text-modifiers.md)
+  * [Fonts](editor/text/fonts.md)
 
 ## Tutorials <a href="#tutorial" id="tutorial"></a>
 
