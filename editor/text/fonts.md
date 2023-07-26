@@ -44,6 +44,10 @@ Select a font in the Assets Panel to view available metadata and licenses in the
 
 ## Export Options
 
+{% hint style="warning" %}
+Export Options are coming to Text soon
+{% endhint %}
+
 Your Rive file will need to reference a font file if you're looking to dynamically update text at runtime. Configure the available options to suit your needs and optimise your `.riv` files. Select a font in the Assets Panel to reveal its export options in the Inspector.&#x20;
 
 ### Export Type
