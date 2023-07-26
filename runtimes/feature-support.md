@@ -8,6 +8,12 @@ As our Rive editor grows to support more features and toolsets in making Rive as
 \
 We may include notes on migrating to newer versions if a new feature warrants recent API changes.
 
+## Follow Path Support
+
+To take advantage of follow path at runtime, bump to the appropriate versions noted below to support this new feature.
+
+<table><thead><tr><th width="368">Runtime</th><th>Version</th></tr></thead><tbody><tr><td>(Web) <code>@rive-app/canvas</code> and <code>@rive-app/webgl</code></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 1.2.2</code></td></tr><tr><td>React</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 3.0.55</code></td></tr><tr><td>React Native</td><td><span data-gb-custom-inline data-tag="emoji" data-code="1f440">👀</span> Coming soon</td></tr><tr><td>Flutter</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 0.11.6</code></td></tr><tr><td>iOS/macOS</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 4.0.5</code></td></tr><tr><td>Android</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 6.0.1</code></td></tr><tr><td>C++</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span> Supported</td></tr></tbody></table>
+
 ## Interpolation on States Support
 
 To take advantage of Interpolation on States at runtime, bump to the appropriate versions noted below to support this new feature.
