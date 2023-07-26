@@ -125,6 +125,7 @@
 * [Animation Playback](runtimes/playback.md)
 * [Layout](runtimes/layout.md)
 * [State Machines](runtimes/state-machines.md)
+* [Text](runtimes/text.md)
 * [Advanced Topics](runtimes/advanced\_topics/README.md)
   * [Format](runtimes/advanced\_topics/format.md)
 * [Feature Support](runtimes/feature-support.md)
