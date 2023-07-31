@@ -47,12 +47,22 @@ RiveAnimation.network(
 
 #### Via Asset Bundle
 
-Make sure you add the Rive file to your asset bundle and reference it in `pub.dev`
+Make sure you add the Rive file to your asset bundle and reference it in `pubspec.yaml`
 
 ```dart
 RiveAnimation.asset(
   'assets/vehicles.riv',
 )
+```
+
+In `pubspec.yaml`:
+
+```yaml
+...
+
+# To add assets to your application, add an assets section, like this:
+assets:
+    - assets/vehicles.riv
 ```
 
 #### Via Relative Path
