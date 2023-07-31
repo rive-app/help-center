@@ -84,7 +84,54 @@ textRun.text = "Hello JS Runtime!";
 {% endtab %}
 
 {% tab title="React" %}
-:eyes: coming soon
+#### Reading Text
+
+To read a given text run text value at any given time, reference the `.getTextRunValue()` API on the `rive` instance returned from `useRive`:
+
+```typescript
+public getTextRunValue(textRunName: string): string | undefined
+```
+
+Supply the text run name, and you'll have the Rive text run value returned, or `undefined` if the text run could not be queried.
+
+#### Setting Text
+
+To set a given text run value at any given time, reference the `.setTextRunValue()` API on the `rive` instance returned from `useRive`:
+
+```typescript
+public setTextRunValue(textRunName: string, textRunValue: string): void
+```
+
+Supply the text run name and a second parameter, `textValue`, with a String value that you want to set the new text value for if the text run can be successfully queried on the active artboard.
+
+#### Example Usage
+
+```tsx
+import { useRive } from '@rive-app/canvas';
+
+const MyTextComponent = () => {
+  const {rive, RiveComponent} = useRive({
+    src: "my-rive-file.riv",
+    artboard: "New Artboard",
+    stateMachines: "State Machine 1",
+    autoplay: true,
+  });
+  
+  // Cannot query for the text run immediately, you have to wait until `rive`
+  // has value and has instantiated before querying or setting text run values
+  useEffect(() => {
+    if (rive) {
+      console.log("Rive text was initially: ", rive.getTextRunValue("MyRun"));
+      rive.setTextRunValue("MyRun", "New Text!!");
+      console.log("Rive text is now: ", rive.getTextRunValue("MyRun");
+    }
+  }, [rive]);
+  
+  return (
+    <RiveComponent />
+  );
+};
+```
 {% endtab %}
 
 {% tab title="React Native" %}
