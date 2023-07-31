@@ -4,9 +4,9 @@ description: Reading and modifying text at runtime
 
 # Text
 
-For more information designing and animating Text, please refer to the [editor's text section](text.md).
+For more information on designing and animating Text, please refer to the [editor's text section](text.md).
 
-Please ensure you're on the correct runtime version with support for Rive Text, see [Feature Support](feature-support.md).
+Please ensure you're on the correct runtime version with support for Rive Text; see [Feature Support](feature-support.md).
 
 ### Read/Update Text Runs at Runtime
 
@@ -24,17 +24,62 @@ If the name is not set manually in the editor the name will not be part of the e
 {% tab title="Web" %}
 ### High-level API usage
 
-:eyes: Coming soon
+#### Reading Text
+
+To read a given text run text value at any given time, reference the `.getTextRunValue()` API on the Rive instance:
+
+```typescript
+public getTextRunValue(textRunName: string): string | undefined
+```
+
+Supply the text run name, and you'll have the Rive text run value returned, or `undefined` if the text run could not be queried.
+
+#### Setting Text
+
+To set a given text run value at any given time, reference the `.setTextRunValue()` API on the Rive instance:
+
+```typescript
+public setTextRunValue(textRunName: string, textRunValue: string): void
+```
+
+Supply the text run name and a second parameter, `textValue`, with a String value that you want to set the new text value for if the text run can be successfully queried on the active artboard.
+
+#### Example Usage
+
+```typescript
+import rive from '@rive-app/canvas'
+
+const r = new rive.Rive({
+  src: "my-rive-file.riv"
+  artboard: "my-artboard-name",
+  autoplay: true,
+  stateMachines: "State Machine 1",
+  onLoad: () => {
+    console.log("My design-time text is, ", r.getTextRunValue("MyRun"));
+    r.setTextRunValue("MyRun", "New text value");
+  },
+})
+```
 
 ### Low-level API usage
 
 Get a reference to the Rive `Artboard`, find a text run by a given **name**, and get/update the text value property.
 
 ```javascript
+import RiveCanvas from '@rive-app/canvas-advanced';
+
+
+const bytes = await (
+  await fetch(new Request('./my-rive-file.riv'))
+).arrayBuffer();
+const myRiveFile = await rive.load(new Uint8Array(bytes));
+
 const artboard = myRiveFile.defaultArtboard();
 const textRun = artboard.textRun("MyRun"); // Query by the text run name
 console.log(`My design-time text is ${textRun.text}`);
 textRun.text = "Hello JS Runtime!";
+
+...
 ```
 {% endtab %}
 
@@ -75,11 +120,123 @@ Or get a reference to the artboard by calling: `riveFile.mainArtboard`, see [Alt
 {% endtab %}
 
 {% tab title="iOS/macOS" %}
-:eyes: coming soon
+#### Reading Text
+
+To read a given text run text value at any given time, reference the `.getTextRunValue()` API on the `RiveViewModel`:
+
+```swift
+open func getTextRunValue(_ textRunName: String) -> String?
+```
+
+Supply the text run name and you'll have the Rive text run value returned, or `nil` if the text run could not be queried.
+
+#### Setting Text
+
+To set a given text run value at any given time, reference the `.setTextRunValue()` API on the `RiveViewModel`:
+
+```swift
+open func setTextRunValue(_ textRunName: String, textValue: String) throws
+```
+
+Supply the text run name and a second parameter, `textValue`, with a String value that you want to set the new text value for.&#x20;
+
+{% hint style="warning" %}
+If the supplied `textRunName` Rive text run cannot be queried on the active artboard, Rive will throw a `RiveError.textValueRunError` that you may need to catch and handle gracefully in your application.&#x20;
+{% endhint %}
+
+#### Example Usage
+
+```swift
+@State private var userInput: String = ""
+@State private var rvm = RiveViewModel(fileName: "my-rive-file")
+
+var body: some View {
+    VStack(spacing: 20) {
+        Text("Enter text:")
+            .font(.headline)
+        TextField("Enter text...", text: $userInput)
+            .textFieldStyle(RoundedBorderTextFieldStyle())
+            .padding()
+            .onChange(of: userInput, perform: { newValue in
+                if (!newValue.isEmpty) {
+                    try! rvm.setTextRunValue("MyTextRunName", textValue: userInput)
+                }
+            })
+        rvm.view()
+    }
+}
+```
 {% endtab %}
 
 {% tab title="Android" %}
-:eyes: coming soon
+#### Reading Text via RiveAnimationView
+
+To read a given text run text value at any given time, reference the `.getTextRunValue()` API on the `RiveAnimationView`:
+
+```kotlin
+fun getTextRunValue(textRunName: String): String? = try
+```
+
+Supply the text run name and you'll have the Rive text run value returned, or `null` if the text run could not be queried.
+
+#### Setting Text via RiveAnimationView
+
+To set a given text run value at any given time, reference the `.setTextRunValue()` API on the `RiveAnimationView`:
+
+```kotlin
+fun setTextRunValue(textRunName: String, textValue: String)
+```
+
+Supply the text run name and a second parameter, `textValue`, with a String value that you want to set the new text value for.&#x20;
+
+{% hint style="warning" %}
+If the supplied `textRunName` Rive text run cannot be queried on the active artboard, Rive will throw a `RiveException` that you may need to catch and handle gracefully in your application.&#x20;
+{% endhint %}
+
+#### Reference to Rive TextRun
+
+You can also choose to query the active Artboard for the Rive text run reference and get/set a text property manually.
+
+```kotlin
+private val textRun by lazy(LazyThreadSafetyMode.NONE) {
+    yourRiveAnimationView.artboardRenderer?.activeArtboard?.textRun("name")
+}
+```
+
+#### Example Usage
+
+```kotlin
+import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
+import android.util.Log
+import android.widget.EditText
+import androidx.appcompat.app.AppCompatActivity
+import app.rive.runtime.kotlin.RiveAnimationView
+
+class DynamicTextActivity : AppCompatActivity(), TextWatcher {
+    private val animationView by lazy(LazyThreadSafetyMode.NONE) {
+        findViewById<RiveAnimationView>(R.id.dynamic_text)
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.dynamic_text)
+        val editText = findViewById<EditText>(R.id.text_run_value)
+        editText.addTextChangedListener(this)
+    }
+
+    override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+        // get the current value of the reference
+        animationView.getTextRunValue("name")
+    }
+
+    override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+        // update the reference
+        animationView.setTextRunValue("name", s.toString())
+    }
+}
+```
 {% endtab %}
 {% endtabs %}
 
