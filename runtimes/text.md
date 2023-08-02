@@ -135,7 +135,45 @@ const MyTextComponent = () => {
 {% endtab %}
 
 {% tab title="React Native" %}
-:eyes: coming soon
+#### Setting Text via Rive Ref
+
+To set a given text run value at any given time, reference the `.setTextRunValue()` API on the Rive `ref`:
+
+```typescript
+setTextRunValue: (textRunName: string, value: string) => void;
+```
+
+Supply the text run name and a second parameter, `textValue`, with a String value that you want to set the new text value for.&#x20;
+
+#### Example Usage
+
+```typescript
+export default function DynamicText() {
+  const riveRef = useRef<RiveRef>(null);
+
+  const handleInputChange = (e: string) => {
+    // Set the TextRun value of the 'name' TextRun
+    // The name must exist else an error will be thrown
+    riveRef.current?.setTextRunValue('name', e);
+  };
+
+  return (
+    <SafeAreaView style={styles.safeAreaViewContainer}>
+      <ScrollView>
+        <Rive
+          ref={riveRef}
+          resourceName="hello_world_text"
+          stateMachineName="State Machine 1"
+        />
+        <TextInput
+          onChangeText={handleInputChange}
+          defaultValue="world"
+        />
+      </ScrollView>
+    </SafeAreaView>
+  );
+}
+```
 {% endtab %}
 
 {% tab title="Flutter" %}
