@@ -28,11 +28,11 @@ You can use "copy as SVG" and paste it directly into the Rive editor.
 
 #### Import Lottie file
 
-You can import your Lottie animations into Rive. To get started, drag and drop your Lottie JSON file into the Rive ediotr. this adds it to your Assets panel.
+You can import your Lottie animations into Rive. To get started, drag and drop your Lottie JSON file into the Rive editor. This adds it to your Assets panel.
 
 <figure><img src="../../.gitbook/assets/CleanShot 2023-04-12 at 17.05.03@2x.png" alt=""><figcaption></figcaption></figure>
 
-From there, you can drag it into an exisiting artboard or drag it into an empty space to create a new artboard.
+From there, you can drag it into an existing Artboard or drag it into an empty space to create a new Artboard.
 
 <figure><img src="../../.gitbook/assets/CleanShot 2023-04-12 at 17.08.12@2x.png" alt=""><figcaption></figcaption></figure>
 
