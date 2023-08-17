@@ -88,7 +88,7 @@
 
 ## Runtimes
 
-* [Runtime Libraries](runtimes/overview.md)
+* [Getting Started](runtimes/overview.md)
   * [Web (JS)](runtimes/overview/web-js/README.md)
     * [Rive Parameters](runtimes/overview/web-js/rive-parameters.md)
     * [Canvas vs WebGL](runtimes/overview/web-js/canvas-vs-webgl.md)
