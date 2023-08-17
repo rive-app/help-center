@@ -25,6 +25,7 @@ export interface RiveParameters {
   onStop?: EventCallback,
   onLoop?: EventCallback,
   onStateChange?: EventCallback,
+  onAdvance?: EventCallback,
   useOffscreenRenderer?: boolean,
   shouldDisableRiveListeners?: boolean,
 }
@@ -60,6 +61,7 @@ In a future major version of `rive-wasm`, `stateMachines` will be a singular str
 * `onStop?` - _(optional)_ Callback that gets fired when the animation stops playing.
 * `onLoop?` - _(optional)_ Callback that gets fired when the animation completes a loop.
 * `onStateChange?` - _(optional)_ Callback that gets fired when a state change occurs.
+* `onAdvance?` - _(optional)_ Callback that gets fired every frame when the Artboard has advanced.
 * `useOffscreenRenderer?` - _(optional)_ Boolean flag to determine whether to use a shared offscreen WebGL context rather than create its own WebGL context for this instance of Rive. This is only relevant for the `@rive-app/webgl` package. If you are displaying multiple Rive animations, it is highly encouraged to set this flag to `true`. Defaults to `false`.
 * `shouldDisableRiveListeners?` - _(optional)_ Boolean flag to disable setting up Rive Listeners on the `<canvas>` element, thus preventing any event listeners from being set up on the element.&#x20;
   * **Note:** Rive Listeners by default are not set up on a `<canvas>` element if there is no playing state machine, or a state machine without any Rive Listeners set up on the state machine
@@ -316,6 +318,18 @@ Stops the render loop, and can only be resumed with `startRendering()`. This is 
 `startRendering()`
 
 Starts the render loop if it has been previously stopped. It will have no effect if the render loop is already active.
+
+### getTextRunValue()
+
+`getTextRunValue(textRunName: string): string | undefined`
+
+Returns the text value of the text run component (from the hierarchy of your `.riv` file) you want to retrieve from. Returns `undefined` if the text run cannot be queried from the active Artboard (you may see console warnings in this case for further guidance).
+
+### setTextRunValue()
+
+`setTextRunValue(textRunName: string, textValue: string): void`
+
+Sets the text value of the text run component (from the hierarchy of your `.riv` file) you specify via `textRunName`. You may see console warnings if the text run cannot be queried from the active Artboard, and thus the provided `textValue` you want to set on the run may not be successful.
 
 ## Debugging Tools
 

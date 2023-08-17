@@ -159,14 +159,13 @@ Type: `(stateMachineName: string, inputName: string, value: boolean | number) =>
 
 Example:
 
-```jsx
-import Rive, { RiveRef } from 'rive-react-native';
+<pre class="language-jsx"><code class="lang-jsx">import Rive, { RiveRef } from 'rive-react-native';
 
-const resourceName = 'ui_swipe_left_to_delete'
-const threshold = 50
+<strong>const resourceName = 'ui_swipe_left_to_delete'
+</strong>const threshold = 50
 
 function App() {
-  const riveRef = React.useRef<RiveRef>(null);
+  const riveRef = React.useRef&#x3C;RiveRef>(null);
 
   const handleFireState = () => {
     riveRef.current?.setInputState(
@@ -177,11 +176,46 @@ function App() {
   };
 
   return (
+    &#x3C;>
+      &#x3C;Rive ref={riveRef} resourceName={resourceName} autoplay={true} />
+      &#x3C;Button onPress={handleFireState} title="FireState">
+    &#x3C;/>
+  );
+}
+</code></pre>
+
+### `.setTextRunValue()`
+
+A reference method that will set a text run value (via `value`) on a given text run (via `textRunName`).&#x20;
+
+Type: `setTextRunValue: (textRunName: string, value: string) => void`
+
+* `textRunName` - Name of the text run to set a new text value on. Read more on text runs [here](../../text.md)
+* `value` - Specifies a new text value that should be set on the text run
+
+Example:
+
+```tsx
+import Rive, { RiveRef } from 'rive-react-native';
+
+const resourceName = 'ui_swipe_left_to_delete'
+const threshold = 50
+
+function App() {
+  const riveRef = React.useRef<RiveRef>(null);
+
+  const handleSetText = () => {
+    riveRef.current?.setTextRunValue(
+      'MyRunName',
+      'New Text',
+    );
+  };
+
+  return (
     <>
       <Rive ref={riveRef} resourceName={resourceName} autoplay={true} />
-      <Button onPress={handleFireState} title="FireState">
+      <Button onPress={handleSetText} title="SetText">
     </>
   );
 }
 ```
-
