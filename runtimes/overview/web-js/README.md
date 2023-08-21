@@ -14,9 +14,17 @@ This library has both a high-level JavaScript API (with TypeScript support), as 
 * Providing a base API to build other web-based Rive runtime wrappers (i.e React, Angular, etc.)
 * Advanced use cases in controlling a render loop
 
+## Quick Start
+
+See our [quick start example](https://codesandbox.io/s/rive-quick-start-js-m7p872?file=/src/index.html) that shows how to play a Rive animation on the web.
+
+{% embed url="https://codesandbox.io/embed/rive-quick-start-js-m7p872?fontsize=14&hidenavigation=1&theme=dark" %}
+Interactive Rive Web Quick Start
+{% endembed %}
+
 ## Getting Started
 
-Follow the steps below for a quick start on integrating Rive into your web app.
+Follow the steps below on integrating Rive into your web app.
 
 ### 1. Install the dependency
 

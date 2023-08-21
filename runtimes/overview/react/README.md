@@ -10,6 +10,14 @@ This guide documents how to get started using the React runtime library. Rive ru
 \
 This library contains a React component, as well as custom hooks to help integrate Rive into your web application (types included). Under the hood, this runtime is a React-friendly wrapper around the `@rive-app/webgl` runtime, exposing types and Rive instance functionality.
 
+## Quick Start
+
+See our [quick start example](https://codesandbox.io/s/rive-quick-start-react-qqkn52?file=/src/App.js) that shows how to play a Rive animation with React.
+
+{% embed url="https://codesandbox.io/embed/rive-quick-start-react-qqkn52?fontsize=14&hidenavigation=1&theme=dark" %}
+Interactive Rive React Quick Start
+{% endembed %}
+
 ## Getting Started
 
 Follow the steps below for a quick start on integrating Rive into your React app.

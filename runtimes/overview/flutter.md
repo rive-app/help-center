@@ -10,6 +10,10 @@ This guide documents how to get started using the Flutter runtime library. Rive 
 \
 This library contains an API for Flutter apps to easily integrate their Rive assets.
 
+## Quick Start
+
+See our [quick start example](https://zapp.run/edit/rive-car-wash-zf160614f170?entry=lib/main.dart\&file=lib/main.dart) that shows how to play a Rive animation in Flutter.
+
 ## Getting Started
 
 Follow the steps below for a quick start on integrating Rive into your Flutter apps.
