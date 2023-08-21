@@ -20,7 +20,7 @@ Yes, but not everything is supported yet. The new Rive has a new format with dif
 
 ## What's changed in the new Rive compared to the old version (formerly Flare)?
 
-A lot! There's team collaboration, tons of new editor features, all-new simple-to-use runtimes for the web, Android, iOS, Flutter, and more. Read about [all the improvements](improvements-in-the-new-rive.md) in the new Rive.
+A lot! There's team collaboration, tons of new editor features, all-new simple-to-use runtimes for the web, Android, iOS, Flutter, game engines, and more. Read about [all the improvements](improvements-in-the-new-rive.md) in the new Rive.
 
 ## What happens if my internet connection goes down?
 
@@ -29,4 +29,8 @@ Your files are always saved in the local storage of your browser. Even if your c
 ## What happens to my files if I cancel my team plan?
 
 If you cancel, your team plan will not renew at the next billing cycle. At that moment, team members will lose the ability to edit files in the team. They will still be able to view the files, but they won't be able to make changes to them without re-activating the account.
+
+## Are my files private?
+
+Yes! All your files are privately stored within your personal directory. Your account also enables you to join teams to collaborate with your peers, remix and share files with the wider community, and access our in-app tuition material.
 

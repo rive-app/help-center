@@ -2,6 +2,10 @@
 
 In this section, we'll step through a typical workflow from creating an artboard all the way to exporting your first Rive file. Before we get started, check out our brief overview of the interface to familiarise yourself with the various sections and modes.
 
+{% hint style="info" %}
+Prefer to watch a series of short videos to follow visually? Check out our [Rive 101](https://www.youtube.com/playlist?list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3) playlist!
+{% endhint %}
+
 ### 1. Interface overview
 
 Take a tour of the Rive editor to familiarise yourself with the various sections and modes.

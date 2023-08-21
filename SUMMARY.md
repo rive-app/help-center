@@ -1,13 +1,11 @@
 # Table of contents
 
-* [Introduction](README.md)
-
 ## Getting started
 
-* [Welcome to Rive!](getting-started/welcome-to-rive.md)
+* [Introduction](README.md)
 * [FAQ](getting-started/faq-1/README.md)
   * [Requirements and troubleshooting](getting-started/faq-1/requirements-and-troubleshooting.md)
-  * [Editor and runtimes](getting-started/faq-1/editor-and-runtimes.md)
+  * [Editor and Runtimes](getting-started/faq-1/editor-and-runtimes.md)
   * [Teams and billing](getting-started/faq-1/teams-and-billing.md)
   * [Improvements in the new Rive](getting-started/faq-1/improvements-in-the-new-rive.md)
   * [Importing old Rive (Flare) files](getting-started/faq-1/importing-rive-1-files.md)
@@ -71,21 +69,6 @@
   * [Text Modifiers](editor/text/text-modifiers.md)
   * [Fonts](editor/text/fonts.md)
 
-## Tutorials <a href="#tutorial" id="tutorial"></a>
-
-* [Bouncing ball](tutorial/bouncing-ball.md)
-* [Tom Morello](tutorial/tom-morello.md)
-
-## Rive GameKit
-
-* [Overview](rive-gamekit/overview.md)
-* [Fundamentals](rive-gamekit/fundamentals.md)
-* [Advancing State Machines](rive-gamekit/advancing-state-machines.md)
-* [Paint & Layout](rive-gamekit/paint-and-layout.md)
-* [Tutorials](rive-gamekit/tutorials/README.md)
-  * [Tilemaps](rive-gamekit/tutorials/tilemaps.md)
-  * [Adding Keyboard and Mouse Interaction](rive-gamekit/tutorials/adding-keyboard-and-mouse-interaction.md)
-
 ## Runtimes
 
 * [Getting Started](runtimes/overview.md)
@@ -131,6 +114,21 @@
 * [Advanced Topics](runtimes/advanced\_topics/README.md)
   * [Format](runtimes/advanced\_topics/format.md)
 * [Feature Support](runtimes/feature-support.md)
+
+## Rive GameKit
+
+* [Overview](rive-gamekit/overview.md)
+* [Fundamentals](rive-gamekit/fundamentals.md)
+* [Advancing State Machines](rive-gamekit/advancing-state-machines.md)
+* [Paint & Layout](rive-gamekit/paint-and-layout.md)
+* [Tutorials](rive-gamekit/tutorials/README.md)
+  * [Tilemaps](rive-gamekit/tutorials/tilemaps.md)
+  * [Adding Keyboard and Mouse Interaction](rive-gamekit/tutorials/adding-keyboard-and-mouse-interaction.md)
+
+## Tutorials <a href="#tutorial" id="tutorial"></a>
+
+* [Bouncing ball](tutorial/bouncing-ball.md)
+* [Tom Morello](tutorial/tom-morello.md)
 
 ## Community
 

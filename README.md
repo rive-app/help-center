@@ -1,18 +1,21 @@
 # Introduction
 
-Welcome to the Rive Guide. We've split this documentation into the sub-sections below. If you can't find the information you're looking for or have questions for us, join us on [Twitter](https://twitter.com/rive\_app), [Discord](https://discord.com/invite/FGjmaTr), or contact us by filling out [this form](https://rive.app/contact).
+Welcome to the Rive Docs. We've split this documentation into the sub-sections below. If you can't find the information you're looking for or have questions for us, join us on [Twitter](https://twitter.com/rive\_app), [Discord](https://discord.com/invite/FGjmaTr), or contact us by filling out [this form](https://rive.app/contact).
+
+{% embed url="https://www.youtube.com/watch?v=vNHH2sna2pI" %}
 
 ## Getting Started
 
-New to Rive? Check out the Getting Started section for details on how to get up and running. You'll also find frequently asked questions and links to helpful resources.
+New to Rive? Here are some tips to get started:
 
-{% content-ref url="getting-started/welcome-to-rive.md" %}
-[welcome-to-rive.md](getting-started/welcome-to-rive.md)
-{% endcontent-ref %}
+* [Create an account](https://rive.app/login/?redirect=https%3A%2F%2Feditor.rive.app) today and try out the Rive Editor
+* Ready to design and animate? Peruse the Rive docs here, or watch our series of short tutorial videos in [Rive 101](https://youtube.com/playlist?list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3)
+* Want to jump straight into adding Rive in code? Check out the [runtimes](runtimes/overview.md) docs for quickstart guides, examples, and code snippets
+* ...and find more resources on our [Learn Page](https://rive.app/learn-rive)
 
 ## Editor
 
-Ready to start designing and animating in Rive? The editor section walks through the core concepts of Rive and details individual features in-depth.
+Ready to start designing and animating in Rive? The editor is where you create and animate designs and utilize the powerful [State Machine](editor/state-machine.md) to build your logic of how different animations mix together. From there, you can export your work ready to drop into your app or game via one of our runtimes.
 
 {% content-ref url="editor/fundamentals/" %}
 [fundamentals](editor/fundamentals/)
@@ -20,7 +23,11 @@ Ready to start designing and animating in Rive? The editor section walks through
 
 ## Runtimes
 
-Learn about our runtimes and how to integrate them into your app or game. The Rive runtimes are open-source libraries that allow you to load and control your animations in apps, games, and websites.
+Runtimes are open-source libraries that allow you to playback and control your animations in real-time across a variety of platforms and frameworks, such as Web, iOS, Android, game engines (i.e., Unity and Unreal), Flutter, React Native, and more!
+
+You can learn more about both our editor and runtimes via the respective chapters of this documentation.
+
+The Rive format and runtimes are available through the MIT license.
 
 {% content-ref url="runtimes/overview.md" %}
 [overview.md](runtimes/overview.md)

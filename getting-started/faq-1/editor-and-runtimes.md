@@ -1,4 +1,4 @@
-# Editor and runtimes
+# Editor and Runtimes
 
 ## What is the Rive editor?
 
@@ -10,17 +10,17 @@ You can learn more about our editor [here](../../editor/fundamentals/).&#x20;
 
 ## What are the Rive runtimes?
 
-Runtimes are open-source libraries that allow you to play and manipulate your animations in realtime across a variety of platforms. Currently, we have runtimes for the web and Flutter with iOS and Android versions arriving in the coming month.&#x20;
+Runtimes are open-source libraries that allow you to play and manipulate your animations in realtime across a variety of platforms.
 
 You can learn more about our runtimes [here](../../runtimes/overview.md).
 
 ## What's the best way to learn Rive?
 
-The [fundamentals](../../editor/fundamentals/) section of this manual is the perfect place to get started with the core concepts of Rive. You can also check out the 'Welcome to Rive!' and 'Distinctly Rive' video series on our [Resources page](https://rive.app/resources) for more tips on getting started. We'll be adding series on more advanced topics over time.
+The [fundamentals](../../editor/fundamentals/) section of this manual is the perfect place to get started with the core concepts of Rive. Check out our [Learn Page](https://rive.app/learn-rive) for a collection of short video tutorials, examples, articles, and more, on using Rive in the editor and in the runtimes. We'll be adding series on more advanced topics over time.
 
 ## What is remixing?
 
-With the upcoming addition of our in-app community destination, users will be able to share their designs and animations publically. Remixing enables the community to create and share their own versions of a user's original creation.
+Remixing enables the community to create and share their own versions of a user's original creation. Want to tweak a color, some keyed frames, or completely reimagine something you find in the community? Click the Remix button on a community post to make a copy of the creation into your own files. Learn more in the [community overview](../../community/overview.md).
 
 ## How do I save my work?
 
@@ -28,9 +28,9 @@ Your work is automatically saved in real-time and safely stored remotely. If you
 
 ## How do I export to iOS, Android, Flutter, my game engines, or the web?
 
-Use the [export menu](../../editor/fundamentals/interface-overview/#toolbar) within the toolbar to export and download your Rive file. Alternatively, you can export directly from the file browser by right-clicking on a file or folder.
+Use the [export menu](../../editor/fundamentals/interface-overview/#toolbar) within the toolbar to export and download your Rive file (it will appear as `name-of-your-rive-file.riv` when downloaded). Alternatively, you can export directly from the file browser by right-clicking on a file or folder.
 
-Use one of our runtimes to import your file into your chosen platform and begin playing and manipulating your animation in real-time! You can learn more about our runtimes [here](../../runtimes/overview.md).
+Use one of our runtimes to import your file into your chosen platform and begin playing and manipulating your Rive graphics in real time! You can learn more about our runtimes [here](../../runtimes/overview.md).
 
 
 
