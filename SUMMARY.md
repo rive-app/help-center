@@ -138,6 +138,7 @@
 
 * [Accounts](admin/accounts/README.md)
   * [Account Admin](admin/accounts/account-admin/README.md)
+    * [Billing changes](admin/accounts/account-admin/billing-changes.md)
     * [Trouble logging in](admin/accounts/account-admin/trouble-logging-in.md)
     * [Account settings](admin/accounts/account-admin/account-settings/README.md)
       * [Delete account](admin/accounts/delete-account.md)
