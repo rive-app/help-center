@@ -90,6 +90,7 @@
     * [Props](runtimes/overview/react-native/props.md)
     * [Rive Ref Methods](runtimes/overview/react-native/rive-ref-methods.md)
     * [Loading in Rive Files](runtimes/overview/react-native/loading-in-rive-files.md)
+    * [Adding Rive to Expo](runtimes/overview/react-native/adding-rive-to-expo.md)
     * [Migrating from v3 to v4](runtimes/overview/react-native/migrating-from-v3-to-v4.md)
     * [Migrating from v4 to v6](runtimes/overview/react-native/migrating-from-v4-to-v6.md)
   * [Vue](runtimes/overview/vue.md)

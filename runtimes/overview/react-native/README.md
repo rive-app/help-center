@@ -12,8 +12,8 @@ This library contains an API for React Native apps to easily integrate Rive asse
 
 The minimum iOS target is **14.0**
 
-{% hint style="warning" %}
-The Rive React Native runtime does not have support for Expo at this time
+{% hint style="success" %}
+See [our documentation](adding-rive-to-expo.md) to add Rive to an Expo app.
 {% endhint %}
 
 ## Getting Started
