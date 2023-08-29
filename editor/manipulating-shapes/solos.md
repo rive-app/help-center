@@ -1,6 +1,8 @@
 # Solos
 
-{% embed url="https://www.youtube.com/live/imaeWOYkI50?feature=share" %}
+{% embed url="https://www.youtube.com/watch?v=fRtsldzaHC8&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=33" %}
+
+
 
 A Solo is similiar to a group, but adds the ability to toggle the rendering of nested object. It works like a radio button, so it will de-activate other objects on the same level. This is much faster than having to animate the opacity of each object indiviually.
 

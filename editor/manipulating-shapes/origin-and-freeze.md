@@ -1,5 +1,7 @@
 # Freeze and Origin
 
+{% embed url="https://www.youtube.com/watch?v=20aS5ZOkNpI&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=16" %}
+
 When you transform objects, their children inherit the same transformations. The location where these transformations happen (sometimes called the origin, anchor point, or pivot) affects how your objects animate.
 
 For example, manipulating the scale of a group creates different results if the scale originates in the center or the bottom.

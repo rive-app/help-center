@@ -4,35 +4,37 @@ description: Clipping allows you to cut one shape out from another.
 
 # Clipping
 
-##  How to use Clipping
+{% embed url="https://www.youtube.com/watch?v=u8EPxqT3LnM&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=17" %}
+
+## How to use Clipping
 
 Select the shape you want to clip and hit the plus button next to the Clipping options in the Inspector. Now, select the path you want to use as a clipping path.
 
-![](../../.gitbook/assets/clipping_20px.gif)
+![](../../.gitbook/assets/clipping\_20px.gif)
 
 You can add as many clipping paths to a shape as you'd like.
 
 ## How to use a group as a clipping path
 
-![](../../.gitbook/assets/clipping_group.png)
+![](../../.gitbook/assets/clipping\_group.png)
 
 Instead of selecting multiple clipping paths one-by-one, you can select a group and all the paths inside the group will be used as clipping paths. In this example, we are adding the ball group as a clipping path to the light shape, which creates a lighting effect on the ball as it moves across the screen.
 
-![Using a group as a clipping path](../../.gitbook/assets/clipping_group.gif)
+![Using a group as a clipping path](../../.gitbook/assets/clipping\_group.gif)
 
 ## Clipping and path direction
 
-![Reverse path direction](../../.gitbook/assets/clipping_fiix.gif)
+![Reverse path direction](../../.gitbook/assets/clipping\_fiix.gif)
 
 In the event that you have shapes that aren't clipping, or only partially clipping, be sure to check the winding of that shape. In most cases, reversing the direction of the path with fix this problem.
 
- 
+&#x20;
 
 ## Inverse Clipping
 
 Clipping is typically used to hide a part of your graphics. In the example below, we're using an ellipse to show only part of our jewel graphic.
 
-![](../../.gitbook/assets/clipping_jewel.png)
+![](../../.gitbook/assets/clipping\_jewel.png)
 
 You occasionally may want to invert the clipping, so that only the graphics outside of the clipping paths are drawn.
 
@@ -61,4 +63,3 @@ Open the Clip Options and set the Operation to Even-Odd.
 Be sure to hide the visibility of your clipping shape so it's not covering your graphic.
 
 ![](../../.gitbook/assets/screen-shot-2020-09-23-at-5.22.43-pm.png)
-

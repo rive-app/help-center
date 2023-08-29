@@ -6,7 +6,7 @@ description: >-
 
 # Interface Overview
 
-{% embed url="https://www.youtube.com/watch?v=S-sSF09NCvs" %}
+{% embed url="https://www.youtube.com/watch?v=VaZc-Uhh4QM" %}
 
 ## Toolbar
 

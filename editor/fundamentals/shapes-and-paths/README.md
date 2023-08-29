@@ -4,7 +4,7 @@ Rive allows you to create, edit, and animate vector graphics using either proced
 
 To learn more about Shape and Path layers, watch our video on Shapes and Paths, or read more below.
 
-{% embed url="https://www.youtube.com/watch?v=lj6AwrC_yEE&t=7s" %}
+{% embed url="https://www.youtube.com/watch?v=AaLjHH0MruM&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=12" %}
 
 ## **Shape layer**
 

@@ -1,5 +1,7 @@
 # Text Modifiers
 
+{% embed url="https://www.youtube.com/watch?v=V-QzXkhMu20&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=43" %}
+
 Modifiers provide powerful ways to manipulate and animate the glyphs that make up text. Currently, the available Text Modifier properties include:
 
 * Position

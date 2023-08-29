@@ -2,6 +2,10 @@
 
 Import your assets by dragging and dropping them onto the Rive Editor. You can import SVG, JSON, PNG, PSD, and JPG formats.
 
+{% embed url="https://www.youtube.com/watch?v=mWEHZzB4hLs&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=21" %}
+
+{% embed url="https://www.youtube.com/watch?v=zrK6zMy2uZg&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=22" %}
+
 ## Assets Panel&#x20;
 
 After dragging in your graphics, they now appear in the Assets Panel, located in the left side of the editor UI. Drag and drop them onto an artboard to begin using them.

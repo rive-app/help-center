@@ -1,6 +1,8 @@
 # Fill and Stroke
 
-![](<../../../.gitbook/assets/fill-and-stroke (1).png>)
+
+
+{% embed url="https://www.youtube.com/watch?v=H2sJZhZplig&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=11" %}
 
 ## **Fill**
 
@@ -17,6 +19,8 @@ You can apply different fill types to shapes. These include:
 * Radial gradient
 
 ### **Fill rule**
+
+{% embed url="https://www.youtube.com/watch?v=3GUh1Rl6hgY&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=13" %}
 
 ![](<../../../.gitbook/assets/fill\_rule (1).gif>)
 

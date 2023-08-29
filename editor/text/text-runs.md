@@ -1,5 +1,7 @@
 # Text Runs
 
+{% embed url="https://www.youtube.com/watch?v=a4drmh2S-eg&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=41" %}
+
 Runs allow you break your text up into sections — typically, they're used to apply a variety of styles to a single block of text. Whilst most tools manage text runs behind the scenes, Rive exposes them for greater control when dynamically changing text at runtime.
 
 You may want to split your text into multiple runs to apply a different style (such as font, font size, color etc.) to a certain part of your text, or if you only want to [replace a specific word or section at runtime](../../runtimes/text.md#read-update-text-runs-at-runtime).

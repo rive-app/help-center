@@ -1,5 +1,7 @@
 # Interpolation (Easing)
 
+{% embed url="https://www.youtube.com/watch?v=087zael11_M&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=26" %}
+
 When you set two keys on a property, the value in between those keys is automatically calculated. This is called interpolation. Interpolation settings can be customized to create dramatically different results.
 
 You can set the easing on your keys by either using the Interpolation panel to the right of the Timeline, or by using the[ Graph Editor](interpolation-easing.md#using-the-graph-editor), which you can toggle on via the shortcut near the Timeline options.
@@ -48,6 +50,8 @@ When inputting values manually, use a comma or a space to separate each of the f
 ![](../../.gitbook/assets/interpolation\_field.gif)
 
 ## The Graph editor
+
+{% embed url="https://www.youtube.com/watch?v=9mQUqa4ud5c&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=28" %}
 
 Rive's Graph editor visually represents how an object's properties change over time. Using this graph, we can edit the rate of change and the values being interpolated.&#x20;
 

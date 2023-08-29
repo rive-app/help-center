@@ -1,5 +1,7 @@
 # Keys
 
+{% embed url="https://www.youtube.com/watch?v=-2jtNJnLB2Y&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=24" %}
+
 ### **Set Keys**
 
 Objects and their properties appear on the Timeline once they have been keyed. There are a few different ways to key a property. You can manipulate an object directly on the Stage (which will set keys for any resulting transformation, like position, rotation, or scale) or change the property in the Inspector. You can also use the key button that appears next to any property that can be animated. This will set a key for the current value.

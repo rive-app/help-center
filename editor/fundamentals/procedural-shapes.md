@@ -1,5 +1,7 @@
 # Procedural Shapes
 
+{% embed url="https://www.youtube.com/watch?v=XDbYmb7id9Y&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=10" %}
+
 ## Creating a procedural shape
 
 ![](../../.gitbook/assets/create-tools\_b.png)

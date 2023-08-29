@@ -6,7 +6,9 @@ Artboards are the foundation of your composition across both design and animate 
 
 To learn more about Artboards, watch our video on Artboards or read more below.
 
-{% embed url="https://www.youtube.com/watch?v=fP_utYlGU5Y" %}
+
+
+{% embed url="https://www.youtube.com/watch?v=AitX3lthC3I&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=7" %}
 
 
 

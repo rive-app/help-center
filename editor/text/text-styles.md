@@ -1,5 +1,7 @@
 # Text Styles
 
+{% embed url="https://www.youtube.com/watch?v=i5HDtWJQ6Ko&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=42" %}
+
 A Text Style contains many of the familiar options that define how you'd like your text to be styled, and is applied to one or more runs. Currently, only Text Styles defined on a Text object can be applied to it. We'll introduce ways to share Text Styles across multiple Text objects or entire Rive files in future.
 
 Each new Text object is created with a Text Style. Use the `+` action in the Inspector to create additional styles to be applied to specific Text Runs or to key between in an animation.

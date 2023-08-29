@@ -6,6 +6,8 @@ description: >-
 
 # Stage
 
+{% embed url="https://www.youtube.com/watch?v=IgaysOQ0KFo&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=5" %}
+
 ## **Selection**
 
 Select an object by simply clicking on it, or click and drag over a number of shapes to perform a marquee selection. Hold the `Shift` modifier key to add or remove from an existing selection (by either single clicking or marqueeing).
@@ -29,6 +31,8 @@ Use the `Enter` key to quickly navigate down the Hierarchy. If you have a group 
 Use the `Esc` key to quickly navigate up the Hierarchy. This allows you to quickly select the parent of your current selection.
 
 ## **Navigating**
+
+{% embed url="https://www.youtube.com/watch?v=osp_et6q7o8&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=4" %}
 
 ### **Panning**
 
