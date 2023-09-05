@@ -75,6 +75,7 @@ The team name is at the top. You can upload an avatar for the team. "Upload Avat
 
 * To change the plan, click on "Change Plan".
 * You can select a new plan and the payment cycle you would prefer.&#x20;
+* Note: The Pro plan is a single-person plan. If the team has multiple people, you cannot create a Pro plan.&#x20;
 
 <figure><img src="../../../../.gitbook/assets/Rive-Change.png" alt=""><figcaption></figcaption></figure>
 
