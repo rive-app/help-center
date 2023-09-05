@@ -67,7 +67,7 @@ Each team has a name and under the name is the status of the team.
 
 To manage the team, click on "Manage Team" to the right.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/Rive-Manage-Team.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Rive-Manage-Team (1).png" alt=""><figcaption></figcaption></figure>
 
 The team name is at the top. You can upload an avatar for the team. "Upload Avatar" opens a window where you can select a file on your computer to use as your avatar.&#x20;
 
