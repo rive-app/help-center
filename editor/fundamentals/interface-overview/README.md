@@ -75,6 +75,6 @@ When a state machine is selected, the Timeline is replaced by a graph.
 
 Read more on the State Machine page.
 
-{% content-ref url="../../state-machine.md" %}
-[state-machine.md](../../state-machine.md)
+{% content-ref url="../../state-machine/" %}
+[state-machine](../../state-machine/)
 {% endcontent-ref %}

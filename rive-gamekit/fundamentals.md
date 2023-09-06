@@ -274,7 +274,7 @@ If you run your app now, you should see a static vector blob. This is because we
 ## State Machines
 
 {% hint style="info" %}
-If you’re not familiar with State Machines in Rive, see our [docs](../editor/state-machine.md) on State Machines
+If you’re not familiar with State Machines in Rive, see our [docs](../editor/state-machine/) on State Machines
 {% endhint %}
 
 Now that we have an instance of an `Artboard`, we can query it for a `StateMachine` which we can use to advance animations over time in the `paint()` method, as well as grab references to State Machine inputs. Similar to querying for an Artboard, you can query for a State Machine by name or by picking the default State Machine on the artboard:

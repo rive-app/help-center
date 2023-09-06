@@ -100,7 +100,7 @@ Add secondary motion to make the animation more interesting.
 
 ![](<../.gitbook/assets/2021-08-16-13.45.55 (1).gif>)
 
-If you are planning on using the animation in the [state machine](../editor/state-machine.md), be sure to key all objects (bones, shapes, paths, ect...) in their current position. This will ensure the character can return to the proper pose when switching between states.
+If you are planning on using the animation in the [state machine](../editor/state-machine/), be sure to key all objects (bones, shapes, paths, ect...) in their current position. This will ensure the character can return to the proper pose when switching between states.
 
 ![](<../.gitbook/assets/2021-08-16-13.57.27 (1).gif>)
 
@@ -122,15 +122,15 @@ Drag your animations onto the graph.
 
 ![](../.gitbook/assets/2021-08-16-15.00.10.gif)
 
-Add [transitions](../editor/state-machine.md#create-transitions).
+Add [transitions](../editor/state-machine/#create-transitions).
 
 ![](../.gitbook/assets/2021-08-16-15.05.09.gif)
 
-Add an [input](../editor/state-machine.md#inputs).
+Add an [input](../editor/state-machine/#inputs).
 
 ![](../.gitbook/assets/2021-08-16-15.07.50.gif)
 
-Configure transition [conditions](../editor/state-machine.md#conditions).
+Configure transition [conditions](../editor/state-machine/#conditions).
 
 ![](<../.gitbook/assets/2021-08-16-15.10.19 (1).gif>)
 

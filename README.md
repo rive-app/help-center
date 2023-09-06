@@ -15,7 +15,7 @@ New to Rive? Here are some tips to get started:
 
 ## Editor
 
-Ready to start designing and animating in Rive? The editor is where you create and animate designs and utilize the powerful [State Machine](editor/state-machine.md) to build your logic of how different animations mix together. From there, you can export your work ready to drop into your app or game via one of our runtimes.
+Ready to start designing and animating in Rive? The editor is where you create and animate designs and utilize the powerful [State Machine](editor/state-machine/) to build your logic of how different animations mix together. From there, you can export your work ready to drop into your app or game via one of our runtimes.
 
 {% content-ref url="editor/fundamentals/" %}
 [fundamentals](editor/fundamentals/)

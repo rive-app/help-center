@@ -35,7 +35,7 @@ These sections provide details on how to interact with your Rive animations at r
 
 * [Animation Playback](playback.md)
 * [Layout](layout.md)
-* [State Machines](../editor/state-machine.md)
+* [State Machines](../editor/state-machine/)
 * [Text](text.md)
 * [Advanced Topics](advanced\_topics/)
 * [Feature Support](feature-support.md)

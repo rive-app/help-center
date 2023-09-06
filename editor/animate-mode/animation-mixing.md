@@ -4,4 +4,4 @@ Rive allows you to mix animations from the same artboard at runtime, creating mo
 
 ![](../../.gitbook/assets/reload.gif)
 
-In this example, four different animation states are being mixed together to produce this pull to refresh animation. Learn how to mix animations using the [State Machine](../state-machine.md) or [Nested Artboards](../fundamentals/nested-artboards.md#animations-and-mixing).
+In this example, four different animation states are being mixed together to produce this pull to refresh animation. Learn how to mix animations using the [State Machine](../state-machine/) or [Nested Artboards](../fundamentals/nested-artboards.md#animations-and-mixing).
