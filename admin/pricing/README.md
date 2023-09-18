@@ -50,7 +50,7 @@ Contact us for a quote.&#x20;
 
 ## Education and non-profit discounts
 
-We do not offer educational or non-profit pricing at this time. Our free plan is available to anyone who wishes to try Rive. Free plans allow you to work on a maximum of 3 files at a time, and there is a 10 MB file size limit per each image you upload into Rive.
+We do not offer educational or non-profit pricing at this time. Our free plan is available to anyone who wishes to try Rive. Free plans allow you to work on a maximum of 3 files at a time, and there is a 10 MB file size limit per each image you upload into Rive. All files are exported with a Rive logo on them.
 
 
 
