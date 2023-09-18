@@ -1,6 +1,6 @@
 # Pricing
 
-Rive is free for individuals and supports paid plans for teams. Teams allow you to create a shared space where you and other team members can collaborate in real time, no matter where you are. We offer flexible plan options, and our [fair billing policy](fair-billing-policy.md) means you'll only be billed for users as you add them. We'll add a prorated credit based on your billing cycle to your account when you remove a user.
+Rive is free for individuals and supports paid plans for teams. Teams allow you to create a shared space where you and other team members can collaborate in real-time, no matter where you are. We offer flexible plan options, and our [fair billing policy](fair-billing-policy.md) means you'll only be billed for users as you add them. We'll add a prorated credit based on your billing cycle to your account when you remove a user.
 
 ## Individual Free plan
 
@@ -52,3 +52,6 @@ Contact us for a quote.&#x20;
 
 We do not offer educational or non-profit pricing at this time. Our free plan is available to anyone who wishes to try Rive. Free plans allow you to work on a maximum of 3 files at a time, and there is a 10 MB file size limit per each image you upload into Rive.
 
+
+
+**NOTE: Our** [**Pricing page**](https://rive.app/pricing) **is the most reliable source for up-to-date pricing information.**
