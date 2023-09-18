@@ -42,7 +42,9 @@ To change your password, click on Change Password and type in the new password. 
 
 <figure><img src="../../../../.gitbook/assets/Rive-Change-Password.png" alt=""><figcaption></figcaption></figure>
 
-**Profile**: This section shows your name, username, location, website, and bio. Only your name and username are required. To change your email address and/or profile information, click the Account link in the above tab. Then, click on "Edit Profile" on the right. Type in the new information you wish to update and click on "Save changes" at the bottom.
+#### **Profile**:&#x20;
+
+This section shows your name, username, location, website, and bio. Only your name and username are required. To change your email address and/or profile information, click the Account link in the above tab. Then, click on "Edit Profile" on the right. Type in the new information you wish to update and click "Save changes" at the bottom.
 
 
 
@@ -50,11 +52,15 @@ To change your password, click on Change Password and type in the new password. 
 
 **Notifications**: This is where any notifications you have will appear.
 
-**Share links**: This tab shows you any share links you have generated. You can see the file you shared, the date when the share link was created, if the share link is active, and the link to the file. By toggling the Active button off, the link becomes inactive. You can also copy the link and share it as long as it's active.
+#### **Share links**:&#x20;
+
+This tab shows you any share links you have generated. You can see the file you shared, the date when the share link was created, if the share link is active, and the link to the file. By toggling the Active button off, the link becomes inactive. You can also copy the link and share it as long as it's active.
 
 <figure><img src="../../../../.gitbook/assets/Rive-Share-Links.png" alt=""><figcaption></figcaption></figure>
 
-**Your Plans**: Along the left side of the page is a list of the plans you have. You can have multiple plans and you can be a member and/or owner of multiple teams.&#x20;
+#### **Your Plans**:&#x20;
+
+Along the left side of the page is a list of the plans you have. You can have multiple plans and you can be a member and/or owner of multiple teams.&#x20;
 
 <figure><img src="../../../../.gitbook/assets/Rive-Account (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -71,7 +77,9 @@ To manage the team, click on "Manage Team" to the right.&#x20;
 
 The team name is at the top. You can upload an avatar for the team. "Upload Avatar" opens a window where you can select a file on your computer to use as your avatar.&#x20;
 
-**Plan:** This tells you the name of the plan the team is on and the status of the team.&#x20;
+#### **Plan:**&#x20;
+
+This tells you the name of the plan the team is on and the status of the team.&#x20;
 
 * To change the plan, click on "Change Plan".
 * You can select a new plan and the payment cycle you would prefer.&#x20;
