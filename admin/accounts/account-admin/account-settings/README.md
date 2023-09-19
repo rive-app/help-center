@@ -1,5 +1,5 @@
 ---
-description: How do I find my account and billing information?
+description: How do I find my account, billing information, and manage my team?
 ---
 
 # Account settings
