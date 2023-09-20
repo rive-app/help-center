@@ -1,8 +1,8 @@
 ---
-description: How do I find my account, billing information, and manage my team?
+description: How do I find my account settings, billing information, and manage my team?
 ---
 
-# Account settings
+# Account Management
 
 On the [Rive website](https://rive.app/), in the upper right is a button that says "Get Started."\
 
