@@ -57,7 +57,9 @@
   * [Clipping](editor/manipulating-shapes/clipping.md)
   * [Solos](editor/manipulating-shapes/solos.md)
   * [Trim Path](editor/manipulating-shapes/trim-path.md)
+  * [Joysticks](editor/manipulating-shapes/joysticks.md)
 * [Constraints](editor/constraints/README.md)
+  * [Follow Path Constraint](editor/constraints/follow-path-constraint.md)
   * [IK Constraint](editor/constraints/ik-constraint.md)
   * [Distance Constraint](editor/constraints/distance-constraint.md)
   * [Scale Constraint](editor/constraints/scale-constraint.md)
@@ -73,6 +75,7 @@
   * [Text Styles](editor/text/text-styles.md)
   * [Text Modifiers](editor/text/text-modifiers.md)
   * [Fonts](editor/text/fonts.md)
+* [Events](editor/events.md)
 
 ## Runtimes
 
@@ -117,6 +120,7 @@
 * [Layout](runtimes/layout.md)
 * [State Machines](runtimes/state-machines.md)
 * [Text](runtimes/text.md)
+* [Rive Events](runtimes/rive-events.md)
 * [Advanced Topics](runtimes/advanced\_topics/README.md)
   * [Format](runtimes/advanced\_topics/format.md)
 * [Feature Support](runtimes/feature-support.md)

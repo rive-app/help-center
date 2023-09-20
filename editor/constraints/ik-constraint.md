@@ -6,6 +6,8 @@ description: Learn how to use Inverse Kinematics in Rive
 
 ## About Inverse Kinematics (IK)
 
+{% embed url="https://youtu.be/8FK5E5WBUpM" %}
+
 ### Forward Kinematics
 
 Most skeletal animation in Rive is done by rotating the angles of bones. The position of a child bone changes according to the rotation of its parent. Positioning a bone at the end of a chain requires rotating multiple parent bones (the bones up the chain) to reach the desired pose. This type of skeletal posing is called Forward Kinematics.

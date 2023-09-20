@@ -2,6 +2,8 @@
 
 The Transform Constraint allows its owner to copy all the transformation properties from a target object, regardless of their hierarchical relationships. These properties include Position, Rotation, and Scale.
 
+{% embed url="https://youtu.be/pJfWNtVBrvM" %}
+
 ## How to create a Transform Constraint
 
 ### 1. Add a Transform Constraint to an object
@@ -22,7 +24,7 @@ Manipulating the target object now causes the constrained object to copy Positio
 
 ![](../../.gitbook/assets/2021-08-05-18.26.11.gif)
 
-## Strength <a id="target"></a>
+## Strength <a href="#target" id="target"></a>
 
 The Strength property determines how much the constrained object is affected.
 
@@ -46,7 +48,7 @@ Choose whether this constraint should use World or Local coordinates for the Des
 
 Consider the package resting on the table and the mechanical arm below.
 
-![](../../.gitbook/assets/image%20%283%29.png)
+![](<../../.gitbook/assets/image (3).png>)
 
 Add a Transform Constraint to the package and a target group at the end of the arm.
 
@@ -54,9 +56,7 @@ Add a Transform Constraint to the package and a target group at the end of the a
 
 With a Strength of 100%, all the transform properties of the package match the target. Notice how the package moves and rotates correctly with the movement of the arm.
 
-![](../../.gitbook/assets/arm_pickup_package.gif)
+![](../../.gitbook/assets/arm\_pickup\_package.gif)
 
 Set the Strength to 0% to make the arm drop the package.
-
-
 

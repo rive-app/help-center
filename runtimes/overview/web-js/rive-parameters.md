@@ -179,13 +179,105 @@ buttonEl.onclick = function() {
 };
 ```
 
+### on()
+
+`on(type: EventType, callback: EventCallback): void`
+
+Similar to the Web API's `addEventListener` functionality on DOM elements, you can subscribe to specific "events" in a render loop cycle via providing an `EventType` enum and a callback for the runtime to invoke with different parameters depending on the event you want to subscribe to.
+
+`EventType` has the following enums to subscribe to that may or may not trigger during the lifespan of the Rive animation/state machine:
+
+```typescript
+export enum EventType {
+  Load = "load", // When Rive has successfully loaded in the Rive file
+  LoadError = "loaderror", // When Rive cannot load the Rive file
+  Play = "play", // When Rive plays an entity or resumes the render loop
+  Pause = "pause", // When Rive pauses the render loop and playing entity
+  Stop = "stop", // When Rive stops the render loop and playing entity
+  Loop = "loop", // (Singular animations only) When Rive loops an animation 
+  Advance = "advance", // When Rive advances the animation in a frame
+  StateChange = "statechange", // When a Rive state change is detected
+  RiveEvent = "riveevent", // When a Rive Event gets reported
+}
+```
+
+#### Example
+
+```typescript
+import {Rive, EventType} from '@rive-app/canvas';
+
+const riveInstance = new Rive({
+  src: "/rating-animation.riv",
+  autoplay: true,
+  canvas: document.querySelector("canvas"),
+  stateMachines: "State Machine 1",
+});
+
+const riveEventHandler = (event) => {
+  if (event.data.name === "rating1") {
+    // Send feedback to API
+  } else if (event.data.name === "redirect") {
+    const newAnchorTag = document.createElement("a");
+    const {url, target} = (event as rc.OpenUrlEvent);
+    url && newAnchorTag.setAttribute("href", url);
+    target && newAnchorTag.setAttribute("target", target);
+    if (url) {
+      newAnchorTag.click();
+    }
+  }
+};
+
+riveInstance.on(EventType.RiveEvent, riveEventHandler);
+```
+
+### off()
+
+`off(type: EventType, callback: EventCallback): void`
+
+Similar to the Web API's `removeEventListener` functionality on DOM elements, you can unsubscribe to specific "events" in a render loop cycle via providing an `EventType` enum and the callback reference that was registered via the `on()` API.
+
+```typescript
+import {Rive, EventType} from '@rive-app/canvas';
+
+const riveInstance = new Rive({
+  src: "/rating-animation.riv",
+  autoplay: true,
+  canvas: document.querySelector("canvas"),
+  stateMachines: "State Machine 1",
+});
+
+const riveEventHandler = (event) => {
+  if (event.data.name === "rating1") {
+    // Send feedback to API
+  } else if (event.data.name === "redirect") {
+    const newAnchorTag = document.createElement("a");
+    const {url, target} = (event as rc.OpenUrlEvent);
+    url && newAnchorTag.setAttribute("href", url);
+    target && newAnchorTag.setAttribute("target", target);
+    if (url) {
+      newAnchorTag.click();
+    }
+  }
+};
+
+riveInstance.on(EventType.RiveEvent, riveEventHandler);
+// ...
+riveInstance.off(EventType.RiveEvent, riveEventHandler);
+```
+
+### removeAllEventListeners()
+
+`removeAllEventListeners(type?: EventType): void`
+
+This effectively removes all event listening subscriptions for a single particular `EventType` that may have been added via the `on()` API.
+
 ### scrub()
 
 `scrub(animationNames?: string | string[], value?: number): void`
 
 Scrubs through (a) linear timeline animation(s) by a specified amount of seconds.
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Note: This will not do anything if you are playing through a state machine. This only applies if you are using instantiated animations through the `animations` property.
 {% endhint %}
 
@@ -330,6 +422,8 @@ Returns the text value of the text run component (from the hierarchy of your `.r
 `setTextRunValue(textRunName: string, textValue: string): void`
 
 Sets the text value of the text run component (from the hierarchy of your `.riv` file) you specify via `textRunName`. You may see console warnings if the text run cannot be queried from the active Artboard, and thus the provided `textValue` you want to set on the run may not be successful.
+
+
 
 ## Debugging Tools
 

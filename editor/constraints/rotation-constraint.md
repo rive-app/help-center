@@ -1,6 +1,8 @@
 # Rotation Constraint
 
-The Rotation Constraint allows you to set limits on an object's rotation and/or copy the rotation properties from a target object. These properties can be independently activated. 
+The Rotation Constraint allows you to set limits on an object's rotation and/or copy the rotation properties from a target object. These properties can be independently activated.&#x20;
+
+{% embed url="https://youtu.be/YrQeUrzYoi8" %}
 
 ## How to create a Rotation Constraint
 
@@ -22,7 +24,7 @@ Manipulating the target object now causes the constrained object to copy Rotatio
 
 ![](../../.gitbook/assets/2021-08-19-16.29.48.gif)
 
-## Strength <a id="target"></a>
+## Strength <a href="#target" id="target"></a>
 
 The Strength property determines how much the constrained object is affected.
 
@@ -57,8 +59,6 @@ Define the rate at which the rotation property is copied.
 ## Min/Max
 
 Use the numerical values to define the minimum and maximum limits of the constraint.
-
-
 
 
 

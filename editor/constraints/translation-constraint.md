@@ -1,6 +1,8 @@
 # Translation Constraint
 
-The Translation Constraint allows you to set limits on an object's position and/or copy the position properties from a target object. These properties can be independently activated. 
+The Translation Constraint allows you to set limits on an object's position and/or copy the position properties from a target object. These properties can be independently activated.&#x20;
+
+{% embed url="https://youtu.be/i6OAPcqcPBw" %}
 
 ## How to create a Translation Constraint
 
@@ -22,7 +24,7 @@ Manipulating the target object now causes the constrained object to copy Positio
 
 ![](../../.gitbook/assets/2021-08-19-15.47.25.gif)
 
-## Strength <a id="target"></a>
+## Strength <a href="#target" id="target"></a>
 
 The Strength property determines how much the constrained object is affected.
 
@@ -50,15 +52,13 @@ Allows the constraint owner to be manually offset from the constraint source.
 
 ![](../../.gitbook/assets/2021-08-19-15.49.58.gif)
 
-## Copy X &Y
+## Copy X \&Y
 
 Allows you to decide if the constraint owner will copy the translation in the X and Y direction. Additionally, use the numerical value to define the rate at which it copies the value.
 
 ## Max/Min
 
 Use the numerical values to define the minimum and maximum limits of the constraint.
-
-
 
 
 

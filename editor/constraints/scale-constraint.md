@@ -1,6 +1,8 @@
 # Scale Constraint
 
-The Scale Constraint allows you to set limits on an object's scale and/or copy the scale properties from a target object. These properties can be independently activated. 
+The Scale Constraint allows you to set limits on an object's scale and/or copy the scale properties from a target object. These properties can be independently activated.&#x20;
+
+{% embed url="https://youtu.be/4fFuGQHAiIQ" %}
 
 ## How to create a Scale Constraint
 
@@ -22,7 +24,7 @@ Use the new constraint's fly-out menu to select a target for this constraint.
 
 Manipulating the target object now causes the constrained object to Scale properties.
 
-## Strength <a id="target"></a>
+## Strength <a href="#target" id="target"></a>
 
 The Strength property determines how much the constrained object is affected.
 
@@ -43,8 +45,6 @@ Choose whether this constraint should use World or Local coordinates for the Des
 ### Min/Max Space
 
 Choose whether this constraint should use World or Local coordinates for the Min/Max Space.
-
-
 
 
 
