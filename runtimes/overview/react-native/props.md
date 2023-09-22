@@ -47,6 +47,8 @@ The following are props you can set on the Rive React component for this runtime
   * Type: `(stateMachineName: string, stateName: string) => void`
 * `onError` _(optional)_ - Callback function that is called when error is thrown. Allows manual handling of thrown errors that are described by [`RNRiveError`](https://github.com/rive-app/rive-react-native/blob/main/docs/types.md#RNRiveError).
   * Type: `(riveError: RNRiveError) => void`
+* `onRiveEventReceived` _(optional)_ - Callback function that is called when the render loop reports a Rive Event.
+  * Type: `(event: RiveGeneralEvent | RiveOpenUrlEvent) => void`
 
 
 

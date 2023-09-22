@@ -158,7 +158,61 @@ const MyTextComponent = () => {
 {% endtab %}
 
 {% tab title="React Native" %}
-#### Coming Soon!
+### Adding a Rive Event Listener
+
+Similar to other callback functions you can provide on the `<Rive>` component, such as `onPlay` or `onStateChange`, you can now provide an `onRiveEventReceived` callback which will be invoked any time a Rive Event gets reported during the render loop.
+
+The API signature is as follows:
+
+```typescript
+onRiveEventReceived?: (event: RiveGeneralEvent | RiveOpenUrlEvent) => void;
+```
+
+#### Example Usage
+
+```tsx
+import React, { useRef, useState } from 'react';
+import {
+  SafeAreaView,
+  ScrollView,
+  Linking,
+  Text,
+} from 'react-native';
+import Rive, { Fit, RiveOpenUrlEvent, RiveRef } from 'rive-react-native';
+
+export default function Events() {
+  const riveRef = useRef<RiveRef>(null);
+  const [eventMessage, setEventMessage] = useState('');
+
+  return (
+    <SafeAreaView>
+      <ScrollView>
+        <Rive
+          ref={riveRef}
+          autoplay={true}
+          fit={Fit.Cover}
+          resourceName={'rating'}
+          stateMachineName="State Machine 1"
+          onRiveEventReceived={(event) => {
+            // These are properties added to the event at Design Time in the
+            // Rive editor
+            const eventProperties = event.properties;
+            if (eventProperties?.message) {
+              setEventMessage(eventProperties.message as string);
+            }
+            
+            // If an event has an accompanying URL, open it
+            if ('url' in event) {
+              Linking.openURL((event as RiveOpenUrlEvent).url || '');
+            }
+          }}
+        />
+        <Text>{eventMessage}</Text>
+      </ScrollView>
+    </SafeAreaView>
+  );
+}
+```
 {% endtab %}
 
 {% tab title="Flutter" %}
