@@ -52,13 +52,13 @@ function onRiveEventReceived(riveEvent) {
   const eventData = riveEvent.data;
   const eventProperties = eventData.properties;
   if (eventData.type === RiveEventType.General) {
-    console.log("Event name", data.name);
+    console.log("Event name", eventData);
     // Added relevant metadata from the event
     console.log("Rating", eventProperties.rating);
     console.log("Message", eventProperties.message);
   } else if (eventData.type === RiveEventType.OpenUrl) {
-    console.log("Event name", data.name);
-    window.location.href = data.url;
+    console.log("Event name", eventData.name);
+    window.open(eventData.url);
   }
 }
 
