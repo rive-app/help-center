@@ -11,7 +11,7 @@ New to Rive? Here are some tips to get started:
 * [Create an account](https://rive.app/login/?redirect=https%3A%2F%2Feditor.rive.app) today and try out the Rive Editor
 * Ready to design and animate? Peruse the Rive docs here, or watch our series of short tutorial videos in [Rive 101](https://youtube.com/playlist?list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3)
 * Want to jump straight into adding Rive in code? Check out the [runtimes](runtimes/overview.md) docs for quickstart guides, examples, and code snippets
-* ...and find more resources on our [Learn Page](https://rive.app/learn-rive)
+* Curious about what use cases to consider when building with Rive? We've got examples, blogs, tutorials, and more on our [use cases page](https://rive.app/use-cases)
 
 ## Editor
 

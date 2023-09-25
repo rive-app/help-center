@@ -8,4 +8,4 @@
 
 [Send feedback](https://discord.com/invite/FGjmaTr)
 
-[Video tutorials and other resources](https://rive.app/learn-rive)
+[Check out our Youtube page](https://www.youtube.com/@Rive\_app/featured)

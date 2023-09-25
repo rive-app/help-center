@@ -16,7 +16,7 @@ You can learn more about our runtimes [here](../../runtimes/overview.md).
 
 ## What's the best way to learn Rive?
 
-The [fundamentals](../../editor/fundamentals/) section of this manual is the perfect place to get started with the core concepts of Rive. Check out our [Learn Page](https://rive.app/learn-rive) for a collection of short video tutorials, examples, articles, and more, on using Rive in the editor and in the runtimes. We'll be adding series on more advanced topics over time.
+The [fundamentals](../../editor/fundamentals/) section of this manual is the perfect place to get started with the core concepts of Rive. Want a series of short videos explaining specific parts of the Rive editor, concepts, and more? Check out the [Rive 101 series](https://youtube.com/playlist?list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3\&si=vznV1pd1cpMhfeNK). Along the same lines, join us for our weekly livestreams, watch workshop videos, feature announcements, and more, on our [Youtube channel](https://www.youtube.com/@Rive\_app/featured).
 
 ## What is remixing?
 

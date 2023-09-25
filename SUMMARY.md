@@ -151,7 +151,7 @@
     * [Billing changes](admin/accounts/account-admin/billing-changes.md)
     * [Trouble logging in](admin/accounts/account-admin/trouble-logging-in.md)
     * [Account Management](admin/accounts/account-admin/account-management/README.md)
-      * [Delete account](admin/accounts/account-admin/account-management/delete-account.md)
+      * [Delete account](admin/accounts/delete-account.md)
 * [Teams](admin/teams.md)
 * [Pricing](admin/pricing/README.md)
   * [Fair Billing Policy](admin/pricing/fair-billing-policy.md)
