@@ -15,3 +15,12 @@ Click on the stage to place vertices.
 Click and drag to create a vertex with bezier handles. When you are finished, hit `esc` on your keyboard.
 
 ![](<../../../.gitbook/assets/pen-tool-create-handless (1) (1) (1).gif>)
+
+## Path & vertex shortcuts
+
+* Hold Alt (Opt) to detach Pen tool while drawing a path.
+* Ctrl+click (Cmd+click) on vertex to toggle between mirrored and straight handles.
+* With Select or Pen tool, Ctrl+click (Cmd+click) on vertex handle to remove that handle.
+* With Select or Pen tool, Alt+click (Opt+click) on a vertex handle to detach the handle.
+* With Pen tool, Alt+click (Opt+click) on a vertex to delete the vertex.
+* Alt+drag (Option+drag) to duplicate vertices.

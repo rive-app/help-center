@@ -59,13 +59,13 @@
   * [Trim Path](editor/manipulating-shapes/trim-path.md)
   * [Joysticks](editor/manipulating-shapes/joysticks.md)
 * [Constraints](editor/constraints/README.md)
-  * [Follow Path Constraint](editor/constraints/follow-path-constraint.md)
   * [IK Constraint](editor/constraints/ik-constraint.md)
   * [Distance Constraint](editor/constraints/distance-constraint.md)
   * [Scale Constraint](editor/constraints/scale-constraint.md)
   * [Rotation Constraint](editor/constraints/rotation-constraint.md)
   * [Transform Constraint](editor/constraints/transform-constraint.md)
   * [Translation Constraint](editor/constraints/translation-constraint.md)
+  * [Follow Path Constraint](editor/constraints/follow-path-constraint.md)
 * [Keyboard Shortcuts](editor/keyboard-shortcuts.md)
 * [Exporting](editor/exporting.md)
 * [Share Links](editor/share-links/README.md)
@@ -75,6 +75,7 @@
   * [Text Styles](editor/text/text-styles.md)
   * [Text Modifiers](editor/text/text-modifiers.md)
   * [Fonts](editor/text/fonts.md)
+* [Tagging](editor/tagging.md)
 * [Events](editor/events.md)
 
 ## Runtimes

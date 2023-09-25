@@ -53,3 +53,9 @@ If you only need to reverse the Draw Order of a group, right-click on an object 
 ![](<../../../.gitbook/assets/2022-05-26 15.45.26.gif>)
 
 You can change the name of any object by double-clicking the name.
+
+
+
+## Assets Panel
+
+The assets panel is where all of your Images, Lottie files, and Custom fonts will be added and appear. Read more about importing assets [here](../importing-assets.md#assets-panel).

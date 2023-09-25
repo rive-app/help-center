@@ -10,6 +10,14 @@ Import your assets by dragging and dropping them onto the Rive Editor. You can i
 
 After dragging in your graphics, they now appear in the Assets Panel, located in the left side of the editor UI. Drag and drop them onto an artboard to begin using them.
 
+
+
+## Importing Custom Font
+
+For Pro customers, you have the ability to add custom fonts to be used with our Text tool. Simply drag and drop your .OTF or .TTF file into the editor, or use the plus button next to the Font section.
+
+
+
 ## Updating image assets
 
 You can make updates to your images after they've been imported.&#x20;
