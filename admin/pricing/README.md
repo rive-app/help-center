@@ -4,7 +4,16 @@ Rive is free for individuals and supports paid plans for teams. Teams allow you 
 
 ## Individual Free plan
 
-Every user that signs up for Rive has a free individual space. Free plans allow you to work on a maximum of 3 files at a time, and there is a 10 MB file size limit per each image you upload into Rive. All files are exported with a Rive logo on them.&#x20;
+Every user that signs up for Rive has a free individual space. The free account with Rive has the following:
+
+* Maximum of 3 files at a time
+* 10 MB file size limit per image you upload into Rive
+* All files are exported with the Rive logo
+* There is no access to revision history or deleted files
+* Unable to export a .rev file
+* Unable to import a .riv file
+* No share links
+* Cannot use custom fonts
 
 **Free**
 
