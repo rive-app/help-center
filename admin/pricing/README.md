@@ -63,4 +63,4 @@ We do not offer educational or non-profit pricing at this time. Our free plan is
 
 
 
-**NOTE: Our** [**Pricing page**](https://rive.app/pricing) **is the most reliable source for up-to-date pricing information.**
+**NOTE: Our** [**Pricing page**](https://rive.app/pricing) **is the most reliable source for up-to-date pricing information and account features.**
