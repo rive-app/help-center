@@ -6,7 +6,7 @@
 * [FAQ](getting-started/faq-1/README.md)
   * [Requirements and troubleshooting](getting-started/faq-1/requirements-and-troubleshooting.md)
   * [Editor and Runtimes](getting-started/faq-1/editor-and-runtimes.md)
-  * [Teams and billing](getting-started/faq-1/teams-and-billing.md)
+  * [Free and paid plans](getting-started/faq-1/teams-and-billing.md)
   * [Improvements in the new Rive](getting-started/faq-1/improvements-in-the-new-rive.md)
   * [Importing old Rive (Flare) files](getting-started/faq-1/importing-rive-1-files.md)
 * [Quick Links](getting-started/quick-links.md)
