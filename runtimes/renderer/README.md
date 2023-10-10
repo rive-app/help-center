@@ -30,7 +30,7 @@ By default, both Android and iOS will use the current Skia renderer.
 {% tab title="iOS / macOS" %}
 ## Starting Version
 
-The Rive Renderer was introduced in the iOS runtime starting at **v5.2.0**, however, we recommend installing the latest version of the dependency to get the latest updates. See the [CHANGELOG](https://github.com/rive-app/rive-ios/blob/main/CHANGELOG.md) for details on the latest versions.
+The Rive Renderer was introduced in the iOS runtime starting at **v5.3.2**, however, we recommend installing the latest version of the dependency to get the latest updates. See the [CHANGELOG](https://github.com/rive-app/rive-ios/blob/main/CHANGELOG.md) for details on the latest versions.
 
 {% hint style="warning" %}
 At this time, the Rive Renderer is not supported in simulator environments, and can only be tested on physical devices. Configuring the `.riveRenderer` on your project while running on the iOS simulator may use a Core Graphics (CG) renderer as a fallback, which should support all Rive features.
@@ -50,7 +50,7 @@ With UIKit, you'll be able to see the best performance differences by drawing mu
 {% tab title="Android" %}
 ## Starting Version
 
-The Rive Renderer was introduced in the Android runtime starting at **v7.0.0**, however, we recommend installing the latest version of the dependency to get the latest updates. See the [CHANGELOG](https://github.com/rive-app/rive-android/blob/master/CHANGELOG.md) for details on the latest versions.
+The Rive Renderer was introduced in the Android runtime starting at **v8.5.0**, however, we recommend installing the latest version of the dependency to get the latest updates. See the [CHANGELOG](https://github.com/rive-app/rive-android/blob/master/CHANGELOG.md) for details on the latest versions.
 {% endtab %}
 {% endtabs %}
 
