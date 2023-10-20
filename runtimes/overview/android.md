@@ -10,6 +10,20 @@ This guide documents how to get started using the Android runtime library. Rive 
 \
 This library contains an API for Android apps to easily integrate Rive assets.
 
+## Example App
+
+You can run our Android example app from the Rive GitHub repository.
+
+```bash
+git clone https://github.com/rive-app/rive-android
+```
+
+Open the cloned folder in Android Studio and select the `app` configuration and target device. Ensure that the build variant is set to `preview` (default) by opening the menu `Build - Select Build Variant...` and selecting the `preview` variant for `app`.
+
+The other build variants are for development purposes and require additional configuration, see [CONTRIBUTING.MD](https://github.com/rive-app/rive-android/blob/master/CONTRIBUTING.md).
+
+<figure><img src="../../.gitbook/assets/CleanShot 2023-10-19 at 18.59.46.png" alt=""><figcaption><p>Select the <code>preview</code> build variant to easily run the example app</p></figcaption></figure>
+
 ## Getting Started
 
 Follow the steps below for a quick start on integrating Rive into your Android app.

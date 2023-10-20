@@ -16,6 +16,24 @@ The minimum iOS target is **14.0,** and the target for macOS is `13.1`
 **Note:** macOS runtime support is included in `v4.0.1+`
 {% endhint %}
 
+## Example App
+
+You can run our iOS/macOS example app from the Rive GitHub repository.
+
+```bash
+git clone https://github.com/rive-app/rive-ios
+```
+
+Open the `Example-iOS` app in XCode and be sure to select the `Preview (iOS)` or `Preview (macOS)` [scheme](https://developer.apple.com/documentation/xcode/customizing-the-build-schemes-for-a-project). The other schemes are for development purposes and require additional configuration, see [CONTRIBUTING.MD](https://github.com/rive-app/rive-ios/blob/main/CONTRIBUTING.md).
+
+
+
+<div align="center" data-full-width="false">
+
+<figure><img src="../../../.gitbook/assets/CleanShot 2023-10-19 at 18.49.31@2x.png" alt="" width="375"><figcaption><p>Select the <code>Preview</code> scheme to easily run the example app</p></figcaption></figure>
+
+</div>
+
 ## Getting Started
 
 Follow the steps below for a quick start on integrating Rive into your iOS/macOS app.
