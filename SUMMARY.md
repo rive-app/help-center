@@ -9,6 +9,7 @@
   * [Free and paid plans](getting-started/faq-1/teams-and-billing.md)
   * [Improvements in the new Rive](getting-started/faq-1/improvements-in-the-new-rive.md)
   * [Importing old Rive (Flare) files](getting-started/faq-1/importing-rive-1-files.md)
+* [Best Practices](getting-started/best-practices.md)
 * [Quick Links](getting-started/quick-links.md)
 
 ## Editor
