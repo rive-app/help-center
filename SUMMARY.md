@@ -123,6 +123,7 @@
 * [State Machines](runtimes/state-machines.md)
 * [Text](runtimes/text.md)
 * [Rive Events](runtimes/rive-events.md)
+* [Loading Assets](runtimes/loading-assets.md)
 * [Choose a Renderer](runtimes/renderer/README.md)
   * [FAQ](runtimes/renderer/faq.md)
 * [Advanced Topics](runtimes/advanced\_topics/README.md)

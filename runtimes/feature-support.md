@@ -8,15 +8,21 @@ As our Rive editor grows to support more features and toolsets in making Rive as
 \
 We may include notes on migrating to newer versions if a new feature warrants recent API changes.
 
+## Our-of-band Assets
+
+To load assets dynamically, instead of embedded in the `riv` file, bump the appropriate versions noted below to support this new feature. For runtime specific information, see [loading-assets.md](loading-assets.md "mention").
+
+<table><thead><tr><th width="368">Runtime</th><th>Version</th></tr></thead><tbody><tr><td>(Web) <code>@rive-app/canvas</code> and <code>@rive-app/webgl</code></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 2.7.0</code></td></tr><tr><td>React</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 4.5.0</code></td></tr><tr><td>React Native</td><td>❗️Coming soon</td></tr><tr><td>Flutter</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 0.12.0</code></td></tr><tr><td>iOS/macOS</td><td>❗️Coming soon</td></tr><tr><td>Android</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 8.6.1</code></td></tr><tr><td>C++</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span> Supported</td></tr></tbody></table>
+
 ## Rive Events Support
 
-To receive reported Rive Events at runtime, bump to the appropriate versions noted below to support this new feature.
+To receive reported Rive Events at runtime, bump to the appropriate versions noted below to support this new feature. For runtime specific information, see [rive-events.md](rive-events.md "mention").
 
 <table><thead><tr><th width="368">Runtime</th><th>Version</th></tr></thead><tbody><tr><td>(Web) <code>@rive-app/canvas</code> and <code>@rive-app/webgl</code></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 2.4.3</code></td></tr><tr><td>React</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 4.3.3</code></td></tr><tr><td>React Native</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 6.1.0</code></td></tr><tr><td>Flutter</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 0.11.17</code></td></tr><tr><td>iOS/macOS</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 5.3.1</code></td></tr><tr><td>Android</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 8.4.0</code></td></tr><tr><td>C++</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span> Supported</td></tr></tbody></table>
 
 ## Text Support
 
-To take advantage of basic Text support at runtime, bump to the appropriate versions noted below to support this new feature.
+To take advantage of basic Text support at runtime, bump to the appropriate versions noted below to support this new feature. For runtime specific information, see [text.md](text.md "mention").
 
 <table><thead><tr><th width="368">Runtime</th><th>Version</th></tr></thead><tbody><tr><td>(Web) <code>@rive-app/canvas</code> and <code>@rive-app/webgl</code></td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 2.1.3</code></td></tr><tr><td>React</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 4.1.3</code></td></tr><tr><td>React Native</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 6.0.3</code></td></tr><tr><td>Flutter</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 0.11.14</code></td></tr><tr><td>iOS/macOS</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 5.1.5</code></td></tr><tr><td>Android</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span><code>>= 8.1.3</code></td></tr><tr><td>C++</td><td><span data-gb-custom-inline data-tag="emoji" data-code="2705">✅</span> Supported</td></tr></tbody></table>
 
