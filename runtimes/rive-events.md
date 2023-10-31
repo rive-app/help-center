@@ -27,6 +27,11 @@ Let's use a 5-star rater Rive example to set any text supplied with events and o
 
 {% tabs %}
 {% tab title="Web" %}
+### Examples
+
+* [Star rating example](https://codesandbox.io/s/rive-events-js-wsgcqd?file=/src/index.mjs)
+* [Neostream example (Chrome only)](https://codesandbox.io/s/neostream-rive-events-2f6sny?file=/src/index.mjs)
+
 ### High-level API usage
 
 #### Adding an Event Listener
@@ -43,6 +48,7 @@ const r = new rive.Rive({
   artboard: "my-artboard-name",
   autoplay: true,
   stateMachines: "State Machine 1",
+  // automaticallyHandleEvents: true, // Automatically handle OpenUrl events
   onLoad: () => {
     r.resizeDrawingSurfaceToCanvas();
   },
@@ -52,7 +58,7 @@ function onRiveEventReceived(riveEvent) {
   const eventData = riveEvent.data;
   const eventProperties = eventData.properties;
   if (eventData.type === RiveEventType.General) {
-    console.log("Event name", eventData);
+    console.log("Event name", eventData.name);
     // Added relevant metadata from the event
     console.log("Rating", eventProperties.rating);
     console.log("Message", eventProperties.message);
@@ -106,6 +112,10 @@ rive.requestAnimationFrame(mycustomRenderLoop);
 {% endtab %}
 
 {% tab title="React" %}
+### Examples
+
+* [Star rating example](https://codesandbox.io/s/rive-events-react-2pk8qk?file=/src/App.js:399-470)
+
 ### Adding an Event Listener
 
 Similar to the `addEventListener()` / `removeEventListener()` API for DOM elements, you'll use the Rive instance's `on()` / `off()` API to subscribe to Rive events from the `rive` object returned from the `useRive` hook.  Simply supply the RiveEvent enum and a callback for the runtime to call at the appropriate moment any Rive event gets detected.
@@ -117,7 +127,7 @@ Similar to the `addEventListener()` / `removeEventListener()` API for DOM elemen
 #### Example Usage
 
 ```tsx
-import { useRive, RiveEventType } from '@rive-app/canvas';
+import { useRive, EventType, RiveEventType } from '@rive-app/canvas';
 import { useCallback, useEffect } from 'react';
 
 const MyTextComponent = () => {
@@ -125,6 +135,7 @@ const MyTextComponent = () => {
     src: "/static-assets/star-rating.riv",
     artboard: "my-artboard-name",
     autoplay: true,
+    // automaticallyHandleEvents: true, // Automatically handle OpenUrl events
     stateMachines: "State Machine 1",
   });
   
@@ -132,12 +143,13 @@ const MyTextComponent = () => {
     const eventData = riveEvent.data;
     const eventProperties = eventData.properties;
     if (eventData.type === RiveEventType.General) {
-      console.log("Event name", data.name);
+      console.log("Event name", eventData.name);
       // Added relevant metadata from the event
       console.log("Rating", eventProperties.rating);
       console.log("Message", eventProperties.message);
     } else if (eventData.type === RiveEventType.OpenUrl) {
-      console.log("Event name", data.name);
+      console.log("Event name", eventData.name);
+      // Handle OpenUrl event manually
       window.location.href = data.url;
     }
   };
@@ -146,7 +158,7 @@ const MyTextComponent = () => {
   // event listener
   useEffect(() => {
     if (rive) {
-      r.on(EventType.RiveEvent, onRiveEventReceived);
+      rive.on(EventType.RiveEvent, onRiveEventReceived);
     }
   }, [rive]);
   
@@ -611,6 +623,8 @@ By calling `event.properties` you'll get a `HashMap` that contains any custom pr
 {% endtab %}
 {% endtabs %}
 
+### Additional Resources
 
+* [Rive events - workshop](https://www.youtube.com/watch?v=e2bshfKuu8U)
 
 ###

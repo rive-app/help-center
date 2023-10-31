@@ -31,7 +31,7 @@ Follow the steps below on integrating Rive into your web app.
 Add the following script tag to a web page; we recommend sticking to one version, such as seen below:
 
 ```javascript
-<script src="https://unpkg.com/@rive-app/canvas@2.1.0"></script>
+<script src="https://unpkg.com/@rive-app/canvas@2.7.0"></script>
 ```
 
 Find the versions of the runtimes in the "Versions" tab here: [https://www.npmjs.com/package/@rive-app/canvas](https://www.npmjs.com/package/@rive-app/canvas)

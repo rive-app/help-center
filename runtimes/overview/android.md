@@ -34,7 +34,7 @@ Add the following dependencies to your `build.gradle` file in your project:
 
 ```
 dependencies {
-    implementation 'app.rive:rive-android:5.0.0'
+    implementation 'app.rive:rive-android:8.7.0'
     // During initialization, you may need to add a dependency
     // for Jetpack Startup
     implementation "androidx.startup:startup-runtime:1.1.1"

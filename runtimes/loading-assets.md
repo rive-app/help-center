@@ -61,6 +61,7 @@ Note that we will progressively update the table below with docs on other runtim
 ### Examples
 
 * [Specify a font asset to load](https://codesandbox.io/s/rive-out-of-band-fonts-d3lzs4)
+* [Specify an image asset to load](https://codesandbox.io/s/rive-out-of-band-images-pfx4h2?file=/src/index.mjs)
 
 ### Using the Asset Handler API
 
@@ -163,6 +164,7 @@ const riveInstance = new Rive({
 ### Examples
 
 * [Specify a font asset to load](https://codesandbox.io/s/rive-out-of-band-fonts-react-6yljqv?file=/src/styles.css)
+* [Specify an image asset to load](https://codesandbox.io/s/rive-out-of-band-images-react-y5fmx6?file=/src/App.js)
 
 ### Using the Asset Handler API
 
