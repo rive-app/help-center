@@ -52,7 +52,7 @@ Add the following to your Podspec file:
 
 #### Via Swift Package Manager
 
-To install via Swift Package Manager, in the package finder in Xcode, search for `rive-ios`
+To install via Swift Package Manager, in the package finder in Xcode, search for `rive-ios` or the full Github path: [`https://github.com/rive-app/rive-ios`](https://github.com/rive-app/rive-ios)
 
 ### 2. Importing Rive
 
@@ -120,7 +120,7 @@ class AnimationViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         let riveView = simpleVM.createRiveView()
         view.addSubview(riveView)
-        riveView.frame = view.frame
+        riveView.frame = view.bounds
     }
 }
 ```

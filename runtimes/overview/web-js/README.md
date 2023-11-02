@@ -94,7 +94,7 @@ Additionally, we'll add an `onLoad` callback to the Rive object to use Rive's `r
   <body>
     <canvas id="canvas" width="500" height="500"></canvas>
 
-    <script src="https://unpkg.com/@rive-app/canvas@2.1.0"></script>
+    <script src="https://unpkg.com/@rive-app/canvas@2.7.0"></script>
     <script>
       const r = new rive.Rive({
         src: "https://cdn.rive.app/animations/vehicles.riv",
