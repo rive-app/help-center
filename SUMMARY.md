@@ -130,6 +130,14 @@
   * [Format](runtimes/advanced\_topics/format.md)
 * [Feature Support](runtimes/feature-support.md)
 
+## Game Runtimes
+
+* [Bevy](game-runtimes/bevy/README.md)
+  * [Getting Started](game-runtimes/bevy/getting-started.md)
+  * [State Machines](game-runtimes/bevy/state-machines.md)
+  * [Rive Events](game-runtimes/bevy/rive-events.md)
+  * [Text](game-runtimes/bevy/text.md)
+
 ## Rive GameKit
 
 * [Overview](rive-gamekit/overview.md)
