@@ -45,6 +45,10 @@ npm install @rive-app/canvas
 import rive from "@rive-app/canvas";
 ```
 
+{% hint style="success" %}
+Not using [Rive Text](../../../editor/text/) in your Rive Graphic? Consider using [@rive-app/canvas-lite](canvas-vs-webgl.md#rive-app-canvas-lite) which is a smaller package variant
+{% endhint %}
+
 If you need more details and options for a web runtime, check out the installation section in the [README](https://github.com/rive-app/rive-wasm#installing) docs.
 
 ### 2. Create a canvas

@@ -16,11 +16,29 @@ npm install @rive-app/canvas
 
 An easy-to-use high-level Rive API using a backing [CanvasRenderingContext2D](https://developer.mozilla.org/en-US/docs/Web/API/Canvas\_API) renderer. This lets Rive use the browser's native high-level vector graphics renderer. Some benefits of this package:
 
-* Extremely small download size
+* Small download size without the bloat of a separate renderer dependency
+* Support for [Rive Text](../../../editor/text/)
 * Great for displaying many animated canvases concurrently on the screen. This is ideal for when you want to render lists or grids of Rive animations on the screen, as there is no context limit by the browser (as opposed to WebGL)
 * Support for simple vector graphics animations and raster
 * Requests the Web Assembly (WASM) backing dependency for you
-* Web Assembly (WASM) backing dependency is part of the JS bundle; no need for any WASM request
+
+{% hint style="success" %}
+Want an **even smaller** Rive dependency that doesn't have all the bells/whistles? Consider using `@rive-app/canvas-lite` below :point\_down:
+{% endhint %}
+
+### @rive-app/canvas-lite
+
+```
+npm install @rive-app/canvas-lite
+```
+
+A smaller package than that of `@rive-app/canvas` with the same API and backing [CanvasRenderingContext2D](https://developer.mozilla.org/en-US/docs/Web/API/Canvas\_API), but does not compile and build WASM with certain dependencies in order to keep the package size as small as possible.
+
+This solution will be preferable if you **do not** have a need for the following features below:
+
+* &#x20;[Rive Text](https://help.rive.app/editor/text)&#x20;
+  * If your Rive file may include Rive Text components, rendering the graphic should not cause any app errors, or cease to render. Rive Text will just not appear within the graphic
+  * You can still make use of text within your graphic by importing text externally as SVG
 
 ### @rive-app/webgl
 
@@ -50,6 +68,24 @@ A low-level Rive API using the [CanvasRenderingContext2D](https://developer.mozi
 
 See an example of usage here: [https://codesandbox.io/s/rive-canvas-advanced-api-basketball-rgted8](https://codesandbox.io/s/rive-canvas-advanced-api-basketball-rgted8)
 
+{% hint style="success" %}
+Want an **even smaller** Rive dependency that doesn't have all the bells/whistles? Consider using `@rive-app/canvas-advanced-lite` below :point\_down:
+{% endhint %}
+
+### @rive-app/canvas-advanced-lite
+
+```
+npm install @rive-app/canvas-advanced-lite
+```
+
+A smaller package than that of `@rive-app/canvas-advanced` with the same API and backing [CanvasRenderingContext2D](https://developer.mozilla.org/en-US/docs/Web/API/Canvas\_API), but does not compile and build WASM with certain dependencies in order to keep the package size as small as possible.
+
+This solution will be preferable if you **do not** have a need for the following features below:
+
+* &#x20;[Rive Text](https://help.rive.app/editor/text)&#x20;
+  * If your Rive file may include Rive Text components, rendering the graphic should not cause any app errors, or cease to render. Rive Text will just not appear within the graphic
+  * You can still make use of text within your graphic by importing text externally as SVG
+
 ### @rive-app/webgl-advanced
 
 A low-level Rive API using the [WebGL](https://developer.mozilla.org/en-US/docs/Web/API/WebGL\_API) renderer. It has the same benefits as the regular `@rive-app/webgl` package plus:
@@ -63,7 +99,7 @@ See an example of usage here: [https://codesandbox.io/s/rive-webgl-advanced-api-
 
 ### \*-single versions
 
-Each of the above NPM packages includes the `rive.wasm` file. In the high-level APIs (`@rive-app/canvas` and `@rive-app/webgl`) the runtime requests this for you so you don't have to, as opposed to their `-advanced` counterparts. We also have alternative versions of each of the above packages on NPM that have the WASM encoded in the JS bundle. This means you won't have to make a network request for the WASM that powers the Rive animations, as it's all in one main JS file.
+Each of the above NPM packages includes the `rive.wasm` file. In the high-level APIs (`@rive-app/canvas` and `@rive-app/webgl`) the runtime requests this for you so you don't have to, as opposed to their `-advanced` counterparts. We also have alternative versions of each of the above packages on NPM that have the WASM encoded in the JS bundle (excluding the `lite` versions). This means you won't have to make a network request for the WASM that powers the Rive animations, as it's all in one main JS file.
 
 * [@rive-app/canvas-single](https://www.npmjs.com/package/@rive-app/canvas-single)
 * [@rive-app/canvas-advanced-single](https://www.npmjs.com/package/@rive-app/canvas-advanced-single)

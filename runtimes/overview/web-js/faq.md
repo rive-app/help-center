@@ -15,6 +15,12 @@ In some cases, you may decide to host your `.riv` files over a CDN, and store th
 Read more on [what CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) is.\
 [See here](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ManageCorsUsing.html#cors-example-1) for more docs on how to configure CORS in AWS S3, as an example.
 
+### Is there a smaller dependency I can use? My Rive graphic doesn't require all of Rive's feature-set capabilities.
+
+Yes! You may notice that starting in `v2.0.0` of the web runtimes, the size of the `rive.wasm` file requested on the browser increased. This was due to including a new dependency in the WASM build for a text engine that supports the powerful and flexible [Rive Text](../../../editor/text/) feature.&#x20;
+
+However, if you don't have a need to use the native Rive Text feature (or prefer to use imported SVG text), you can use the [@rive-app/canvas-lite](canvas-vs-webgl.md#rive-app-canvas-lite) which provides the same API and similar rendering capabilities as `@rive-app/canvas`, with a smaller package.
+
 ### Why did the canvas width/height attribute values change?
 
 You may have noticed that the `<canvas>` width/height attributes in the DOM may be larger than you originally set by some factor. Internally, the high-level API tries to adjust the original set (or default) canvas width/height attributes by accounting for the `window.devicePixelRatio`. By doing this internal calculation, we're able to account for high-dpi screens so that Rive animations don't have a "blurry" output. We do not however try to size the actual size of the canvas element with respect to the DOM. This is ultimately up to you to configure.

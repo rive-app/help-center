@@ -27,6 +27,7 @@ Follow the steps below for a quick start on integrating Rive into your React app
 The Rive React runtime allows for two main options based on which backing renderer you need.
 
 * **(Recommended)** `@rive-app/react-canvas` - Wraps the `@rive-app/canvas` dependency. Unless you specifically need a `WebGL` backing renderer, we recommend you use this dependency when using Rive in your apps for quick and fast usage.
+* `@rive-app/react-canvas-lite` - Similar to `@rive-app/react-canvas`, but [smaller](../web-js/canvas-vs-webgl.md#rive-app-canvas-lite). This is recommended if the Rive graphic does not use [Rive Text](../../../editor/text/)
 * `@rive-app/react-webgl` - Wraps the `@rive-app/webgl` dependency. In the future, we may have advanced rendering features that are only supported by using `WebGL`. At the moment, however, due to the size of the dependency (with Skia), we do not recommend it unless you have specific needs here. We are currently working on improving the performance and size with the [Rive Renderer](https://rive.app/renderer).
 
 {% code title="" %}
