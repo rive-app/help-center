@@ -75,6 +75,16 @@ Check out the runtime subpages for steps on how to get started!
 | Angular | François Guezengar                           | [GitHub](https://github.com/dappsnation/ng-rive)                |
 | AWTK    | [Li XianJing](https://twitter.com/xianjimli) | [GitHub](https://github.com/zlgopen/awtk-widget-rive)           |
 
+## Handling .riv Files
+
+When checking in `.riv` files with Git, consider adding a `.gitattributes` file and marking `.riv` files as `binary` files to prevent Git from changing line endings when these files are checked in. Otherwise, some platforms may accidentally corrupt the `.riv` file where there are line returns (i.e. Windows CRLF line endings vs LF line endings) and cause issues at runtime when the file is read.
+
+{% code title=".gitattributes" %}
+```
+*.riv binary
+```
+{% endcode %}
+
 ## Licensing
 
 Our official runtimes are all open-source and licensed under the [MIT License](https://choosealicense.com/licenses/mit/). You're free to use them for personal and commercial applications.
