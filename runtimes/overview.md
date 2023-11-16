@@ -73,6 +73,7 @@ Check out the runtime subpages for steps on how to get started!
 | ------- | -------------------------------------------- | --------------------------------------------------------------- |
 | Vue.js  | Dan Nelson                                   | [GitHub](https://github.com/Coded-Clouds/Rive\_Vue\_ExampleApp) |
 | Angular | François Guezengar                           | [GitHub](https://github.com/dappsnation/ng-rive)                |
+| QtQuick | [basysKom](https://github.com/basysKom)      | [Github](https://github.com/basysKom/RiveQtQuickPlugin)         |
 | AWTK    | [Li XianJing](https://twitter.com/xianjimli) | [GitHub](https://github.com/zlgopen/awtk-widget-rive)           |
 
 ## Handling .riv Files
