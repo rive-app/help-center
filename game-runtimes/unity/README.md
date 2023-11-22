@@ -26,6 +26,16 @@ Planned support for:
 * WebGL
 * Vulkan
 
+### Bug Reports
+
+If you encounter any errors or unexpected crashes while integrating the Rive Unity runtime, we recommend logging a detailed issue directly to the [rive-unity](https://github.com/rive-app/rive-unity/issues) repo with an **Editor.log** attached to the issue to help provide more details and context about what might have occurred.
+
+You can find more details on where to find your Editor.log file in the [Unity docs](https://docs.unity3d.com/Manual/LogFiles.html).
+
+{% hint style="info" %}
+Note that it is best to grab the Editor.log file immediately after a crash has occurred
+{% endhint %}
+
 ## Feature Support
 
 The rive-unity runtime uses the latest Rive C++ runtime. For more details on runtime support, see the [Runtime Feature Support](https://www.notion.so/o/-LLf9WNWru58qo4lWjp9/s/-M3EXlibk6bj2FzPQW-9/\~/changes/387/runtimes/feature-support) page. Refer to the following table for what is currently supported at runtime.
