@@ -12,7 +12,7 @@ If you wish to update your card on file to pay your subscription, you must log i
 
 This is the page you will see:
 
-<figure><img src="../../.gitbook/assets/Rive-Account (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Rive-Account (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 If you have an active plan, it will be below the "Your Plans" section of the page.&#x20;
 
@@ -22,7 +22,7 @@ On the Manage Team page, the team name is at the top, and the links to make chan
 
 To change your plan, click on "Change Plan." You can change from a Pro plan to a Team plan or switch from a Team plan to a Pro plan.
 
-<figure><img src="../../.gitbook/assets/Rive-Manage-Team (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Rive-Manage-Team (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 If you wish to change the card on file for your plan, select "Manage Billing." This takes you to a secure Stripe page where you can update your card on file or add a different card.
 
