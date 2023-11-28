@@ -169,7 +169,7 @@
   * [Downloading My Receipt/Invoice](admin/accounts/downloading-my-receipt-invoice.md)
   * [Cancel My Account](admin/accounts/cancel-my-account.md)
   * [Delete My Account](admin/accounts/delete-account.md)
-  * [Trouble logging in](admin/accounts/trouble-logging-in.md)
+  * [Trouble Logging In](admin/accounts/trouble-logging-in.md)
 * [Teams](admin/teams.md)
 * [Pricing](admin/pricing/README.md)
   * [Fair Billing Policy](admin/pricing/fair-billing-policy.md)
