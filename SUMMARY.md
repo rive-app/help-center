@@ -163,10 +163,10 @@
 
 ## Admin
 
-* [Trouble logging in](admin/trouble-logging-in.md)
+* [Trouble logging in](admin/accounts/trouble-logging-in.md)
 * [Account Admin](admin/accounts/README.md)
   * [Account Management](admin/accounts/account-management.md)
-  * [Billing changes](admin/accounts/billing-changes.md)
+  * [Billing Changes](admin/accounts/billing-changes.md)
   * [Downloading My Receipt/Invoice](admin/accounts/downloading-my-receipt-invoice.md)
   * [Cancel my account](admin/accounts/cancel-my-account.md)
   * [Delete account](admin/accounts/delete-account.md)
