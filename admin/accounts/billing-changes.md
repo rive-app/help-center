@@ -24,6 +24,6 @@ To change your plan, click on "Change Plan." You can change from a Pro plan to a
 
 <figure><img src="../../.gitbook/assets/Rive-Manage-Team (1).png" alt=""><figcaption></figcaption></figure>
 
-If you wish to change the card on file for your plan, select "Manage Billing." This takes you to a Stripe page where you can update your card on file or add a different card.
+If you wish to change the card on file for your plan, select "Manage Billing." This takes you to a secure Stripe page where you can update your card on file or add a different card.
 
 <figure><img src="../../.gitbook/assets/Rive-Inc-Billing (1).png" alt=""><figcaption></figcaption></figure>
