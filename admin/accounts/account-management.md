@@ -19,7 +19,7 @@ At the top of the page is your name and the word drafts. Click on the drop-down 
 \
 On the new page, you are viewing your account information.&#x20;
 
-<figure><img src="../../.gitbook/assets/Rive-Account (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Rive-Account (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 There are 4 tabs across the top.&#x20;
 
@@ -62,7 +62,7 @@ This tab shows you any share links you have generated. You can see the file you 
 
 Along the left side of the page is a list of the plans you have. You can have multiple plans and you can be a member and/or owner of multiple teams.&#x20;
 
-<figure><img src="../../.gitbook/assets/Rive-Account (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Rive-Account (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Each team has a name and under the name is the status of the team.
 
@@ -73,7 +73,7 @@ Each team has a name and under the name is the status of the team.
 
 To manage the team, click on "Manage Team" to the right.&#x20;
 
-<figure><img src="../../.gitbook/assets/Rive-Manage-Team (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Rive-Manage-Team (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The team name is at the top. You can upload an avatar for the team. "Upload Avatar" opens a window where you can select a file on your computer to use as your avatar.&#x20;
 
@@ -90,7 +90,7 @@ This tells you the name of the plan the team is on and the status of the team.&#
 * To cancel the plan, click on "Cancel Plan".
 * You will be directed to a Stripe page. From there, you click on the "Cancel plan" button.&#x20;
 
-<figure><img src="../../.gitbook/assets/Rive-Inc-Billing (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Rive-Inc-Billing (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -105,4 +105,4 @@ This tells you the name of the plan the team is on and the status of the team.&#
 **Billing History**: Your billing history is available on the Stripe page. You can access this by clicking on "Manage Billing". The Stripe page will open. If you aren't already logged in, you will need to enter the email address associated with your Rive account. Stripe will email you a login link. Check your spam folder if the email hasn't arrived within a couple of minutes. At the bottom, you can download your previous invoices. \
 
 
-<figure><img src="../../.gitbook/assets/Rive-Inc-Billing (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Rive-Inc-Billing (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
