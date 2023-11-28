@@ -168,7 +168,7 @@
   * [Account Management](admin/accounts/account-management.md)
   * [Billing Changes](admin/accounts/billing-changes.md)
   * [Downloading My Receipt/Invoice](admin/accounts/downloading-my-receipt-invoice.md)
-  * [Cancel my account](admin/accounts/cancel-my-account.md)
+  * [Cancel My Account](admin/accounts/cancel-my-account.md)
   * [Delete account](admin/accounts/delete-account.md)
 * [Teams](admin/teams.md)
 * [Pricing](admin/pricing/README.md)
