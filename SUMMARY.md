@@ -136,6 +136,8 @@
   * [Getting Started](game-runtimes/unity/getting-started.md)
   * [Layout](game-runtimes/unity/layout.md)
   * [Listeners](game-runtimes/unity/listeners.md)
+  * [State Machines](game-runtimes/unity/state-machines.md)
+  * [Rive Events](game-runtimes/unity/rive-events.md)
 * [Bevy](game-runtimes/bevy/README.md)
   * [Getting Started](game-runtimes/bevy/getting-started.md)
   * [State Machines](game-runtimes/bevy/state-machines.md)
