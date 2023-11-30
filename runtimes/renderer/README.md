@@ -14,6 +14,19 @@ The table below outlines the available, and default, renderers for Rive's runtim
 
 <table><thead><tr><th width="239">Runtime</th><th width="248.33333333333331">Renderer</th><th>Options</th></tr></thead><tbody><tr><td>Android</td><td>Skia</td><td>Rive / Skia</td></tr><tr><td>iOS</td><td>Skia</td><td>Rive / Skia</td></tr><tr><td>React Native</td><td>Skia</td><td>Skia</td></tr><tr><td>Web (Canvas) </td><td>Canvas2D</td><td>Canvas2D</td></tr><tr><td>Web (WebGL)</td><td>Skia</td><td>Skia</td></tr><tr><td>Flutter</td><td>Skia (other), Impeller (iOS)</td><td>Skia / Impeller</td></tr></tbody></table>
 
+### Note on Rendering in Flutter
+
+Starting in Flutter `v3.10`, [Impeller](https://docs.flutter.dev/perf/impeller) has replaced [Skia](https://skia.org/) to become the default renderer for apps on the iOS platform and may continue to be the default on future platforms over time. As such, there is a possibility of rendering discrepancies when using the `rive` Flutter runtime with platforms that use the Impeller renderer that may not have surfaced before. If you encounter visual errors at runtime compared to expected behavior in the Rive editor, we recommend trying the following steps to triage:
+
+1. Try running the Flutter app with the `--no-enable-impeller` flag to use the Skia renderer. If the visual discrepancy does not show when using Skia, it may be a rendering bug on Impeller. However, before raising a bug with the Flutter team, try the second point below :point\_down:
+
+```bash
+flutter run --no-enable-impeller
+```
+
+2. Try running the Flutter app on the latest `master` channel. It is possible that visual bugs may be resolved on the latest Flutter commits, but not yet released in the `beta` or `stable` channel.
+3. If you are still seeing visual discrepancies with just the Impeller renderer on the latest master branch, we recommend raising a detailed issue to the [Flutter](https://github.com/flutter/flutter) Github repo with a reproducible example, and other relevant details that can help the team debug any possible issues that may be present.
+
 ## Rive Renderer
 
 The [Rive Renderer](https://rive.app/renderer) is now available on Android and iOS. See [#specifying-a-renderer](./#specifying-a-renderer "mention") to set it as your preferred renderer.

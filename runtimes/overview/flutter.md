@@ -114,6 +114,10 @@ class MyRiveAnimation extends StatelessWidget {
 
 See subsequent runtime pages to learn how to control animation playback, state machines, and more.
 
+{% hint style="info" %}
+Using Impeller and noticing visual bugs in your app? See [our notes on rendering](../renderer/#note-on-rendering-in-flutter) with Impeller for some triaging tips
+{% endhint %}
+
 ## Resources
 
 Github: [https://github.com/rive-app/rive-flutter](https://github.com/rive-app/rive-flutter)\
