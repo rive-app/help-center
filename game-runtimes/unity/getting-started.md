@@ -50,6 +50,63 @@ A `.riv` file can be added like any other Unity asset, by dragging it into the `
 
 <figure><img src="../../.gitbook/assets/CleanShot 2023-11-13 at 14.34.53@2x.png" alt="" width="375"><figcaption><p>.riv asset preview in Unity</p></figcaption></figure>
 
+## File
+
+A `Rive.File` contains Artboards, StateMachines, and Animations. There are higher-level behaviors that you can use directly in the Unity editor. Use this class if you need direct control of the lifecycle of the Rive File.
+
+A Rive File can be created from a Rive Asset (.riv):
+
+```csharp
+public Rive.Asset asset; // pass in .riv asset in the inspector
+private Rive.File m_file;
+
+...
+
+private void Start()
+{
+    if (asset != null)
+    {
+        m_file = Rive.File.load(asset);
+    }
+}
+```
+
+## Arboards
+
+An [Artboard](../../editor/fundamentals/artboards.md) contains [StateMachines](../../editor/state-machine/) and Animations. Artboards are instantiated from a `Rive.File` instance:
+
+<pre class="language-csharp"><code class="lang-csharp">private Artboard m_artboard;
+
+...
+<strong>
+</strong><strong>m_artboard = m_file.artboard(0); // by index
+</strong>m_artboard = m_file.artboard("Arboard 1"); // by name
+</code></pre>
+
+## State Machines
+
+A StateMachine contains Inputs and Events, for more information see Unity [State Machines](state-machines.md) and [Events](rive-events.md).
+
+State Machines are instantiated from an Arboard instance:
+
+```csharp
+private StateMachine m_stateMachine;
+
+...
+
+m_stateMachine = m_artboard?.stateMachine(); // default state machine
+m_stateMachine = m_artboard?.stateMachine(0); // state machine at index
+m_stateMachine = m_artboard?.stateMachine("Name"); // state machine with name
+```
+
+They also control advancing (playing) an animation:
+
+<pre class="language-csharp"><code class="lang-csharp">private void Update()
+{
+<strong>    m_stateMachine?.advance(Time.deltaTime);
+</strong><strong>}
+</strong></code></pre>
+
 ## Rendering
 
 Rive Unity renders to a [RenderTexture](https://docs.unity3d.com/ScriptReference/RenderTexture.html) that you can display in your Scene by attaching to a [Material](https://docs.unity3d.com/ScriptReference/Material.html) or drawing to the camera. Layout and draw commands are managed through the `RenderQueue`.

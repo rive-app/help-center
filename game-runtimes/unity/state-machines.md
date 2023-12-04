@@ -6,13 +6,37 @@ description: Interact with the Rive State Machine in Unity
 
 For more information on Rive State Machines see the respective [runtime](../../runtimes/state-machines.md) and [editor](../../editor/state-machine/) documentation.
 
+## Overview
+
+A StateMachine contains [Inputs](state-machines.md#accessing-inputs) and [Events](rive-events.md) and advances (plays) an animation.
+
+State Machines are instantiated from an Arboard instance:
+
+```csharp
+private StateMachine m_stateMachine;
+
+...
+
+m_stateMachine = m_artboard?.stateMachine(); // default state machine
+m_stateMachine = m_artboard?.stateMachine(0); // state machine at index
+m_stateMachine = m_artboard?.stateMachine("Name"); // state machine with name
+```
+
+The state machine is played by calling `advance` and passing in the delta time:
+
+<pre class="language-csharp"><code class="lang-csharp">private void Update()
+{
+<strong>    m_stateMachine?.advance(Time.deltaTime);
+</strong><strong>}
+</strong></code></pre>
+
 ## Accessing Inputs
 
 There are three input types, each extends `SMIInput` (State Machine Input):
 
-* `SMIBool` is a boolean that can be set to true or false.
-* `SMITrigger` is a boolean that is set to true for one frame.
-* `SMINumber` is a float that can be set to any value.
+* `SMIBool` contains a `value` property, a boolean that can be set to true or false.
+* `SMITrigger` is a boolean that is set to true for one frame by calling the `fire` method.
+* `SMINumber` contains a `value` property, a float that can be set to any value.
 
 State machine inputs can be accessed in a number of different ways.
 
