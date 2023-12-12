@@ -8,7 +8,7 @@ Every user that signs up for Rive has a free individual space. The free account 
 
 * Maximum of 3 files at a time
 * 10 MB file size limit per image you upload into Rive
-* There is no access to revision history or deleted files
+* No access to revision history or deleted files
 * Unable to export a .rev file
 * Unable to import a .riv file
 * No share links
@@ -21,7 +21,6 @@ Every user that signs up for Rive has a free individual space. The free account 
 The Pro plan is for a single user. All paid accounts have unlimited files. There is a 100 MB file size limit per each image you upload into Rive.
 
 * Unlimited files
-* Export without logo
 * Share links
 * Unlimited history
 * Custom fonts
@@ -54,7 +53,7 @@ Enterprise plans are for companies with more than $10M in annual revenue.
 * Ongoing best practices and reviews
 * Custom terms and billing
 
-Contact us for a quote.&#x20;
+[Contact us](https://rive.atlassian.net/servicedesk/customer/portal/3/group/4/create/34) for a quote.&#x20;
 
 ## Education and non-profit discounts
 
