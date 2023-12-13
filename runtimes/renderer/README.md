@@ -16,7 +16,7 @@ The table below outlines the available, and default, renderers for Rive's runtim
 
 ### Note on Rendering in Flutter
 
-Starting in Flutter `v3.10`, [Impeller](https://docs.flutter.dev/perf/impeller) has replaced [Skia](https://skia.org/) to become the default renderer for apps on the iOS platform and may continue to be the default on future platforms over time. As such, there is a possibility of rendering discrepancies when using the `rive` Flutter runtime with platforms that use the Impeller renderer that may not have surfaced before. If you encounter visual errors at runtime compared to expected behavior in the Rive editor, we recommend trying the following steps to triage:
+Starting in Flutter `v3.10`, [Impeller](https://docs.flutter.dev/perf/impeller) has replaced [Skia](https://skia.org/) to become the default renderer for apps on the iOS platform and may continue to be the default on future platforms over time. As such, there is a possibility of rendering and [performance](https://github.com/flutter/flutter/issues/134432) discrepancies when using the `rive` Flutter runtime with platforms that use the Impeller renderer that may not have surfaced before. If you encounter any visual or performance errors at runtime compared to expected behavior in the Rive editor, we recommend trying the following steps to triage:
 
 1. Try running the Flutter app with the `--no-enable-impeller` flag to use the Skia renderer. If the visual discrepancy does not show when using Skia, it may be a rendering bug on Impeller. However, before raising a bug with the Flutter team, try the second point below :point\_down:
 
