@@ -57,7 +57,7 @@ When an `Open URL` Event is selected, we have additional configuration options.
 In the text box, we will add the URL that we want our component to take us.&#x20;
 
 {% hint style="info" %}
-Make sure to include the URL Protocol (i.e. "http://" or "http://") if you want to link to a new domain.
+Make sure to include the URL Protocol (i.e. "http://" or "https://") if you want to link to a new domain.
 {% endhint %}
 
 
