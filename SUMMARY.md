@@ -175,6 +175,7 @@
   * [Billing Changes](admin/accounts/billing-changes.md)
   * [Downloading My Receipt/Invoice](admin/accounts/downloading-my-receipt-invoice.md)
   * [Trouble Logging In](admin/accounts/trouble-logging-in.md)
+  * [Creating an Account](admin/accounts/creating-an-account.md)
 * [Teams](admin/teams.md)
 * [Pricing](admin/pricing/README.md)
   * [Fair Billing Policy](admin/pricing/fair-billing-policy.md)
