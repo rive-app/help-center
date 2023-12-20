@@ -1,4 +1,4 @@
-# Trouble logging in
+# Trouble Logging In
 
 If you type in your email address and password and see "Invalid credentials," you could have typed in the wrong login information or created your account using express login via Google or Facebook.&#x20;
 
@@ -10,4 +10,4 @@ For additional help, please email us at support@rive.app.
 
 
 
-<figure><img src="../../.gitbook/assets/logininvalid.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/logininvalid.png" alt=""><figcaption></figcaption></figure>
