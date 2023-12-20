@@ -10,4 +10,4 @@ For additional help, please email us at support@rive.app.
 
 
 
-<figure><img src="../../../.gitbook/assets/logininvalid.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/logininvalid.png" alt=""><figcaption></figcaption></figure>
