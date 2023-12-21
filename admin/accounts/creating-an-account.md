@@ -18,4 +18,4 @@ You have created a free account.&#x20;
 
 If you wish to subscribe to a paid plan, click on "Upgrade" on the left side of the editor.&#x20;
 
-Go [here](how-to-subscribe.md) for help subscribing to a paid plan.
+Go [here](how-to-subscribe-to-a-paid-plan.md) for help subscribing to a paid plan.

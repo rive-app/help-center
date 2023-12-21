@@ -170,7 +170,7 @@
 * [Account Admin](admin/accounts/README.md)
   * [Creating an Account](admin/accounts/creating-an-account.md)
   * [Account Management](admin/accounts/account-management.md)
-  * [How to Subscribe](admin/accounts/how-to-subscribe.md)
+  * [How to Subscribe to a Paid Plan](admin/accounts/how-to-subscribe-to-a-paid-plan.md)
   * [Cancel My Account](admin/accounts/cancel-my-account.md)
   * [Delete My Account](admin/accounts/delete-account.md)
   * [Trouble Logging In](admin/accounts/trouble-logging-in.md)
