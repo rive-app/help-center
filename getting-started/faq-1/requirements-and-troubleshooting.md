@@ -14,7 +14,7 @@ While you can use Rive on multiple computers personally, you'll need individual 
 
 ## How many people can use my account?
 
-Accounts are intended for individual use. If you want to work with a team, each team member should have their own account. Per our [Terms of Service](https://www.2dimensions.com/terms), and for your security, your account may be locked if we notice that multiple people are using it.
+Accounts are intended for individual use. If you want to work with a team, each team member should have their own account. Per our [Terms of Service](../../legal/terms-of-service.md), and for your security, your account may be locked if we notice that multiple people are using it.
 
 ## What happens if my internet connection goes down?
 
