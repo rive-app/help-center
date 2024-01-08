@@ -31,19 +31,25 @@ Follow the steps below on integrating Rive into your web app.
 Add the following script tag to a web page; we recommend sticking to one version, such as seen below:
 
 ```javascript
-<script src="https://unpkg.com/@rive-app/canvas@2.7.0"></script>
+<script src="https://unpkg.com/@rive-app/canvas@2.9.1"></script>
 ```
 
-Find the versions of the runtimes in the "Versions" tab here: [https://www.npmjs.com/package/@rive-app/canvas](https://www.npmjs.com/package/@rive-app/canvas)
+Find the versions of the runtimes in the "Versions" tab here: [https://www.npmjs.com/package/@rive-app/canvas](https://www.npmjs.com/package/@rive-app/canvas). This will add a global `rive` object in scope of your web page so that you can access the Rive API's via the `rive` entry point (i.e. `new rive.Rive({})`)
 
 Alternatively, you can import our recommended web runtime package via npm/yarn in your project:
 
-```
+```bash
 npm install @rive-app/canvas
-
-// example.js
-import rive from "@rive-app/canvas";
 ```
+
+{% code title="example.js" %}
+```javascript
+import * as rive from "@rive-app/canvas";
+
+// Or import just the bits you need
+// import { Rive } from "@rive-app/canvas";
+```
+{% endcode %}
 
 {% hint style="success" %}
 Not using [Rive Text](../../../editor/text/) in your Rive Graphic? Consider using [@rive-app/canvas-lite](canvas-vs-webgl.md#rive-app-canvas-lite) which is a smaller package variant
@@ -72,7 +78,7 @@ Create a new instance of a Rive object, providing the following properties:
 <script>
     const r = new rive.Rive({
         src: "https://cdn.rive.app/animations/vehicles.riv",
-        // Or the path to a public Rive asset
+        // OR the path to a discoverable and public Rive asset
         // src: '/public/example.riv',
         canvas: document.getElementById("canvas"),
         autoplay: true,
@@ -122,7 +128,7 @@ You can choose to load Rive files in the following ways:
 
 * Hosted URL - The string of the URL where the `.riv` file is hosted. Set this to the `src` attribute when instantiating a `Rive` object
 * Static assets in the bundle - String of a path to a publicly accessible `.riv` asset in your web project. Treat `.riv` files in the project just as you would any other asset in your bundle, such as images or font files.
-* Fetching a file - Instead of using the `src` attribute, use the `buffer` attribute to load in an ArrayBuffer when fetching a file. See an example [here](https://codesandbox.io/s/rive-buffer-import-9989fv)
+* Fetching a file - Instead of using the `src` attribute, use the `buffer` attribute to load in an ArrayBuffer when fetching a file. This is useful if you are re-using a Rive file across multiple Rive instances and want to load it just once. See an example [here](https://codesandbox.io/s/rive-buffer-import-9989fv)
 
 See more in the [rive parameters](rive-parameters.md) `src` property for further details.
 
@@ -130,7 +136,7 @@ See more in the [rive parameters](rive-parameters.md) `src` property for further
 
 When creating a Rive instance, you need to ensure that it gets cleaned up. This should happen in scenarios where you no longer want to show the Rive canvas, for example, where:
 
-* The user navigates off the page showing Rive animations
+* UI with Rive Animations is no longer necessary (i.e. a modal with Rive graphics is closed)
 * The animation or state machine has completed and will no longer ever be run/shown
 
 Behind the scenes, lower-level CPP objects are created and must be deleted (i.e artboard instances, animation instances, state machine instances, etc.) manually. This helps prevent unwanted memory leaks and keeps your web application lean on resources. Luckily, with this high-level JS API, there is no need to track and manage what was created for deletion, as there is one method call you can make to effectively clean up all the instances created.

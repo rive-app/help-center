@@ -41,9 +41,9 @@ Similar to the `addEventListener()` / `removeEventListener()` API for DOM elemen
 #### Example Usage
 
 ```typescript
-import rive, { EventType, RiveEventType } from '@rive-app/canvas'
+import { Rive, EventType, RiveEventType } from '@rive-app/canvas'
 
-const r = new rive.Rive({
+const r = new Rive({
   src: "/static-assets/star-rating.riv"
   artboard: "my-artboard-name",
   autoplay: true,

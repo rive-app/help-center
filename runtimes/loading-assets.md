@@ -89,6 +89,14 @@ When decoding an asset be sure to call `unref` once it is no longer needed - to 
 #### Example Usage
 
 ```typescript
+import {
+  Rive,
+  Fit,
+  Alignment,
+  Layout,
+  decodeFont,
+} from "@rive-app/canvas";
+
 // Load a random asset by using a decodeFont API to feed to a
 // setFont API on the asset provided in assetLoader
 const randomFontAsset = (asset) => {

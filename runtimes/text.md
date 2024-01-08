@@ -47,9 +47,9 @@ Supply the text run name and a second parameter, `textValue`, with a String valu
 #### Example Usage
 
 ```typescript
-import rive from '@rive-app/canvas'
+import {Rive} from '@rive-app/canvas'
 
-const r = new rive.Rive({
+const r = new Rive({
   src: "my-rive-file.riv"
   artboard: "my-artboard-name",
   autoplay: true,

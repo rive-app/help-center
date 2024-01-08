@@ -38,9 +38,9 @@ npm i @rive-app/canvas
 ```
 
 ```javascript
-import rive from '@rive-app/canvas';
+import {Rive} from '@rive-app/canvas';
 
-const foo = new rive.Rive({
+const foo = new Rive({
   src: "https://cdn.rive.app/animations/vehicles.riv",
 });
 ```
