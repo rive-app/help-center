@@ -26,6 +26,7 @@ export interface RiveParameters {
   onLoop?: EventCallback,
   onStateChange?: EventCallback,
   onAdvance?: EventCallback,
+  assetLoader?: AssetLoadCallback,
   useOffscreenRenderer?: boolean,
   shouldDisableRiveListeners?: boolean,
 }
@@ -62,6 +63,7 @@ In a future major version of `rive-wasm`, `stateMachines` will be a singular str
 * `onLoop?` - _(optional)_ Callback that gets fired when the animation completes a loop.
 * `onStateChange?` - _(optional)_ Callback that gets fired when a state change occurs.
 * `onAdvance?` - _(optional)_ Callback that gets fired every frame when the Artboard has advanced.
+* `assetLoader?` - _(optional)_ Callback that gets invoked for every asset detected in a Rive file (whether included or excluded). The callback is passed a reference to a Rive **FileAsset** and associated **bytes** for the file (if the asset is embedded in the file). In this callback, you'll determine whether or not to load the asset in your app yourself, or have Rive do it for you. For more details and examples, see the [Loading Assets](../../loading-assets.md) page.
 * `useOffscreenRenderer?` - _(optional)_ Boolean flag to determine whether to use a shared offscreen WebGL context rather than create its own WebGL context for this instance of Rive. This is only relevant for the `@rive-app/webgl` package. If you are displaying multiple Rive animations, it is highly encouraged to set this flag to `true`. Defaults to `false`.
 * `shouldDisableRiveListeners?` - _(optional)_ Boolean flag to disable setting up Rive Listeners on the `<canvas>` element, thus preventing any event listeners from being set up on the element.&#x20;
   * **Note:** Rive Listeners by default are not set up on a `<canvas>` element if there is no playing state machine, or a state machine without any Rive Listeners set up on the state machine
@@ -342,9 +344,11 @@ This sets the layout bounds to the current canvas size. You may want to call thi
 
 ### resizeDrawingSurfaceToCanvas()
 
-`resizeDrawingSurfaceToCanvas(): void`
+`resizeDrawingSurfaceToCanvas(customDevicePixelRatio?: number): void`
 
 This resets the `<canvas>` width and height properties to render at its current bounding rect size (CSS `height` and `width` properties) with the browser's `devicePixelRatio` in mind. This prevents blurry output on high-dpi screens (i.e., a `<canvas>` that is 500x500 on the page may render with an internal area size of 1000x1000 while still maintaining its original canvas size). This calls `resizeToCanvas()` implicitly. It's recommended to call this in the `onLoad` callback.
+
+You may also pass in a single number parameter when calling this function that forces a specific device pixel ratio to be used in calculating the canvas width and height. This may be helpful when displaying Rives on a mobile device where you could have a more performant graphic by overriding the window's devicePixelRatio with a lower value.
 
 {% hint style="info" %}
 In a future major version of this runtime, this API may be called internally on initialization by default, with an option to opt-out if you have specific `width` and `height` properties you want to set on the canvas

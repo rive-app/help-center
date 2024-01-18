@@ -243,8 +243,8 @@ The web runtime provides an `onLoad` callback that's run when the Rive file is l
 We use the `stateMachineInputs` function on the Rive object to retrieve the inputs. Each input will have a name and type. There are three types:
 
 * `StateMachineInputType.Trigger` which has a `fire()` function
-* `StateMachineInputType.Number` which has a `value` number property
-* `StateMachineInputType.Boolean` which has a `value` boolean property
+* `StateMachineInputType.Number` which has a `value` number property where you can `get`/`set` the value
+* `StateMachineInputType.Boolean` which has a `value` boolean property where you can `get`/`set` the value
 
 ```javascript
 const inputs = r.stateMachineInputs('bumpy');
@@ -264,8 +264,6 @@ inputs.forEach(i => {
     }
 });
 ```
-
-
 
 ### State change event callback
 
@@ -739,7 +737,9 @@ animationView.registerListener(listener)
 {% endtab %}
 {% endtabs %}
 
+## Rive Listeners
 
+If your Rive file has [Rive Listeners](../editor/state-machine/listeners.md) and you've configured your Rive instance with a state machine according to the steps outlined per runtime above, there is no additional configuration or options needed to enable the pointer events to be captured on the Rive instance. The event capturing is handled internally by the Rive widget/component.
 
-
+However, if you are going about constructing your own render loop and using low-level APIs to drive Rive content, (i.e., [low-level WASM](overview/web-js/low-level-api-usage.md)), you may need to set up event listeners manually to capture user interaction and pass feedback down to the state machine (i.e. see setup in [JS](https://github.com/rive-app/rive-wasm/blob/master/js/src/utils/registerTouchInteractions.ts)).
 
