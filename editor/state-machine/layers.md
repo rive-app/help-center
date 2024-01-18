@@ -16,7 +16,7 @@ Notice that each new tab that you create comes with the Default States.
 
 ### Layer Order
 
-It may not be obvious, but the order of your Layers matter with Layers to the left taking priority over the Layers to the right. In most cases, this won’t matter, but if your Layers have States that control the same object, the animations in the left most layer will take priority over the layers to the right as they mix.
+It may not be obvious, but the order of your Layers matter with Layers to the right taking priority over the Layers to the left. In most cases, this won’t matter, but if your Layers have States that control the same object, the animations in the right most layer will take priority over the layers to the left as they mix.
 
 **Changing layer order**
 
