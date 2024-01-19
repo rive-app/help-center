@@ -23,13 +23,13 @@ On Mac with ARM64 you do not need to configure anything. To manually update sele
 You can install the Rive package for Unity by opening the Package Manager and adding the [latest tag](https://github.com/rive-app/rive-unity/tags) as a git dependency:
 
 ```
-git@github.com:rive-app/rive-unity.git?path=package#v0.1.30
+git@github.com:rive-app/rive-unity.git?path=package#v0.1.56
 ```
 
 Or through HTTP:
 
 ```
-https://github.com/rive-app/rive-unity.git?path=package#v0.1.30
+https://github.com/rive-app/rive-unity.git?path=package#v0.1.56
 ```
 
 1. Open **Window -> Package Manager**
@@ -41,7 +41,7 @@ https://github.com/rive-app/rive-unity.git?path=package#v0.1.30
 You can also add and update it manually to your projects `Packages/manifest.json` file:
 
 ```json
-"app.rive.rive-unity": "git@github.com:rive-app/rive-unity.git?path=package#v0.1.30",
+"app.rive.rive-unity": "git@github.com:rive-app/rive-unity.git?path=package#v0.1.56",
 ```
 
 ## Assets
@@ -147,6 +147,7 @@ namespace Rive
 
         private void Start()
         {
+            renderTexture.enableRandomWrite = true;
             m_renderQueue = new RenderQueue(renderTexture);
             if (asset != null)
             {
