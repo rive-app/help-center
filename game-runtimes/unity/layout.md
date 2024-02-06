@@ -8,21 +8,22 @@ For more information on Rive Layout see the [runtime documentation](../../runtim
 
 ## Fit and Alignment
 
-The **fit** and **alignment** can be controlled on the **RenderQueue** `align` method:
+The **fit** and **alignment** can be controlled on the **Rive.Renderer** `.Align()` method:
 
 <pre class="language-csharp"><code class="lang-csharp">public Fit fit = Fit.contain;
-public Alignment alignment = Alignment.center;
+public Alignment alignment = Alignment.Center;
 public RenderTexture renderTexture;
+private Rive.Renderer m_riveRenderer;
 
 ...
 <strong>
-</strong><strong>m_renderQueue = new RenderQueue(renderTexture);
-</strong>
+</strong><strong>m_renderQueue = new Rive.RenderQueue(renderTexture);
+</strong>m_riveRenderer = m_renderQueue.Renderer();
 ...
 
 if (m_artboard != null &#x26;&#x26; renderTexture != null)
 {
-    m_renderQueue.align(fit, alignment, m_artboard);
-    m_renderQueue.draw(m_artboard);
+    m_riveRenderer.Align(fit, alignment, m_artboard);
+    m_riveRenderer.Draw(m_artboard);
 }
 </code></pre>

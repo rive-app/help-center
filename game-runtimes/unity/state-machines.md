@@ -17,16 +17,16 @@ private StateMachine m_stateMachine;
 
 ...
 
-m_stateMachine = m_artboard?.stateMachine(); // default state machine
-m_stateMachine = m_artboard?.stateMachine(0); // state machine at index
-m_stateMachine = m_artboard?.stateMachine("Name"); // state machine with name
+m_stateMachine = m_artboard?.StateMachine(); // default state machine
+m_stateMachine = m_artboard?.StateMachine(0); // state machine at index
+m_stateMachine = m_artboard?.StateMachine("Name"); // state machine with name
 ```
 
 The state machine is played by calling `advance` and passing in the delta time:
 
 <pre class="language-csharp"><code class="lang-csharp">private void Update()
 {
-<strong>    m_stateMachine?.advance(Time.deltaTime);
+<strong>    m_stateMachine?.Advance(Time.deltaTime);
 </strong><strong>}
 </strong></code></pre>
 
@@ -34,9 +34,9 @@ The state machine is played by calling `advance` and passing in the delta time:
 
 There are three input types, each extends `SMIInput` (State Machine Input):
 
-* `SMIBool` contains a `value` property, a boolean that can be set to true or false.
-* `SMITrigger` is a boolean that is set to true for one frame by calling the `fire` method.
-* `SMINumber` contains a `value` property, a float that can be set to any value.
+* `SMIBool` contains a `.Value` property, a boolean that can be set to true or false.
+* `SMITrigger` is a boolean that is set to true for one frame by calling the `.Fire()` method.
+* `SMINumber` contains a `.Value` property, a float that can be set to any value.
 
 State machine inputs can be accessed in a number of different ways.
 
@@ -47,39 +47,39 @@ Retrieve a state machine input by name and type.
 **Trigger:**
 
 ```csharp
-SMITrigger someTrigger = m_stateMachine.getTrigger("icon_02_press_trig");
+SMITrigger someTrigger = m_stateMachine.GetTrigger("icon_02_press_trig");
 if (someTrigger != null)
 {
-    someTrigger.fire();
+    someTrigger.Fire();
 }
 ```
 
 **Bool:**
 
 ```csharp
-SMIBool someBool = m_stateMachine.getBool("centerHover");
+SMIBool someBool = m_stateMachine.GetBool("centerHover");
 if (someBool == null) return;
-Debug.Log(someBool.value);
-someBool.value = !someBool.value;
-Debug.Log(someBool.value);
+Debug.Log(someBool.Value);
+someBool.Value = !someBool.Value;
+Debug.Log(someBool.Value);
 ```
 
 **Number:**
 
 ```csharp
-SMINumber someNumber = m_stateMachine.getNumber("rating");
+SMINumber someNumber = m_stateMachine.GetNumber("rating");
 if (someNumber == null) return;
-Debug.Log(someNumber.value);
-someNumber.value = 4;
-Debug.Log(someNumber.value);
+Debug.Log(someNumber.Value);
+someNumber.Value = 4;
+Debug.Log(someNumber.Value);
 ```
 
 #### Access by index
 
 Get the input count (length) and retrieve by index:
 
-<pre class="language-csharp"><code class="lang-csharp">Debug.Log(m_stateMachine.inputCount());
-<strong>SMIInput input = m_stateMachine.input(1);
+<pre class="language-csharp"><code class="lang-csharp">Debug.Log(m_stateMachine.InputCount());
+<strong>SMIInput input = m_stateMachine.Input(1);
 </strong></code></pre>
 
 #### Access all inputs
@@ -87,7 +87,7 @@ Get the input count (length) and retrieve by index:
 Retrieve a list of all `SMIInput`s:
 
 ```csharp
-var inputs = m_riveStateMachine.inputs();
+var inputs = m_riveStateMachine.Inputs();
 foreach (var input in inputs)
 {
     switch (input)

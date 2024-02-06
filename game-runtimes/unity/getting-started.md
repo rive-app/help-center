@@ -23,13 +23,13 @@ On Mac with ARM64 you do not need to configure anything. To manually update sele
 You can install the Rive package for Unity by opening the Package Manager and adding the [latest tag](https://github.com/rive-app/rive-unity/tags) as a git dependency:
 
 ```
-git@github.com:rive-app/rive-unity.git?path=package#v0.1.56
+git@github.com:rive-app/rive-unity.git?path=package#v0.1.69
 ```
 
 Or through HTTP:
 
 ```
-https://github.com/rive-app/rive-unity.git?path=package#v0.1.56
+https://github.com/rive-app/rive-unity.git?path=package#v0.1.69
 ```
 
 1. Open **Window -> Package Manager**
@@ -41,7 +41,7 @@ https://github.com/rive-app/rive-unity.git?path=package#v0.1.56
 You can also add and update it manually to your projects `Packages/manifest.json` file:
 
 ```json
-"app.rive.rive-unity": "git@github.com:rive-app/rive-unity.git?path=package#v0.1.56",
+"app.rive.rive-unity": "git@github.com:rive-app/rive-unity.git?path=package#v0.1.69",
 ```
 
 ## Assets
@@ -66,12 +66,12 @@ private void Start()
 {
     if (asset != null)
     {
-        m_file = Rive.File.load(asset);
+        m_file = Rive.File.Load(asset);
     }
 }
 ```
 
-## Arboards
+## Artboards
 
 An [Artboard](../../editor/fundamentals/artboards.md) contains [StateMachines](../../editor/state-machine/) and Animations. Artboards are instantiated from a `Rive.File` instance:
 
@@ -79,13 +79,13 @@ An [Artboard](../../editor/fundamentals/artboards.md) contains [StateMachines](.
 
 ...
 <strong>
-</strong><strong>m_artboard = m_file.artboard(0); // by index
-</strong>m_artboard = m_file.artboard("Arboard 1"); // by name
+</strong><strong>m_artboard = m_file.Artboard(0); // by index
+</strong>m_artboard = m_file.Artboard("Arboard 1"); // by name
 </code></pre>
 
 ## State Machines
 
-A StateMachine contains Inputs and Events, for more information see Unity [State Machines](state-machines.md) and [Events](rive-events.md).
+A StateMachine contains Inputs and Events. For more information see Unity [State Machines](state-machines.md) and [Events](rive-events.md).
 
 State Machines are instantiated from an Arboard instance:
 
@@ -94,26 +94,26 @@ private StateMachine m_stateMachine;
 
 ...
 
-m_stateMachine = m_artboard?.stateMachine(); // default state machine
-m_stateMachine = m_artboard?.stateMachine(0); // state machine at index
-m_stateMachine = m_artboard?.stateMachine("Name"); // state machine with name
+m_stateMachine = m_artboard?.StateMachine(); // default state machine
+m_stateMachine = m_artboard?.StateMachine(0); // state machine at index
+m_stateMachine = m_artboard?.StateMachine("Name"); // state machine with name
 ```
 
 They also control advancing (playing) an animation:
 
 <pre class="language-csharp"><code class="lang-csharp">private void Update()
 {
-<strong>    m_stateMachine?.advance(Time.deltaTime);
+<strong>    m_stateMachine?.Advance(Time.deltaTime);
 </strong><strong>}
 </strong></code></pre>
 
 ## Rendering
 
-Rive Unity renders to a [RenderTexture](https://docs.unity3d.com/ScriptReference/RenderTexture.html) that you can display in your Scene by attaching to a [Material](https://docs.unity3d.com/ScriptReference/Material.html) or drawing to the camera. Layout and draw commands are managed through the `RenderQueue`.
+Rive Unity renders to a [RenderTexture](https://docs.unity3d.com/ScriptReference/RenderTexture.html) that you can display in your Scene by attaching to a [Material](https://docs.unity3d.com/ScriptReference/Material.html) or drawing to the camera. Layout and draw commands are managed through the `Rive.Renderer`.
 
-For a more complex example drawing a texture directly to a camera, see the **getting-started** project in the [examples repository](https://github.com/rive-app/rive-unity-examples).
+For a more complex example of drawing a texture directly to a camera, see the **getting-started** project in the [examples repository](https://github.com/rive-app/rive-unity-examples).
 
-The following is a basic example script behaviour to render a given Rive `asset` to the provided `renderTexture`. The animation is played by calling `advance` on the State Machine.
+The following is a basic example script behaviour to render a given Rive asset to the provided `renderTexture`. The animation is played by calling `.Advance()` on the State Machine.
 
 See [Animation Playback](../../runtimes/playback.md) for more general information on playing animations and state machines at runtime.
 
@@ -123,71 +123,71 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEditor;
+using Rive;
 
 using LoadAction = UnityEngine.Rendering.RenderBufferLoadAction;
 using StoreAction = UnityEngine.Rendering.RenderBufferStoreAction;
 
-namespace Rive
+public class RiveTexture : MonoBehaviour
 {
-    public class RiveTexture : MonoBehaviour
+    public Rive.Asset asset;
+    public RenderTexture renderTexture;
+    public Fit fit = Fit.contain;
+    public Alignment alignment = Alignment.Center;
+
+    private Rive.RenderQueue m_renderQueue;
+    private Rive.Renderer m_riveRenderer;
+    private CommandBuffer m_commandBuffer;
+
+    private Rive.File m_file;
+    private Artboard m_artboard;
+    private StateMachine m_stateMachine;
+
+    private Camera m_camera;
+
+    private void Start()
     {
-        public Rive.Asset asset;
-        public RenderTexture renderTexture;
-        public Fit fit = Fit.contain;
-        public Alignment alignment = Alignment.center;
-
-        private RenderQueue m_renderQueue;
-        private CommandBuffer m_commandBuffer;
-
-        private Rive.File m_file;
-        private Artboard m_artboard;
-        private StateMachine m_stateMachine;
-
-        private Camera m_camera;
-
-        private void Start()
+        // If on D3d11, this is required
+        renderTexture.enableRandomWrite = true;
+        m_renderQueue = new Rive.RenderQueue(renderTexture);
+        m_riveRenderer = m_renderQueue.Renderer();
+        if (asset != null)
         {
-            renderTexture.enableRandomWrite = true;
-            m_renderQueue = new RenderQueue(renderTexture);
-            if (asset != null)
-            {
-                m_file = Rive.File.load(asset);
-                m_artboard = m_file.artboard(0);
-                m_stateMachine = m_artboard?.stateMachine();
-            }
-
-            if (m_artboard != null && renderTexture != null)
-            {
-                m_renderQueue.align(fit, alignment, m_artboard);
-                m_renderQueue.draw(m_artboard);
-
-                m_commandBuffer = new CommandBuffer();
-                m_renderQueue.toCommandBuffer();
-                m_commandBuffer.SetRenderTarget(renderTexture);
-                m_commandBuffer.ClearRenderTarget(true, true, UnityEngine.Color.clear, 0.0f);
-                m_renderQueue.addToCommandBuffer(m_commandBuffer);
-                m_camera = Camera.main;
-                if (m_camera != null)
-                {
-                    Camera.main.AddCommandBuffer(CameraEvent.AfterEverything, m_commandBuffer);
-                }
-            }
+            m_file = Rive.File.Load(asset);
+            m_artboard = m_file.Artboard(0);
+            m_stateMachine = m_artboard?.StateMachine();
         }
 
-        private void Update()
+        if (m_artboard != null && renderTexture != null)
         {
-            if (m_stateMachine != null)
+            m_riveRenderer.Align(fit, alignment, m_artboard);
+            m_riveRenderer.Draw(m_artboard);
+
+            m_commandBuffer = m_riveRenderer.ToCommandBuffer();
+            m_commandBuffer.SetRenderTarget(renderTexture);
+            m_commandBuffer.ClearRenderTarget(true, true, UnityEngine.Color.clear, 0.0f);
+            m_riveRenderer.AddToCommandBuffer(m_commandBuffer);
+            m_camera = Camera.main;
+            if (m_camera != null)
             {
-                m_stateMachine.advance(Time.deltaTime);
+                Camera.main.AddCommandBuffer(CameraEvent.AfterEverything, m_commandBuffer);
             }
         }
+    }
 
-        private void OnDisable()
+    private void Update()
+    {
+        if (m_stateMachine != null)
         {
-            if (m_camera != null && m_commandBuffer != null)
-            {
-                m_camera.RemoveCommandBuffer(CameraEvent.AfterEverything, m_commandBuffer);
-            }
+            m_stateMachine.Advance(Time.deltaTime);
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (m_camera != null && m_commandBuffer != null)
+        {
+            m_camera.RemoveCommandBuffer(CameraEvent.AfterEverything, m_commandBuffer);
         }
     }
 }
@@ -197,6 +197,6 @@ namespace Rive
 1. Create a Unity [RenderTexture](https://docs.unity.cn/ru/2020.1/Manual/class-RenderTexture.html) and [Material](https://docs.unity3d.com/2019.3/Documentation/Manual/Materials.html) in Assets
 2. Assign the **RenderTexture** to the **Material**
 3. Drag this behaviour to a **GameObject** and attach the material
-4. Link the .riv asset and **RenderTexture** on the **RiveTexture** (custom script) behaviour
+4. Link the `.riv` asset and **RenderTexture** on the **RiveTexture** (custom script) behaviour
 
 <figure><img src="../../.gitbook/assets/CleanShot 2023-11-14 at 11.50.39@2x (2).png" alt="" width="351"><figcaption><p><code>RiveTexture</code> in Unity Inspector</p></figcaption></figure>

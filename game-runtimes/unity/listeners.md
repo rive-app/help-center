@@ -39,36 +39,36 @@ if (camera != null)
     );
     if (m_artboard != null && m_lastMousePosition != mouseRiveScreenPos)
     {
-        Vector2 local = m_artboard.localCoordinate(
+        Vector2 local = m_artboard.LocalCoordinate(
             mouseRiveScreenPos,
             new Rect(0, 0, camera.pixelWidth, camera.pixelHeight),
             fit,
             alignment
         );
-        m_stateMachine?.pointerMove(local);
+        m_stateMachine?.PointerMove(local);
         m_lastMousePosition = mouseRiveScreenPos;
     }
     if (Input.GetMouseButtonDown(0))
     {
-        Vector2 local = m_artboard.localCoordinate(
+        Vector2 local = m_artboard.LocalCoordinate(
             mouseRiveScreenPos,
             new Rect(0, 0, camera.pixelWidth, camera.pixelHeight),
             fit,
             alignment
         );
-        m_stateMachine?.pointerDown(local);
+        m_stateMachine?.PointerDown(local);
         m_wasMouseDown = true;
     }
     else if (m_wasMouseDown)
     {
         m_wasMouseDown = false;
-        Vector2 local = m_artboard.localCoordinate(
+        Vector2 local = m_artboard.LocalCoordinate(
             mouseRiveScreenPos,
             new Rect(0, 0, camera.pixelWidth, camera.pixelHeight),
             fit,
             alignment
         );
-        m_stateMachine?.pointerUp(local);
+        m_stateMachine?.PointerUp(local);
     }
 }
 ```
@@ -111,20 +111,20 @@ void HitTesting()
 
     if (m_lastMousePosition != mouseRiveScreenPos || transform.hasChanged)
     {
-        Vector2 local = m_artboard.localCoordinate(pixelUV, new Rect(0, 0, renderTexture.width, renderTexture.height), fit, alignment);
-        m_stateMachine?.pointerMove(local);
+        Vector2 local = m_artboard.LocalCoordinate(pixelUV, new Rect(0, 0, renderTexture.width, renderTexture.height), fit, alignment);
+        m_stateMachine?.PointerMove(local);
         m_lastMousePosition = mouseRiveScreenPos;
     }
     if (Input.GetMouseButtonDown(0))
     {
-        Vector2 local = m_artboard.localCoordinate(pixelUV, new Rect(0, 0, renderTexture.width, renderTexture.height), fit, alignment);
-        m_stateMachine?.pointerDown(local);
+        Vector2 local = m_artboard.LocalCoordinate(pixelUV, new Rect(0, 0, renderTexture.width, renderTexture.height), fit, alignment);
+        m_stateMachine?.PointerDown(local);
         m_wasMouseDown = true;
     }
     else if (m_wasMouseDown)
     {
-        m_wasMouseDown = false; Vector2 local = m_artboard.localCoordinate(mouseRiveScreenPos, new Rect(0, 0, renderTexture.width, renderTexture.height), fit, alignment);
-        m_stateMachine?.pointerUp(local);
+        m_wasMouseDown = false; Vector2 local = m_artboard.LocalCoordinate(mouseRiveScreenPos, new Rect(0, 0, renderTexture.width, renderTexture.height), fit, alignment);
+        m_stateMachine?.PointerUp(local);
     }
 }
 ```

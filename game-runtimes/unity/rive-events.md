@@ -13,26 +13,26 @@ The following code demonstrates accessing all Rive events reported from an activ
 ```csharp
 ...
 
-foreach (var report in m_stateMachine?.reportedEvents() ?? Enumerable.Empty<ReportedEvent>())
+foreach (var report in m_stateMachine?.ReportedEvents() ?? Enumerable.Empty<ReportedEvent>())
 {
-    Debug.Log($"Event received, name: \"{reportedEvent.name}\", secondsDelay: {reportedEvent.secondsDelay}");
+    Debug.Log($"Event received, name: \"{reportedEvent.Name}\", secondsDelay: {reportedEvent.SecondsDelay}");
 }
 
 // Important! Call `advance` after accessing events.
-m_stateMachine?.advance(Time.deltaTime);
+m_stateMachine?.Advance(Time.deltaTime);
 ```
 
-The method `reportedEvents()` returns a list of `ReportedEvent`s.
+The method `ReportedEvents()` returns a list of `ReportedEvent`s.
 
 Let's look at a code snippet for a star-rating Rive file. If a reported event's name is **Star,** the **rating** property of type `float` and a **message** of type `string` are retrieved from the event data (custom properties).
 
 ```csharp
 private void RiveScreen_OnRiveEvent(ReportedEvent reportedEvent)
 {
-    Debug.Log($"Event received, name: \"{reportedEvent.name}\", secondsDelay: {reportedEvent.secondsDelay}");
+    Debug.Log($"Event received, name: \"{reportedEvent.Name}\", secondsDelay: {reportedEvent.SecondsDelay}");
     
     // Access specific event properties
-    if (reportedEvent.name == "Star")
+    if (reportedEvent.Name == "Star")
     {
         var rating = reportedEvent["rating"] as float?;
         var message = reportedEvent["message"] as string;
@@ -43,7 +43,7 @@ private void RiveScreen_OnRiveEvent(ReportedEvent reportedEvent)
 ```
 
 * Properties that can be read are **bool**, **string**, and **float**.
-* Access a dictionary of all properties with: `reportedEvent.properties`.
+* Access a dictionary of all properties with: `reportedEvent.Properties`.
 
 ### Additional Resources
 
