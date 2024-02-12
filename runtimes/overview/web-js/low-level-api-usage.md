@@ -319,3 +319,9 @@ The high-level JS runtime APIs are built with the low-level APIs specified above
 * Hooking up gesture events to [Rive Listeners](https://help.rive.app/editor/state-machine#listeners)
 
 When using Rive’s advanced JS APIs to customize how you use Rive, you will have to set up some of these affordances yourself. Take a look at how the [high-level Rive API is built here](https://github.com/rive-app/rive-wasm/blob/master/js/src/rive.ts) to get a sense of how to replicate some of these high-level affordances should you need these.
+
+## Integrating Rive into Existing rAF Loop
+
+If you're looking to add Rive to your existing render loop (the JS API `requestAniationFrame()`) and do not want to use the Rive-wrapped `requestAnimationFrame()` API, you can do so with an extra API call at the end of your render loop. Call the `rive.resolveAnimationFrame()` API at the end of the render loop before calling `requestAnimationFrame()` again.
+
+See more on usage in the [Rive Parameters](rive-parameters.md#resolveanimationframe) doc.

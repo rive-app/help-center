@@ -427,7 +427,70 @@ Returns the text value of the text run component (from the hierarchy of your `.r
 
 Sets the text value of the text run component (from the hierarchy of your `.riv` file) you specify via `textRunName`. You may see console warnings if the text run cannot be queried from the active Artboard, and thus the provided `textValue` you want to set on the run may not be successful.
 
+### resolveAnimationFrame()
 
+`resolveAnimationFrame(): void`
+
+{% hint style="info" %}
+You only need to use this function if you are using Rive's [low-level APIs](low-level-api-usage.md) to build the render loop manually and are integrating Rive into your existing `requestAnimationFrame()` loop
+{% endhint %}
+
+Resolves deferred drawing commands with the renderer. You must call this at the end of your render loop if you decide to use your own `requestAnimationFrame()` loop and are adding Rive graphics into it. Otherwise, if you are using Rive's wrapped `rAF` loop (i.e., `rive.requestAnimatimationFrame()` ), you do not need to call this method, as Rive will worry about resolving any rendering calls related to Rive graphics.
+
+See example usage below:
+
+```javascript
+let lastTime = 0;
+function draw(time) {
+  if (!lastTime) {
+    lastTime = time;
+  }
+  const elapsedMs = time - lastTime;
+  const elapsedSeconds = elapsedMs / 1000;
+  lastTime = time;
+
+  renderer.clear();
+  
+  if (artboard) {
+    if (stateMachine) {
+      stateMachine.advance(elapsedSeconds);
+    }
+    if (animation) {
+      animation.advance(elapsedSeconds);
+      animation.apply(1);
+    }
+    artboard.advance(elapsedSeconds);
+    renderer.save();
+
+    renderer.align(
+      rive.Fit.contain,
+      rive.Alignment.center,
+      {
+        minX: 0,
+        minY: 0,
+        maxX: canvas.width,
+        maxY: canvas.height,
+      },
+      artboard.bounds
+    );
+
+    // Pass along our Renderer to the artboard, so that it can draw onto the canvas
+    artboard.draw(renderer);
+    renderer.restore();
+    renderer.flush();
+  }
+
+  // Needed to actually resolve a queue of drawing and rendering calls with our Renderer
+  // Note: ONLY needed if using a normal JS requestAnimationFrame, rather than our wrapped
+  // one in the rive API
+  rive.resolveAnimationFrame();
+
+  // Call the next frame!
+  requestAnimationFrame(draw);
+}
+// Start the animation loop
+requestAnimationFrame(draw);
+```
 
 ## Debugging Tools
 
