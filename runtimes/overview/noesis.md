@@ -30,6 +30,7 @@ Ensure you have installed the latest `Noesis.GUI` and `Noesis.GUI.Extensions` pa
 * `<RiveControl>` - Responsible for specifying the Rive file for Noesis to render. Noesis will find the default Artboard on the Rive file and the default State Machine associated with that artboard to run automatically
 * `<RiveInput>` - A reference to a State Machine boolean or number input that you can nest within RiveControl
 * `<RiveTriggerAction>` - A reference to a State Machine trigger input
+* `<RiveRun>` - A reference to a text run by which you can bind to other values to retrieve or set text values&#x20;
 
 <figure><img src="../../.gitbook/assets/Screenshot 2023-03-17 142704.png" alt=""><figcaption><p>Rive elements available in Blend</p></figcaption></figure>
 
@@ -54,9 +55,7 @@ To control a State Machine via inputs, we can nest a `<RiveInput>` where we spec
 In the above `<RiveInput>` we bind the input value to a property called `Health`, which you can set via code elsewhere or set the value directly. This is where you use the power of Blend and XAML to define how to data-bind to interactions or other properties. In the example above, you can follow the tutorial video at the end of the page to see how we data-bind this specific property.
 
 {% hint style="warning" %}
-**Note:** As of NoesisGUI 3.2, if you intend to use multiple Artboards from the same file, you should break up the Artboards into their own `.riv` file, as NoesisGUI will only play the default artboard. Future functionality may introduce a property to specify the Artboard you want to display from a given Rive file. \
-\
-Additionally, Rive support is limited to vector-only graphics at this time.
+**Note:** As of NoesisGUI 3.2, if you intend to use multiple Artboards from the same file, you should break up the Artboards into their own `.riv` file, as NoesisGUI will only play the default artboard. Future functionality may introduce a property to specify the Artboard you want to display from a given Rive file.
 {% endhint %}
 
 Save your XAML file and Blend project and load it in the respective game engine/native application you're working in as recommended by Noesis.
