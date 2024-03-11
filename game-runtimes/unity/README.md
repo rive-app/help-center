@@ -8,22 +8,24 @@ description: Unity runtime for Rive
 The Rive Unity runtime is currently in **Technical Review** for Mac and Windows installs of Unity. We're hoping to gather feedback about the API and feature-set as we expand platform support. Please reach out to us on [Discord](https://discord.com/invite/FGjmaTr) or through our [Support Channel](https://rive.atlassian.net/servicedesk/customer/portals).
 {% endhint %}
 
-{% hint style="warning" %}
-Not all Rive features are yet supported in the rive-unity runtime, see [#feature-support](./#feature-support "mention")
+{% hint style="info" %}
+See [#feature-support](./#feature-support "mention")for an updated list of Rive features in Unity.
 {% endhint %}
 
 ## Rendering Support
 
 The rive-unity runtime uses the [Rive Renderer](https://rive.app/renderer) and is up to date with the latest C++ runtime version of Rive.
 
-* Metal on Mac and iOS
+* [WebGL](https://github.com/rive-app/rive-unity/blob/main/WEBGL.md)
+* Metal on Mac
+* Metal on iOS
 * D3D11 on Windows
 * OpenGL on Windows
+* OpenGL on Android
 
 Planned support for:
 
 * D3D12
-* WebGL
 * Vulkan
 
 ### Bug Reports
@@ -40,4 +42,4 @@ Note that it is best to grab the Editor.log file immediately after a crash has o
 
 The rive-unity runtime uses the latest Rive C++ runtime. For more details on runtime support, see the [Runtime Feature Support](https://www.notion.so/o/-LLf9WNWru58qo4lWjp9/s/-M3EXlibk6bj2FzPQW-9/\~/changes/387/runtimes/feature-support) page. Refer to the following table for what is currently supported in the Unity runtime.
 
-<table><thead><tr><th width="541">Feature</th><th>Supported</th></tr></thead><tbody><tr><td><a href="../../runtimes/playback.md">Animation Playback</a></td><td>✅</td></tr><tr><td><a href="../../runtimes/layout.md">Fit and Alignment</a></td><td>✅</td></tr><tr><td><a href="listeners.md">Listeners</a></td><td>✅</td></tr><tr><td><a href="state-machines.md">Setting State Machine Inputs</a></td><td>✅</td></tr><tr><td><a href="rive-events.md">Listening to Events</a></td><td>✅</td></tr><tr><td><a href="../../runtimes/text.md">Updating text at runtime</a></td><td>Coming Soon</td></tr><tr><td><a href="loading-assets.md">Out-of-band assets</a></td><td>✅</td></tr><tr><td><a href="procedural-rendering.md">Procedural rendering</a></td><td>✅</td></tr><tr><td>PNG images</td><td>✅</td></tr><tr><td>WEBP and JPEG images</td><td>Coming Soon</td></tr></tbody></table>
+<table><thead><tr><th width="541">Feature</th><th>Supported</th></tr></thead><tbody><tr><td><a href="../../runtimes/playback.md">Animation Playback</a></td><td>✅</td></tr><tr><td><a href="../../runtimes/layout.md">Fit and Alignment</a></td><td>✅</td></tr><tr><td><a href="listeners.md">Listeners</a></td><td>✅</td></tr><tr><td><a href="state-machines.md">Setting State Machine Inputs</a></td><td>✅</td></tr><tr><td><a href="rive-events.md">Listening to Events</a></td><td>✅</td></tr><tr><td><a href="text.md">Updating text at runtime</a></td><td>✅</td></tr><tr><td><a href="loading-assets.md">Out-of-band assets</a></td><td>✅</td></tr><tr><td><a href="procedural-rendering.md">Procedural rendering</a></td><td>✅</td></tr><tr><td>PNG images</td><td>✅</td></tr><tr><td>WEBP and JPEG images</td><td>Coming Soon</td></tr></tbody></table>

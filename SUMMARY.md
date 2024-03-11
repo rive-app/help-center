@@ -138,6 +138,7 @@
   * [Listeners](game-runtimes/unity/listeners.md)
   * [State Machines](game-runtimes/unity/state-machines.md)
   * [Rive Events](game-runtimes/unity/rive-events.md)
+  * [Text](game-runtimes/unity/text.md)
   * [Loading Assets](game-runtimes/unity/loading-assets.md)
   * [Procedural Rendering](game-runtimes/unity/procedural-rendering.md)
 * [Bevy](game-runtimes/bevy/README.md)
