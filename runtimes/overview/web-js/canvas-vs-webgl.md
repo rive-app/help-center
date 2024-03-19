@@ -2,7 +2,7 @@
 
 ### Background
 
-The JS/WASM runtime provides various packages which are published to npm. For simple usage and best performance, we recommend starting with `@rive-app/canvas` (more on that below). On the web, Rive offers the ability to use a backing `CanvasRenderingContext2D` context or `WebGL` context associated with a `<canvas>` element for rendering Rive animations.
+The JS/WASM runtime provides various packages which are published to npm. For simple usage and smaller package sizes, we recommend starting with `@rive-app/canvas` (more on that below). On the web, Rive offers the ability to use a backing `CanvasRenderingContext2D` context or `WebGL` context associated with a `<canvas>` element for rendering Rive animations.
 
 **Note:** The high-level API and the logic for creating a Rive instance in your script remain the same for the `@rive-app/webgl` and `@rive-app/canvas` packages. That means if you decide one runtime package is better for your use case over the other, you only need to switch the dependency, but not the usage.\
 \
@@ -42,29 +42,76 @@ This solution will be preferable if you **do not** have a need for the following
 
 ### @rive-app/webgl
 
-An easy-to-use high-level Rive API using the [WebGL](https://developer.mozilla.org/en-US/docs/Web/API/WebGL\_API) renderer. Some benefits of this package:
+An easy-to-use high-level Rive API using a WebGL2 context. Some benefits of this package:
 
 * Highest fidelity with edit-time experience.
 * Requests the Web Assembly (WASM) backing dependency for you
+* Currently uses Skia for rendering, but in a future major version release will be replaced with the new Rive Renderer
 
-**A note about WebGL:** Most browsers limit the number of concurrent WebGL contexts by page/domain. Using Rive, this means that the browser limit impacts the number of `new Rive({...})` instances created. See the [Rive Parameters](rive-parameters.md) docs for the `useOffscreenRenderer` option that may assist in working around this limitation.
+**A note about WebGL:** Most browsers limit the number of concurrent WebGL contexts by page/domain. Using Rive, this means that the browser limit impacts the number of `new Rive({...})` instances created.
 
-If you're planning on displaying Rive content in a list/grid or many times on the same page, it's up to you to manage the lifecycle of the provided context and `canvas` element. If you need to display many animations (i.e grids/lists), consider using the `@rive-app/canvas` package which uses the `CanvasRenderingContext2D` renderer and does not have a context limitation.
-
-We are working on a better solution to getting around the browser context limit, while still being performant in various browsers.&#x20;
+If you're planning on displaying Rive content in a list/grid or many times on the same page, it's up to you to manage the lifecycle of the provided context and `canvas` element. If you need to display many animations (i.e grids/lists), consider using the `@rive-app/canvas` package which uses the `CanvasRenderingContext2D` renderer and does not have a context limitation, or consider the `@rive-app/webgl-advanced` package, which will allow you to display multiple Rive graphics on one canvas with full control over the render loop.
 
 {% hint style="warning" %}
-It is highly recommended to set the `useOffscreenRenderer: true` property in the Rive parameters when creating a `new Rive({...})` object, especially when rendering multiple Rive objects on the page.
+It is recommended to set the `useOffscreenRenderer: true` property in the Rive parameters when creating a `new Rive({...})` object, especially when rendering multiple Rive objects on the page.
 {% endhint %}
+
+### @rive-app/webgl2
+
+{% hint style="info" %}
+This is a preview of using the [Rive Renderer](https://rive.app/renderer) with a WebGL2 context. In a future major release, this package may be deprecated and `@rive-app/webgl` will make use of the Rive Renderer completely, without an added Skia dependency
+{% endhint %}
+
+An easy-to-use high-level Rive API using a WebGL2 context. Some benefits of this package:
+
+* Highest fidelity with edit-time experience.
+* Requests the Web Assembly (WASM) backing dependency for you
+* Uses the new Rive Renderer for best performance
+* A much smaller build than `@rive-app/webgl`, which currently adds a larger Skia dependency
+
+{% hint style="warning" %}
+To take advantage of trying out the Rive Renderer, you should [enable the draft](https://www.wikihow.tech/Enable-WebGL-Draft-Extensions-in-Google-Chrome) `WEBGL_shader_pixel_local_storage` Chrome Extension (by adding WebGL Draft Extensions in the link above), otherwise, Rive will fall back to an MSAA solution (also with WebGL2) on browsers without the extension support. Current work is underway with major browsers to support this extension by default in consumer's browsers.
+{% endhint %}
+
+**A note about WebGL:** Most browsers limit the number of concurrent WebGL contexts by page/domain. Using Rive, this means that the browser limit impacts the number of `new Rive({...})` instances created.
+
+If you're planning on displaying Rive content in a list/grid or many times on the same page, it's up to you to manage the lifecycle of the provided context and `canvas` element. If you need to display many animations (i.e grids/lists), consider using the `@rive-app/canvas` package which uses the `CanvasRenderingContext2D` renderer and does not have a context limitation, or consider the `@rive-app/webgl2-advanced` package, which will allow you to display multiple Rive graphics on one canvas with full control over the render loop.
+
+{% hint style="warning" %}
+It is recommended to set the `useOffscreenRenderer: true` property in the Rive parameters when creating a `new Rive({...})` object, especially when rendering multiple Rive objects on the page.
+{% endhint %}
+
+For more information about the Rive Renderer, see the [Choose a Renderer](../../renderer/) section.
+
+### @rive-app/webgl2-advanced
+
+{% hint style="info" %}
+This is a preview of using the [Rive Renderer](https://rive.app/renderer) with a WebGL2 context. In a future major release, this package may be deprecated and `@rive-app/webgl-advanced` will make use of the Rive Renderer completely, without an added Skia dependency
+{% endhint %}
+
+A low-level Rive API using a WebGL2 context. It has the same benefits as the regular `@rive-app/webgl2` package plus:
+
+* Full control over the update and render loop.
+* Allows for rendering multiple Rive graphics to a single canvas.&#x20;
+* Uses the new Rive Renderer for best performance
+* A much smaller build than `@rive-app/webgl-advanced`, which currently adds a larger Skia dependency
+* Allows deeper control and manipulation of the components in a Rive hierarchy.
+
+{% hint style="warning" %}
+To take advantage of trying out the Rive Renderer, you should enable the draft `WEBGL_shader_pixel_local_storage` Chrome Extension, otherwise, Rive will fall back to an MSAA solution (also with WebGL2) on browsers without the extension support. Current work is underway with major browsers to support this extension by default in consumer's browsers.
+{% endhint %}
+
+This package will be the best way to take advantage of the Rive Renderer's performance, being able to draw a large number of Rive graphics to one canvas.&#x20;
+
+For more information about the Rive Renderer, see the [Choose a Renderer](../../renderer/) section.
 
 ### @rive-app/canvas-advanced
 
 A low-level Rive API using the [CanvasRenderingContext2D](https://developer.mozilla.org/en-US/docs/Web/API/Canvas\_API) renderer. It has the same benefits as the regular `@rive-app/canvas` package plus:
 
 * Full control over the update and render loop
-* Allows for rendering multiple Rive artboards to a single canvas
+* Allows for rendering multiple Rive graphics to a single canvas
 * Allows deeper control and manipulation of the components in a Rive hierarchy
-* Web Assembly (WASM) is part of the NPM bundle, but you load in the WASM manually
 
 See an example of usage here: [https://codesandbox.io/s/rive-canvas-advanced-api-basketball-rgted8](https://codesandbox.io/s/rive-canvas-advanced-api-basketball-rgted8)
 
@@ -88,12 +135,11 @@ This solution will be preferable if you **do not** have a need for the following
 
 ### @rive-app/webgl-advanced
 
-A low-level Rive API using the [WebGL](https://developer.mozilla.org/en-US/docs/Web/API/WebGL\_API) renderer. It has the same benefits as the regular `@rive-app/webgl` package plus:
+A low-level Rive API using a WebGL2 context. It has the same benefits as the regular `@rive-app/webgl` package plus:
 
 * Full control over the update and render loop.
-* Allows for rendering multiple Rive artboards to a single canvas.
+* Allows for rendering multiple Rive graphics to a single canvas.&#x20;
 * Allows deeper control and manipulation of the components in a Rive hierarchy.
-* Web Assembly (WASM) is part of the NPM bundle, but you load in the WASM manually
 
 See an example of usage here: [https://codesandbox.io/s/rive-webgl-advanced-api-fwtmdb](https://codesandbox.io/s/rive-webgl-advanced-api-fwtmdb?file=/src/index.ts)
 

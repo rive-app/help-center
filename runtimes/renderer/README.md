@@ -4,7 +4,7 @@ description: Specify a renderer to use at runtime
 
 # Choose a Renderer
 
-Rive makes use of various different renderers depending on platform and runtime. We're working towards unifying the default renderer used across all platforms/runtimes with the [Rive Renderer](https://rive.app/renderer), which is now available on iOS, Android, and Rive GameKit.
+Rive makes use of various different renderers depending on platform and runtime. We're working towards unifying the default renderer used across all platforms/runtimes with the [Rive Renderer](https://rive.app/renderer), which is now available on iOS, Android,  Rive GameKit, and on Web (JS) on Google Chrome ([with WebGL draft extensions enabled](https://www.wikihow.tech/Enable-WebGL-Draft-Extensions-in-Google-Chrome)).
 
 ## Renderer Options and Default
 
@@ -12,7 +12,7 @@ You can opt-in to use a specific renderer, see [#specifying-a-renderer](./#speci
 
 The table below outlines the available, and default, renderers for Rive's runtimes:
 
-<table><thead><tr><th width="239">Runtime</th><th width="248.33333333333331">Renderer</th><th>Options</th></tr></thead><tbody><tr><td>Android</td><td>Skia</td><td>Rive / Skia</td></tr><tr><td>iOS</td><td>Skia</td><td>Rive / Skia</td></tr><tr><td>React Native</td><td>Skia</td><td>Skia</td></tr><tr><td>Web (Canvas) </td><td>Canvas2D</td><td>Canvas2D</td></tr><tr><td>Web (WebGL)</td><td>Skia</td><td>Skia</td></tr><tr><td>Flutter</td><td>Skia (other), Impeller (iOS)</td><td>Skia / Impeller</td></tr></tbody></table>
+<table><thead><tr><th width="239">Runtime</th><th width="248.33333333333331">Renderer</th><th>Options</th></tr></thead><tbody><tr><td>Android</td><td>Skia</td><td>Rive / Skia</td></tr><tr><td>iOS</td><td>Skia</td><td>Rive / Skia</td></tr><tr><td>React Native</td><td>Skia</td><td>Skia</td></tr><tr><td>Web (Canvas) </td><td>Canvas2D</td><td>Canvas2D</td></tr><tr><td>Web (WebGL)</td><td>Skia</td><td>Skia</td></tr><tr><td>Web (WebGL2)</td><td>Rive</td><td>Rive</td></tr><tr><td>Flutter</td><td>Skia (other), Impeller (iOS)</td><td>Skia / Impeller</td></tr></tbody></table>
 
 ### Note on Rendering in Flutter
 
@@ -40,6 +40,27 @@ By default, both Android and iOS will use the current Skia renderer.
 {% endhint %}
 
 {% tabs %}
+{% tab title="Web (JS)" %}
+## Starting Version
+
+The Rive Renderer was introduced in the Web (JS)/WASM runtime starting at **v2.11.1** with the following new packages:
+
+* &#x20;`@rive-app/webgl2`&#x20;
+* `@rive-app/webgl2-advanced`&#x20;
+
+However, we recommend installing the latest version of the dependency to get the latest updates.
+
+These packages do not bundle any heavy rendering dependencies such as Skia, which makes the package size much smaller than that of the existing `@rive-app/webgl` package.
+
+## Enabling the Draft Extension
+
+Currently, the Rive Renderer on web relies on a WebGL2 extension that is currently in progress being implemented across all major browsers. To try out the Rive Renderer today, you can do so on Google Chrome. Simply [enable WebGL draft extensions](https://www.wikihow.tech/Enable-WebGL-Draft-Extensions-in-Google-Chrome) on Chrome and restart the browser.
+
+Once the extension is enabled, you must use the `@rive-app/webgl2` package (introduced with `v2.11.1`) to use the Rive Renderer by default. If you do not have the draft extensions enabled or you are using a different browser, the package will fallback to an MSAA solution still using a WebGL2 context to back the `<canvas>` element.
+
+The API usage does not change in comparison to using any of the other Web (JS)/WASM runtimes.
+{% endtab %}
+
 {% tab title="iOS / macOS" %}
 ## Starting Version
 
@@ -72,6 +93,10 @@ The Rive Renderer was introduced in the Android runtime starting at **v8.5.0**, 
 See below for runtime instructions to enable a specific renderer.
 
 {% tabs %}
+{% tab title="Web (JS)" %}
+The `@rive-app/webgl2` and `@rive-app/webgl2-advanced` packages only use the Rive renderer, so there is no configuration needed to use it by default.
+{% endtab %}
+
 {% tab title="iOS/macOS" %}
 ## Getting Started
 
