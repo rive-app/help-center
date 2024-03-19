@@ -95,6 +95,8 @@ See below for runtime instructions to enable a specific renderer.
 {% tabs %}
 {% tab title="Web (JS)" %}
 The `@rive-app/webgl2` and `@rive-app/webgl2-advanced` packages only use the Rive renderer, so there is no configuration needed to use it by default.
+
+To get started, see the section above about [enabling draft extensions](./#enabling-the-draft-extension).
 {% endtab %}
 
 {% tab title="iOS/macOS" %}
