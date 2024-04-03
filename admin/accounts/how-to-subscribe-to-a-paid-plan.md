@@ -1,5 +1,9 @@
 # How to Subscribe to a Paid Plan
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/how-to-subscribe-to-a-paid-plan/docoEMgna2RP).
+{% endhint %}
+
 If you currently have a free account with Rive and wish to subscribe to a paid plan, you must log in to your account.&#x20;
 
 The editor has an "Upgrade" button in the left menu.&#x20;

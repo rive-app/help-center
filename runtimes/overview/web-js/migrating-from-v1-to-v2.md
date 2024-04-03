@@ -4,6 +4,10 @@ description: Migration notes going from v1 to v2 of the JS runtime
 
 # Migrating from v1 to v2
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/migrating-from-v1-to-v2/doc9zpmqx6dg).
+{% endhint %}
+
 Starting in v2 of our Web (JS) runtimes, Rive will support Rive Text at runtime, which includes the following packages:
 
 * Web (JS) / WASM

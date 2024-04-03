@@ -4,6 +4,10 @@ description: Update Rive text at runtime in Unity
 
 # Text
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/text/docNlLQtrqAS).
+{% endhint %}
+
 For more information on Rive Text see the respective [runtime](../../runtimes/text.md) and [editor](../../editor/text/) documentation.
 
 ## Update Rive Text in Unity

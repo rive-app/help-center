@@ -6,6 +6,10 @@ description: >-
 
 # Share Links
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/overview/docCxp7bueYA).
+{% endhint %}
+
 Share the current version of the file you're working with share links. Note that this is not the same as giving someone access to the live file with all its revision history. This link will be a frozen version of the file in its current state. If you make changes to the file, you'll need to generate a new share link.&#x20;
 
 ## Creating a share link

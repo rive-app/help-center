@@ -1,5 +1,9 @@
 # Interpolation (Easing)
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/interpolation-easing/docP9A6iGEsI).
+{% endhint %}
+
 {% embed url="https://www.youtube.com/watch?v=087zael11_M&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=26" %}
 
 When you set two keys on a property, the value in between those keys is automatically calculated. This is called interpolation. Interpolation settings can be customized to create dramatically different results.

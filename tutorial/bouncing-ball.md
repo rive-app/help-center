@@ -1,5 +1,9 @@
 # Bouncing ball
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/bouncing-ball/doc3R2iYi7Cs).
+{% endhint %}
+
 ## Intro
 
 In this tutorial, we'll show you how to build a bouncing ball in Rive. This tutorial is broken into three parts, design, rigging, and animation. Feel free to jump around and go directly to the information you are looking for.

@@ -4,6 +4,10 @@ description: JS/WASM runtime for Rive
 
 # Web (JS)
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/web-js/docvlgbnS1mp).
+{% endhint %}
+
 ## Overview
 
 This guide documents how to get started using the Web runtime library. Rive runtime libraries are open-source. The source is available in its [GitHub repository](https://github.com/rive-app/rive-wasm).\

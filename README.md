@@ -1,5 +1,9 @@
 # Introduction
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/introduction/docvphVOrBbl).
+{% endhint %}
+
 Welcome to the Rive Docs. We've split this documentation into the sub-sections below. If you can't find the information you're looking for or have questions for us, join us on [Twitter](https://twitter.com/rive\_app), [Discord](https://discord.com/invite/FGjmaTr), or contact us by filling out [this form](https://rive.app/contact).
 
 {% embed url="https://www.youtube.com/watch?v=vNHH2sna2pI" %}

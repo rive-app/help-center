@@ -4,6 +4,10 @@ description: Rive React API
 
 # Parameters and Return Values
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/parameters-and-return-values/docJlDMNulDh).
+{% endhint %}
+
 ## Hooks
 
 ### useRive

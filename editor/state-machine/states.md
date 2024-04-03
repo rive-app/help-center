@@ -1,5 +1,9 @@
 # States
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/states/docEwEIEWU1U).
+{% endhint %}
+
 States are simply timeline animations that can play at any point in your state machine. A state could be as simple as changing the color and position of an object, or as complex as blending multiple timelines together.
 
 There are a few types of states that you’ll end up using as you work with the State Machine, including Default States, Single animations, and Blend States. We’ll explore each of these below.

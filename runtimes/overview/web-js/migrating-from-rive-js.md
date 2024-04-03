@@ -4,6 +4,10 @@ description: Migration guide from the rive-js package
 
 # Migrating from rive-js
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/migrating-from-rivejs/docX1CbC22dq).
+{% endhint %}
+
 Previously, the web runtime would deploy to the [rive-js](https://www.npmjs.com/package/rive-js) package on npm. We have since moved away from this one-package model and into a place where you can import from several different packages based on your API/rendering-level needs.
 
 * @rive-app/webgl

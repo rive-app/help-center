@@ -2,6 +2,10 @@
 
 
 
+{% hint style="info" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/fill-and-stroke/docssRdNqU2I).
+{% endhint %}
+
 {% embed url="https://www.youtube.com/watch?v=H2sJZhZplig&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=11" %}
 
 ## **Fill**

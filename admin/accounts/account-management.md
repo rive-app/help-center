@@ -4,6 +4,10 @@ description: How do I find my account settings, billing information, and manage 
 
 # Account Management
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/account-management/doc1dl8HK9Co).
+{% endhint %}
+
 On the [Rive website](https://rive.app/), in the upper right is a button that says "Get Started."\
 
 

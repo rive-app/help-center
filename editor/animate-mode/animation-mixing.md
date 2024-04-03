@@ -1,5 +1,9 @@
 # Animation Mixing
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/animation-mixing/docy5ELEMQQx).
+{% endhint %}
+
 Rive allows you to mix animations from the same artboard at runtime, creating more interesting ways for you to add interactivity to your apps and games.&#x20;
 
 ![](../../.gitbook/assets/reload.gif)

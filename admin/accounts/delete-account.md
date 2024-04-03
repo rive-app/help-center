@@ -1,5 +1,9 @@
 # Delete My Account
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/delete-my-account/docmVVklclHm).
+{% endhint %}
+
 You can delete your account at any time by logging into [your account](https://rive.app/account/) or by submitting a ticket [here](https://rive.atlassian.net/servicedesk/customer/portals).&#x20;
 
 ### To cancel if you have a paid account

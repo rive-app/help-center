@@ -1,5 +1,9 @@
 # Importing Assets
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/importing-assets/docO2hh4U88G).
+{% endhint %}
+
 Import your assets by dragging and dropping them onto the Rive Editor. You can import SVG, JSON, PNG, PSD, and JPG formats.
 
 {% embed url="https://www.youtube.com/watch?v=mWEHZzB4hLs&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=21" %}

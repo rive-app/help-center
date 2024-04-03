@@ -4,6 +4,10 @@ description: Migrating guide from < 4.x
 
 # Migrating from v3 to v4
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/migrating-from-v3-to-v4/docGpKiBm5cb).
+{% endhint %}
+
 If you are migrating to `rive-react-native` note the following changes below.
 
 ## Breaking API Changes

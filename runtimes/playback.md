@@ -4,6 +4,10 @@ description: Playing and pausing animations
 
 # Animation Playback
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/animation-playback/docDKKxsr7ko).
+{% endhint %}
+
 Rive lets you specify what artboard to use, what animations and state machines to mix and play and control the play/pause state of each animation.
 
 The term _animations_ may collectively refer to both animations and state machines. In this section, we explore how to deal with specific animation playback, rather than state machines.

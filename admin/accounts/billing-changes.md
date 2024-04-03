@@ -4,6 +4,10 @@ description: How do I change my card on file or change my billing plan?
 
 # Billing Changes
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/billing-changes/doc4uRBp2abX).
+{% endhint %}
+
 **NOTE: If you have a Legacy pricing plan and wish to change your billing from monthly to annual or vice versa, please submit a ticket** [**here**](https://rive.atlassian.net/servicedesk/customer/portals) **under the Account and Billing option. We can help you process the change.**&#x20;
 
 **Clicking on Create a Team creates a new team. It does NOT update your current team's billing.**

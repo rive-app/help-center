@@ -4,6 +4,10 @@ description: Reading and modifying text at runtime
 
 # Text
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/text/docn2E6y1lXo).
+{% endhint %}
+
 For more information on designing and animating Text, please refer to the [editor's text section](text.md).
 
 Please ensure you're on the correct runtime version with support for Rive Text; see [Feature Support](feature-support.md).

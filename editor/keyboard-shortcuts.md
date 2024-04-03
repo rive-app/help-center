@@ -1,5 +1,9 @@
 # Keyboard Shortcuts
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/keyboard-shortcuts/docTep8fClyG).
+{% endhint %}
+
 ### Tools
 
 | Select Tool                                        | `V` |

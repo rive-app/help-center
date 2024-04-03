@@ -1,5 +1,9 @@
 # Animating Draw Order
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/animating-draw-order/docFeifDob4o).
+{% endhint %}
+
 You can change the draw order of your graphics at design time by moving items up and down the [Hierarchy](../fundamentals/interface-overview/hierarchy.md#draw-order). But what if you want to change the draw order during an animation? Or what if you want to change the draw order without breaking the current hierarchical structure? Rive allows you to accomplish this with Draw Order Rules.
 
 

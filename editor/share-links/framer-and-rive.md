@@ -4,6 +4,10 @@ description: Learn more about the Rive integration into Framer
 
 # Framer and Rive
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/framer-and-rive/docNJ1eVCEmG).
+{% endhint %}
+
 ## Overview
 
 Framer allows users to build functional websites fast in a low/no-code platform. Integrate Rives into Framer sites to build and control animations and interactive content without having to write custom code with [runtimes](https://help.rive.app/runtimes/overview). See more below on how to get started.

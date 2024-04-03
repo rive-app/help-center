@@ -4,6 +4,10 @@ description: Runtime versions that start supporting new Rive features
 
 # Feature Support
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/feature-support/dockjX9x72UM).
+{% endhint %}
+
 As our Rive editor grows to support more features and toolsets in making Rive assets, sometimes our runtimes need to be updated to support these updates. These editor additions may or may not introduce an API change or feature. You may need to update the runtime version to support these features. Check below to see if a feature your Rive asset takes advantage of is supported at runtime yet or not. We generally recommend you are on the latest version of the runtimes to take advantage of follow-on bug fixes and new features.\
 \
 We may include notes on migrating to newer versions if a new feature warrants recent API changes.

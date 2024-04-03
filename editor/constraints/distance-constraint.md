@@ -1,5 +1,9 @@
 # Distance Constraint
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/distance-contraint/doc8CTqEhcbP).
+{% endhint %}
+
 The Distance Constraint makes an object stay close, far, or exactly at a specific distance to another object.
 
 {% embed url="https://youtu.be/Nvwf27EIvdw" %}

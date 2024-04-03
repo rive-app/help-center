@@ -1,5 +1,9 @@
 # Rotation Constraint
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/rotation-contraint/docKAWZlJvfC).
+{% endhint %}
+
 The Rotation Constraint allows you to set limits on an object's rotation and/or copy the rotation properties from a target object. These properties can be independently activated.&#x20;
 
 {% embed url="https://youtu.be/YrQeUrzYoi8" %}

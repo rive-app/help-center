@@ -5,6 +5,10 @@ description: Adding Rive to your Unity game
 # Getting Started
 
 {% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/getting-started/docQycIiNOv4).
+{% endhint %}
+
+{% hint style="warning" %}
 The rive-unity package is currently in **Technical** **Preview** for macOS and Windows. We're hoping to gather feedback about the API and feature-set as we expand platform support. There may be sudden breaking changes between versions and not all Rive runtime features are supported yet - see [#feature-support](./#feature-support "mention")
 {% endhint %}
 

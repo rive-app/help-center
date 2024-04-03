@@ -4,6 +4,10 @@ description: Some techniques to tile your Rive games
 
 # Tilemaps
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/tilemaps/docIji41KXIU).
+{% endhint %}
+
 In this tutorial, we’ll explore a simple 2D-level concept and demonstrate a few approaches to tile your game. In principle, it works the same as a traditional sprite tilemap system.
 
 > 💡 With the Rive Renderer you have the flexibility to make every scene component a vector element. Meaning you can make your world fully interactive and animated.

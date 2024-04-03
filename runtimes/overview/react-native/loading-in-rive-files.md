@@ -4,6 +4,10 @@ description: How to use Rive files with the Rive React Native runtime
 
 # Loading in Rive Files
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/loading-in-rive-files/doc8P5oDeLlH).
+{% endhint %}
+
 There are two ways to include Rive files in your React Native projects:
 
 * Option 1: URL where a Rive file is hosted
@@ -17,7 +21,8 @@ Read more below to see more on each of the options.
 
 <pre class="language-jsx"><code class="lang-jsx">&#x3C;Rive
 <strong>  url="https://cdn.rive.app/animations/vehicles.riv"
-</strong>/>;</code></pre>
+</strong>/>;
+</code></pre>
 
 When using the Rive React Native runtime to load in a RIve file, one option is to reference the URL where the Rive file may be hosted (i.e AWS S3 bucket, Google Storage, etc.). This can be done via the `url` parameter when instantiating the `<Rive />` component.
 

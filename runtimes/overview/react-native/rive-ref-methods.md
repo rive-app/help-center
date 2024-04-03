@@ -1,5 +1,9 @@
 # Rive Ref Methods
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/rive-ref-methods/docw3wRbTWNJ).
+{% endhint %}
+
 Once you have access to the Rive ref object, there are a number of methods available to invoke for controlling animations and state machines.
 
 ### `.play()`

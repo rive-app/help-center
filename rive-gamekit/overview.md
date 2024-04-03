@@ -4,6 +4,10 @@ description: Overview of Rive GameKit
 
 # Overview
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/overview/dochMzQqsILp).
+{% endhint %}
+
 {% embed url="https://www.youtube.com/watch?v=YwRWJX0OC34" %}
 Rive GameKit announcement
 {% endembed %}

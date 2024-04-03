@@ -4,6 +4,10 @@ description: Common issues for the web runtime
 
 # FAQ
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/faq/docrACJNJWUm).
+{% endhint %}
+
 ## Concerns
 
 We've compiled a list of common concerns when using web-based runtimes. See each section below for more on how to address these in your applications.

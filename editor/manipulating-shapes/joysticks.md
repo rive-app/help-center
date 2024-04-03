@@ -1,5 +1,9 @@
 # Joysticks
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/joysticks/doc3cjzYt83Q).
+{% endhint %}
+
 ## **Joystick Overview**
 
 Joysticks make it easy to set up sophisticated rigs with simple controls. You can quickly animate body poses, eyes, mouths, hands, and more. You can even control joysticks with other joysticks.

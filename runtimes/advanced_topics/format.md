@@ -1,5 +1,9 @@
 # Format
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/format/docxcTF9lJxR).
+{% endhint %}
+
 ## Runtime Format
 
 The Rive editor exports your project as a .riv file for consumption by the Rive runtimes. This is a binary representation of your Artboards, Shapes, Animations, State Machines, etc. This is the file that Rive's runtimes read to display your content in an application, game, website, etc. The format was designed to provide a balance of quick load times, small file sizes, and flexibility with regards to future changes/addition of features.

@@ -1,5 +1,9 @@
 # Solos
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/solos/docXEEYoqU0R).
+{% endhint %}
+
 {% embed url="https://www.youtube.com/watch?v=fRtsldzaHC8&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=33" %}
 
 

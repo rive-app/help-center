@@ -5,6 +5,10 @@ description: Unity runtime for Rive
 # Unity
 
 {% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/unity/doc31LHoppdv).
+{% endhint %}
+
+{% hint style="warning" %}
 The Rive Unity runtime is currently in **Technical Review** for Mac and Windows installs of Unity. We're hoping to gather feedback about the API and feature-set as we expand platform support. Please reach out to us on [Discord](https://discord.com/invite/FGjmaTr) or through our [Support Channel](https://rive.atlassian.net/servicedesk/customer/portals).
 {% endhint %}
 

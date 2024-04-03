@@ -4,6 +4,10 @@ description: React Native runtime for Rive
 
 # React Native
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/react-native/docvvuSp165E).
+{% endhint %}
+
 ## Overview
 
 This guide documents how to get started using the React Native runtime library. Rive runtime libraries are open-source. The source is available in its [GitHub repository](https://github.com/rive-app/rive-react-native).\

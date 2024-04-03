@@ -4,6 +4,10 @@ description: Subscribing to Rive Events at runtime
 
 # Rive Events
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/rive-events/docbOnaeffgr).
+{% endhint %}
+
 With Rive events, you have the ability to subscribe to meaningful signals that get reported from animations, state machines, and Rive listeners, all created at design time from the Rive editor. These signals can be subscribed to at runtime and have a specific name, type, and various custom metadata that may accompany the event to help inform the context surrounding its meaning.&#x20;
 
 For more on the Events feature in general, check out the [Events](../editor/events.md) page in the editor section of the docs.

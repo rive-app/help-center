@@ -4,6 +4,10 @@ description: Procedurally draw shapes and paths in Unity using Rive
 
 # Procedural Rendering
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/procedural-rendering/docF2fNqCP1W).
+{% endhint %}
+
 In this section, you’ll learn how to create custom paint and path objects. This enables you to perform custom computed draw commands using the Rive Renderer.
 
 ## Overview

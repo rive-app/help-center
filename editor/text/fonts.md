@@ -1,5 +1,9 @@
 # Fonts
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/fonts/docIMUINFL5T).
+{% endhint %}
+
 Select a font in the inspector as part of a Text Style. The default list is populated via Google Fonts, however you can also upload your own fonts to the Assets Panel with a Studio plan.
 
 ## Font Options

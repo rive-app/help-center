@@ -4,6 +4,10 @@ description: Migrating guide from < 2.x
 
 # Migrating from 1.x.x to 2.x.x
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/migrating-from-1xx-to-2xx/docP4U5Gjx4i).
+{% endhint %}
+
 The Rive runtime for iOS has a different API in 2.x.x from 1.x.x that allows for a unified internal model that supports both Storyboard/UIKit and SwiftUI usage.&#x20;
 
 There are now 3 main pieces of the Rive API to be familiar with for iOS development:

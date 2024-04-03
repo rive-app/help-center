@@ -1,5 +1,9 @@
 # Adding Keyboard and Mouse Interaction
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/adding-keyboard-and-mouse-interaction/dochb2K8yEKw).
+{% endhint %}
+
 As the Rive GameKit is built on top of Flutter, it’s possible to add a wide range of peripheral inputs. This tutorial demonstrates how to add keyboard and mouse interaction to your games.
 
 There are a number of commonly used Flutter widgets that handle keyboard and mouse input:

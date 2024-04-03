@@ -1,5 +1,9 @@
 # Alternative Widget Setup
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/alternative-widget-setup/docNlDD0H0rp).
+{% endhint %}
+
 The easiest way to integrate Rive animations and state machines into your application is via the `RiveAnimation` widget mentioned throughout the runtime help docs. However, there are cases where you may want to set up animation or state machine controllers associated with the Rive widget before the Artboard is rendered. Check out below for other ways to integrate Rive into your Flutter applications:\
 
 

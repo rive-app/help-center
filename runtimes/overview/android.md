@@ -4,6 +4,10 @@ description: Android runtime for Rive
 
 # Android
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/android/docxb0vASIwp).
+{% endhint %}
+
 ## Overview
 
 This guide documents how to get started using the Android runtime library. Rive runtime libraries are open-source. The source is available in its [GitHub repository](https://github.com/rive-app/rive-android).\

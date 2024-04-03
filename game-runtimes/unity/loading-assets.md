@@ -4,6 +4,10 @@ description: Out-of-band assets in Rive Unity
 
 # Loading Assets
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/loading-assets/doc1etuJJdEC).
+{% endhint %}
+
 See the [runtime documentation](../../runtimes/loading-assets.md) for more information on loading assets out-of-band.
 
 {% hint style="warning" %}

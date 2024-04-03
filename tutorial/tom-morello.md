@@ -1,5 +1,9 @@
 # Tom Morello
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/tom-morello/dockjeb3tgza).
+{% endhint %}
+
 ## Intro
 
 In this tutorial, we'll look at an advanced file and look into some of the techniques used. While we won't build the file step by step, we will examine the design, rig, animations, and state machine. For a more in-depth look, dive into the source file and look around.

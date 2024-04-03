@@ -1,5 +1,9 @@
 # Pen Tool
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/pen-tool-overview/docdrRI0YiQT).
+{% endhint %}
+
 The Pen tool allows you to create custom vector paths as well as add additional vertices to your procedural paths. Learn more about the Pen tool by either watching the video or reading more below.
 
 {% embed url="https://www.youtube.com/watch?v=m41E2yCOUd0&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=9" %}

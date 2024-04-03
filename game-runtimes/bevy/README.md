@@ -4,6 +4,10 @@ description: Bevy runtime for Rive
 
 # Bevy
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/bevy/docYfczHUQLr).
+{% endhint %}
+
 The Bevy runtime is available here: [https://github.com/rive-app/rive-bevy/](https://github.com/rive-app/rive-bevy/)
 
 {% hint style="warning" %}

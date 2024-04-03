@@ -6,6 +6,10 @@ description: >-
 
 # Interface Overview
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/overview/docxUpEVGsr5).
+{% endhint %}
+
 {% embed url="https://www.youtube.com/watch?v=VaZc-Uhh4QM" %}
 
 ## Toolbar

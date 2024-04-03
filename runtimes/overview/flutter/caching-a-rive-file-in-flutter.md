@@ -4,6 +4,10 @@ description: Techniques and considerations to cache a Rive File in Flutter
 
 # Caching a Rive File
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/caching-a-rive-file/docrLMDw15AJ).
+{% endhint %}
+
 Under most circumstances a `.riv` file should load quickly and managing the `RiveFile` yourself is not necessary. But if you intend to use the same `.riv` file in multiple parts of your application, or even on the same screen, it might be advantageous to load the file once and keep it in memory.
 
 ### Example Usage

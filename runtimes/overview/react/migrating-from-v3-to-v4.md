@@ -4,6 +4,10 @@ description: Migration notes going from v3 to v4 of the React runtime
 
 # Migrating from v3 to v4
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/migrating-from-v3-to-v4/dociIPXVHKFF).
+{% endhint %}
+
 Starting in v4 of our React runtimes, Rive will support Rive Text at runtime, which includes the following packages:
 
 * React

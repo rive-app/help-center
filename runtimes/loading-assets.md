@@ -4,6 +4,10 @@ description: Loading and replacing assets dynamically at runtime
 
 # Loading Assets
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/loading-assets/doct4wVHGPgC).
+{% endhint %}
+
 Some Rive files may contain assets that can be embedded within the actual file binary, such as fonts or images. The Rive runtimes may then load these assets when the Rive file gets loaded in. While this makes for easy usage of the Rive files/runtimes, there may be opportunities to load these assets in or even replace them at runtime instead of embedding the assets in the file binary.
 
 There are several benefits to this approach:

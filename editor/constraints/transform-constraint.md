@@ -1,5 +1,9 @@
 # Transform Constraint
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/transform-constraint/docd8hlRRS2d).
+{% endhint %}
+
 The Transform Constraint allows its owner to copy all the transformation properties from a target object, regardless of their hierarchical relationships. These properties include Position, Rotation, and Scale.
 
 {% embed url="https://youtu.be/pJfWNtVBrvM" %}

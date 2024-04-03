@@ -1,5 +1,9 @@
 # Artboards
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/artboards/docYyi4AbIjL).
+{% endhint %}
+
 ![](<../../.gitbook/assets/Screen Shot 2022-05-27 at 9.32.57 AM.png>)
 
 Artboards are the foundation of your composition across both design and animate mode. They act as the root of every hierarchy and allow you to define the dimensions and background color of a scene. You can create an infinite amount of artboards on the [Stage](interface-overview/stage.md), but each Rive file has at least one artboard.

@@ -4,6 +4,10 @@ description: 'Last Updated: January 28, 2021'
 
 # Privacy Policy
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/privacy-policy/docPxxkGAUVc).
+{% endhint %}
+
 ## Overview
 
 This Privacy Policy explains how information is collected, used, and disclosed by Rive Inc. (**“Rive”**) and applies to information collected when you use or access Rive’s website at rive.app (the **“Website”**) or when you use the services we offer (our **“Product”**) (together with the Website, the **“Service”**). We respect the privacy rights of users and recognize the importance of protecting information collected about you.

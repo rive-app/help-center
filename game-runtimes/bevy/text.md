@@ -4,6 +4,10 @@ description: Read and update Rive Text
 
 # Text
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/text/docOxY8YTQ5T).
+{% endhint %}
+
 For more information on Rive Text see the respective [runtime](../../runtimes/text.md) and [editor](../../editor/text/) documentation.
 
 ## Read/Update Text Runs at Runtime

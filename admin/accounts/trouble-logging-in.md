@@ -1,5 +1,9 @@
 # Trouble Logging In
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/trouble-logging-in/docKiaGIaNuk).
+{% endhint %}
+
 If you type in your email address and password and see "Invalid credentials," you could have typed in the wrong login information or created your account using express login via Google or Facebook.&#x20;
 
 If you used express login, we do not have a password stored in our system - that's managed by Google or Facebook. You must use the Google or Facebook sign-in option, not email and password.

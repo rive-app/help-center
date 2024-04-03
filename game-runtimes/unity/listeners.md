@@ -4,6 +4,10 @@ description: Enable listeners on your Rive animation in Unity
 
 # Listeners
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/listeners/docRlEVvrCZW).
+{% endhint %}
+
 For more information on Rive Listeners see the [editor documentation](../../editor/state-machine/listeners.md).
 
 ## Pointer Positions

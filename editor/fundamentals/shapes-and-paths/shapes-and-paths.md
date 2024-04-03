@@ -1,5 +1,9 @@
 # Shape and Path Tips
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/shapes-and-paths-overview/docxaCyhcQbt).
+{% endhint %}
+
 ![](../../../.gitbook/assets/shapes-and-paths-01.png)
 
 Making good use of shapes and path helps you to create your designs in an easier way. In this example, you can find 3 different ways to use shapes and paths.
@@ -21,4 +25,3 @@ When creating multiple paths of the same color, when possible try to use a singl
 **Duplicate shapes**. Duplicate a shape and edit the properties of the shapes and vertex to create a texture effect.
 
 ![Enter in vertex mode to edit the path.](../../../.gitbook/assets/shapes-and-paths-parte-3.gif)
-

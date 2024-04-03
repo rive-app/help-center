@@ -4,6 +4,10 @@ description: Access Rive Events in Unity
 
 # Rive Events
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/rive-events/docvlavjXfq8).
+{% endhint %}
+
 For more information on Rive Events see the respective [runtime](../../runtimes/rive-events.md) and [editor](../../editor/events.md) documentation.
 
 ## Accessing Events

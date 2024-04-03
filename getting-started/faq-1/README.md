@@ -4,6 +4,10 @@ description: Frequently Asked Questions
 
 # FAQ
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/forums/faq/fsKixNVwMqiY).
+{% endhint %}
+
 ## Is Rive free?
 
 Every user that signs up for Rive has a free individual space. You can create a maximum of 3 files, which are exported with the Rive logo. If you want unlimited files and to privately share and collaborate on files, then you need to pick from one of our [paid plans](../../admin/pricing/).

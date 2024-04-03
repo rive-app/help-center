@@ -4,6 +4,10 @@ description: Migrating to v3.x.x
 
 # Migrating from 1.x.x to 3.x.x
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/migrating-from-1xx-to-3xx/docB2sJyj3b3).
+{% endhint %}
+
 For the most part, if you're using v1.x.x of `rive-react`, you should be able to upgrade to the new dependencies in v3.x.x without many changes.
 
 {% hint style="info" %}

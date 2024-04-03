@@ -4,6 +4,10 @@ description: Rive React Native Expo
 
 # Adding Rive to Expo
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/adding-rive-to-expo/docFSwIlblYi).
+{% endhint %}
+
 To enable your Expo application to run Rive animations you'll need to include the native Android and iOS libraries.
 
 To achive this you can make use of [development builds](https://docs.expo.dev/develop/development-builds/introduction/) or by [generating the native projects with prebuild](https://docs.expo.dev/workflow/customizing/#generate-native-projects-with-prebuild). A development build can be seen as your own version of the Expo Go client that includes custom native libraries. We suggest reading [Expo's documentation](https://docs.expo.dev/workflow/customizing/#generate-native-projects-with-prebuild) for more information.

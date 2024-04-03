@@ -4,6 +4,10 @@ description: 'Last Updated: October 5, 2020'
 
 # Acceptable Use Policy
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/acceptable-use-policy/docZWMMMT2Xz).
+{% endhint %}
+
 Capitalized terms used but not defined in these Acceptable Use Policies have the meanings assigned to them in our Terms of Service, Corporate Terms of Service, and Privacy Statement. For customers subject to the Corporate Terms of Service, "you" and "your" refer to "Customer" or "Users". "We", "us", "our" refer to "Rive".
 
 ## 1. Compliance with Laws and Regulations

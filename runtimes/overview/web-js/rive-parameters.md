@@ -4,6 +4,10 @@ description: API docs for the Rive instance
 
 # Rive Parameters
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/rive-parameters/docHI9ASztXP).
+{% endhint %}
+
 ## Parameters
 
 You can set any of the following parameters on the Rive object when instantiating:

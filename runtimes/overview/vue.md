@@ -4,6 +4,10 @@ description: Using Rive in Vue apps
 
 # Vue
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/vue/doczJWqd7CHZ).
+{% endhint %}
+
 ## Overview
 
 Currently, there is no official Rive "Vue"-specific runtime available, however, you can utilize the Web runtime packages in your Vue applications. Check out [this example](https://github.com/Coded-Clouds/Rive\_Vue\_ExampleApp) from the community.

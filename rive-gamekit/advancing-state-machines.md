@@ -4,6 +4,10 @@ description: Advancing and Performance Considerations
 
 # Advancing State Machines
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/advancing-state-machines/docRN5kqj0ZO).
+{% endhint %}
+
 ## Advancing State Machines
 
 In the render loop, as we’ve seen in previous sections, the essential goal of each frame is to:

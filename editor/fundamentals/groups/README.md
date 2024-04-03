@@ -1,5 +1,9 @@
 # Groups
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/groups/docktcOluWe7).
+{% endhint %}
+
 {% embed url="https://www.youtube.com/watch?v=s9x35tPmEZs&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=15" %}
 
 Use groups to organize your graphics or to add extra transform spaces.

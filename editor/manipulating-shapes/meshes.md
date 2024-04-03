@@ -1,5 +1,9 @@
 # Meshes
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/meshes/docdJwZKih2V).
+{% endhint %}
+
 Meshes are an excellent way to add natural and organic deformations to raster graphics. Make skin flex, fabric ripple, hair flow, and more.
 
 ## Add Mesh

@@ -4,6 +4,10 @@ description: Clipping allows you to cut one shape out from another.
 
 # Clipping
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/clipping/docbYLdCButS).
+{% endhint %}
+
 {% embed url="https://www.youtube.com/watch?v=u8EPxqT3LnM&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=17" %}
 
 ## How to use Clipping

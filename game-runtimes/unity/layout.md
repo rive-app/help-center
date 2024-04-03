@@ -4,6 +4,10 @@ description: Control the layout of your Rive animation in Unity
 
 # Layout
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/layout/docFHk0CrU8G).
+{% endhint %}
+
 For more information on Rive Layout see the [runtime documentation](../../runtimes/layout.md).
 
 ## Fit and Alignment

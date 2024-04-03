@@ -4,6 +4,10 @@ description: Specify a renderer to use at runtime
 
 # Choose a Renderer
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/overview/docD20dU9Rod).
+{% endhint %}
+
 Rive makes use of various different renderers depending on platform and runtime. We're working towards unifying the default renderer used across all platforms/runtimes with the [Rive Renderer](https://rive.app/renderer), which is now available on iOS, Android,  Rive GameKit, and on Web (JS) on Google Chrome ([with WebGL draft extensions enabled](https://www.wikihow.tech/Enable-WebGL-Draft-Extensions-in-Google-Chrome)).
 
 ## Renderer Options and Default

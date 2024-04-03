@@ -1,5 +1,9 @@
 # Translation Constraint
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/translation-contraint/doc3GjQBAmpC).
+{% endhint %}
+
 The Translation Constraint allows you to set limits on an object's position and/or copy the position properties from a target object. These properties can be independently activated.&#x20;
 
 {% embed url="https://youtu.be/i6OAPcqcPBw" %}

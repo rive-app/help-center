@@ -1,5 +1,9 @@
 # Inputs
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/inputs/docwgNrq7ssz).
+{% endhint %}
+
 Inputs are the contract between designers and developers. As Designers, we use Inputs as a way to control the transitions in our state machine by assigning them as conditions. Developers tie into the inputs at runtime and define conditions through code that can change those inputs.
 
 ### **Creating a new Input**

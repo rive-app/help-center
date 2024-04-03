@@ -4,6 +4,10 @@ description: Learn how to use Inverse Kinematics in Rive
 
 # IK Constraint
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/ik-constraint/doclOLGcy3yB).
+{% endhint %}
+
 ## About Inverse Kinematics (IK)
 
 {% embed url="https://youtu.be/8FK5E5WBUpM" %}

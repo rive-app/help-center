@@ -1,5 +1,9 @@
 # Nested Artboards
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/nested-artboards/docL5SnBgUng).
+{% endhint %}
+
 Nested Artboards can speed up your workflow by allowing you to reuse animations and State Machines. Any changes made to the source Artboard will be reflected across any of the Nested Artboards
 
 

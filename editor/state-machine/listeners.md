@@ -1,5 +1,9 @@
 # Listeners
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/listeners/doceaiA9rRW1).
+{% endhint %}
+
 Listeners give designers the tools to take their State Machine one step further and define click, hover, and mouse move actions that can change inputs in the editor and at runtime without the need for a developer.
 
 For example, this button does not have listeners attached to it. If we click on the button, nothing happens. We would need to change the inputs directly in the input panel to make our button react.

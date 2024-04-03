@@ -6,6 +6,10 @@ description: >-
 
 # Stage
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/stage/doct5hQbrcdD).
+{% endhint %}
+
 {% embed url="https://www.youtube.com/watch?v=IgaysOQ0KFo&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=5" %}
 
 ## **Selection**

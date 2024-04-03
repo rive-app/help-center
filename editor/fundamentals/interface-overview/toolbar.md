@@ -4,6 +4,10 @@ description: Access design and animation tools from the Rive Editor toolbar.
 
 # Toolbar
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/toolbar/docC0WckDcbf).
+{% endhint %}
+
 ## Editor menu
 
 The Editor menu is located to the left of the Transform Tools menu. This menu allows you to change the file name and view your file's [Revision History](../revision-history.md). Note that you can also change your file's name by double clicking on the tab at the top.

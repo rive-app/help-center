@@ -4,6 +4,10 @@ description: The link in the email no longer works. How can I download my receip
 
 # Downloading My Receipt/Invoice
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/downloading-my-receipt--invoice/docsTQRewANB).
+{% endhint %}
+
 You must log in to your account and access your account admin page: [rive.app/account](https://rive.app/account/)
 
 <figure><img src="../../.gitbook/assets/Rive-Account (1).png" alt=""><figcaption></figcaption></figure>

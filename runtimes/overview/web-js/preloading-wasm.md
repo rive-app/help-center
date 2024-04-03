@@ -1,5 +1,9 @@
 # Preloading WASM
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/preloading-wasm/docZkAViuNLJ).
+{% endhint %}
+
 ## Background
 
 When rending a `new Rive()` instance from the `@rive-app/*` packages, or the `<RiveComponent />` from the `@rive-app/react-*` packages, your browser is making a network request to `https://unpkg.com/@rive-app/canvas@x.x.x/rive.wasm` which retrieves a [Web Assembly](https://developer.mozilla.org/en-US/docs/WebAssembly) (WASM) file that contains Rive-specific APIs to build the render loop. [unkpg](https://unpkg.com/) is a global CDN that quickly allows for loading in NPM packages, which in this case includes a WASM file. This allows for a smaller bundle size when pulling in the Rive JS-based runtimes, while only loading in WASM when Rive instances are created.\

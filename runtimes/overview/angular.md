@@ -4,6 +4,10 @@ description: Community-driven Angular runtime for Rive
 
 # Angular
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/angular/docGiKUC4AXY).
+{% endhint %}
+
 ## Overview
 
 This guide documents how to get started using the community-built Angular runtime library. The source is available in its [GitHub repository](https://github.com/dappsnation/ng-rive).\

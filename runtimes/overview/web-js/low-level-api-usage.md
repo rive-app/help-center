@@ -4,6 +4,10 @@ description: Using low-level JS APIs to construct Rive scenes
 
 # Low-level API Usage
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/low-level-api-usage/doctAfBY6v3P).
+{% endhint %}
+
 ## Background
 
 While the JS runtime offers a high-level API that allows for integrating Rives into web applications quickly, the runtime also allows for a smaller advanced low-level API that allows for constructing and controlling Rive(s) in your own render loop. There are several reasons and benefits to using this lower-level API:

@@ -4,6 +4,10 @@ description: Controlling the layout of your Rive animation
 
 # Layout
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/layout/docBl81zd1GB).
+{% endhint %}
+
 Rive provides a number of ways to control how your animations are laid out in the canvas or view used to display them. Rive lets you control the fit, alignment, and offset of rendered content.
 
 ## The `Layout` object

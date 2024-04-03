@@ -4,6 +4,10 @@ description: Advance and paint a Rive artboard manually in Flutter.
 
 # Custom Painter
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/custom-painter/docgYyBHBJnY).
+{% endhint %}
+
 You can manage advancing and drawing an artboard yourself by using a [CustomPainter](https://api.flutter.dev/flutter/rendering/CustomPainter-class.html). This will give you more control at a painting level, allowing you to:
 
 * Draw multiple Rive artboards to the same [Flutter Canvas](https://api.flutter.dev/flutter/dart-ui/Canvas-class.html).

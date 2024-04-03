@@ -4,6 +4,10 @@ description: Learn how to export your Rive files
 
 # Exporting
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/exporting/dockj1y5YeDd).
+{% endhint %}
+
 ## Exporting for real-time content
 
 You can load your Rive files into apps, websites, products, and games thanks to the open-source [Rive Runtimes](../runtimes/overview.md). To load your files in our runtimes, you'll need to export a **.riv** file.
@@ -51,4 +55,3 @@ To render an animation, open up the timeline you want to render (in [Animate Mod
 This opens up the Cloud Renderer. Add multiple videos to a queue and set them to render either one-by-one or all at once. Our services do the heavy lifting while you continue working.
 
 ![](../.gitbook/assets/screen-shot-2021-05-13-at-2.42.53-pm.png)
-

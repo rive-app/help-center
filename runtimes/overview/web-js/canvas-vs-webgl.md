@@ -1,5 +1,9 @@
 # Canvas vs WebGL
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/canvas-vs-webgl/docanjXoQ1uT).
+{% endhint %}
+
 ### Background
 
 The JS/WASM runtime provides various packages which are published to npm. For simple usage and smaller package sizes, we recommend starting with `@rive-app/canvas` (more on that below). On the web, Rive offers the ability to use a backing `CanvasRenderingContext2D` context or `WebGL` context associated with a `<canvas>` element for rendering Rive animations.

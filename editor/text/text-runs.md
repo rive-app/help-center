@@ -1,5 +1,9 @@
 # Text Runs
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/text-runs/docrTbOtaAk3).
+{% endhint %}
+
 {% embed url="https://www.youtube.com/watch?v=a4drmh2S-eg&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=41" %}
 
 Runs allow you break your text up into sections — typically, they're used to apply a variety of styles to a single block of text. Whilst most tools manage text runs behind the scenes, Rive exposes them for greater control when dynamically changing text at runtime.

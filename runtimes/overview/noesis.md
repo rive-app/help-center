@@ -4,6 +4,10 @@ description: Noesis support for Rive
 
 # Noesis
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/noesis/docmj3dhOsBF).
+{% endhint %}
+
 ## Overview
 
 This guide documents how to get started using Rive in [Noesis](https://www.noesisengine.com/index.php). Noesis is a UI middleware for game engines and real-time applications. As of [NoesisGUI v3.2](https://www.noesisengine.com/docs/Gui.Core.Changelog.html#version-3-2-0rc2), you can use Rive assets with NoesisGUI and therefore can render Rives in game engines that support Noesis such as Unity and Unreal, as well as C# and C++ standalone applications.

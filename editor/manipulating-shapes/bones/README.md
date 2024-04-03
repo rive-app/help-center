@@ -1,5 +1,9 @@
 # Bones
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/bones/docYyQwxrgI5).
+{% endhint %}
+
 Bones allow you to create a skeleton for your graphics. This is an intuitive and natural way to animate multiple connected parts such as an arm, flag, or tree branch. Learn how to use bones by either watching the video or reading more below.
 
 {% embed url="https://youtu.be/WDILxfmCEt0" %}

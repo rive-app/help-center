@@ -1,5 +1,9 @@
 # Freeze and Origin
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/freeze-and-origin/docc6CFtaMoZ).
+{% endhint %}
+
 {% embed url="https://www.youtube.com/watch?v=20aS5ZOkNpI&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=16" %}
 
 When you transform objects, their children inherit the same transformations. The location where these transformations happen (sometimes called the origin, anchor point, or pivot) affects how your objects animate.

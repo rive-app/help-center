@@ -1,5 +1,9 @@
 # Transitions
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/transitions/docpF7IDbHp6).
+{% endhint %}
+
 Transitions supply the logical map for the state machine to follow. There are a number of considerations and configurable properties for transitions that we will cover below. Note that we’ll briefly discuss Inputs as well, so be sure to read more about those as well here.
 
 ## **Creating a new Transition**

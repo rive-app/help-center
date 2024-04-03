@@ -4,6 +4,10 @@ description: iOS/macOS runtime for Rive
 
 # iOS/macOS
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/iosmacos/docXbeEcWybL).
+{% endhint %}
+
 ## Overview
 
 This guide documents how to get started using the iOS/macOS runtime library. Rive runtime libraries are open-source. The source is available in its [GitHub repository](https://github.com/rive-app/rive-ios).\

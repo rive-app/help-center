@@ -1,5 +1,9 @@
 # Scale Constraint
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/scale-constraint/doc2RcOWOZD2).
+{% endhint %}
+
 The Scale Constraint allows you to set limits on an object's scale and/or copy the scale properties from a target object. These properties can be independently activated.&#x20;
 
 {% embed url="https://youtu.be/4fFuGQHAiIQ" %}

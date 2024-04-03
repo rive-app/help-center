@@ -4,6 +4,10 @@ description: Run Rive on your platform of choice.
 
 # Getting Started
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/getting-started/docxMZXGxnHR).
+{% endhint %}
+
 The Rive runtimes are open-source libraries that allow you to load and control your animations in apps, games, and websites. Dive into each of the subpages to get started!
 
 ## How to use this guide

@@ -4,6 +4,10 @@ description: Listen to Rive Events in Bevy
 
 # Rive Events
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/rive-events/docX2iZ1A8EQ).
+{% endhint %}
+
 For more information on Rive Events see the respective [runtime](../../runtimes/rive-events.md) and [editor](../../editor/events.md) documentation.
 
 ## Subscribing to Events

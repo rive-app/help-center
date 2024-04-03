@@ -4,6 +4,10 @@ description: Fundamentals Guide
 
 # Fundamentals
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/fundamentals/docM72mRgBW7).
+{% endhint %}
+
 To get started using the Rive GameKit, follow along with each section below to go through the core steps of loading in a Rive file, rendering its contents, and building the render loop where we’ll display a Zombie animation.
 
 {% hint style="info" %}

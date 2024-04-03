@@ -1,5 +1,9 @@
 # Fundamentals
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/overview/dochNjEjvf3S).
+{% endhint %}
+
 In this section, we'll step through a typical workflow from creating an artboard all the way to exporting your first Rive file. Before we get started, check out our brief overview of the interface to familiarise yourself with the various sections and modes.
 
 {% hint style="info" %}

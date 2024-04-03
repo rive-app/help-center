@@ -4,6 +4,10 @@ description: Interact with the Rive State Machine in Bevy
 
 # State Machines
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/state-machines/docKIZctc54e).
+{% endhint %}
+
 For more information on Rive State Machines see the respective [runtime](../../runtimes/state-machines.md) and [editor](../../editor/state-machine/) documentation.
 
 ## Reading/Writing Inputs

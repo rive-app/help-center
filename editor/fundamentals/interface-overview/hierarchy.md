@@ -4,6 +4,10 @@ description: The hierarchy is always located on the left side of the editor.
 
 # Hierarchy
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/hierarchy/docpNRiVLdQE).
+{% endhint %}
+
 The Hierarchy is a tree view, which shows both the parent-child relationships between objects on the stage as well as the order in which they are rendered. Learn about the Hierarchy by either watching the video or reading more below.
 
 {% embed url="https://www.youtube.com/watch?v=ipMJIw6T0Ds&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=14" %}

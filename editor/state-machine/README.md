@@ -4,6 +4,10 @@ description: Add intelligence to your animations
 
 # State Machine
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/state-machine/docwH5zPdh93).
+{% endhint %}
+
 ## **State Machine Overview**
 
 State Machines are a visual way to connect animations together and define the logic that drives the transitions. They allow you to build interactive motion graphics that are ready to be implemented in your product, app, game, or website.

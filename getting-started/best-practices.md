@@ -4,6 +4,10 @@ description: Editor & runtime performance and usage considerations
 
 # Best Practices
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/best-practices/docQqXohqHJa).
+{% endhint %}
+
 Rive is built to efficiently play interactive graphics in the editor and at runtime in applications and games. However, poorly optimized animations can consume significant resources and cause poor performance, particularly on low-end devices. In the following sections, we will outline important considerations and tips for maintaining optimal performance and minimal resource utilisation both during design/animate time in the Rive editor, as well as during runtime in applications.
 
 {% hint style="info" %}

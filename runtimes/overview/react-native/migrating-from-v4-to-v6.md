@@ -4,6 +4,10 @@ description: Migrating from v4 to v6
 
 # Migrating from v4 to v6
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/migrating-from-v4-to-v6/doctKfNYXsOS).
+{% endhint %}
+
 If you are migrating to `rive-react-native` note the following changes below. Since there were not any minor/patch versions released on `v5`, we're consolidating the migration guidance from `v4` to `v5` and `v5` to `v6`, which we recommend migrating to stay up-to-date.
 
 {% hint style="success" %}

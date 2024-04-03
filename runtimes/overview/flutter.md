@@ -4,6 +4,10 @@ description: Flutter runtime for Rive
 
 # Flutter
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/flutter/docqzmYRZmvF).
+{% endhint %}
+
 ## Overview
 
 This guide documents how to get started using the Flutter runtime library. Rive runtime libraries are open-source. The source is available in its [GitHub repository](https://github.com/rive-app/rive-flutter).\

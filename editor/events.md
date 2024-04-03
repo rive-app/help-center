@@ -1,5 +1,9 @@
 # Events
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/events/docREl0GMIeb).
+{% endhint %}
+
 Events are a way to send signals to your runtime code to execute a block of code at the right moment. They enhance the communication between designers and developers by passing along useful information. With them, we can do things like go to a URL, play a sound, have some HTML  appear, or do anything else we may want to accomplish via code.
 
 Coordinating Rive events at design time and runtime will be important to ensure a successful integration in apps, games, and more.

@@ -4,6 +4,10 @@ description: Migrating guide from < 3.x
 
 # Migrating from 2.x.x to 3.x.x
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/migrating-from-2xx-to-3xx/docJ4RkfRoA0).
+{% endhint %}
+
 Migrating to v3 of the iOS runtime should be fairly straightforward. See the sections below on concerns you may need to look out for to change to your app if you upgrade.\
 
 

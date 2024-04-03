@@ -1,5 +1,9 @@
 # Timeline
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/timeline/docPP7e6ES3Y).
+{% endhint %}
+
 {% embed url="https://www.youtube.com/watch?v=NSb_TNWOVc0&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=23" %}
 
 The Rive interface displays a timeline with playback controls and options for the current animation in Animate mode. A list of all animations is displayed to the left of the Timeline. Keep in mind that these are animations for the currently [active artboard](../fundamentals/artboards.md#active-artboard).

@@ -1,5 +1,9 @@
 # Pricing
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/pricing/docuWp6cbOeg).
+{% endhint %}
+
 Rive is free for individuals and supports paid plans for teams. Teams allow you to create a shared space where you and other team members can collaborate in real-time, no matter where you are. We offer flexible plan options, and our [fair billing policy](fair-billing-policy.md) means you'll only be billed for users as you add them. When you remove a user, we'll add a prorated credit to your account based on your billing cycle.
 
 ## Individual Free plan

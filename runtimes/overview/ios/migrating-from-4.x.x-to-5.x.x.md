@@ -4,6 +4,10 @@ description: Migrating guide from  < 4.x
 
 # Migrating from 4.x.x to 5.x.x
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/migrating-from-4xx-to-5xx/docZ3powhHJm).
+{% endhint %}
+
 {% hint style="success" %}
 No breaking API changes!
 {% endhint %}

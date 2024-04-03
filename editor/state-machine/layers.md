@@ -1,5 +1,9 @@
 # Layers
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/layers/docQI8guiwME).
+{% endhint %}
+
 A layer on the state machine allows you to play a single animation at a time. For this reason, you can create multiple layers if you wish to mix multiple animations or add additional interactions to a state machine.
 
 This example uses layers to mix different background animations, and add multiple interactions onto a single artboard.

@@ -1,5 +1,9 @@
 # Follow Path Constraint
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/follow-path-constraint/docfKwWYBhyz).
+{% endhint %}
+
 The Follow Path Constraint makes complex motion much easier to create by allowing us to constrain an object to a path. Watch the video, or read more below.
 
 {% embed url="https://youtu.be/9Gp_Kz-ylT4" %}

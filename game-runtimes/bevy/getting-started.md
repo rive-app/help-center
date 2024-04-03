@@ -4,6 +4,10 @@ description: Adding Rive to your Bevy games
 
 # Getting Started
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/getting-started/docMGsIZQEaJ).
+{% endhint %}
+
 ## Example Project
 
 To quickly experiment with rive-bevy, run one of our example projects.

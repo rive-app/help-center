@@ -4,6 +4,10 @@ description: Extend RiveRenderObject to perform more advanced operations.
 
 # Custom Rive RenderObject
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/custom-rive-renderobject/docnbX5AnjkW).
+{% endhint %}
+
 It is possible to have finer control over your Rive animation at runtime by extending `RiveRenderObject`. This allows you to override low-level methods such as `advance`, `beforeDraw`, and `draw` to have more control and optionally perform additional operations. See below for example usage.
 
 {% hint style="info" %}

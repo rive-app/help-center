@@ -4,6 +4,10 @@ description: 'Last Updated: April 10, 2023'
 
 # Terms of Service
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/terms-of-service/docG7vv2lLg8).
+{% endhint %}
+
 The following Terms of Service (the **“Terms”**) form a binding agreement between you, in your individual capacity, or on behalf of the entity you represent, as applicable (the **“User,” “you,”** and **“your”**), and Rive, Inc., a Delaware corporation (**“Rive”**, **“we”** and **“us”**), and govern your use of the internet-based applications, software, services and websites offered by Rive (the **“Service”)**.
 
 ## A. Account Terms

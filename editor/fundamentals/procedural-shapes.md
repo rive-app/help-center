@@ -1,5 +1,9 @@
 # Procedural Shapes
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/procedural-shapes/docqippP5FkJ).
+{% endhint %}
+
 {% embed url="https://www.youtube.com/watch?v=XDbYmb7id9Y&list=PLujDTZWVDSsFGonP9kzAnvryowW098-p3&index=10" %}
 
 ## Creating a procedural shape

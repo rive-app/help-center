@@ -4,6 +4,10 @@ description: Rive Renderer FAQ
 
 # FAQ
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/faq/docXLOMCudtc).
+{% endhint %}
+
 ## Is the Rive Renderer available on all platforms?
 
 See the [top-level page](./) for all supported platforms/runtimes. We will continue to update the docs and usage guidance frequently to reflect new support for the Rive Renderer in other runtimes as it becomes available.

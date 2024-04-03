@@ -1,5 +1,9 @@
 # Props
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/props/docTQpmOGnkp).
+{% endhint %}
+
 ## Rive Component Props
 
 The following are props you can set on the Rive React component for this runtime:

@@ -1,5 +1,9 @@
 # Creating an Account
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/creating-an-account/docAZAcKpXts).
+{% endhint %}
+
 To create an account with Rive, you will need to go to our website: [https://rive.app/](https://rive.app/)
 
 In the upper right corner is a "Get Started" button.&#x20;

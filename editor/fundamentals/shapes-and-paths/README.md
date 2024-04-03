@@ -1,5 +1,9 @@
 # Shapes and Paths
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/shapes-and-paths-overview/docxaCyhcQbt).
+{% endhint %}
+
 Rive allows you to create, edit, and animate vector graphics using either procedural or custom shapes. These graphics combine shape and path layers to define them, which Rive exposes to give you greater flexibility and control with your designs and animations.
 
 To learn more about Shape and Path layers, watch our video on Shapes and Paths, or read more below.

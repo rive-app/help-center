@@ -1,5 +1,9 @@
 # Tagging
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/tagging/docMJwIYrx3S).
+{% endhint %}
+
 Tagging is a way to organize your hierarchy further. Create tags, then apply them to objects in the Hierarchy like Bones or Groups, then filter the view to see exactly what you need, when you need it.
 
 ## Creating Tags

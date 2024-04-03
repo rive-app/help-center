@@ -4,6 +4,10 @@ description: Basic techniques to paint and perform layout on the Rive texture ar
 
 # Paint & Layout
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/paint--layout/docEmw5Kp1Y8).
+{% endhint %}
+
 {% hint style="info" %}
 If you’re new to Flutter or the Rive GameKit, please read the [Fundamentals](fundamentals.md) documentation first.
 {% endhint %}

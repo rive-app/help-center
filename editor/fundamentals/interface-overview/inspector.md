@@ -4,6 +4,10 @@ description: The Inspector is located on the right side of the Editor.
 
 # Inspector
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/inspector/docasBwsL61r).
+{% endhint %}
+
 ![](<../../../.gitbook/assets/Screen Shot 2023-03-29 at 12.40.06 PM.png>)
 
 An object's editable properties can be found in the Inspector. The Inspector changes dynamically depending on your selected object and where you are in the editor.&#x20;

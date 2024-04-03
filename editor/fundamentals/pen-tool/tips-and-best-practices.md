@@ -1,5 +1,9 @@
 # Pen Tool Tips
 
+{% hint style="warning" %}
+This article is out of date! Find the [new version here](https://rive.app/community/doc/pen-tool-tips/docvdaeb9swN).
+{% endhint %}
+
 ## Using the pen tool
 
 The Pen tool is a great way to build complex shapes and paths, but it's not always the most simple tool. Here are a few things to keep in mind when using the pen tool that will help you get started.
@@ -8,7 +12,7 @@ To learn more about the Pen tool, watch our video on the Pen tool or read below.
 
 
 
-![](../../../.gitbook/assets/pen_tool.gif)
+![](../../../.gitbook/assets/pen\_tool.gif)
 
 To learn more about the Pen tool, watch our video on the Pen tool or read below.
 
@@ -16,13 +20,13 @@ To learn more about the Pen tool, watch our video on the Pen tool or read below.
 
 ### Click for straight edges
 
-![](../../../.gitbook/assets/pen_tool_straight.gif)
+![](../../../.gitbook/assets/pen\_tool\_straight.gif)
 
 If you want to make a path that only has straight edges, click your mouse to place each vertex.
 
 ### Drag for curved edges
 
-![](../../../.gitbook/assets/pen_tool_mixed.gif)
+![](../../../.gitbook/assets/pen\_tool\_mixed.gif)
 
 If you want to create curved edges, click and drag your mouse as you place the vertex. The longer you drag the mouse, the more exaggerated the curve will be. If you want to create a straight edge from a curve, click to add your next vertex.
 
@@ -42,27 +46,26 @@ Change which vertex is considered the first vertex by right-clicking on the desi
 
 ### Non-Zero
 
-Non-Zero takes into account the winding of a path, or the direction that the path is created \(clockwise or counterclockwise\). 
+Non-Zero takes into account the winding of a path, or the direction that the path is created (clockwise or counterclockwise).&#x20;
 
-![](../../../.gitbook/assets/winding_same_fixed1.gif)
+![](../../../.gitbook/assets/winding\_same\_fixed1.gif)
 
 If two overlapping paths are created in the same direction and the draw rule is set to Non-Zero, you'll see that where they intersect is filled.
 
-![](../../../.gitbook/assets/winding_dif.gif)
+![](../../../.gitbook/assets/winding\_dif.gif)
 
 If two overlapping paths are created in opposite directions, you'll see that where they intersect is not filled.
 
-![Example](../../../.gitbook/assets/non_zero_example.gif)
+![Example](../../../.gitbook/assets/non\_zero\_example.gif)
 
 We can use this to our advantage if we want to punch a hole in another shape without using clipping.
 
-### 
+###
 
 ### Even-Odd
 
-Even-Odd is a bit easier to understand because you don't need to think about the direction in which a path is created. 
+Even-Odd is a bit easier to understand because you don't need to think about the direction in which a path is created.&#x20;
 
-![](../../../.gitbook/assets/even_odd_fixed.gif)
+![](../../../.gitbook/assets/even\_odd\_fixed.gif)
 
 When two paths overlap, you'll see that there is no fill.
-
