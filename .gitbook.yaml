@@ -1,8 +1,7 @@
 root: ./
 
 redirects:
-  getting-started/faq-1: https://rive.app/community/forums/faq/fsKixNVwMqiY
-  getting-started/faq-1: getting-started/teams-and-billing.md
+  getting-started/faq-1: getting-started/faq-1/teams-and-billing.md
   getting-started:
     faq-1: https://rive.app/community/forums/faq/fsKixNVwMqiY
   getting-started/faq-1/editor-and-runtimes: https://rive.app/community/forums/faq/fsKixNVwMqiY
