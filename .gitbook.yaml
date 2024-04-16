@@ -1,5 +1,1 @@
 root: ./
-
-redirects:
-  getting-started/faq-1/requirements-and-troubleshooting: getting-started/faq-1/teams-and-billing.md
-
