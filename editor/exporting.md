@@ -5,7 +5,7 @@ description: Learn how to export your Rive files
 # Exporting
 
 {% hint style="warning" %}
-This article is out of date! Find the [new version here](https://rive.app/community/doc/exporting/dockj1y5YeDd).
+This article is out of date! Find the [new version here](https://rive.app/community/doc/exporting-for-runtime/docp8HLoCk3G).
 {% endhint %}
 
 ## Exporting for real-time content
