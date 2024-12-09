@@ -1,3 +1,7 @@
+---
+hidden: true
+---
+
 # Fair Billing Policy
 
 {% hint style="warning" %}
