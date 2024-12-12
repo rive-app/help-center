@@ -62,8 +62,6 @@ The Service is free for individual Accounts, subject to these Terms.  Creation o
 
 You may add additional Team Members to a Team within the interface of the Service.  You will be charged for any such additional Team Members at a prorated rate for the remaining portion of the then-current billing period.
 
-If you remove Team Members from a Team, you will be credited a prorated amount for the remaining portion of the then-current billing period.  Such credit may be applied only to future amounts payable to Rive for a Subscription and are not redeemable for cash.
-
 You may change the type of Subscription at any time by (i) emailing us at support@rive.app and following any instructions, if any, we provide to you in response to your change request or (ii) initiating a change through your Account settings within the Service.\
 
 
