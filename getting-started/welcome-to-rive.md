@@ -4,7 +4,7 @@ Welcome to the Rive help center. Here you can find documentation on all aspects 
 
 {% embed url="https://www.youtube.com/watch?v=GPy0s2Y6hQg" %}
 
-Have questions? [Join us on Discord](https://discord.com/invite/FGjmaTr) for more help from the team and community.
+Have questions? [Join us on Discord](https://discord.gg/rive-app) for more help from the team and community.
 
 ## Create an account
 

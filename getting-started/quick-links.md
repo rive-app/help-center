@@ -2,7 +2,7 @@
 
 [Get the runtimes](../runtimes/overview.md)
 
-[Join us on Discord](https://discord.gg/FGjmaTr)
+[Join us on Discord](https://discord.gg/rive-app)
 
 [Follow us on Twitter](https://twitter.com/rive_app)
 
